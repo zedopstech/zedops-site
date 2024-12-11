@@ -43,9 +43,9 @@ export default function ComingSoon() {
             <p className="max-w-xl mx-auto mt-4 text-base leading-relaxed text-gray-600">{ComingSoonContent.content}</p>
         </div>
 
-        <div className="ml-8 space-y-8 sm:space-x-12 sm:mt-12 sm:flex sm:items-start sm:justify-center sm:space-y-0 md:space-x-20 lg:mt-20">
-            <div className="flex items-start ml-8">
-                {ComingSoonContent.section.map((item, index)=>(<div key={index} className="ml-8">
+        <div className="mt-8 space-y-8 sm:space-x-12 sm:mt-12 sm:flex sm:items-start sm:justify-center sm:space-y-0 md:space-x-20 lg:mt-20">
+            <div className="lg:flex lg:justify-between grid items-start">
+                {ComingSoonContent.section.map((item, index)=>(<div key={index} className="ml-8 mt-2">
                     <h3 className="text-xl font-semibold text-black">{item.title}</h3>
                     <p className="mt-1.5 text-base text-gray-600">{item.description}</p>
                 </div>))}
