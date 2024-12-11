@@ -1,4 +1,4 @@
-'use client'
+'use client';
 import React, { useState } from "react";
 import Logo from "./Logo";
 import Link from "next/link";
@@ -22,7 +22,7 @@ const Header: React.FC = () => {
       name:"About Us",
       href:"/about-us"
     }
-  ]
+  ];
   return (
     <div>
       <header className="py-4 bg-orange-50 sm:py-5">
@@ -100,6 +100,22 @@ const Header: React.FC = () => {
             </div>
           </div>
         </div>
+
+        {expanded && (
+          <div className="px-4 py-4 bg-gray-50 border-t border-gray-300 lg:hidden">
+            <nav className="space-y-2">
+              {navigationOption.map((item, index) => (
+                <Link
+                  href={item.href}
+                  key={index}
+                  className="block px-4 py-2 text-base font-medium text-gray-900 transition-all duration-200 rounded-md hover:bg-gray-100"
+                >
+                  {item.name}
+                </Link>
+              ))}
+            </nav>
+          </div>
+        )}
       </header>
     </div>
   );
