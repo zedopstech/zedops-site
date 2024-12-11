@@ -1,6 +1,3 @@
-import { CalendarDays } from "lucide-react";
-import Link from "next/link";
-
 const HeroContent = {
     title:' Building the Future of Construction Management',
     description: "At Zedops, we are revolutionizing the way construction projects are planned, managed, and delivered. Our mission is to empower construction companies with cutting-edge tools that enhance productivity, streamline workflows, and foster seamless collaboration across teams and stakeholders."
