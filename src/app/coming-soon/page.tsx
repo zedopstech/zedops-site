@@ -27,8 +27,7 @@ export default function ComingSoon() {
     const [email, setEmail] = useState('');
     const [enable, setEnable] = useState(true);
 
-    const handleSubmit = (e:any) =>{
-        e.preventDefault();
+    const handleSubmit = () =>{
         if (enable && email) {
             setEnable(false);
         }   
