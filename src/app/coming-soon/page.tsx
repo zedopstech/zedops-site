@@ -83,7 +83,7 @@ export default function ComingSoon() {
 
         {!enable && <div className="max-w-2xl mx-auto mt-6">
             <div className="p-4 mb-4 text-sm text-center bg-green-50" role="alert">
-            <span className="font-medium">Thank you for showing interest in Zedops Construction Management Software!</span> Our team will reach out to you shortly once the product is launched.</div>
+            <span className="font-medium">Thank you for showing interest in Zedops Construction Management Software!</span> Our team will reach out to you shortly.</div>
         </div>}
 
         <div className="flex items-center justify-start mt-8 sm:justify-center sm:px-0">
