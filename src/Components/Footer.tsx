@@ -1,5 +1,6 @@
 import {Facebook, Instagram, X } from "lucide-react";
 import Logo from "./Logo";
+import Link from "next/link";
 
 const Footer: React.FC = () => {
   const FooterContent = {
@@ -27,8 +28,8 @@ const Footer: React.FC = () => {
                     url:"#features"
                 },
                 {
-                    name:"Contact Us",
-                    url:""
+                    name:"About Us",
+                    url:"/about-us"
                 },
                 {
                     name:"Book a Demo",
@@ -121,7 +122,7 @@ const Footer: React.FC = () => {
 
                 <ul className="mt-6 space-y-5">
                     {section.options.map((option, index)=>(<li key={index}>
-                        <a href={option.url} title="" className="flex text-sm font-normal text-gray-900 transition-all duration-200 transform hover:translate-x-1"> {option.name} </a>
+                        <Link href={option.url} title="" className="flex text-sm font-normal text-gray-900 transition-all duration-200 transform hover:translate-x-1"> {option.name} </Link>
                     </li>))}
                 </ul>
             </div>))}
@@ -132,7 +133,7 @@ const Footer: React.FC = () => {
                 <div className="mt-5 space-y-6">
                     <div>
                         <p className="text-base font-bold text-gray-900">
-                            <a href="#" title=""> {FooterContent.contactInfo.email} </a>
+                            <a href="@email" title=""> {FooterContent.contactInfo.email} </a>
                         </p>
                         <p className="mt-2 text-sm font-medium text-gray-500">{FooterContent.contactInfo.address}</p>
                     </div>

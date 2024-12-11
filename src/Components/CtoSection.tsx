@@ -1,4 +1,5 @@
 import { Clock, Link2 } from "lucide-react";
+import Link from "next/link";
 
 const CtoContent = {
     mainTitle:"Experience Support Like Never Before",
@@ -38,14 +39,14 @@ const CtoSection: React.FC = () => {
                 <div className="relative inline-flex group">
                   <div className="absolute transitiona-all duration-1000 opacity-70 -inset-px bg-gradient-to-r from-[#44BCFF] via-[#7b6f79] to-orange-200 rounded-xl blur-lg filter group-hover:opacity-100 group-hover:-inset-1 group-hover:duration-200"></div>
 
-                  <a
-                    href="#"
+                  <Link
+                    href="/coming-soon"
                     title=""
                     className="relative inline-flex items-center justify-center px-5 py-2 text-base font-bold text-white transition-all duration-200 bg-orange-400 border-2 border-transparent focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-900 font-pj hover:bg-black rounded-xl"
                     role="button"
                   >
                     Book a Demo
-                  </a>
+                  </Link>
                 </div>
 
                 <a

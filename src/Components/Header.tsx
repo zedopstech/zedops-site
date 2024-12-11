@@ -1,10 +1,15 @@
 'use client'
 import React, { useState } from "react";
 import Logo from "./Logo";
+import Link from "next/link";
 
 const Header: React.FC = () => {
   const [expanded, setExpanded] = useState(false);
   const navigationOption = [
+    {
+      name:"Home",
+      href:"/"
+    },
     {
       name:"Products",
       href:"#problem-statement"
@@ -14,8 +19,8 @@ const Header: React.FC = () => {
       href:"#features"
     },
     {
-      name:"Support",
-      href:"#support"
+      name:"About Us",
+      href:"/about-us"
     }
   ]
   return (
@@ -24,9 +29,9 @@ const Header: React.FC = () => {
         <div className="px-4 mx-auto sm:px-6 lg:px-8 max-w-7xl">
           <div className="flex items-center justify-between">
             <div className="shrink-0">
-              <a href="/" title="">
+              <Link href="/" title="">
                 <Logo />
-              </a>
+              </Link>
             </div>
 
             <div className="hidden lg:flex lg:items-center lg:space-x-4 lg:ml-12">
@@ -43,14 +48,14 @@ const Header: React.FC = () => {
             </div>
 
             <div className="hidden sm:flex sm:items-center sm:justify-end sm:space-x-4 sm:ml-auto">
-              <a
-                href="#"
+              <Link
+                href="/coming-soon"
                 title="Start free trial"
                 className="inline-flex items-center justify-center px-6 py-2.5 text-base font-medium text-gray-900 transition-all duration-200 border border-gray-600 rounded-lg hover:border-gray-400 hover:bg-orange-400 hover:text-white focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-ring-900"
                 role="button"
               >
-                Start free trial
-              </a>
+                Book a Demo
+              </Link>
             </div>
 
             <div className="flex ml-4 lg:hidden">

@@ -1,4 +1,5 @@
-import { CalendarDays, SquarePlay } from "lucide-react";
+import { CalendarDays } from "lucide-react";
+import Link from "next/link";
 
 const HeroContent = {
     title:' Revolutionize Your Construction Management',
@@ -28,8 +29,8 @@ const Hero:React.FC = () =>{
                             Get Start
                         </a>
 
-                        <a
-                            href="#"
+                        <Link
+                            href="/coming-soon"
                             title=""
                             className="inline-flex items-center justify-center px-8 py-4 text-base font-medium text-gray-900 transition-all duration-200 border border-gray-400 rounded-lg hover:bg-orange-50 hover:border-gray-400 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-300"
                             role="button"
@@ -37,7 +38,7 @@ const Hero:React.FC = () =>{
                            <CalendarDays className=" text-gray-400 w-[18px]"/>{"  "}
                            <span className="px-1">Request Demo</span>
                            
-                        </a>
+                        </Link>
                     </div>
                 </div>
             </div>
