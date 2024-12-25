@@ -4,3 +4,108 @@
 html {
   scroll-behavior: smooth;
 }
+
+@layer base {
+  :root {
+    --background: 216 33% 97%; /* Procore Light Gray */
+    --foreground: 0 0% 20%; /* Procore Black */
+    --card: 216 33% 97%; /* Procore Light Gray */
+    --card-foreground: 0 0% 20%; /* Procore Black */
+    --popover: 216 33% 97%; /* Procore Light Gray */
+    --popover-foreground: 0 0% 20%; /* Procore Black */
+
+    --primary: 20 94% 53%; /* Procore Orange */
+    --primary-foreground: 0 0% 100%; /* White */
+
+    --secondary: 216 33% 85%; /* Procore Secondary Light Gray */
+    --secondary-foreground: 0 0% 20%; /* Procore Black */
+
+    --muted: 216 33% 90%; /* Muted Light Gray */
+    --muted-foreground: 0 0% 50%; /* Gray */
+
+    --accent: 0 0% 0%; /* Dark Black */
+    --accent-foreground: 0 0% 100%; /* White */
+
+    --destructive: 0 84% 50%; /* Procore Red */
+    --destructive-foreground: 0 0% 100%; /* White */
+
+    --border: 216 33% 85%; /* Light Gray Border */
+    --input: 216 33% 85%; /* Light Gray Input */
+    --ring: 20 94% 53%; /* Procore Orange */
+
+    --chart-1: 20 94% 53%; /* Procore Orange */
+    --chart-2: 211 100% 50%; /* Procore Blue */
+    --chart-3: 0 84% 50%; /* Procore Red */
+    --chart-4: 48 100% 50%; /* Procore Green */
+    --chart-5: 36 100% 50%; /* Procore Yellow */
+    --chart-6: 197 100% 47%; /* Additional Blue */
+    --chart-7: 300 76% 72%; /* Purple */
+    --chart-8: 145 63% 49%; /* Teal */
+    --chart-9: 160 44% 41%; /* Olive */
+    --chart-10: 340 70% 55%; /* Pink */
+
+    --body: 216 33% 97%; /* Procore Light Background */
+    --highlight: 48 100% 90%; /* Procore Green Highlight */
+    --disabled: 216 33% 85%; /* Light Disabled */
+    --shadow: 0 0% 0%; /* Black Shadow */
+    --ink: 0 0% 20%; /* Procore Black */
+    --ghost: 0 0% 100%; /* White */
+
+    --radius: 0.4rem;
+  }
+
+  .dark {
+    --background: 0 0% 10%; /* Dark Background */
+    --foreground: 0 0% 90%; /* Light Foreground */
+    --card: 0 0% 15%; /* Dark Card */
+    --card-foreground: 0 0% 90%; /* Light Foreground */
+    --popover: 0 0% 15%; /* Dark Popover */
+    --popover-foreground: 0 0% 90%; /* Light Foreground */
+
+    --primary: 20 94% 53%; /* Procore Orange */
+    --primary-foreground: 0 0% 10%; /* Dark Foreground */
+
+    --secondary: 0 0% 20%; /* Dark Gray */
+    --secondary-foreground: 0 0% 90%; /* Light Gray */
+
+    --muted: 0 0% 20%; /* Dark Muted */
+    --muted-foreground: 0 0% 60%; /* Muted Text */
+
+    --accent: 211 100% 50%; /* Procore Blue */
+    --accent-foreground: 0 0% 90%; /* Light Foreground */
+
+    --destructive: 0 84% 50%; /* Procore Red */
+    --destructive-foreground: 0 0% 90%; /* Light Foreground */
+
+    --border: 0 0% 30%; /* Dark Border */
+    --input: 0 0% 30%; /* Dark Input */
+    --ring: 20 94% 53%; /* Procore Orange */
+
+    --chart-1: 20 94% 53%; /* Procore Orange */
+    --chart-2: 211 100% 50%; /* Procore Blue */
+    --chart-3: 0 84% 50%; /* Procore Red */
+    --chart-4: 48 100% 50%; /* Procore Green */
+    --chart-5: 36 100% 50%; /* Procore Yellow */
+    --chart-6: 197 100% 47%; /* Additional Blue */
+    --chart-7: 300 76% 72%; /* Purple */
+    --chart-8: 145 63% 49%; /* Teal */
+    --chart-9: 160 44% 41%; /* Olive */
+    --chart-10: 340 70% 55%; /* Pink */
+
+    --body: 0 0% 15%; /* Dark Body Background */
+    --highlight: 48 100% 30%; /* Dark Green Highlight */
+    --disabled: 0 0% 30%; /* Dark Disabled */
+    --shadow: 0 0% 100%; /* Light Shadow */
+    --ink: 0 0% 90%; /* Light Ink */
+    --ghost: 0 0% 10%; /* Dark Ghost */
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground;
+  }
+}
