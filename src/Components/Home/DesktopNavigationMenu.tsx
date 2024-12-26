@@ -124,46 +124,44 @@ export default function DesktopNavigation() {
               Features
             </NavigationMenuTrigger>
             <NavigationMenuContent>
-              <div>
-                <div className="grid gap-6 p-4 md:w-[500px] lg:w-[1000px] lg:grid-cols-4">
-                  {featuresMenu.map((category, index) => (
-                    <div key={index}>
-                      <h3 className="mb-2 text-lg font-bold text-gray-900">
-                        {category.category}
-                      </h3>
-                      <ul className="space-y-2">
-                        {category.items.map((item, idx) => (
-                          <li key={idx}>
-                            <Link
-                              href={item.href}
-                              className={cn(
-                                "flex space-x-3 select-none rounded-md p-3 leading-none no-underline outline-none transition-colors hover:bg-accent hover:text-accent-foreground focus:bg-accent focus:text-accent-foreground"
-                              )}
-                            >
-                              <item.icon className="w-14 h-14 text-primary font-bold" />
-                              <div>
-                                <div className="text-sm font-medium">
-                                  {item.title}
-                                </div>
-                                <p className="mt-1 text-sm text-muted-foreground">
-                                  {item.description}
-                                </p>
+              <div className="grid bg-white gap-6 p-4 md:w-[500px] lg:w-[1000px] lg:grid-cols-4">
+                {featuresMenu.map((category, index) => (
+                  <div key={index}>
+                    <h3 className="mb-2 text-lg font-bold text-gray-900">
+                      {category.category}
+                    </h3>
+                    <ul className="space-y-2">
+                      {category.items.map((item, idx) => (
+                        <li key={idx}>
+                          <Link
+                            href={item.href}
+                            className={cn(
+                              "flex space-x-3 select-none rounded-md p-3 leading-none no-underline outline-none transition-colors hover:bg-accent hover:text-accent-foreground focus:bg-accent focus:text-accent-foreground"
+                            )}
+                          >
+                            <item.icon className="w-14 h-14 text-primary font-bold" />
+                            <div>
+                              <div className="text-sm font-medium">
+                                {item.title}
                               </div>
-                            </Link>
-                          </li>
-                        ))}
-                      </ul>
-                    </div>
-                  ))}
-                </div>
-                <div className="flex justify-end p-4 bg-slate-200">
-                  <Link
-                    href="/"
-                    className="flex items-center font-semibold text-primary hover:underline"
-                  >
-                    Explore More <MoveUpRightIcon size={14} className="ml-2" />
-                  </Link>
-                </div>
+                              <p className="mt-1 text-sm text-muted-foreground">
+                                {item.description}
+                              </p>
+                            </div>
+                          </Link>
+                        </li>
+                      ))}
+                    </ul>
+                  </div>
+                ))}
+              </div>
+              <div className="flex justify-end p-4 bg-slate-100">
+                <Link
+                  href="/"
+                  className="flex items-center font-semibold text-primary hover:underline"
+                >
+                  Explore More <MoveUpRightIcon size={14} className="ml-2" />
+                </Link>
               </div>
             </NavigationMenuContent>
           </NavigationMenuItem>
@@ -174,7 +172,7 @@ export default function DesktopNavigation() {
               Resources
             </NavigationMenuTrigger>
             <NavigationMenuContent>
-              <div className="grid gap-3 p-4 md:w-[400px] lg:w-[600px] lg:grid-cols-2">
+              <div className="grid gap-3 bg-white p-4 md:w-[400px] lg:w-[600px] lg:grid-cols-2">
                 <ListItem
                   title="Blog"
                   href="/resources/blog"
