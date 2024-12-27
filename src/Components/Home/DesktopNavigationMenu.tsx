@@ -144,7 +144,7 @@ export default function DesktopNavigation() {
                               <div className="text-sm font-medium">
                                 {item.title}
                               </div>
-                              <p className="mt-1 text-sm text-muted-foreground">
+                              <p className="mt-1 text-sm ">
                                 {item.description}
                               </p>
                             </div>

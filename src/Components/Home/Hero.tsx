@@ -10,7 +10,7 @@ const Hero = () => {
   };
 
   return (
-    <section className="bg-black min-h-screen relative flex flex-col lg:grid lg:grid-cols-2 items-center gap-8 overflow-hidden">
+    <section className="bg-black min-h-screen relative flex flex-col lg:grid lg:grid-cols-2 items-center justify-between gap-8 overflow-hidden">
       {/* Hero Text Section */}
       <div className="flex flex-col items-center lg:items-start justify-center px-6  pt-12 lg:pt-0 lg:px-12 xl:px-24 text-center lg:text-left z-10">
         <h1 className="text-3xl lg:text-5xl font-black text-white leading-tight">
@@ -20,7 +20,7 @@ const Hero = () => {
           {heroContent.description}
         </p>
 
-        <div className="mt-8 flex flex-col sm:flex-row gap-4">
+        <div className="mt-8 flex flex-row gap-4">
           <Button className="px-8 py-3 text-white font-medium ">
             Request Demo
           </Button>

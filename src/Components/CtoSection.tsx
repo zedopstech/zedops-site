@@ -26,15 +26,18 @@ const CtoContent = {
 const CtoSection: React.FC = () => {
   return (
     <>
-      <section id="cto" className="py-12 bg-violet-50 sm:py-16 lg:py-20">
+      <section
+        id="cto"
+        className="bg-amber-50 py-16 flex justify-center items-center"
+      >
         <div className="px-4 mx-auto max-w-7xl sm:px-6 lg:px-8">
           <div className="grid items-center grid-cols-1 text-center lg:text-left gap-y-10 lg:grid-cols-5">
             {/* Text Section */}
             <div className="lg:col-span-2 lg:pr-8 xl:pr-24">
-              <h2 className="text-2xl font-bold text-gray-900 font-pj">
+              <h2 className="text-2xl font-bold  font-pj">
                 {CtoContent.mainTitle}
               </h2>
-              <p className="mt-5 text-base font-normal leading-7 text-gray-600 font-pj">
+              <p className="mt-5 text-base font-normal leading-7">
                 {CtoContent.content}
               </p>
 

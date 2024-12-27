@@ -47,8 +47,8 @@ const Features: React.FC = () => {
   return (
     <div className="bg-white pt-12">
       <div className="max-w-xl mx-auto text-center xl:max-w-2xl">
-        <h2 className="text-3xl font-bold leading-tight text-gray-900 sm:text-4xl xl:text-4xl font-pj">
-          {"Unleashing Smarter Construction Management"}
+        <h2 className="text-3xl font-bold leading-tight bg-gradient-to-r from-blue-600 to-purple-500 bg-clip-text text-transparent sm:text-4xl xl:text-4xl font-pj">
+          Unleashing Smarter Construction Management
         </h2>
       </div>
       {FeatureContent.map((item, index) => (

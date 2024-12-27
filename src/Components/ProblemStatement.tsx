@@ -60,7 +60,7 @@ const ProblemStatement: React.FC = () => {
     >
       <div className="px-4 mx-auto max-w-7xl sm:px-6 lg:px-8">
         <div className="max-w-xl mx-auto text-center xl:max-w-2xl">
-          <h2 className="text-3xl font-bold leading-tight text-gray-900 sm:text-4xl">
+          <h2 className="text-3xl font-bold leading-tight sm:text-4xl bg-gradient-to-r from-primary to-orange-400 bg-clip-text text-transparent">
             {content.mainTitle}
           </h2>
         </div>
