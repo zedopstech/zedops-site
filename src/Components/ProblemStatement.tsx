@@ -43,7 +43,15 @@ const content = {
 };
 
 const ProblemStatement: React.FC = () => {
-  const Card = ({ title, content, icon, buttonText, buttonLink }: any) => (
+  interface CardProps {
+    title: string;
+    content: string;
+    icon: React.ReactNode;
+    buttonText: string;
+    buttonLink: string;
+  }
+
+  const Card: React.FC<CardProps> = ({ title, content, icon, buttonText, buttonLink }) => (
     <div className="group bg-white shadow-md rounded-xl p-8 hover:shadow-lg transition-shadow duration-300">
       <div className="flex flex-col items-center sm:items-start text-center sm:text-left">
         <div className="flex justify-center items-center w-12 h-12 mb-6 group-hover:scale-105 transition-transform duration-200">

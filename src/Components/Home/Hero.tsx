@@ -15,7 +15,7 @@ const Hero = () => {
       {/* Hero Text Section */}
       <div className="flex flex-col items-center lg:items-start justify-center px-6  pt-8 lg:pt-0 lg:px-12 xl:px-24 text-center lg:text-left z-10">
         <h1 className="text-sm lg:text-lg font-bold gradient-text">
-          "Construction Management Reimagined"
+          {"Construction Management Reimagined"}
         </h1>
         <h1 className="mt-4 text-2xl lg:text-4xl text-black font-black leading-tight">
           {heroContent.title}
