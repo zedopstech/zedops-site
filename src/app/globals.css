@@ -110,3 +110,16 @@ html {
     @apply bg-background text-foreground;
   }
 }
+
+.gradient-text {
+  @apply bg-gradient-to-r from-primary to-orange-400 bg-clip-text text-transparent;
+}
+
+.gradient-button {
+  @apply bg-gradient-to-r from-primary to-orange-400 text-white;
+  transition: transform 0.2s ease, filter 0.3s ease;
+}
+
+.gradient-button:hover {
+  filter: brightness(1.2); /* Brightens the gradient on hover */
+}

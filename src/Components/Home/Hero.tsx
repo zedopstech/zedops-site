@@ -4,28 +4,32 @@ import Image from "next/image";
 
 const Hero = () => {
   const heroContent = {
-    title: "Revolutionize Your Construction Management",
+    title:
+      "Build Smarter, Deliver Faster: with AI-Powered Insights and World-Class Support",
     description:
-      "ZedOps transforms how construction teams operate—streamline workflows, mitigate risks, and drive unprecedented efficiency from preconstruction to project completion",
+      "Save 40% of your time, improve collaboration, and achieve exceptional results across all phases of construction.",
   };
 
   return (
-    <section className="bg-black min-h-screen relative flex flex-col lg:grid lg:grid-cols-2 items-center justify-between gap-8 overflow-hidden">
+    <section className="bg-slate-50 min-h-screen relative flex flex-col lg:grid lg:grid-cols-2 items-center justify-between gap-8 overflow-hidden">
       {/* Hero Text Section */}
-      <div className="flex flex-col items-center lg:items-start justify-center px-6  pt-12 lg:pt-0 lg:px-12 xl:px-24 text-center lg:text-left z-10">
-        <h1 className="text-3xl lg:text-5xl font-black text-white leading-tight">
+      <div className="flex flex-col items-center lg:items-start justify-center px-6  pt-8 lg:pt-0 lg:px-12 xl:px-24 text-center lg:text-left z-10">
+        <h1 className="text-sm lg:text-lg font-bold gradient-text">
+          "Construction Management Reimagined"
+        </h1>
+        <h1 className="mt-4 text-2xl lg:text-4xl text-black font-black leading-tight">
           {heroContent.title}
         </h1>
-        <p className="mt-6 text-lg text-white font-normal leading-relaxed max-w-xl">
+        <p className="mt-6 text-sm lg:text-base text-black font-medium leading-relaxed max-w-xl">
           {heroContent.description}
         </p>
 
         <div className="mt-8 flex flex-row gap-4">
-          <Button className="px-8 py-3 text-white font-medium ">
-            Request Demo
+          <Button className="px-8 py-3 text-white font-medium gradient-button">
+            Get Started Today
           </Button>
           <Button
-            className="font-medium text-white hover:text-primary w-full sm:w-auto"
+            className="font-medium text-black hover:text-primary w-full sm:w-auto"
             variant="link"
             icon={PlayIcon}
           >

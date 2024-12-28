@@ -5,7 +5,7 @@ import Link from "next/link";
 const Footer = () => {
   const FooterContent = {
     logoContent:
-      "ZedOps is transforming the construction industry by providing innovative, intelligent solutions that simplify project management. We empower teams to collaborate effectively, drive efficiency, and achieve success in every project phase.",
+      "Empowering construction with innovative solutions to simplify workflows, enhance collaboration, and drive success. Build smarter and achieve seamless project execution with ZedOps.",
     socialMedia: [
       { icon: Twitter, url: "https://x.com/zedopstech" },
       { icon: Linkedin, url: "https://www.linkedin.com/company/zedops/" },
@@ -63,7 +63,7 @@ const Footer = () => {
             <Link href="#" title="">
               <Logo variant="primary" />
             </Link>
-            <p className="max-w-md mt-6 text-sm font-semibold leading-6">
+            <p className="max-w-md mt-6 text-md leading-6">
               {FooterContent.logoContent}
             </p>
           </div>
@@ -121,8 +121,8 @@ const Footer = () => {
         <hr className="mt-8 border-gray-200 lg:mt-8" />
       </div>
       {/* Footer Bottom */}
-      <div className="bg-black h-16 w-full flex flex-col items-center justify-center">
-        <p className="text-sm font-normal leading-6 text-white">
+      <div className=" h-16 w-full flex flex-col items-center justify-center">
+        <p className="text-sm font-normal leading-6 ">
           &copy; 2024, All Rights Reserved by{" "}
           <span className="text-primary font-bold">ZedOps</span>
         </p>

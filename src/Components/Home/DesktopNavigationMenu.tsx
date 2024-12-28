@@ -67,17 +67,6 @@ const featuresMenu = [
     ],
   },
   {
-    category: "Resource Management",
-    items: [
-      {
-        title: "Resource Tracking",
-        href: "/features/resource-tracking",
-        description: "Track and allocate resources efficiently.",
-        icon: Package, // Icon for logistics or resources
-      },
-    ],
-  },
-  {
     category: "Financial Management",
     items: [
       {
@@ -100,6 +89,18 @@ const featuresMenu = [
       },
     ],
   },
+  {
+    category: "Resource Management",
+    items: [
+      {
+        title: "Resource Tracking",
+        href: "/features/resource-tracking",
+        description: "Track and allocate resources efficiently.",
+        icon: Package, // Icon for logistics or resources
+      },
+    ],
+  },
+
   {
     category: "Construction Intelligence",
     items: [
@@ -124,10 +125,10 @@ export default function DesktopNavigation() {
               Features
             </NavigationMenuTrigger>
             <NavigationMenuContent>
-              <div className="grid bg-white gap-6 p-4 md:w-[500px] lg:w-[1000px] lg:grid-cols-4">
+              <div className="grid bg-white gap-6 p-4 mx-auto md:max-w-[500px] lg:max-w-[1200px] w-[95vw] xl:grid-cols-3 grid-cols-2">
                 {featuresMenu.map((category, index) => (
                   <div key={index}>
-                    <h3 className="mb-2 text-lg font-bold text-gray-900">
+                    <h3 className="mb-2 text-lg font-bold text-gray-700">
                       {category.category}
                     </h3>
                     <ul className="space-y-2">
@@ -136,12 +137,12 @@ export default function DesktopNavigation() {
                           <Link
                             href={item.href}
                             className={cn(
-                              "flex space-x-3 select-none rounded-md p-3 leading-none no-underline outline-none transition-colors hover:bg-accent hover:text-accent-foreground focus:bg-accent focus:text-accent-foreground"
+                              "flex flex-row items-center space-x-3 select-none rounded-md p-3 leading-none no-underline outline-none transition-colors hover:bg-accent hover:text-accent-foreground focus:bg-accent focus:text-accent-foreground"
                             )}
                           >
-                            <item.icon className="w-14 h-14 text-primary font-bold" />
+                            <item.icon className="w-8 h-8 text-primary" />
                             <div>
-                              <div className="text-sm font-medium">
+                              <div className="text-sm font-semibold">
                                 {item.title}
                               </div>
                               <p className="mt-1 text-sm ">
@@ -237,17 +238,13 @@ const ListItem = React.forwardRef<
         )}
         {...props}
       >
-        {icon && <div className="w-8 h-8 text-primary font-bold">{icon}</div>}
+        {icon && <div className="w-6 h-6 text-primary">{icon}</div>}
         <div>
-          <div className="text-sm font-medium">{title}</div>
-          <p className="line-clamp-2 text-sm leading-snug text-muted-foreground">
-            {children}
-          </p>
+          <div className="text-sm font-semibold">{title}</div>
+          <p className="line-clamp-2 text-sm leading-snug">{children}</p>
         </div>
       </Link>
     </div>
   );
 });
-ListItem.displayName = "ListItem";
-
 ListItem.displayName = "ListItem";
