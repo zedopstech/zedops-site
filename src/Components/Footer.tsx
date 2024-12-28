@@ -18,7 +18,7 @@ const Footer = () => {
           { name: "Home", url: "#hero" },
           { name: "Features", url: "#features" },
           { name: "About Us", url: "/about-us" },
-          { name: "Book a Demo", url: "#cto" },
+          { name: "Book a Demo", url: "/book-a-demo" },
         ],
       },
       {

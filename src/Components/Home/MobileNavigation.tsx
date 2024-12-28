@@ -1,6 +1,7 @@
 import Link from "next/link";
 import { Button } from "../UI/button";
 import { Headset } from "lucide-react";
+import { redirect } from "next/navigation";
 
 export default function MobileNavigation({
   expanded,
@@ -62,6 +63,9 @@ export default function MobileNavigation({
           className="px-6 py-6 text-xl font-semibold"
           variant={"ghost"}
           size="fullWidth"
+          onClick={() => {
+            redirect("/contact-sales");
+          }}
           icon={Headset}
           iconStyle="h-6 w-6"
         >

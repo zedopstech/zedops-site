@@ -1,6 +1,9 @@
+"use client";
+
 import { PlayIcon } from "lucide-react";
 import { Button } from "../UI/button";
 import Image from "next/image";
+import { redirect } from "next/navigation";
 
 const Hero = () => {
   const heroContent = {
@@ -13,9 +16,9 @@ const Hero = () => {
   return (
     <section className="bg-slate-50 min-h-screen relative flex flex-col lg:grid lg:grid-cols-2 items-center justify-between gap-8 overflow-hidden">
       {/* Hero Text Section */}
-      <div className="flex flex-col items-center lg:items-start justify-center px-6  pt-8 lg:pt-0 lg:px-12 xl:px-24 text-center lg:text-left z-10">
+      <div className="flex flex-col items-center lg:items-start justify-center px-6 pt-8 lg:pt-0 lg:px-6 xl:px-12 text-center lg:text-left z-10">
         <h1 className="text-sm lg:text-lg font-bold gradient-text">
-          {"Construction Management Reimagined"}
+          &quot;Construction Management Reimagined&quot;
         </h1>
         <h1 className="mt-4 text-2xl lg:text-4xl text-black font-black leading-tight">
           {heroContent.title}
@@ -24,8 +27,13 @@ const Hero = () => {
           {heroContent.description}
         </p>
 
-        <div className="mt-8 flex flex-row gap-4">
-          <Button className="px-8 py-3 text-white font-medium gradient-button">
+        <div className="mt-8 flex flex-row items-center gap-4">
+          <Button
+            onClick={() => {
+              redirect("/book-a-demo");
+            }}
+            className="px-8 py-6 text-white font-medium"
+          >
             Get Started Today
           </Button>
           <Button
