@@ -1,5 +1,5 @@
 import React, { useEffect } from "react";
-import { Headset, X, DollarSign, Info, Layers, Book } from "lucide-react";
+import { Headset, DollarSign, Info, Layers, Book } from "lucide-react";
 import { Button } from "@/Components/UI/button";
 import {
   Accordion,
@@ -7,7 +7,6 @@ import {
   AccordionTrigger,
   AccordionContent,
 } from "@/Components/UI/accordion"; // Example from ShadCN
-import Logo from "../Logo";
 import Link from "next/link";
 
 const featuresMenu = [
