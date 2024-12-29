@@ -104,18 +104,7 @@ export default function MobileNavigation({
   ];
 
   return (
-    <div className="fixed inset-0 bg-white z-50 flex flex-col overflow-y-auto">
-      {/* Header */}
-      <div className="flex items-center bg-black justify-between px-4 py-6">
-        <Logo />
-        <button
-          onClick={() => setExpanded(false)}
-          className="text-gray-800 hover:text-gray-600"
-        >
-          <X className="mr-2 w-6 h-6 text-white" />
-        </button>
-      </div>
-
+    <div className="fixed inset-0 top-20 bg-white z-50 flex flex-col overflow-y-auto">
       {/* Navigation */}
       <div className="flex-grow px-4 py-6">
         <Accordion type="single" collapsible>

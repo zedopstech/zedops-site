@@ -1,25 +1,22 @@
 "use client";
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
 import Logo from "../Logo";
 import Link from "next/link";
 import { Button } from "../UI/button";
-import { Headset } from "lucide-react";
+import { Headset, Menu, X } from "lucide-react";
 import DesktopNavigation from "./DesktopNavigationMenu";
 import MobileNavigation from "./MobileNavigation";
 
 const Header: React.FC = () => {
   const [expanded, setExpanded] = useState(false);
-  // Disable body scroll when menu is open
-  useEffect(() => {
-    if (expanded) {
-      document.body.style.overflow = "hidden";
-    } else {
-      document.body.style.overflow = "";
-    }
+
+  // Disable body scroll when mobile menu is open
+  React.useEffect(() => {
+    document.body.style.overflow = expanded ? "hidden" : "";
   }, [expanded]);
 
   return (
-    <header className="sticky top-0 z-50 bg-black py-5">
+    <header className="sticky top-0 z-50 bg-black shadow-sm py-5">
       <div className="px-4 mx-auto max-w-7xl flex items-center justify-between">
         {/* Logo Section */}
         <div className="shrink-0 flex-1 text-center lg:text-left lg:flex-none">
@@ -58,22 +55,9 @@ const Header: React.FC = () => {
             aria-label="Toggle Navigation"
           >
             {expanded ? (
-              <></>
+              <X className="w-6 h-6" />
             ) : (
-              <svg
-                className="w-6 h-6"
-                xmlns="http://www.w3.org/2000/svg"
-                fill="none"
-                viewBox="0 0 24 24"
-                stroke="currentColor"
-              >
-                <path
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  strokeWidth="2"
-                  d="M4 6h16M4 12h16M4 18h16"
-                />
-              </svg>
+              <Menu className="w-6 h-6" />
             )}
           </button>
         </div>
@@ -81,7 +65,7 @@ const Header: React.FC = () => {
 
       {/* Mobile Navigation */}
       {expanded && (
-        <MobileNavigation expanded={expanded} setExpanded={setExpanded} />
+        <MobileNavigation  expanded={expanded} setExpanded={setExpanded} />
       )}
     </header>
   );

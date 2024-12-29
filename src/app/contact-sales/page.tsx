@@ -64,7 +64,7 @@ const ContactSales = () => {
   return (
     <div className="min-h-screen flex flex-col">
       {/* Header Section */}
-      <header className="bg-gradient-to-r from-orange-400 to-orange-600 text-white py-10">
+      <header className="bg-gradient-to-r from-[#FFA800] via-[#19BB7D] to-[#B85FFF] text-white py-10">
         <div className="max-w-7xl mx-auto px-6">
           <h1 className="text-3xl font-extrabold lg:text-4xl">
             We&#39;re Here to Help You Succeed

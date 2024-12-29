@@ -61,7 +61,8 @@ const AboutUs: React.FC = () => {
   return (
     <div className="bg-gray-50">
       {/* Hero Section */}
-      <section className="bg-gradient-to-r from-orange-400 to-primary py-16">
+      <section className="bg-gradient-to-br from-orange-600 via-red-500 to-yellow-500 text-white py-16">
+        {" "}
         <div className="max-w-7xl mx-auto px-6 lg:grid lg:grid-cols-2 lg:gap-16 items-center">
           <div className="lg:pr-16">
             <h1 className="text-4xl font-bold text-white lg:text-5xl">
