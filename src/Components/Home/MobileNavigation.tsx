@@ -133,6 +133,7 @@ export default function MobileNavigation({
                               <li key={subIdx}>
                                 <Link
                                   href={item.href}
+                                  title={item.title}
                                   className="text-lg text-gray-700 hover:text-orange-500"
                                 >
                                   {item.title}
@@ -145,6 +146,7 @@ export default function MobileNavigation({
                         <li key={idx}>
                           <Link
                             href={itemOrCategory.href}
+                            title={itemOrCategory.title}
                             className="text-lg text-gray-700 hover:text-orange-500"
                           >
                             {itemOrCategory.title}
@@ -160,6 +162,7 @@ export default function MobileNavigation({
                 <Link
                   href={option.href}
                   onClick={() => setExpanded(false)}
+                  title={option.name}
                   className="flex items-center text-xl font-semibold text-gray-800 py-3 hover:text-orange-500"
                 >
                   {option.icon}

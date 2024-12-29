@@ -136,6 +136,7 @@ export default function DesktopNavigation() {
                         <li key={idx}>
                           <Link
                             href={item.href}
+                            title={item.title}
                             className={cn(
                               "flex flex-row items-center space-x-3 select-none rounded-md p-3 leading-none no-underline outline-none transition-colors hover:bg-accent hover:text-accent-foreground focus:bg-accent focus:text-accent-foreground"
                             )}
@@ -203,6 +204,7 @@ export default function DesktopNavigation() {
           <NavigationMenuItem>
             <Link
               href="/pricing"
+              title="Pricing"
               className="text-white text-base hover:text-primary ml-2"
             >
               Pricing
@@ -211,6 +213,7 @@ export default function DesktopNavigation() {
           <NavigationMenuItem>
             <Link
               href="/about-us"
+              title="About Us"
               className="text-white hover:text-primary ml-6"
             >
               About Us
@@ -232,6 +235,7 @@ const ListItem = React.forwardRef<
       <Link
         ref={ref}
         href={href}
+        title={title}
         className={cn(
           "flex items-center space-x-3 select-none rounded-md p-3 leading-none no-underline outline-none transition-colors hover:bg-accent hover:text-accent-foreground focus:bg-accent focus:text-accent-foreground",
           className

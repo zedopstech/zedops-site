@@ -22,7 +22,7 @@ const Hero = () => {
           </p>
 
           <div className="mt-8 flex flex-col lg:flex-row items-center gap-4">
-            <Link href="/book-a-demo">
+            <Link href="/book-a-demo" title="Book a demo">
               <Button className="px-8 py-6 text-white font-medium">
                 Get Started Today
               </Button>

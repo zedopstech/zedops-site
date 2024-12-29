@@ -40,7 +40,7 @@ const Pricing: React.FC = () => {
                 }
               </p>
             </div>
-            <Link href="/contact-sales">
+            <Link href="/contact-sales" title="Contact Sales">
               <Button
                 size={"lg"}
                 className="bg-white font-semibold text-indigo-600 hover:bg-gray-100"

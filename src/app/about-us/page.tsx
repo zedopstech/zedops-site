@@ -162,7 +162,7 @@ const AboutUs: React.FC = () => {
 
             {/* Button */}
             <div className="mt-8 lg:mt-0 ml-8">
-              <Link href="/book-a-demo">
+              <Link href="/book-a-demo" title="Book a Demo">
                 <Button size={"lg"} className="text-lg font-medium">
                   Get Started
                 </Button>

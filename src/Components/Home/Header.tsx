@@ -32,6 +32,7 @@ const Header: React.FC = () => {
         <div className="hidden sm:flex sm:items-center sm:space-x-4">
           <Link
             href="/contact-sales"
+            title="Contact Sales"
             className="flex items-center px-4 py-2 text-base font-medium text-white hover:text-primary"
           >
             <Headset className="w-5 h-5 mr-2" />
@@ -65,7 +66,7 @@ const Header: React.FC = () => {
 
       {/* Mobile Navigation */}
       {expanded && (
-        <MobileNavigation  expanded={expanded} setExpanded={setExpanded} />
+        <MobileNavigation expanded={expanded} setExpanded={setExpanded} />
       )}
     </header>
   );

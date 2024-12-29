@@ -53,7 +53,7 @@ const CtoSection: React.FC = () => {
 
             <div className="flex items-center justify-center mt-8 space-x-5 lg:justify-start">
               <div className="relative inline-flex group">
-                <Link href="/book-a-demo">
+                <Link href="/book-a-demo" title="Book a demo">
                   <Button className="px-8 py-3 text-white font-medium">
                     Request Demo
                   </Button>

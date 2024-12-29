@@ -40,10 +40,6 @@ const BookDemo = () => {
     >
       {/* Hero Section with How It Works and Demo Form */}
       <header className="relative text-white py-20">
-        <div
-          className="absolute inset-0 bg-opacity-25 bg-cover bg-center"
-          style={{ backgroundImage: "url('/assets/demo-bg.jpg')" }}
-        />
         <div className="relative max-w-7xl mx-auto px-6 z-10 grid grid-cols-1 lg:grid-cols-2 gap-8 items-start">
           {/* Left Content: Hero Text and How It Works */}
           <div className="space-y-6">
