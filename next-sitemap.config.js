@@ -13,8 +13,8 @@ module.exports = {
       { userAgent: "*", disallow: "/admin/" },
     ],
     additionalSitemaps: [
-      "https://www.zedops.com/custom-sitemap-1.xml",
-      "https://www.zedops.com/custom-sitemap-2.xml",
+      "https://www.zedops.com/sitemap-0.xml",
+      "https://www.zedops.com/sitemap-1.xml",
     ],
   },
 };
