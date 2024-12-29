@@ -1,10 +1,8 @@
-"use client";
-
 import React from "react";
 import Image from "next/image";
-import { Button } from "@/Components/UI/button";
 import { Building2, CheckCircle, TrendingUp, Users } from "lucide-react";
-import { redirect } from "next/navigation";
+import Link from "next/link";
+import { Button } from "@/Components/UI/button";
 
 const aboutUsContent = {
   hero: {
@@ -148,7 +146,7 @@ const AboutUs: React.FC = () => {
         </div>
 
         {/* Call-to-Action Section */}
-        <section className="mt-16 max-w-6xl mx-auto py-12 bg-black rounded-2xl">
+        <section className="mt-16 max-w-6xl mx-auto py-12 bg-black lg:rounded-2xl">
           <div className="px-12 flex flex-col lg:flex-row items-center justify-between">
             {/* Text Content */}
             <div className="text-center lg:text-left">
@@ -162,16 +160,12 @@ const AboutUs: React.FC = () => {
             </div>
 
             {/* Button */}
-            <div className="mt-8 lg:mt-0">
-              <Button
-                size={"lg"}
-                className="text-lg font-medium"
-                onClick={() => {
-                  redirect("/book-a-demo");
-                }}
-              >
-                Get Started
-              </Button>
+            <div className="mt-8 lg:mt-0 ml-8">
+              <Link href="/book-a-demo">
+                <Button size={"lg"} className="text-lg font-medium">
+                  Get Started
+                </Button>
+              </Link>
             </div>
           </div>
         </section>

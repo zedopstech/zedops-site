@@ -1,9 +1,7 @@
-"use client";
-
 import { PlayIcon } from "lucide-react";
-import { Button } from "../UI/button";
 import Image from "next/image";
-import { redirect } from "next/navigation";
+import Link from "next/link";
+import { Button } from "../UI/button";
 
 const Hero = () => {
   const heroContent = {
@@ -17,7 +15,7 @@ const Hero = () => {
     <section className="bg-slate-50 min-h-screen relative flex flex-col lg:grid lg:grid-cols-2 items-center justify-between gap-8 overflow-hidden">
       {/* Hero Text Section */}
       <div className="flex flex-col items-center lg:items-start justify-center px-6 pt-8 lg:pt-0 lg:px-6 xl:px-12 text-center lg:text-left z-10">
-        <h1 className="text-sm lg:text-lg font-bold gradient-text">
+        <h1 className="text-md lg:text-lg font-bold gradient-text">
           &quot;Construction Management Reimagined&quot;
         </h1>
         <h1 className="mt-4 text-2xl lg:text-4xl text-black font-black leading-tight">
@@ -28,21 +26,18 @@ const Hero = () => {
         </p>
 
         <div className="mt-8 flex flex-row items-center gap-4">
-          <Button
-            onClick={() => {
-              redirect("/book-a-demo");
-            }}
-            className="px-8 py-6 text-white font-medium"
+          <Link href="/book-a-demo">
+            <Button className="px-8 py-6 text-white font-medium">
+              Get Started Today
+            </Button>
+          </Link>
+          <Link
+            href="#why-zedops"
+            className="font-medium text-black hover:text-primary transition-all flex items-center gap-2"
           >
-            Get Started Today
-          </Button>
-          <Button
-            className="font-medium text-black hover:text-primary w-full sm:w-auto"
-            variant="link"
-            icon={PlayIcon}
-          >
+            <PlayIcon className="w-5 h-5" />
             Why ZedOps?
-          </Button>
+          </Link>
         </div>
       </div>
 

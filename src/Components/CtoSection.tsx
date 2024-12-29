@@ -1,8 +1,7 @@
-"use client";
-
 import { Headset, Link2 } from "lucide-react";
 import { Button } from "./UI/button";
-import { redirect } from "next/navigation";
+
+import Link from "next/link";
 
 const CtoContent = {
   mainTitle: "Experience Support Like Never Before",
@@ -54,14 +53,11 @@ const CtoSection: React.FC = () => {
 
             <div className="flex items-center justify-center mt-8 space-x-5 lg:justify-start">
               <div className="relative inline-flex group">
-                <Button
-                  className="px-8 py-3 text-white font-medium"
-                  onClick={() => {
-                    redirect("/book-a-demo");
-                  }}
-                >
-                  Request Demo
-                </Button>
+                <Link href="/book-a-demo">
+                  <Button className="px-8 py-3 text-white font-medium">
+                    Request Demo
+                  </Button>
+                </Link>
               </div>
               <Button variant={"ghost"} className="text-primary">
                 <p className="text-base font-medium">Learn More</p>

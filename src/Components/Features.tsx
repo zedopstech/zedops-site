@@ -46,7 +46,7 @@ const FeatureContent = [
 const Features: React.FC = () => {
   return (
     <div className="bg-gray-900 text-white py-16">
-      <div className="max-w-4xl mx-auto text-center mb-16 ">
+      <div className="max-w-4xl px-6 sm:px-8 lg:px-6 mx-auto text-center mb-8 lg:16">
         <h2 className="text-3xl font-bold leading-tight sm:text-4xl xl:text-5xl">
           Empowering Smarter Construction
         </h2>

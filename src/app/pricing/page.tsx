@@ -1,8 +1,6 @@
-"use client";
-
 import { Button } from "@/Components/UI/button";
 import { Headset } from "lucide-react";
-import { redirect } from "next/navigation";
+import Link from "next/link";
 import React from "react";
 
 const Pricing: React.FC = () => {
@@ -35,16 +33,15 @@ const Pricing: React.FC = () => {
                 }
               </p>
             </div>
-            <Button
-              size={"lg"}
-              onClick={() => {
-                redirect("/contact-sales");
-              }}
-              className="bg-white font-semibold text-indigo-600 hover:bg-gray-100"
-              icon={Headset}
-            >
-              Contact Sales
-            </Button>
+            <Link href="/contact-sales">
+              <Button
+                size={"lg"}
+                className="bg-white font-semibold text-indigo-600 hover:bg-gray-100"
+                icon={Headset}
+              >
+                Contact Sales
+              </Button>
+            </Link>
           </div>
         </div>
       </div>
