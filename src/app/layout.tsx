@@ -1,21 +1,9 @@
 import "./globals.css";
 import Header from "@/Components/Home/Header";
 import Footer from "@/Components/Footer";
-import localFont from "next/font/local";
 import { ReactNode } from "react";
 import { Metadata } from "next";
 import Head from "next/head";
-
-const geistSans = localFont({
-  src: "./fonts/GeistVF.woff",
-  variable: "--font-geist-sans",
-  weight: "100 900",
-});
-const geistMono = localFont({
-  src: "./fonts/GeistMonoVF.woff",
-  variable: "--font-geist-mono",
-  weight: "100 900",
-});
 
 export const metadata: Metadata = {
   title: "ZedOps - Revolutionize Your Construction Workflow",
@@ -52,7 +40,7 @@ export const metadata: Metadata = {
 
 export default function RootLayout({ children }: { children: ReactNode }) {
   return (
-    <html lang="en" className={`${geistSans.variable} ${geistMono.variable}`}>
+    <html lang="en">
       <Head>
         {/* Metadata */}
         <meta name="viewport" content="width=device-width, initial-scale=1" />
