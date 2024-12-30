@@ -24,7 +24,7 @@ export const metadata: Metadata = {
   keywords:
     "construction management, project management, construction software, ZedOps, streamline workflows",
   icons: {
-    icon: "/favicon-with-primary.png",
+    icon: "/favicon-with-primary.ico",
   },
   openGraph: {
     type: "website",
