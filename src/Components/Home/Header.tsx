@@ -16,7 +16,7 @@ const Header: React.FC = () => {
   }, [expanded]);
 
   return (
-    <header className="sticky top-0 z-50 bg-black shadow-sm py-5">
+    <header className="sticky top-0 z-50  bg-black shadow-sm py-5">
       <div className="px-4 mx-auto max-w-7xl flex items-center justify-between">
         {/* Logo Section */}
         <div className="shrink-0 flex-1 text-center lg:text-left lg:flex-none">

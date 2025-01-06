@@ -1,6 +1,6 @@
 "use client";
 
-import React from "react";
+import React, { useState } from "react";
 import {
   NavigationMenu,
   NavigationMenuContent,
@@ -23,6 +23,10 @@ import {
   PieChart,
   LineChart,
   FileText,
+  ChevronDown, // Importing the down arrow icon
+  FilePlus,
+  LogOut,
+  Calendar,
 } from "lucide-react";
 
 const featuresMenu = [
@@ -33,19 +37,19 @@ const featuresMenu = [
         title: "Tender Management",
         href: "/features/tender-management",
         description: "Manage tenders and streamline bidding processes.",
-        icon: ClipboardList, // Icon for list-related actions
+        icon: ClipboardList,
       },
       {
         title: "BIM",
         href: "/features/bim",
         description: "Building Information Modeling for efficient planning.",
-        icon: Building2, // Icon for construction or building
+        icon: Building2,
       },
       {
         title: "Estimating",
         href: "/features/estimating",
         description: "Accurate project cost estimation tools.",
-        icon: DollarSign, // Icon for financial estimation
+        icon: DollarSign,
       },
     ],
   },
@@ -56,13 +60,18 @@ const featuresMenu = [
         title: "Project Management",
         href: "/features/project-management",
         description: "Organize and execute projects effectively.",
-        icon: HardHat, // Icon representing management in construction
+        icon: HardHat,
+        dropdown: [
+          { title: "Projects", href: "/features/project-management", icon: FilePlus },
+          { title: "Daily Logs", href: "/features/project-management", icon: LogOut },
+          { title: "Scheduling", href: "/features/project-management", icon: Calendar },
+        ],
       },
       {
         title: "Quality & Safety",
         href: "/features/quality-safety",
         description: "Ensure quality and safety standards are met.",
-        icon: ShieldCheck, // Icon for safety and assurance
+        icon: ShieldCheck,
       },
     ],
   },
@@ -73,19 +82,19 @@ const featuresMenu = [
         title: "Project Financial",
         href: "/features/project-financial",
         description: "Track financial and project budgets in real-time.",
-        icon: PieChart, // Icon for financial visualization
+        icon: PieChart,
       },
       {
         title: "Accounting Integrations",
         href: "/features/accounting-integrations",
         description: "Seamlessly integrate with accounting software.",
-        icon: LineChart, // Icon for data and accounting integration
+        icon: LineChart,
       },
       {
         title: "Invoice Management",
         href: "/features/invoice-management",
         description: "Simplify invoicing and payment processes.",
-        icon: FileText, // Icon for managing documents like invoices
+        icon: FileText,
       },
     ],
   },
@@ -96,11 +105,10 @@ const featuresMenu = [
         title: "Resource Tracking",
         href: "/features/resource-tracking",
         description: "Track and allocate resources efficiently.",
-        icon: Package, // Icon for logistics or resources
+        icon: Package,
       },
     ],
   },
-
   {
     category: "Construction Intelligence",
     items: [
@@ -108,13 +116,19 @@ const featuresMenu = [
         title: "Analytics",
         href: "/features/analytics",
         description: "Gain insights with advanced analytics tools.",
-        icon: BarChart2, // Icon representing analytics
+        icon: BarChart2,
       },
     ],
   },
 ];
 
 export default function DesktopNavigation() {
+  const [openDropdown, setOpenDropdown] = useState<string | null>(null);
+
+  const toggleDropdown = (categoryTitle: string) => {
+    setOpenDropdown(openDropdown === categoryTitle ? null : categoryTitle);
+  };
+
   return (
     <div className="hidden lg:flex lg:items-center lg:space-x-4">
       <NavigationMenu>
@@ -133,24 +147,63 @@ export default function DesktopNavigation() {
                     </h3>
                     <ul className="space-y-2">
                       {category.items.map((item, idx) => (
-                        <li key={idx}>
-                          <Link
+                        <li
+                          key={idx}
+                          onClick={() => item.dropdown && toggleDropdown(item.title)} // Handle click to toggle dropdown visibility
+                          onMouseEnter={() => {
+                            if (item.dropdown) setOpenDropdown(item.title);
+                          }}
+                          onMouseLeave={() => {
+                            if (item.dropdown) setOpenDropdown(null);
+                          }}
+                        >
+                          <a
                             href={item.href}
                             title={item.title}
                             className={cn(
                               "flex flex-row items-center space-x-3 select-none rounded-md p-3 leading-none no-underline outline-none transition-colors hover:bg-accent hover:text-accent-foreground focus:bg-accent focus:text-accent-foreground"
                             )}
                           >
-                            <item.icon className="w-8 h-8 text-primary" />
+                            {item.icon &&
+                              React.createElement(item.icon, {
+                                className: "w-8 h-8 text-primary",
+                              })}
                             <div>
                               <div className="text-sm font-semibold">
                                 {item.title}
                               </div>
-                              <p className="mt-1 text-sm ">
-                                {item.description}
-                              </p>
+                              {item.description && (
+                                <p className="mt-1 text-sm">{item.description}</p>
+                              )}
                             </div>
-                          </Link>
+                            {/* Displaying the down arrow if it has a dropdown */}
+                            {item.dropdown && (
+                              <ChevronDown
+                                className={`ml-auto w-4 h-4 transition-transform ${
+                                  openDropdown === item.title ? "rotate-180" : ""
+                                }`}
+                              />
+                            )}
+                          </a>
+                          {/* Show dropdown for "Project Management" */}
+                          {openDropdown === item.title && item.dropdown && (
+                            <ul className="mt-2 space-y-2 pl-6">
+                              {item.dropdown.map((dropdownItem, i) => (
+                                <li key={i}>
+                                  <Link
+                                    href={dropdownItem.href}
+                                    className="flex items-center space-x-3 block px-4 py-2 text-sm font-semibold text-gray-700 hover:bg-accent hover:text-accent-foreground"
+                                  >
+                                    {dropdownItem.icon &&
+                                      React.createElement(dropdownItem.icon, {
+                                        className: "w-5 h-5 text-primary",
+                                      })}
+                                    <span>{dropdownItem.title}</span>
+                                  </Link>
+                                </li>
+                              ))}
+                            </ul>
+                          )}
                         </li>
                       ))}
                     </ul>
@@ -226,29 +279,29 @@ export default function DesktopNavigation() {
 }
 
 // Reusable ListItem Component
-const ListItem = React.forwardRef<
-  React.ComponentRef<"a">,
-  React.ComponentPropsWithoutRef<"a"> & { href: string; icon?: React.ReactNode }
->(({ className, title, icon, children, href, ...props }, ref) => {
-  return (
-    <div>
-      <Link
-        ref={ref}
-        href={href}
-        title={title}
-        className={cn(
-          "flex items-center space-x-3 select-none rounded-md p-3 leading-none no-underline outline-none transition-colors hover:bg-accent hover:text-accent-foreground focus:bg-accent focus:text-accent-foreground",
-          className
-        )}
-        {...props}
-      >
-        {icon && <div className="w-6 h-6 text-primary">{icon}</div>}
-        <div>
-          <div className="text-sm font-semibold">{title}</div>
-          <p className="line-clamp-2 text-sm leading-snug">{children}</p>
-        </div>
-      </Link>
-    </div>
-  );
-});
+const ListItem = React.forwardRef<React.ComponentRef<"a">, React.ComponentPropsWithoutRef<"a"> & { href: string; icon?: React.ReactNode }>(
+  ({ className, title, icon, children, href, ...props }, ref) => {
+    return (
+      <div>
+        <Link
+          ref={ref}
+          href={href}
+          title={title}
+          className={cn(
+            "flex items-center space-x-3 select-none rounded-md p-3 leading-none no-underline outline-none transition-colors hover:bg-accent hover:text-accent-foreground focus:bg-accent focus:text-accent-foreground",
+            className
+          )}
+          {...props}
+        >
+          {icon && <div className="w-6 h-6 text-primary">{icon}</div>}
+          <div>
+            <div className="text-sm font-semibold">{title}</div>
+            <p className="line-clamp-2 text-sm leading-snug">{children}</p>
+          </div>
+        </Link>
+      </div>
+    );
+  }
+);
+
 ListItem.displayName = "ListItem";
