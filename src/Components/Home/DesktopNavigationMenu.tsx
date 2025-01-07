@@ -99,12 +99,12 @@ const featuresMenu = [
     ],
   },
   {
-    category: "Resource Management",
+    category: "Material Management",
     items: [
       {
-        title: "Resource Tracking",
-        href: "/features/resource-tracking",
-        description: "Track and allocate resources efficiently.",
+        title: "Inventory",
+        href: "/features/inventory",
+        description: "Effortless control, seamless inventory management",
         icon: Package,
       },
     ],
