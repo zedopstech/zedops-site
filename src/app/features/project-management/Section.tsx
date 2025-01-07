@@ -50,159 +50,153 @@ export default function Example() {
   const [openFeature, setOpenFeature] = useState<number | null>(null);
   const [openAdditionalFeature, setOpenAdditionalFeature] = useState<number | null>(null);
   const [openThirdFeature, setOpenThirdFeature] = useState<number | null>(null);
-  const [highlightedFeature, setHighlightedFeature] = useState<number | null>(null); // Track highlighted feature
+  const [highlightedFeature, setHighlightedFeature] = useState<number | null>(null);
 
   const toggleFeatureDescription = (index: number) => {
     setOpenFeature(openFeature === index ? null : index);
-    setHighlightedFeature(openFeature === index ? null : index); // Toggle highlight
+    setHighlightedFeature(openFeature === index ? null : index);
   };
 
   const toggleAdditionalFeatureDescription = (index: number) => {
     setOpenAdditionalFeature(openAdditionalFeature === index ? null : index);
-    setHighlightedFeature(openAdditionalFeature === index ? null : index); // Toggle highlight
+    setHighlightedFeature(openAdditionalFeature === index ? null : index);
   };
 
   const toggleThirdFeatureDescription = (index: number) => {
     setOpenThirdFeature(openThirdFeature === index ? null : index);
-    setHighlightedFeature(openThirdFeature === index ? null : index); // Toggle highlight
+    setHighlightedFeature(openThirdFeature === index ? null : index);
   };
 
   return (
     <div className="overflow-hidden">
       {/* First Section */}
-      <div id="projects" className="bg-pink-50 py-24 sm:py-32">
-        <div className="mx-auto max-w-7xl px-6 lg:px-8">
-          <div className="mx-auto grid max-w-2xl grid-cols-1 gap-x-8 gap-y-16 sm:gap-y-20 lg:mx-0 lg:max-w-none lg:grid-cols-2">
+      <section id="projects" className="bg-pink-50 py-12 sm:py-24">
+        <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+          <div className="grid gap-16 sm:gap-20 lg:grid-cols-2">
             <div className="lg:pr-8 lg:pt-4">
-              <div className="lg:max-w-lg">
-                <h2 className="text-base/7 font-semibold text-indigo-600">Projects</h2>
-                <p className="mt-2 text-pretty font-semibold tracking-tight text-gray-900 sm:text-4xl">
-                  Take Charge of Your Projects, Don't Let Them Take Charge of You
-                </p>
-                <p className="mt-6 text-lg/8 text-gray-600">
-                  Organize your projects with customizable workflows and boards. Set clear goals and track milestones with interactive Gantt charts. Assign tasks, manage resources, and ensure timely delivery. Collaborate with your team in a centralized workspace.
-                </p>
-                <dl className="mt-10 max-w-xl space-y-8 text-base/7 text-gray-600 lg:max-w-none">
-                  {features.map((feature, index) => (
-                    <div key={feature.name} className="relative pl-9">
-                      <dt
-                        className={`inline font-semibold cursor-pointer ${
-                          highlightedFeature === index ? 'text-orange-500' : 'text-gray-900'
-                        }`}
-                        onClick={() => toggleFeatureDescription(index)}
-                      >
-                        <ArrowRight className="inline ml-2 text-indigo-600" /> {feature.name}
-                      </dt>
-                      <dd
-                        className={`inline block mt-2 text-gray-600 transition-all duration-300 ease-in-out max-h-0 overflow-hidden ${
-                          openFeature === index ? 'max-h-screen' : ''
-                        }`}
-                      >
-                        {openFeature === index && feature.description}
-                      </dd>
-                    </div>
-                  ))}
-                </dl>
-              </div>
+              <h2 className="text-base font-semibold text-indigo-600">Projects</h2>
+              <p className="mt-2 text-2xl sm:text-4xl font-semibold text-gray-900">
+                Take Charge of Your Projects, Don't Let Them Take Charge of You
+              </p>
+              <p className="mt-6 text-lg text-gray-600">
+                Organize your projects with customizable workflows and boards. Set clear goals and track milestones with interactive Gantt charts. Assign tasks, manage resources, and ensure timely delivery.
+              </p>
+              <dl className="mt-10 space-y-8">
+                {features.map((feature, index) => (
+                  <div key={feature.name} className="relative">
+                    <dt
+                      className={`font-semibold cursor-pointer ${
+                        highlightedFeature === index ? 'text-orange-500' : 'text-gray-900'
+                      }`}
+                      onClick={() => toggleFeatureDescription(index)}
+                    >
+                      <ArrowRight className="inline-block text-indigo-600" /> {feature.name}
+                    </dt>
+                    <dd
+                      className={`transition-all duration-300 ease-in-out overflow-hidden ${
+                        openFeature === index ? 'max-h-screen mt-2' : 'max-h-0'
+                      }`}
+                    >
+                      {openFeature === index && feature.description}
+                    </dd>
+                  </div>
+                ))}
+              </dl>
             </div>
             <img
               alt=""
               src="/project hero.jpg"
-              className="w-[500px] h-[550px] rounded-xl shadow-xl ring-1 ring-gray-400/10 sm:w-[57rem] md:-ml-4 lg:-ml-0"
+              className="w-full h-auto rounded-xl shadow-xl ring-1 ring-gray-400/10"
             />
           </div>
         </div>
-      </div>
+      </section>
 
       {/* Second Section */}
-      <div id="daily-logs" className="bg-gray-50 py-24 sm:py-32">
-        <div className="mx-auto max-w-7xl px-6 lg:px-8">
-          <div className="mt-16 grid max-w-2xl grid-cols-1 gap-x-8 gap-y-16 sm:gap-y-20 lg:mx-0 lg:max-w-none lg:grid-cols-2">
+      <section id="daily-logs" className="bg-gray-50 py-12 sm:py-24">
+        <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+          <div className="grid gap-16 sm:gap-20 lg:grid-cols-2">
             <img
               alt=""
               src="/project dailylog.png"
-              className="w-[500px] h-[550px] rounded-xl shadow-xl ring-1 ring-gray-400/10 sm:w-[57rem] md:-ml-4 lg:-ml-0"
+              className="w-full h-auto rounded-xl shadow-xl ring-1 ring-gray-400/10"
             />
             <div className="lg:pr-8 lg:pt-4">
-              <div className="lg:max-w-lg">
-                <h2 className="text-base/7 font-semibold text-indigo-600">Daily Logs</h2>
-                <p className="mt-2 text-pretty font-semibold tracking-tight text-gray-900 sm:text-4xl">
-                  Stay On Top of Daily Activities
-                </p>
-                <p className="mt-6 text-lg/8 text-gray-600">
-                  Full Daily Logs keep you safe and up to date. Weather, visitors, safety, productivity, materials used and more are all covered in your Daily Logs.
-                </p>
-                <dl className="mt-10 max-w-xl space-y-8 text-base/7 text-gray-600 lg:max-w-none">
-                  {additionalFeatures.map((feature, index) => (
-                    <div key={feature.name} className="relative pl-9">
-                      <dt
-                        className={`inline font-semibold cursor-pointer ${
-                          highlightedFeature === index ? 'text-orange-500' : 'text-gray-900'
-                        }`}
-                        onClick={() => toggleAdditionalFeatureDescription(index)}
-                      >
-                        <ArrowRight className="inline ml-2 text-indigo-600" /> {feature.name}
-                      </dt>
-                      <dd
-                        className={`inline block mt-2 text-gray-600 transition-all duration-300 ease-in-out max-h-0 overflow-hidden ${
-                          openAdditionalFeature === index ? 'max-h-screen' : ''
-                        }`}
-                      >
-                        {openAdditionalFeature === index && feature.description}
-                      </dd>
-                    </div>
-                  ))}
-                </dl>
-              </div>
+              <h2 className="text-base font-semibold text-indigo-600">Daily Logs</h2>
+              <p className="mt-2 text-2xl sm:text-4xl font-semibold text-gray-900">
+                Stay On Top of Daily Activities
+              </p>
+              <p className="mt-6 text-lg text-gray-600">
+                Full Daily Logs keep you safe and up to date. Weather, visitors, safety, productivity, materials used, and more are all covered in your Daily Logs.
+              </p>
+              <dl className="mt-10 space-y-8">
+                {additionalFeatures.map((feature, index) => (
+                  <div key={feature.name} className="relative">
+                    <dt
+                      className={`font-semibold cursor-pointer ${
+                        highlightedFeature === index ? 'text-orange-500' : 'text-gray-900'
+                      }`}
+                      onClick={() => toggleAdditionalFeatureDescription(index)}
+                    >
+                      <ArrowRight className="inline-block text-indigo-600" /> {feature.name}
+                    </dt>
+                    <dd
+                      className={`transition-all duration-300 ease-in-out overflow-hidden ${
+                        openAdditionalFeature === index ? 'max-h-screen mt-2' : 'max-h-0'
+                      }`}
+                    >
+                      {openAdditionalFeature === index && feature.description}
+                    </dd>
+                  </div>
+                ))}
+              </dl>
             </div>
           </div>
         </div>
-      </div>
+      </section>
 
       {/* Third Section */}
-      <div id="scheduling" className="bg-pink-50 py-24 sm:py-32">
-        <div className="mx-auto max-w-7xl px-6 lg:px-8">
-          <div className="mt-16 grid max-w-2xl grid-cols-1 gap-x-8 gap-y-16 sm:gap-y-20 lg:mx-0 lg:max-w-none lg:grid-cols-2">
+      <section id="scheduling" className="bg-pink-50 py-12 sm:py-24">
+        <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+          <div className="grid gap-16 sm:gap-20 lg:grid-cols-2">
             <div className="lg:pr-8 lg:pt-4">
-              <div className="lg:max-w-lg">
-                <h2 className="text-base/7 font-semibold text-indigo-600">Scheduling</h2>
-                <p className="mt-2 text-pretty font-semibold tracking-tight text-gray-900 sm:text-4xl">
-                  Manage Your Projects Effectively
-                </p>
-                <p className="mt-6 text-lg/8 text-gray-600">
-                  Time is money, and outdated, costly tools shouldn't slow you down. Say goodbye to expensive CPM Gantt chart software and embrace a smarter way to manage your schedules. Carry your project plans with you wherever you go and effortlessly share them with your team, keeping everyone aligned and productive.
-                </p>
-                <dl className="mt-10 max-w-xl space-y-8 text-base/7 text-gray-600 lg:max-w-none">
-                  {thirdSectionFeatures.map((feature, index) => (
-                    <div key={feature.name} className="relative pl-9">
-                      <dt
-                        className={`inline font-semibold cursor-pointer ${
-                          highlightedFeature === index ? 'text-orange-500' : 'text-gray-900'
-                        }`}
-                        onClick={() => toggleThirdFeatureDescription(index)}
-                      >
-                        <ArrowRight className="inline ml-2 text-indigo-600" /> {feature.name}
-                      </dt>
-                      <dd
-                        className={`inline block mt-2 text-gray-600 transition-all duration-300 ease-in-out max-h-0 overflow-hidden ${
-                          openThirdFeature === index ? 'max-h-screen' : ''
-                        }`}
-                      >
-                        {openThirdFeature === index && feature.description}
-                      </dd>
-                    </div>
-                  ))}
-                </dl>
-              </div>
+              <h2 className="text-base font-semibold text-indigo-600">Scheduling</h2>
+              <p className="mt-2 text-2xl sm:text-4xl font-semibold text-gray-900">
+                Manage Your Projects Effectively
+              </p>
+              <p className="mt-6 text-lg text-gray-600">
+                Time is money, and outdated, costly tools shouldn't slow you down. Say goodbye to expensive CPM Gantt chart software and embrace a smarter way to manage your schedules.
+              </p>
+              <dl className="mt-10 space-y-8">
+                {thirdSectionFeatures.map((feature, index) => (
+                  <div key={feature.name} className="relative">
+                    <dt
+                      className={`font-semibold cursor-pointer ${
+                        highlightedFeature === index ? 'text-orange-500' : 'text-gray-900'
+                      }`}
+                      onClick={() => toggleThirdFeatureDescription(index)}
+                    >
+                      <ArrowRight className="inline-block text-indigo-600" /> {feature.name}
+                    </dt>
+                    <dd
+                      className={`transition-all duration-300 ease-in-out overflow-hidden ${
+                        openThirdFeature === index ? 'max-h-screen mt-2' : 'max-h-0'
+                      }`}
+                    >
+                      {openThirdFeature === index && feature.description}
+                    </dd>
+                  </div>
+                ))}
+              </dl>
             </div>
             <img
               alt=""
               src="/project schedule.jpg"
-              className="w-[500px] h-[550px] rounded-xl shadow-xl ring-1 ring-gray-400/10 sm:w-[57rem] md:-ml-4 lg:-ml-0"
+              className="w-full h-auto rounded-xl shadow-xl ring-1 ring-gray-400/10"
             />
           </div>
         </div>
-      </div>
+      </section>
     </div>
   );
 }
