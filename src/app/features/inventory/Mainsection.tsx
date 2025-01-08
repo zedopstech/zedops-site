@@ -11,11 +11,7 @@ const features = [
     description: 'Gain a clear view of current inventory levels at any time. Make informed decisions to prevent overstocking or shortages.',
     icon: ArrowRight
   },
-  {
-    name: 'Usage Analytics',
-    description: 'Analyze material consumption trends to optimize resource allocation. Identify patterns to forecast demand and reduce wastage.',
-    icon: ArrowRight
-  },
+  
 ];
 const additionalFeatures = [
     {
@@ -30,11 +26,7 @@ const additionalFeatures = [
       icon: ArrowRight
     },
     
-    {
-      name: 'Prevent Downtime',
-      description: 'Minimize equipment downtime by proactively monitoring performance and scheduling timely maintenance. Keep your operations running smoothly and avoid costly delays',
-      icon: ArrowRight
-    },
+   
   ];
   const thirdSectionFeatures = [
     {
@@ -47,11 +39,7 @@ const additionalFeatures = [
       description: 'Generate detailed reports to track inventory levels, movements, and usage patterns. Use these insights to optimize inventory management and support strategic decision-making.',
       icon: ArrowRight
     },
-    {
-      name:'Track Inventory Trends',
-      description: 'Monitor inventory trends over time to identify patterns in demand and usage.',
-      icon: ArrowRight
-    },
+    
   ];
   export default function Example() {
     return (
@@ -85,7 +73,7 @@ const additionalFeatures = [
               <img
                 alt=""
                 src="/material-1.jpg"
-                className="w-[44rem] h-[24rem] max-w-none rounded-xl shadow-xl ring-1 ring-gray-400/10 sm:w-[48rem] sm:h-[32rem] md:ml-[-2rem] lg:ml-[-4rem] mt-12"
+                className="w-full h-auto sm:w-[44rem] sm:h-[30rem] md:ml-[-2rem] lg:ml-[-4rem] max-w-none rounded-xl shadow-xl ring-1 ring-gray-400/10 mt-12"
               />
             </div>
     
@@ -94,9 +82,9 @@ const additionalFeatures = [
             <img
                 alt=""
                 src="/material-2.jpeg"
-                className="w-[40rem] h-[20rem] max-w-none rounded-xl shadow-xl ring-1 ring-gray-400/10 sm:w-[46rem] sm:h-[32rem] md:ml-[-2rem] lg:ml-[-4rem] mt-12"
+                className="w-full h-auto sm:w-[44rem] sm:h-[30rem] md:ml-[-2rem] lg:ml-[-4rem] max-w-none rounded-xl shadow-xl ring-1 ring-gray-400/10 mt-12"
               />
-              <div className="lg:pr-8 lg:mt-10 lg:ml-32 lg:max-w-xl min-h-[200px]">
+              <div className="lg:pr-8 lg:mt-4 lg:ml-32 lg:max-w-3xl min-h-[200px]">
                 <div className="lg:max-w-lg">
                   <h2 className="text-base/7 font-bold text-indigo-600">Equipment Tracking</h2>
                   <p className="mt-2 text-pretty text-4xl font-semibold tracking-tight text-gray-900 sm:text-3xl">
@@ -106,7 +94,7 @@ const additionalFeatures = [
                     Efficiently managing and tracking your equipment is crucial for optimizing productivity, reducing downtime, and minimizing costs. 
                     With our equipment tracking solution.
                   </p>
-                  <dl className="mt-10 max-w-xl space-y-8 text-base/7 text-gray-600 lg:max-w-none">
+                  <dl className="mt-10  max-w-xl space-y-8 text-base/7 text-gray-600 lg:max-w-none">
                     {additionalFeatures.map((feature) => (
                       <div key={feature.name} className="relative pl-9">
                         <dt className="inline font-semibold text-gray-900">
@@ -151,7 +139,7 @@ const additionalFeatures = [
               <img
                 alt=""
                 src="/material-3.jpg"
-                className="w-[40rem] h-[20rem] max-w-none rounded-xl shadow-xl ring-1 ring-gray-400/10 sm:w-[46rem] sm:h-[32rem] md:ml-[-2rem] lg:ml-[-4rem] mt-12"
+                className="w-full h-auto sm:w-[44rem] sm:h-[30rem] md:ml-[-2rem] lg:ml-[-4rem] max-w-none rounded-xl shadow-xl ring-1 ring-gray-400/10 mt-12"
               />
             </div>
           </div>
