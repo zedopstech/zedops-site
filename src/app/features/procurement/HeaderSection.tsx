@@ -1,29 +1,29 @@
-import { BarChart2, Layers, MapPinCheck, ChartPie} from "lucide-react";
+import { Lightbulb, Layers, PackageCheck,ChartNoAxesCombined} from "lucide-react";
 
 const features = [
   {
-    name: 'Efficient Inventory',
+    name: 'Smart Procurement',
     description:
-      'Streamline material tracking and allocation effortlessly. Manage stock levels in real-time, minimize waste.',
-    icon:BarChart2,
+      'Optimize sourcing and supplier coordination seamlessly. Ensure timely deliveries, control costs, and maintain quality standards.',
+    icon:Lightbulb,
   },
   {
-    name: 'Seamless Management',
+    name: 'Seamless Procurement',
     description:
-      'Simplify operations with centralized inventory control. Ensure smooth workflows by tracking, allocating, and replenishing resources effortlessly.',
+      'Streamline sourcing with centralized vendor management.Ensure smooth workflows by tracking, managing, and optimizing purchases effortlessly.',
     icon: Layers,
   },
   {
-    name: 'Smart Tracking',
+    name: 'Optimized Sourcing',
     description:
-      'Gain real-time visibility into inventory movements. Optimize stock levels and reduce errors with precise tracking solutions.',
-    icon: MapPinCheck
+      'Enhance procurement efficiency with data-driven decisions.Build strong vendor relationships and ensure timely, cost-effective acquisitions.',
+    icon: PackageCheck
   },
   {
-    name: 'Resource Optimization',
+    name: 'Strategic Procurement',
     description:
-      'Enhance project efficiency by tracking resources accurately. Minimize downtime with precise inventory control and streamlined allocation.',
-    icon: ChartPie
+      'Drive value with well-planned sourcing strategies. Ensure quality, cost efficiency, and timely delivery for every project need.',
+    icon: ChartNoAxesCombined
   },
 ]
 
@@ -34,11 +34,11 @@ export default function Example() {
         <div className="mx-auto max-w-2xl lg:text-center">
           <h2 className="text-base/7 font-semibold text-indigo-600">Optimized Control</h2>
           <p className="mt-2 text-pretty text-4xl font-semibold tracking-tight text-gray-900 sm:text-5xl lg:text-balance">
-          Streamlined Inventory Management for Construction
+          Efficient Procurement Management for Construction
           </p>
           <p className="mt-6 text-lg/8 text-gray-600">
-          With features like automated reorder alerts, mobile accessibility, and detailed reporting, 
-          our solution simplifies inventory management while reducing costs.
+          With features like vendor management and real-time purchase order monitoring,streamlines procurement
+          processes while ensuring cost control.
           </p>
         </div>
         <div className="mx-auto mt-16 max-w-2xl sm:mt-20 lg:mt-24 lg:max-w-4xl">

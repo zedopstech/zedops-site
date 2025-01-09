@@ -23,12 +23,12 @@ export default function Hero() {
             Material Management
             </h1>
             <h1 className="text-balance text-2xl font-semibold tracking-tight text-gray-900 sm:text-5xl">
-            Inventory
+            Procurement
             </h1>
             <p className="mt-8 text-pretty text-lg font-medium text-gray-900 sm:text-xl/8">
-            Inventory management streamlines stock tracking, ensuring optimal levels
-            to reduce costs and prevent shortages.
-            It boosts efficiency, supports demand, and enhances overall operational control.
+            Procurement is the strategic process of sourcing and acquiring the materials, services, 
+            and resources needed to ensure project success. In construction management,
+            it bridges planning and execution, ensuring quality, cost-efficiency, and timely delivery
             </p>
             <div className="mt-10 flex items-center justify-center gap-x-6">
               <a
@@ -40,7 +40,7 @@ export default function Hero() {
              </div>
           </div>
         </div>
-       </div>
+      </div>
     </div>
   );
 }

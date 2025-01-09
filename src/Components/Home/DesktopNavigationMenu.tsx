@@ -27,6 +27,7 @@ import {
   FilePlus,
   LogOut,
   Calendar,
+  BaggageClaim
 } from "lucide-react";
 
 const featuresMenu = [
@@ -106,6 +107,12 @@ const featuresMenu = [
         href: "/features/inventory",
         description: "Effortless control, seamless inventory management",
         icon: Package,
+      },
+      {
+        title: "Procurement",
+        href: "/features/procurement",
+        description: "Building success starts with smart sourcing",
+        icon: BaggageClaim,
       },
     ],
   },
