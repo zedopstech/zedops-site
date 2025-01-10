@@ -47,8 +47,8 @@ const featuresMenu = [
         icon: Building2,
       },
       {
-        title: "Estimating",
-        href: "/features/estimating",
+        title: "Estimation",
+        href: "/features/estimation",
         description: "Accurate project cost estimation tools.",
         icon: DollarSign,
       },
