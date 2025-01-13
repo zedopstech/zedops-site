@@ -11,23 +11,13 @@ import {
 import { cn } from "@/lib/utils";
 import Link from "next/link";
 import {
-  ClipboardList,
-  BookOpen,
-  MoveUpRightIcon,
-  BarChart2,
-  Building2,
-  DollarSign,
-  HardHat,
-  ShieldCheck,
-  Package,
-  PieChart,
-  LineChart,
-  FileText,
-  ChevronDown, // Importing the down arrow icon
-  FilePlus,
-  LogOut,
-  Calendar,
-  BaggageClaim
+  ClipboardList,BookOpen, MoveUpRightIcon,
+  BarChart2,Building2,DollarSign,
+  HardHat,ShieldCheck,Package,
+  PieChart,LineChart,FileText,
+  ChevronDown,FilePlus,LogOut,
+  Calendar,BaggageClaim,Hammer,
+  HandPlatter,BookUser
 } from "lucide-react";
 
 const featuresMenu = [
@@ -96,6 +86,22 @@ const featuresMenu = [
         href: "/features/invoice-management",
         description: "Simplify invoicing and payment processes.",
         icon: FileText,
+      },
+    ],
+  },
+  {
+    category: "Resource Management",
+    items: [
+      {
+        title: "Directory",
+        href: "/features/directory",
+        description: "Organize and Manage Directories Effectively.",
+        icon: Hammer,
+        dropdown: [
+          { title: "Supplier Relations", href: "/features/directory", icon: HandPlatter},
+          { title: "Employee Operations", href: "/features/directory", icon: BookUser},
+        
+        ],
       },
     ],
   },

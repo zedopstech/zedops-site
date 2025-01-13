@@ -1,17 +1,17 @@
 "use client";
 import { useEffect, useState } from "react";
-import Image from "next/image";
-import Link from "next/link";
 import {
   Accordion,
   AccordionItem,
   AccordionTrigger,
   AccordionContent,
 } from "@/Components/UI/accordion";
-import { FilePlus, LogOut, Calendar } from "lucide-react";
+import { HandPlatter, BookUser} from "lucide-react";
 import Hero from "./Hero";
 import Section from "./Section";
 import Cto from "./Cto";
+
+
 
 export default function ProjectManagementPage() {
   const [activeSection, setActiveSection] = useState("");
@@ -41,58 +41,45 @@ export default function ProjectManagementPage() {
         <Hero />
         <div className="flex">
           {/* Sidebar */}
-          <aside className="hidden lg:block w-64 bg-white shadow-md h-screen sticky top-0">
+          <aside className="hidden lg:block w-64 bg-gray-50 shadow-md h-screen sticky top-0">
             <nav className="h-full flex flex-col justify-center">
               <ul className="space-y-4">
                 <li
                   className={`flex items-center px-6 py-3 hover:bg-gray-200 rounded-lg ${
-                    activeSection === "projects" ? "bg-gray-200 font-bold text-gray-900" : "text-gray-400"
+                    activeSection === "supplier-relations" ? "bg-gray-200 font-bold text-gray-900" : "text-gray-400"
                   }`}
                 >
-                  <FilePlus className="h-6 w-6 text-orange-500" />
+                  <HandPlatter className="h-6 w-6 text-orange-500" />
                   <a
-                    href="#projects"
-                    className="block text-lg font-semibold  ml-4"
-                  >
-                    Projects
-                  </a>
-                </li>
-                <li
-                  className={`flex items-center px-6 py-3 hover:bg-gray-200 rounded-lg ${
-                    activeSection === "daily-logs" ? "bg-gray-200 font-bold text-gray-900" : "text-gray-400"
-                  }`}
-                >
-                  <LogOut className="h-6 w-6 text-orange-500" />
-                  <a
-                    href="#daily-logs"
+                    href="#supplier-relations"
                     className="block text-lg font-semibold ml-4"
                   >
-                    Daily Logs
+                    Supplier Relations
                   </a>
                 </li>
                 <li
                   className={`flex items-center px-6 py-3 hover:bg-gray-200 rounded-lg ${
-                    activeSection === "scheduling" ? "bg-gray-200 font-bold text-gray-900" : "text-gray-400"
+                    activeSection === "employee-operations" ? "bg-gray-200 font-bold text-gray-900" : "text-gray-400"
                   }`}
                 >
-                  <Calendar className="h-6 w-6 text-orange-500" />
+                  <BookUser className="h-6 w-6 text-orange-500" />
                   <a
-                    href="#scheduling"
-                    className="block text-lg font-semibold  ml-4"
+                    href="#employee-operations"
+                    className="block text-lg font-semibold ml-4"
                   >
-                    Scheduling
+                    Employee Operations
                   </a>
                 </li>
               </ul>
             </nav>
           </aside>
+        
 
-          {/* Main Content */}
+        
+         {/* Main Content */}
           <Section />
         </div>
-
         <Cto />
-
         {/* FAQ Section */}
         <section id="projects" className="bg-gray-100 py-12">
           <div className="container mx-auto flex justify-center items-center px-4">
@@ -103,42 +90,38 @@ export default function ProjectManagementPage() {
               <Accordion type="single" collapsible className="space-y-4">
                 <AccordionItem value="item-1">
                   <AccordionTrigger className="text-xl font-semibold text-gray-900 text-center bg-gray-200 rounded-lg py-3 px-4 hover:bg-gray-300 transition-all duration-200">
-                    What is Project Management software?
+                  What is directory management?
                   </AccordionTrigger>
                   <AccordionContent className="text-gray-900 text-left px-6 py-4 bg-white rounded-lg shadow-md">
-                    Project Management software is a tool used to plan, execute,
-                    and monitor project progress, helping teams meet deadlines
-                    and achieve goals efficiently.
-                  </AccordionContent>
+                  Directory management organizes and stores project files in a structured system,
+                  making them easy to access, update, and share with the team.
+              </AccordionContent>
                 </AccordionItem>
                 <AccordionItem value="item-2">
                   <AccordionTrigger className="text-xl font-semibold text-gray-900 text-center bg-gray-200 rounded-lg py-3 px-4 hover:bg-gray-300 transition-all duration-200">
-                    Can it integrate with existing tools?
+                  How does directory management improve efficiency?
                   </AccordionTrigger>
                   <AccordionContent className="text-gray-900 text-left px-6 py-4 bg-white rounded-lg shadow-md">
-                    Yes, most Project Management platforms offer integrations
-                    with tools like Slack, Google Workspace, and Microsoft
-                    Teams.
+                  It helps team members quickly locate files, reducing time spent searching and
+                  ensuring everyone works with the latest documents.
                   </AccordionContent>
                 </AccordionItem>
                 <AccordionItem value="item-3">
                   <AccordionTrigger className="text-xl font-semibold text-gray-900 text-center bg-gray-200 rounded-lg py-3 px-4 hover:bg-gray-300 transition-all duration-200">
-                    Is it suitable for small teams?
+                  Can I customize my directory structure?
                   </AccordionTrigger>
                   <AccordionContent className="text-gray-900 text-left px-6 py-4 bg-white rounded-lg shadow-md">
-                    Yes, Project Management tools are designed to scale and are
-                    suitable for small teams to manage their tasks, collaborate,
-                    and achieve goals efficiently.
+                  Yes, directory structures can be tailored to fit the specific needs
+                  of your project, making file organization more effective.
                   </AccordionContent>
                 </AccordionItem>
                 <AccordionItem value="item-4">
                   <AccordionTrigger className="text-xl font-semibold text-gray-900 text-center bg-gray-200 rounded-lg py-3 px-4 hover:bg-gray-300 transition-all duration-200">
-                    Does it support remote team collaboration?
+                  How is directory security handled?
                   </AccordionTrigger>
                   <AccordionContent className="text-gray-900 text-left px-6 py-4 bg-white rounded-lg shadow-md">
-                    Absolutely! Most Project Management tools come with
-                    features like real-time collaboration, file sharing, and
-                    communication tools to support remote teams.
+                  Access controls allow you to restrict file visibility and editing rights, ensuring sensitive 
+                  information is protected and only accessible to authorized users.
                   </AccordionContent>
                 </AccordionItem>
               </Accordion>
