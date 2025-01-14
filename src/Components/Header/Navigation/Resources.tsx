@@ -1,5 +1,3 @@
-import { Button } from "@/Components/UI/button";
-import { cn } from "@/lib/utils";
 import * as NavigationMenu from "@radix-ui/react-navigation-menu";
 import {
   FileText,
@@ -90,7 +88,9 @@ const ResourcesList = () => {
           <div className="p-6 w-1/4 flex flex-col items-start gap-4 justify-evenly">
             <div className="flex flex-row items-center gap-2">
               <Megaphone className="w-6 h-6 text-primary" />
-              <p className="text-sm font-semibold text-primary">What's New</p>
+              <p className="text-sm font-semibold text-primary">
+                {"What's New"}
+              </p>
             </div>
             <div className="bg-primary rounded w-full h-[200px] mb-2 relative group"></div>
             <div className="flex flex-col items-start gap-2">
