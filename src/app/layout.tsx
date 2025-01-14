@@ -1,9 +1,9 @@
 import "./globals.css";
-import Header from "@/Components/Home/Header";
 import Footer from "@/Components/Footer";
 import { ReactNode } from "react";
 import { Metadata } from "next";
 import Head from "next/head";
+import Header from "@/Components/Header";
 
 export const metadata: Metadata = {
   title: "ZedOps - Revolutionize Your Construction Workflow",
@@ -12,7 +12,7 @@ export const metadata: Metadata = {
   keywords:
     "construction management, project management, construction software, ZedOps, streamline workflows",
   icons: {
-    icon: "/favicon-with-primary.ico",
+    icon: "/images/favicon.ico",
   },
   openGraph: {
     type: "website",

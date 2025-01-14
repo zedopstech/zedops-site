@@ -28,19 +28,10 @@ const BookDemo = () => {
   };
 
   return (
-    <div
-      className="min-h-screen flex flex-col"
-      style={{
-        background: `
-      linear-gradient(rgb(7, 6, 36) -17.19%, rgba(7, 6, 36, 0) 111.4%), 
-      linear-gradient(86.97deg, rgba(255, 168, 0, 0.4) -0.67%, rgba(25, 187, 125, 0.4) 24.91%, rgba(0, 82, 204, 0.4) 48.82%, rgba(69, 164, 236, 0.4) 72.18%, rgba(184, 95, 255, 0.4) 88.31%), 
-      rgb(7, 6, 36)
-    `,
-      }}
-    >
+    <div className="min-h-screen flex flex-col bg-white text-background">
       {/* Hero Section with How It Works and Demo Form */}
-      <header className="relative text-white py-20">
-        <div className="relative max-w-7xl mx-auto px-6 z-10 grid grid-cols-1 lg:grid-cols-2 gap-8 items-start">
+      <header className="relative py-20">
+        <div className="relative max-w-6xl mx-auto px-6 lg-px-0 z-10 grid grid-cols-1 lg:grid-cols-2 gap-8 items-start">
           {/* Left Content: Hero Text and How It Works */}
           <div className="space-y-6">
             <div>
@@ -52,9 +43,9 @@ const BookDemo = () => {
                 and collaboration workflows.
               </p>
             </div>
-            <div className="relative rounded-lg p-8 bg-white shadow-md">
-              <h2 className="text-3xl font-bold text-gray-800">How It Works</h2>
-              <p className="mt-2 text-sm text-gray-600">
+            <div className="relative ">
+              <h2 className="text-3xl font-bold">How It Works</h2>
+              <p className="mt-2 text-sm ">
                 Follow these simple steps to get started with your demo.
               </p>
               <div className="mt-6 space-y-4">
@@ -76,14 +67,10 @@ const BookDemo = () => {
                   },
                 ].map((item, idx) => (
                   <div key={idx} className="flex items-start gap-4">
-                    <CheckCircle className="w-6 h-6 text-orange-500" />
+                    <CheckCircle className="w-6 h-6 text-background" />
                     <div>
-                      <h4 className="text-lg font-bold text-gray-900">
-                        {item.title}
-                      </h4>
-                      <p className="text-sm text-gray-600">
-                        {item.description}
-                      </p>
+                      <h4 className="text-lg font-bold ">{item.title}</h4>
+                      <p className="text-sm ">{item.description}</p>
                     </div>
                   </div>
                 ))}
@@ -92,11 +79,11 @@ const BookDemo = () => {
           </div>
 
           {/* Right Content: Demo Form */}
-          <div className="relative bg-white shadow-md rounded-lg p-8">
-            <h2 className="text-3xl font-extrabold text-gray-900 text-center">
+          <div className="relative bg-white border border-background shadow-md rounded-lg p-8">
+            <h2 className="text-3xl font-extrabold  text-center">
               Request a Demo
             </h2>
-            <p className="mt-4 text-lg text-gray-600 text-center">
+            <p className="mt-4 text-lg text-center">
               Fill out the form below, and one of our experts will get in touch
               to schedule your demo.
             </p>
@@ -157,7 +144,11 @@ const BookDemo = () => {
                   ]}
                 />
               </div>
-              <Button type="submit" className="w-full py-6 transition">
+              <Button
+                variant={"destructive"}
+                type="submit"
+                className="w-full py-6 transition"
+              >
                 Get a Demo
               </Button>
             </form>
@@ -192,7 +183,7 @@ const InputField = ({
         value={value}
         onChange={onChange}
         placeholder={placeholder}
-        className="mt-2 p-3 text-gray-800 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-orange-500 transition"
+        className="mt-2 p-3 text-gray-800 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-background focus:border-none transition"
       />
     </div>
   );
@@ -213,12 +204,12 @@ const SelectField = ({
 }) => {
   return (
     <div className="flex flex-col">
-      <label className="text-sm font-medium text-gray-800">{label}</label>
+      <label className="text-sm font-medium ">{label}</label>
       <select
         name={name}
         value={value}
         onChange={onChange}
-        className="mt-2 p-3 text-gray-800 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-orange-500 transition"
+        className="mt-2 p-3 text-gray-800 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-background focus:border-none  transition"
       >
         <option value="">Select a company type</option>
         {options.map((option, idx) => (

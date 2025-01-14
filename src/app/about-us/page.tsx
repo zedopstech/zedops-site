@@ -59,16 +59,14 @@ const AboutUs: React.FC = () => {
   const { hero, whoWeAre, ourMission, whyChooseUs } = aboutUsContent;
 
   return (
-    <div className="bg-gray-50">
+    <div className="bg-gray-50 text-background">
       {/* Hero Section */}
-      <section className="bg-gradient-to-br from-orange-600 via-red-500 to-yellow-500 text-white py-16">
+      <section className="py-16">
         {" "}
-        <div className="max-w-7xl mx-auto px-6 lg:grid lg:grid-cols-2 lg:gap-16 items-center">
-          <div className="lg:pr-16">
-            <h1 className="text-4xl font-bold text-white lg:text-5xl">
-              {hero.title}
-            </h1>
-            <p className="mt-6 text-lg text-white">{hero.description}</p>
+        <div className="max-w-6xl flex flex-col mx-auto px-6 lg:px-0 lg:grid lg:grid-cols-2 lg:gap-16 items-center">
+          <div>
+            <h1 className="text-4xl font-bold lg:text-5xl">{hero.title}</h1>
+            <p className="mt-6 text-lg ">{hero.description}</p>
           </div>
           <div className="mt-12 lg:mt-0">
             <Image
@@ -76,7 +74,7 @@ const AboutUs: React.FC = () => {
               alt="Hero Image"
               width={600}
               height={400}
-              className="rounded-xl shadow-lg"
+              className="rounded-md shadow-lg"
             />
           </div>
         </div>
@@ -84,27 +82,27 @@ const AboutUs: React.FC = () => {
 
       {/* Who We Are Section */}
       <section className="py-16 bg-white">
-        <div className="max-w-7xl mx-auto px-6 lg:grid lg:grid-cols-2 lg:gap-16 items-center">
+        <div className="max-w-6xl mx-auto flex flex-col px-6 lg:px-0 lg:grid lg:grid-cols-2 lg:gap-16 items-center">
           <div className="mb-8">
             <Image
               src={whoWeAre.image}
               alt="Who We Are"
               width={600}
               height={400}
-              className="rounded-xl shadow-lg"
+              className="rounded-md shadow-lg"
             />
           </div>
           <div>
-            <h2 className="text-3xl font-bold text-gray-900 lg:text-4xl">
+            <h2 className="text-3xl font-bold  lg:text-4xl">
               {whoWeAre.title}
             </h2>
-            <p className="mt-6 text-lg text-gray-600">{whoWeAre.description}</p>
+            <p className="mt-6 text-lg ">{whoWeAre.description}</p>
           </div>
         </div>
       </section>
 
       {/* Our Mission Section */}
-      <section className="py-16 bg-gradient-to-r from-gray-900 to-gray-800 text-white">
+      <section className="py-16 bg-background text-white">
         <div className="max-w-5xl mx-auto px-6 text-center">
           <h2 className="text-3xl font-bold lg:text-4xl">{ourMission.title}</h2>
           <p className="mt-6 text-lg">{ourMission.description}</p>
@@ -112,14 +110,12 @@ const AboutUs: React.FC = () => {
       </section>
 
       {/* Why Choose Zedops Section */}
-      <section className="py-16 bg-gradient-to-br from-gray-100 to-gray-200">
-        <div className="max-w-7xl mx-auto px-6 text-center">
-          <h2 className="text-3xl font-extrabold text-gray-900 lg:text-4xl">
+      <section className="pt-16 lg:py-16 ">
+        <div className="max-w-6xl mx-auto px-6 lg:px-0 text-center">
+          <h2 className="text-3xl font-extrabold  lg:text-4xl">
             {whyChooseUs.title}
           </h2>
-          <p className="mt-6 text-lg text-gray-700">
-            {whyChooseUs.description}
-          </p>
+          <p className="mt-6 text-lg ">{whyChooseUs.description}</p>
 
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-10 mt-12">
             {whyChooseUs.points.map((point, index) => (
@@ -129,26 +125,22 @@ const AboutUs: React.FC = () => {
               >
                 {/* Icon or Visual Representation */}
                 {/* Icon */}
-                <div className="flex items-center justify-center w-16 h-16 mx-auto bg-gradient-to-r from-primary to-orange-400 rounded-full text-white">
+                <div className="flex items-center justify-center w-16 h-16 mx-auto bg-background rounded-full text-white">
                   {<point.icon />}
                 </div>
                 {/* Title */}
-                <h3 className="mt-6 text-lg font-bold text-gray-900">
-                  {point.title}
-                </h3>
+                <h3 className="mt-6 text-lg font-bold ">{point.title}</h3>
 
                 {/* Description */}
-                <p className="mt-3 text-sm text-gray-600">
-                  {point.description}
-                </p>
+                <p className="mt-3 text-sm ">{point.description}</p>
               </div>
             ))}
           </div>
         </div>
 
         {/* Call-to-Action Section */}
-        <section className="mt-16 max-w-6xl mx-auto py-12 bg-black lg:rounded-2xl">
-          <div className="px-12 flex flex-col lg:flex-row items-center justify-between">
+        <section className="mt-16 max-w-6xl mx-auto py-12 bg-gray-950 lg:rounded-2xl">
+          <div className="px-12 flex flex-col items-center  justify-center lg:flex-row lg:justify-between">
             {/* Text Content */}
             <div className="text-center lg:text-left">
               <h2 className="text-2xl font-bold text-white lg:text-3xl">
@@ -161,7 +153,7 @@ const AboutUs: React.FC = () => {
             </div>
 
             {/* Button */}
-            <div className="mt-8 lg:mt-0 ml-8">
+            <div className="mt-8 lg:mt-0">
               <Link href="/book-a-demo" title="Book a Demo">
                 <Button size={"lg"} className="text-lg font-medium">
                   Get Started

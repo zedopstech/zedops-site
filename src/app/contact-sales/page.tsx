@@ -62,10 +62,10 @@ const ContactSales = () => {
   };
 
   return (
-    <div className="min-h-screen flex flex-col">
+    <div className="min-h-screen flex flex-col text-background">
       {/* Header Section */}
-      <header className="bg-gradient-to-r from-[#FFA800] via-[#19BB7D] to-[#B85FFF] text-white py-10">
-        <div className="max-w-7xl mx-auto px-6">
+      <header className=" text-white py-10">
+        <div className="max-w-6xl mx-auto px-6 lg:px-0 text-center">
           <h1 className="text-3xl font-extrabold lg:text-4xl">
             We&#39;re Here to Help You Succeed
           </h1>
@@ -83,29 +83,29 @@ const ContactSales = () => {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-16">
             {/* Left Section: Contact Information */}
             <div>
-              <h2 className="text-3xl font-extrabold text-gray-800">
+              <h2 className="text-3xl font-extrabold">
                 Contact Our Sales Team
               </h2>
-              <p className="mt-4 text-lg text-gray-600">
+              <p className="mt-4 text-lg ">
                 Let us know how we can help, and our team will be in touch with
                 you shortly.
               </p>
               <ul className="mt-8 space-y-6">
                 <li className="flex items-center">
-                  <Phone className="w-6 h-6 text-orange-500 mr-4" />
-                  <span className="text-lg text-gray-800 font-semibold">
+                  <Phone className="w-6 h-6  mr-4" />
+                  <span className="text-lg  font-semibold">
                     +91 97878 82297
                   </span>
                 </li>
                 <li className="flex items-center">
-                  <Mail className="w-6 h-6 text-orange-500 mr-4" />
-                  <span className="text-lg text-gray-800 font-semibold">
+                  <Mail className="w-6 h-6  mr-4" />
+                  <span className="text-lg  font-semibold">
                     sales@zedops.com
                   </span>
                 </li>
                 <li className="flex items-center">
-                  <MapPin className="w-6 h-6 text-orange-500 mr-4" />
-                  <span className="text-lg text-gray-800 font-semibold">
+                  <MapPin className="w-6 h-6  mr-4" />
+                  <span className="text-lg font-semibold">
                     Madurai, Tamil Nadu, IN
                   </span>
                 </li>
@@ -167,8 +167,9 @@ const ContactSales = () => {
                 />
                 <div>
                   <Button
+                    variant={"destructive"}
                     type="submit"
-                    className="w-full py-3 bg-orange-500 text-white rounded-lg hover:bg-orange-600 transition"
+                    className="w-full py-3 text-white"
                   >
                     Submit
                   </Button>
