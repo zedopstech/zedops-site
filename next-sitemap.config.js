@@ -6,11 +6,7 @@ module.exports = {
   priority: 0.7, // Priority of pages
   sitemapSize: 5000, // Limit the number of URLs per sitemap file
   generateIndexSitemap: false, // Generate a sitemap index file
-  exclude: ["/admin/*", "/api/*"], // Exclude specific paths
   robotsTxtOptions: {
-    policies: [
-      { userAgent: "*", allow: "/" },
-      { userAgent: "*", disallow: "/admin/" },
-    ],
+    policies: [{ userAgent: "*", allow: "/" }],
   },
 };
