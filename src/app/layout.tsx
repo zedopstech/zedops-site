@@ -67,6 +67,17 @@ export default function RootLayout({ children }: { children: ReactNode }) {
         />
         {/* Metadata */}
         <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <meta name="author" content="ZedOps" />
+        <meta name="robots" content="index, follow" />
+
+        {/* Canonical */}
+        <link rel="canonical" href="https://www.zedops.com" />
+        <link
+          rel="icon"
+          href="/images/favicon.ico"
+          type="image/x-icon"
+          sizes="16x16"
+        />
       </head>
       <body className="antialiased">
         <Header />
