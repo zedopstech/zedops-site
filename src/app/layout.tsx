@@ -11,7 +11,7 @@ export const metadata: Metadata = {
   keywords:
     "AI construction management, project management, construction software, ZedOps, streamline workflows, smarter construction",
   icons: {
-    icon: "/images/favicon.ico",
+    icon: "/favicon.ico",
   },
   openGraph: {
     type: "website",
@@ -72,12 +72,6 @@ export default function RootLayout({ children }: { children: ReactNode }) {
 
         {/* Canonical */}
         <link rel="canonical" href="https://www.zedops.com" />
-        <link
-          rel="icon"
-          href="/images/favicon.ico"
-          type="image/x-icon"
-          sizes="16x16"
-        />
       </head>
       <body className="antialiased">
         <Header />
