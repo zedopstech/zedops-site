@@ -1,50 +1,78 @@
 import "./globals.css";
-import Header from "@/Components/Home/Header";
 import Footer from "@/Components/Footer";
 import { ReactNode } from "react";
 import { Metadata } from "next";
-import Head from "next/head";
+import Header from "@/Components/Header";
 
 export const metadata: Metadata = {
-  title: "ZedOps - Revolutionize Your Construction Workflow",
+  title: "ZedOps - AI-Powered Construction Management",
   description:
-    "ZedOps is a leading construction management platform that streamlines project workflows, enhances collaboration, and drives efficiency for teams globally.",
+    "AI-powered construction management to streamline workflows, boost collaboration, and deliver projects smarter.",
   keywords:
-    "construction management, project management, construction software, ZedOps, streamline workflows",
+    "AI construction management, project management, construction software, ZedOps, streamline workflows, smarter construction",
   icons: {
-    icon: "/favicon-with-primary.ico",
+    icon: "/favicon.ico",
   },
   openGraph: {
     type: "website",
     url: "https://www.zedops.com",
-    title: "ZedOps - Revolutionize Your Construction Workflow",
+    title: "ZedOps - AI-Powered Construction Management",
     description:
-      "ZedOps is a leading construction management platform that streamlines project workflows, enhances collaboration, and drives efficiency for teams globally.",
+      "AI-powered construction management to streamline workflows, boost collaboration, and deliver projects smarter.",
     images: [
       {
-        url: "/og-image.png",
+        url: "/seo/open-graph.png",
         width: 1200,
         height: 630,
         alt: "ZedOps Open Graph Image",
       },
     ],
+    locale: "en_US",
   },
   twitter: {
     card: "summary_large_image",
-    title: "ZedOps - Revolutionize Your Construction Workflow",
+    title: "ZedOps - AI-Powered Construction Management",
     description:
-      "ZedOps is a leading construction management platform that streamlines project workflows, enhances collaboration, and drives efficiency for teams globally.",
-    images: ["/twitter-card-image.png"],
+      "AI-powered construction management to streamline workflows, boost collaboration, and deliver projects smarter",
+    images: ["/seo/twitter-banner.png"],
+    creator: "@zedopstech",
+  },
+  alternates: {
+    canonical: "https://www.zedops.com",
   },
 };
 
 export default function RootLayout({ children }: { children: ReactNode }) {
   return (
     <html lang="en">
-      <Head>
+      <head>
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify({
+              "@context": "https://schema.org",
+              "@type": "Organization",
+              name: "ZedOps",
+              url: "https://www.zedops.com",
+              logo: "https://www.zedops.com/seo/logo.png",
+              description:
+                "AI-powered construction management to streamline workflows, boost collaboration, and deliver projects smarter.",
+              sameAs: [
+                "https://www.linkedin.com/company/zedops",
+                "https://x.com/zedopstech",
+                "https://www.instagram.com/zedopstech",
+              ],
+            }),
+          }}
+        />
         {/* Metadata */}
         <meta name="viewport" content="width=device-width, initial-scale=1" />
-      </Head>
+        <meta name="author" content="ZedOps" />
+        <meta name="robots" content="index, follow" />
+
+        {/* Canonical */}
+        <link rel="canonical" href="https://www.zedops.com" />
+      </head>
       <body className="antialiased">
         <Header />
         {children}

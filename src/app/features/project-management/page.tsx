@@ -1,7 +1,5 @@
 "use client";
 import { useEffect, useState } from "react";
-import Image from "next/image";
-import Link from "next/link";
 import {
   Accordion,
   AccordionItem,
@@ -23,7 +21,10 @@ export default function ProjectManagementPage() {
 
       sections.forEach((section) => {
         const rect = section.getBoundingClientRect();
-        if (rect.top <= window.innerHeight * 0.5 && rect.bottom >= window.innerHeight * 0.5) {
+        if (
+          rect.top <= window.innerHeight * 0.5 &&
+          rect.bottom >= window.innerHeight * 0.5
+        ) {
           currentSection = section.id;
         }
       });
@@ -59,7 +60,9 @@ export default function ProjectManagementPage() {
                 </li>
                 <li
                   className={`flex items-center px-6 py-3 hover:bg-gray-200 rounded-lg ${
-                    activeSection === "daily-logs" ? "bg-gray-200 font-bold text-gray-900" : "text-gray-400"
+                    activeSection === "daily-logs"
+                      ? "bg-gray-200 font-bold"
+                      : ""
                   }`}
                 >
                   <LogOut className="h-6 w-6 text-orange-500" />
@@ -72,7 +75,9 @@ export default function ProjectManagementPage() {
                 </li>
                 <li
                   className={`flex items-center px-6 py-3 hover:bg-gray-200 rounded-lg ${
-                    activeSection === "scheduling" ? "bg-gray-200 font-bold text-gray-900" : "text-gray-400"
+                    activeSection === "scheduling"
+                      ? "bg-gray-200 font-bold"
+                      : ""
                   }`}
                 >
                   <Calendar className="h-6 w-6 text-orange-500" />
@@ -136,8 +141,8 @@ export default function ProjectManagementPage() {
                     Does it support remote team collaboration?
                   </AccordionTrigger>
                   <AccordionContent className="text-gray-900 text-left px-6 py-4 bg-white rounded-lg shadow-md">
-                    Absolutely! Most Project Management tools come with
-                    features like real-time collaboration, file sharing, and
+                    Absolutely! Most Project Management tools come with features
+                    like real-time collaboration, file sharing, and
                     communication tools to support remote teams.
                   </AccordionContent>
                 </AccordionItem>

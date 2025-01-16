@@ -14,113 +14,115 @@ body {
 
 @layer base {
   :root {
-    --background: 216 33% 97%; /* Procore Light Gray */
-    --foreground: 0 0% 20%; /* Procore Black */
-    --card: 216 33% 97%; /* Procore Light Gray */
-    --card-foreground: 0 0% 20%; /* Procore Black */
-    --popover: 216 33% 97%; /* Procore Light Gray */
-    --popover-foreground: 0 0% 20%; /* Procore Black */
+    --background: 182 76% 14%; /* Dark Teal Background */
+    --foreground: 0 0% 8%; /* Dark Foreground Text */
+    --card: 186 61% 10%; /* Darker Teal for Card Background */
+    --card-foreground: 90 100% 90%; /* Light Green Text for Cards */
+    --popover: 186 61% 10%; /* Darker Teal for Popover Background */
+    --popover-foreground: 90 100% 90%; /* Light Green Text for Popovers */
 
-    --primary: 20 94% 53%; /* Procore Orange */
-    --primary-foreground: 0 0% 100%; /* White */
+    --primary: 81 100% 90%; /* Green for Buttons or Primary Elements */
+    --primary-foreground: 182 76% 14%; /* Light Green Text for Primary Buttons */
 
-    --secondary: 216 33% 85%; /* Procore Secondary Light Gray */
-    --secondary-foreground: 0 0% 20%; /* Procore Black */
+    --secondary: 186 61% 10%; /* Dark Teal for Secondary Elements */
+    --secondary-foreground: 182 76% 14%; /* Light Green Text for Secondary Elements */
 
-    --muted: 216 33% 90%; /* Muted Light Gray */
-    --muted-foreground: 0 0% 50%; /* Gray */
+    --muted: 186 61% 10%; /* Dark Muted Background */
+    --muted-foreground: 0 0% 8%; /* Muted Foreground Text */
 
-    --accent: 0 0% 0%; /* Dark Black */
-    --accent-foreground: 0 0% 100%; /* White */
+    --accent: 158 74% 39%; /* Green for Accents */
+    --accent-foreground: 90 100% 90%; /* Light Green Text for Accents */
 
-    --destructive: 0 84% 50%; /* Procore Red */
-    --destructive-foreground: 0 0% 100%; /* White */
+    --destructive: 182 76% 14%; /* Dark Teal for Destructive Elements */
+    --destructive-foreground: 90 100% 90%; /* Light Green Text for Destructive Elements */
 
-    --border: 216 33% 85%; /* Light Gray Border */
-    --input: 216 33% 85%; /* Light Gray Input */
-    --ring: 20 94% 53%; /* Procore Orange */
+    --border: 0 0% 8%; /* Dark Border */
+    --input: 0 0% 8%; /* Dark Input Background */
+    --ring: 158 74% 39%; /* Green Ring for Focused Elements */
 
-    --chart-1: 20 94% 53%; /* Procore Orange */
-    --chart-2: 211 100% 50%; /* Procore Blue */
-    --chart-3: 0 84% 50%; /* Procore Red */
-    --chart-4: 48 100% 50%; /* Procore Green */
-    --chart-5: 36 100% 50%; /* Procore Yellow */
-    --chart-6: 197 100% 47%; /* Additional Blue */
-    --chart-7: 300 76% 72%; /* Purple */
-    --chart-8: 145 63% 49%; /* Teal */
-    --chart-9: 160 44% 41%; /* Olive */
-    --chart-10: 340 70% 55%; /* Pink */
+    --chart-1: 158 74% 39%; /* Procore Green */
+    --chart-2: 186 61% 10%; /* Darker Teal */
+    --chart-3: 182 76% 14%; /* Dark Teal */
+    --chart-4: 90 100% 90%; /* Light Green */
+    --chart-5: 0 0% 8%; /* Dark Foreground */
+    --chart-6: 186 61% 10%; /* Darker Teal */
+    --chart-7: 182 76% 14%; /* Dark Teal */
+    --chart-8: 90 100% 90%; /* Light Green */
+    --chart-9: 158 74% 39%; /* Procore Green */
+    --chart-10: 90 100% 90%; /* Light Green */
 
-    --body: 216 33% 97%; /* Procore Light Background */
-    --highlight: 48 100% 90%; /* Procore Green Highlight */
-    --disabled: 216 33% 85%; /* Light Disabled */
-    --shadow: 0 0% 0%; /* Black Shadow */
-    --ink: 0 0% 20%; /* Procore Black */
-    --ghost: 0 0% 100%; /* White */
+    --body: 182 76% 14%; /* Dark Teal Background */
+    --highlight: 158 74% 39%; /* Green Highlight */
+    --disabled: 186 61% 10%; /* Disabled Teal */
+    --shadow: 0 0% 8%; /* Dark Shadow */
+    --ink: 0 0% 8%; /* Dark Ink */
+    --ghost: 90 100% 90%; /* Light Green Ghost */
 
-    --radius: 0.4rem;
+    --radius: 0.6rem;
 
-    --sidebar-background: 0 0% 98%;
-
-    --sidebar-foreground: 240 5.3% 26.1%;
-
-    --sidebar-primary: 240 5.9% 10%;
-
-    --sidebar-primary-foreground: 0 0% 98%;
-
-    --sidebar-accent: 240 4.8% 95.9%;
-
-    --sidebar-accent-foreground: 240 5.9% 10%;
-
-    --sidebar-border: 220 13% 91%;
-
-    --sidebar-ring: 217.2 91.2% 59.8%;
+    --sidebar-background: 186 61% 10%; /* Sidebar Teal */
+    --sidebar-foreground: 90 100% 90%; /* Sidebar Light Green */
+    --sidebar-primary: 182 76% 14%; /* Sidebar Dark Teal */
+    --sidebar-primary-foreground: 90 100% 90%; /* Sidebar Light Green */
+    --sidebar-accent: 158 74% 39%; /* Sidebar Green Accent */
+    --sidebar-accent-foreground: 90 100% 90%; /* Sidebar Light Green Accent */
+    --sidebar-border: 186 61% 10%; /* Sidebar Border */
+    --sidebar-ring: 158 74% 39%; /* Sidebar Green Ring */
   }
 
   .dark {
-    --background: 0 0% 10%; /* Dark Background */
-    --foreground: 0 0% 90%; /* Light Foreground */
-    --card: 0 0% 15%; /* Dark Card */
-    --card-foreground: 0 0% 90%; /* Light Foreground */
-    --popover: 0 0% 15%; /* Dark Popover */
-    --popover-foreground: 0 0% 90%; /* Light Foreground */
+    --background: 0 0% 8%; /* Dark Background */
+    --foreground: 90 100% 90%; /* Light Green Foreground */
+    --card: 0 0% 8%; /* Dark Card */
+    --card-foreground: 90 100% 90%; /* Light Green Foreground */
+    --popover: 0 0% 8%; /* Dark Popover */
+    --popover-foreground: 90 100% 90%; /* Light Green Foreground */
 
-    --primary: 20 94% 53%; /* Procore Orange */
-    --primary-foreground: 0 0% 10%; /* Dark Foreground */
+    --primary: 158 74% 39%; /* Green for Primary Elements */
+    --primary-foreground: 90 100% 90%; /* Light Green for Primary Text */
 
-    --secondary: 0 0% 20%; /* Dark Gray */
-    --secondary-foreground: 0 0% 90%; /* Light Gray */
+    --secondary: 186 61% 10%; /* Darker Teal */
+    --secondary-foreground: 90 100% 90%; /* Light Green */
 
-    --muted: 0 0% 20%; /* Dark Muted */
-    --muted-foreground: 0 0% 60%; /* Muted Text */
+    --muted: 186 61% 10%; /* Darker Teal */
+    --muted-foreground: 0 0% 8%; /* Dark Foreground */
 
-    --accent: 211 100% 50%; /* Procore Blue */
-    --accent-foreground: 0 0% 90%; /* Light Foreground */
+    --accent: 158 74% 39%; /* Green Accent */
+    --accent-foreground: 90 100% 90%; /* Light Green Accent Text */
 
-    --destructive: 0 84% 50%; /* Procore Red */
-    --destructive-foreground: 0 0% 90%; /* Light Foreground */
+    --destructive: 182 76% 14%; /* Dark Teal */
+    --destructive-foreground: 90 100% 90%; /* Light Green */
 
-    --border: 0 0% 30%; /* Dark Border */
-    --input: 0 0% 30%; /* Dark Input */
-    --ring: 20 94% 53%; /* Procore Orange */
+    --border: 0 0% 8%; /* Dark Border */
+    --input: 0 0% 8%; /* Dark Input */
+    --ring: 158 74% 39%; /* Green Ring */
 
-    --chart-1: 20 94% 53%; /* Procore Orange */
-    --chart-2: 211 100% 50%; /* Procore Blue */
-    --chart-3: 0 84% 50%; /* Procore Red */
-    --chart-4: 48 100% 50%; /* Procore Green */
-    --chart-5: 36 100% 50%; /* Procore Yellow */
-    --chart-6: 197 100% 47%; /* Additional Blue */
-    --chart-7: 300 76% 72%; /* Purple */
-    --chart-8: 145 63% 49%; /* Teal */
-    --chart-9: 160 44% 41%; /* Olive */
-    --chart-10: 340 70% 55%; /* Pink */
+    --chart-1: 158 74% 39%; /* Procore Green */
+    --chart-2: 186 61% 10%; /* Darker Teal */
+    --chart-3: 182 76% 14%; /* Dark Teal */
+    --chart-4: 90 100% 90%; /* Light Green */
+    --chart-5: 0 0% 8%; /* Dark Foreground */
+    --chart-6: 186 61% 10%; /* Darker Teal */
+    --chart-7: 182 76% 14%; /* Dark Teal */
+    --chart-8: 90 100% 90%; /* Light Green */
+    --chart-9: 158 74% 39%; /* Procore Green */
+    --chart-10: 90 100% 90%; /* Light Green */
 
-    --body: 0 0% 15%; /* Dark Body Background */
-    --highlight: 48 100% 30%; /* Dark Green Highlight */
-    --disabled: 0 0% 30%; /* Dark Disabled */
-    --shadow: 0 0% 100%; /* Light Shadow */
-    --ink: 0 0% 90%; /* Light Ink */
-    --ghost: 0 0% 10%; /* Dark Ghost */ --sidebar-background: 240 5.9% 10%; --sidebar-foreground: 240 4.8% 95.9%; --sidebar-primary: 224.3 76.3% 48%; --sidebar-primary-foreground: 0 0% 100%; --sidebar-accent: 240 3.7% 15.9%; --sidebar-accent-foreground: 240 4.8% 95.9%; --sidebar-border: 240 3.7% 15.9%; --sidebar-ring: 217.2 91.2% 59.8%;
+    --body: 0 0% 8%; /* Dark Body Background */
+    --highlight: 158 74% 39%; /* Dark Green Highlight */
+    --disabled: 186 61% 10%; /* Disabled Teal */
+    --shadow: 0 0% 8%; /* Dark Shadow */
+    --ink: 90 100% 90%; /* Light Ink */
+    --ghost: 0 0% 8%; /* Dark Ghost */
+
+    --sidebar-background: 0 0% 8%; /* Sidebar Background */
+    --sidebar-foreground: 90 100% 90%; /* Sidebar Foreground */
+    --sidebar-primary: 182 76% 14%; /* Sidebar Primary */
+    --sidebar-primary-foreground: 90 100% 90%; /* Sidebar Primary Text */
+    --sidebar-accent: 158 74% 39%; /* Sidebar Accent */
+    --sidebar-accent-foreground: 90 100% 90%; /* Sidebar Accent Text */
+    --sidebar-border: 0 0% 8%; /* Sidebar Border */
+    --sidebar-ring: 158 74% 39%; /* Sidebar Green Ring */
   }
 }
 
@@ -146,7 +148,7 @@ body {
   filter: brightness(1.2); /* Brightens the gradient on hover */
 }
 .list-orange li::marker {
-  color: #FF5F1F; /* Orange color */
+  color: #ff5f1f; /* Orange color */
 }
 .no-scroll {
   overflow: hidden !important;

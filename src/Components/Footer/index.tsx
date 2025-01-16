@@ -1,11 +1,11 @@
 import { Instagram, Linkedin, Twitter } from "lucide-react";
-import Logo from "./Logo";
+import Logo from "../Common/Logo";
 import Link from "next/link";
 
 const Footer = () => {
   const FooterContent = {
     logoContent:
-      "Empowering construction with innovative solutions to simplify workflows, enhance collaboration, and drive success. Build smarter and achieve seamless project execution with ZedOps.",
+      "Streamlining construction operations with advanced intelligence to optimize workflows, improve collaboration, and ensure project success. Build efficiently and deliver exceptional results with ZedOps.",
     socialMedia: [
       { icon: Twitter, url: "https://x.com/zedopstech" },
       { icon: Linkedin, url: "https://www.linkedin.com/company/zedops/" },
@@ -16,7 +16,7 @@ const Footer = () => {
         title: "Explore",
         options: [
           { name: "Home", url: "#hero" },
-          { name: "Features", url: "#features" },
+          { name: "Solutions", url: "#solutions" },
           { name: "About Us", url: "/about-us" },
           { name: "Book a Demo", url: "/book-a-demo" },
         ],
@@ -29,7 +29,7 @@ const Footer = () => {
           { name: "Blog", url: "" },
           { name: "Case Studies", url: "" },
           { name: "FAQs", url: "" },
-          { name: "Safety Guidelines", url: "" },
+          { name: "Security", url: "" },
         ],
       },
       {
@@ -55,8 +55,8 @@ const Footer = () => {
   };
 
   return (
-    <footer className="bg-white">
-      <div className="pt-12 sm:pt-16 lg:pt-20 px-4 mx-auto sm:px-6 lg:px-8 max-w-7xl">
+    <footer className="text-white px-6 lg:px-0">
+      <div className="pt-12 sm:pt-16 lg:pt-20 mx-auto max-w-6xl">
         <div className="grid grid-cols-2 gap-x-8 gap-y-16 md:grid-cols-3 lg:grid-cols-6 lg:gap-x-20">
           {/* Logo Section */}
           <div className="col-span-2 md:col-span-3 lg:col-span-2">
@@ -71,7 +71,9 @@ const Footer = () => {
           {/* Footer Sections */}
           {FooterContent.sections.map((section, index) => (
             <div key={index}>
-              <p className="text-xs font-bold uppercase">{section.title}</p>
+              <p className="text-xs font-bold text-primary uppercase">
+                {section.title}
+              </p>
               <ul className="mt-6 space-y-5">
                 {section.options.map((option, idx) => (
                   <li key={idx}>
@@ -106,7 +108,7 @@ const Footer = () => {
                       href={item.url}
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="inline-flex items-center justify-center text-gray-500 transition-all duration-200 hover:text-primary"
+                      className="inline-flex items-center justify-center transition-all duration-200 hover:text-primary"
                     >
                       <item.icon className="w-5 h-5" />
                     </a>
@@ -116,9 +118,6 @@ const Footer = () => {
             </div>
           </div>
         </div>
-
-        {/* Divider */}
-        <hr className="mt-8 border-gray-200 lg:mt-8" />
       </div>
       {/* Footer Bottom */}
       <div className=" h-16 w-full flex flex-col items-center justify-center">

@@ -45,12 +45,12 @@ const FeatureContent = [
 
 const Features: React.FC = () => {
   return (
-    <div className="bg-gray-900 text-white py-16">
+    <div className="bg-background text-white py-16">
       <div className="max-w-4xl px-6 sm:px-8 lg:px-6 mx-auto text-center mb-8 lg:16">
-        <h2 className="text-3xl font-bold leading-tight sm:text-4xl xl:text-5xl">
+        <h2 className="text-3xl leading-tight sm:text-4xl xl:text-5xl">
           Empowering Smarter Construction
         </h2>
-        <p className="mt-4 text-lg sm: text-gray-300">
+        <p className="mt-4 text-lg text-gray-300">
           Discover tools that revolutionize how construction teams plan,
           collaborate, and deliver projects.
         </p>
@@ -58,7 +58,7 @@ const Features: React.FC = () => {
 
       {FeatureContent.map((item, index) => (
         <section key={index} className="py-16">
-          <div className="max-w-7xl mx-auto px-6 lg:px-8 grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+          <div className="max-w-6xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-12 items-center px-6 lg:px-0">
             {/* Adjust order for Image Section */}
             <div
               className={`${
@@ -70,7 +70,7 @@ const Features: React.FC = () => {
                 alt=""
                 width={700}
                 height={500}
-                className="rounded-lg shadow-lg object-cover"
+                className="rounded-md shadow-lg object-cover"
               />
             </div>
 

@@ -1,6 +1,6 @@
 "use client";
 import Footer from "@/Components/Footer";
-import Header from "@/Components/Home/Header";
+import Header from "@/Components/Header";
 import { Lock, MoveRight } from "lucide-react";
 import { useState } from "react";
 const ComingSoonContent = {
