@@ -1,34 +1,51 @@
-export default function Hero() {
+import Image from "next/image";
+import Link from "next/link";
+import { Button } from "@/Components/UI/button";
+
+const Hero = () => {
   return (
-    <div className="bg-white">
-      <div 
-        className="relative isolate px-6 lg:px-8 bg-cover bg-center" 
-        style={{ backgroundImage: "url('/bg-2.png')" }}
-      >
-        <div className="max-w-2xl py-32 sm:py-48 lg:py-36 flex flex-col justify-start items-start text-left pl-6">
-          <div>
-            <h1 className="text-balance text-5xl font-semibold tracking-tight text-gray-900 sm:text-7xl">
-              Material Management
-            </h1>
-            <h2 className="text-balance text-2xl font-semibold tracking-tight text-gray-900 sm:text-5xl">
-              Inventory
-            </h2>
-            <p className="mt-8 text-pretty text-lg font-medium text-gray-900 sm:text-xl">
-              Inventory management streamlines stock tracking, ensuring optimal levels
-              to reduce costs and prevent shortages. It boosts efficiency, supports demand,
-              and enhances overall operational control.
-            </p>
-            <div className="mt-10 flex items-start gap-x-6">
-              <a
-                href="#"
-                className="rounded-md bg-orange-600 px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-gray-900 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
-              >
-                Get started
-              </a>
-            </div>
-          </div>
+    <section
+      id="hero"
+      className="mx-auto max-w-6xl min-h-[94vh] gap-8 flex flex-col lg:grid lg:grid-cols-2 lg:gap-0 items-center overflow-hidden justify-between"
+    >
+      {/* Hero Text Section */}
+      <div className="flex flex-col md:w-3/4 lg:w-full px-6 lg:px-0 md:items-center justify-between lg:items-start lg:justify-center pt-4 md:pt-8 lg:pt-0 text-center lg:text-left">
+        <h1 className="mt-4 text-3xl text-start md:text-center lg:text-start lg:text-6xl  text-primary font-medium ">
+          Material Management
+        </h1>
+
+        <p className="mt-6 text-lg text-[#1BB387] text-start md:text-center lg:text-start font-medium leading-relaxed max-w-xl">
+          <span className="font-black text-xl text-primary">
+          Inventory
+          </span>{" "}
+        <br />
+        Inventory management streamlines stock tracking, ensuring optimal levels
+        to reduce costs and prevent shortages. It boosts efficiency, supports demand,
+        and enhances overall operational control.
+       </p>
+        <div className="mt-8 flex flex-row justify-start md:justify-center lg:justify-start items-center gap-4">
+          <Link href="/book-a-demo" title="Book a demo">
+            <Button className="px-8 py-6 font-medium">Get Started</Button>
+          </Link>
+          
         </div>
       </div>
-    </div>
+
+      {/* Hero Image Section */}
+      <div className="md:h-[60vh] lg:h-auto">
+        <Image
+          src="/hero inventory.png"
+          width={800}
+          height={400}
+          alt="Construction workers using ZedOps"
+          objectPosition="top center"
+          className="lg:rounded-xl shadow-lg" 
+         
+        />
+      </div>
+     
+    </section>
   );
-}
+};
+
+export default Hero;

@@ -43,25 +43,25 @@ const additionalFeatures = [
   ];
   export default function Example() {
     return (
-        <div className="overflow-hidden bg-orange-100 py-24 sm:py-32">
+        <div className="overflow-hidden bg-background py-24 sm:py-32">
           <div className="mx-auto max-w-7xl px-6 lg:px-8">
             {/* First Section */}
             <div className="mx-auto grid max-w-2xl grid-cols-1 gap-x-8 gap-y-16 sm:gap-y-20 lg:mx-0 lg:max-w-none lg:grid-cols-2">
               <div className="lg:pr-8 lg:pt-4">
                 <div className="lg:max-w-lg">
-                  <h2 className="text-base/7 font-bold text-indigo-600">Smarter Procurement</h2>
-                  <p className="mt-2 text-pretty text-4xl font-semibold tracking-tight text-gray-900 sm:text-3xl">
+                  <h2 className="text-base/7 font-bold text-primary">Smarter Procurement</h2>
+                  <p className="mt-2 text-pretty text-4xl font-semibold tracking-tight text-white sm:text-3xl">
                   Streamline Procurement, Deliver Excellence
                   </p>
-                  <p className="mt-6 text-lg/8 text-gray-600">
+                  <p className="mt-6 text-lg/8 text-gray-300">
                   Unlock tools that transform how procurement teams source, manage vendors, and ensure 
                   timely, cost-effective project deliveries.
                   </p>
-                  <dl className="mt-10 max-w-xl space-y-8 text-base/7 text-gray-600 lg:max-w-none">
+                  <dl className="mt-10 max-w-xl space-y-8 text-base/7 text-gray-300 lg:max-w-none">
                     {features.map((feature) => (
                       <div key={feature.name} className="relative pl-9">
-                        <dt className="inline font-semibold text-gray-900">
-                          <feature.icon aria-hidden="true" className="absolute left-1 top-1 size-5 text-orange-500" />
+                        <dt className="inline font-bold text-primary">
+                          <feature.icon aria-hidden="true" className="absolute left-1 top-1 size-5 text-white" />
                           {feature.name}
                         </dt>{' '}
                         <dd className="inline">{feature.description}</dd>
@@ -85,19 +85,19 @@ const additionalFeatures = [
               />
               <div className="lg:pr-8 lg:mt-4 lg:ml-32 lg:max-w-3xl min-h-[200px]">
                 <div className="lg:max-w-lg">
-                  <h2 className="text-base/7 font-bold text-indigo-600">Vendor Management</h2>
-                  <p className="mt-2 text-pretty text-4xl font-semibold tracking-tight text-gray-900 sm:text-3xl">
+                  <h2 className="text-base/7 font-bold text-primary">Vendor Management</h2>
+                  <p className="mt-2 text-pretty text-4xl font-semibold tracking-tight text-white sm:text-3xl">
                   Manage Vendors,Build Strong Partnerships
                   </p>
-                  <p className="mt-6 text-lg/8 text-gray-600">
+                  <p className="mt-6 text-lg/8 text-gray-300">
                   Effortlessly organize and evaluate suppliers with tools for tracking performance, 
                   managing contracts, and fostering strong vendor relationships.
                   </p>
-                  <dl className="mt-10  max-w-xl space-y-8 text-base/7 text-gray-600 lg:max-w-none">
+                  <dl className="mt-10  max-w-xl space-y-8 text-base/7 text-gray-300 lg:max-w-none">
                     {additionalFeatures.map((feature) => (
                       <div key={feature.name} className="relative pl-9">
-                        <dt className="inline font-semibold text-gray-900">
-                          <feature.icon aria-hidden="true" className="absolute left-1 top-1 size-5 text-orange-500" />
+                        <dt className="inline font-bold text-primary">
+                          <feature.icon aria-hidden="true" className="absolute left-1 top-1 size-5 text-white" />
                           {feature.name}
                         </dt>{' '}
                         <dd className="inline">{feature.description}</dd>
@@ -111,19 +111,19 @@ const additionalFeatures = [
             <div className="mx-auto grid max-w-2xl grid-cols-1 gap-x-8 gap-y-16 sm:gap-y-20 lg:mx-0 lg:max-w-none lg:grid-cols-2 mt-16">
               <div className="lg:pr-8 lg:pt-4">
                 <div className="lg:max-w-lg">
-                  <h2 className="text-base/7 font-bold text-indigo-600">Real-Time Purchase Tracking</h2>
-                  <p className="mt-2 text-pretty text-4xl font-semibold tracking-tight text-gray-900 sm:text-3xl">
+                  <h2 className="text-base/7 font-bold text-primary">Real-Time Purchase Tracking</h2>
+                  <p className="mt-2 text-pretty text-4xl font-semibold tracking-tight text-white sm:text-3xl">
                   Track Purchases Instantly, Stay Ahead
                   </p>
-                  <p className="mt-6 text-lg/8 text-gray-600">
+                  <p className="mt-6 text-lg/8 text-gray-300">
                    Conduct regular audits to ensure inventory accuracy and compliance.Generate detailed reports to gain insights, 
                    track performance, and make informed decisions.
                   </p>
-                  <dl className="mt-10 max-w-xl space-y-8 text-base/7 text-gray-600 lg:max-w-none">
+                  <dl className="mt-10 max-w-xl space-y-8 text-base/7 text-gray-300 lg:max-w-none">
                     {thirdSectionFeatures.map((feature) => (
                       <div key={feature.name} className="relative pl-9">
-                        <dt className="inline font-semibold text-gray-900">
-                          <feature.icon aria-hidden="true" className="absolute left-1 top-1 size-5 text-orange-500" />
+                        <dt className="inline font-bold text-primary">
+                          <feature.icon aria-hidden="true" className="absolute left-1 top-1 size-5 text-white" />
                           {feature.name}
                         </dt>{' '}
                         <dd className="inline">{feature.description}</dd>

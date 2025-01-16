@@ -36,13 +36,13 @@ const featuresMenu = [
       },
       {
         title: "BIM",
-        href: "/solutions/bim",
+        href: "/features/bim",
         description: "Building Information Modeling for efficient planning.",
         icon: Building2,
       },
       {
         title: "Estimation and Take-off",
-        href: "/solutions/estimation-and-take-off",
+        href: "/features/estimation",
         description: "Accurate project cost estimation tools.",
         icon: DollarSign,
       },
