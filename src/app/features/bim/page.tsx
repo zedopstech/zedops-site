@@ -6,51 +6,22 @@ import {
   AccordionContent,
 } from "@/Components/UI/accordion";
 import { Button } from "@/Components/UI/button";
+import Hero from "../components/solutions/Hero";
 
 
 export default function BIMPage() {
   return (
-    <div className="min-h-screen bg-gray-50">
-      {/* Navigation Bar */}
-     
-
-      {/* Hero Section */}
-      <section className="bg-blue-50 py-14" style={{backgroundImage:"url('/bg bim.webp')"}}>
-        <div className="container mx-auto flex flex-col md:flex-row items-center">
-          <div className="md:w-1/2 text-center md:text-left ml-16">
-            <h1 className="text-4xl font-bold text-gray-900 mb-4">BIM</h1>
-            <p className="text-gray-700 text-lg">
-              BIM software for construction managemnt
-            </p>
-            <h1 className="text-4xl font-bold text-gray-900 mb-4">Constructing dreams,one brick at a time</h1>
-            <p className="text-gray-700 text-lg">
-              Revolutionize your construction projects with smarter planning and enhanced collaboration.
-            </p>
-            <div className="mt-6 flex justify-center md:justify-start gap-4">
-        <Button  variant={"secondary"} size="lg" className="bg-black text-white hover:bg-orange-500">
-          Watch Demo
-        </Button>
-        <Button  variant={"secondary"} size="lg"className="bg-white text-black hover:bg-orange-500" >
-          Get Started
-        </Button>
-        </div>
-       </div>
-      <div className="md:w-1/2 mt-8 md:mt-0">
-      {/* Video that behaves like a GIF */}
-      <video
-        autoPlay
-        loop
-        muted
-        playsInline
-        className="mx-auto rounded-lg shadow-lg w-98 h-56 object-cover"
-      >
-      <source src="/demo bim.mp4" type="video/mp4" />
-        Your browser does not support the video tag.
-      </video>
-    </div>
-    </div>
-      </section>
-
+ <div>
+    <Hero 
+    title="Tendering Management"
+    subtitle='BIM'
+    description="Building Information Modeling (BIM) is a transformative approach to construction project management that integrates technology, processes, and people to create a collaborative and data-rich environment. "
+    buttonLabel="Get Started"
+    imageSrc="/solutions/bim-hero.jpg"
+    imageAlt="Construction workers using ZedOps"
+    linkHref="/book-a-demo"
+    
+    />
       {/* Collaboration Section */}
       <section className="container mx-auto py-12 flex flex-col md:flex-row items-center px-4">
         <div className="md:w-1/2 ml-16">
@@ -193,6 +164,6 @@ export default function BIMPage() {
           </div>
         </div>
       </section>
-    </div>
+      </div>
   );
 }

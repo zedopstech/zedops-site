@@ -1,5 +1,4 @@
 import React from 'react'
-import HeroHeader from './HeroHeader'
 import HeaderSection from './HeaderSection'
 import Sectionmain from './Sectionmain'
 import Sectioncto from './Sectioncto'
@@ -9,12 +8,21 @@ import {
     AccordionTrigger,
     AccordionContent,
   } from "@/Components/UI/accordion";
+import Hero from '../components/solutions/Hero'
 
 export default function ProcurementPage() {
   return (
     <div>
-        <HeroHeader />
-        <HeaderSection />
+      <Hero 
+       title="Material Management"
+       subtitle='Procurement'
+       description="Procurement is the strategic process of sourcing and acquiring the materials, services, and resources needed to ensure project success. "
+       buttonLabel="Get Started"
+       imageSrc="/solutions/procurement-hero.jpg"
+       imageAlt="Construction workers using ZedOps"
+       linkHref="/book-a-demo"
+     />
+       <HeaderSection />
         <Sectionmain />
         <Sectioncto />
          {/* FAQ Section */}

@@ -1,5 +1,4 @@
 import React from 'react'
-import HeroSection from './HeroSection'
 import Headerfeature from './Headerfeature'
 import Mainsection from './Mainsection'
 import Ctosection from './Ctosection'
@@ -9,12 +8,23 @@ import {
   AccordionTrigger,
   AccordionContent,
 } from "@/Components/UI/accordion";
+import Hero from '../components/solutions/Hero'
 
 
 export default function Inventorypage() {
   return (
     <div>
-        <HeroSection />
+        <Hero 
+        title="Material Management"
+        subtitle='Inventory'
+        description=" Inventory management streamlines stock tracking, ensuring optimal levels
+        to reduce costs and prevent shortages. It boosts efficiency, supports demand,
+        and enhances overall operational control. "
+        buttonLabel="Get Started"
+        imageSrc="/solutions/inventory-hero.jpg"
+        imageAlt="Construction workers using ZedOps"
+        linkHref="/book-a-demo"
+        />
         <Headerfeature />
         <Mainsection />
         <Ctosection />

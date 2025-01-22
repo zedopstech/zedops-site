@@ -61,8 +61,7 @@ export default function ProjectManagementPage() {
                 <li
                   className={`flex items-center px-6 py-3 hover:bg-gray-200 rounded-lg ${
                     activeSection === "daily-logs"
-                      ? "bg-gray-200 font-bold"
-                      : ""
+                      ? "bg-gray-200 font-bold text-gray-900" : "text-gray-400"
                   }`}
                 >
                   <LogOut className="h-6 w-6 text-orange-500" />
@@ -76,8 +75,7 @@ export default function ProjectManagementPage() {
                 <li
                   className={`flex items-center px-6 py-3 hover:bg-gray-200 rounded-lg ${
                     activeSection === "scheduling"
-                      ? "bg-gray-200 font-bold"
-                      : ""
+                      ? "bg-gray-200 font-bold text-gray-900" : "text-gray-400"
                   }`}
                 >
                   <Calendar className="h-6 w-6 text-orange-500" />
@@ -97,7 +95,6 @@ export default function ProjectManagementPage() {
         </div>
 
         <Cto />
-
         {/* FAQ Section */}
         <section id="projects" className="bg-gray-100 py-12">
           <div className="container mx-auto flex justify-center items-center px-4">
