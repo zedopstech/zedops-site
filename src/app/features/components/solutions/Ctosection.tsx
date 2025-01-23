@@ -20,7 +20,7 @@ const CtaSection: React.FC<CtaSectionProps> = ({
   button2Link,
 }) => {
   return (
-    <div className="bg-green-100 p-20 rounded-lg shadow-md max-w-7xl mx-auto flex flex-col md:flex-row items-center justify-between mt-[-50px]">
+    <div className="bg-green-100 p-20 rounded-lg shadow-md max-w-6xl mx-auto flex flex-col md:flex-row items-center justify-between mt-[-50px]">
 
 
       <div>

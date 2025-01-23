@@ -29,10 +29,10 @@ const AdvancedSegmentation: React.FC<AdvancedSegmentationProps> = ({ title, desc
       )
     }
       {/* Right Side - Content */}
-      <div className="md:w-2/3 ml-10"> 
+      <div className="md:w-2/3"> 
         <h4 className="text-[#1BB387] font-semibold uppercase text-sm">Personalization</h4>
         <h2 className="text-6xl font-semibold text-background">{title}</h2>
-        <p className="mt-4 text-gray-600">{description}</p>
+        <p className="mt-4 text-gray-600 max-w-xs">{description}</p>
 
         {/* Features Section */}
         <div className="mt-7 space-y-7">
@@ -43,7 +43,7 @@ const AdvancedSegmentation: React.FC<AdvancedSegmentationProps> = ({ title, desc
               </div>
               <div>
                 <h3 className="font-semibold">{feature.title}</h3>
-                <p className="text-gray-600">{feature.description}</p>
+                <p className="text-gray-600 max-w-xs">{feature.description}</p>
               </div>
             </div>
           ))}
