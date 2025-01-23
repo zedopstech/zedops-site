@@ -28,15 +28,15 @@ const Features: React.FC<FeaturesProps> = ({ features }) => {
           {features.map((feature, index) => (
             <div
               key={index}
-              className="bg-gray-500 p-8 rounded-lg flex flex-col items-center text-center transform transition-transform duration-300 hover:scale-105 hover:bg-gray-600 hover:shadow-lg"
+              className="bg-gray-500 p-8 rounded-lg flex flex-col items-start  transform transition-transform duration-300 hover:scale-105 hover:bg-gray-600 hover:shadow-lg"
             >
-              <div className="bg-black p-4 mb-4 rounded-full flex items-center justify-center">
+              <div className="bg-black p-2 mb-4 flex items-center justify-center">
                 {feature.icon}
               </div>
-              <h3 className="text-xl md:text-2xl text-white font-bold mb-2">
+              <h3 className="text-xl md:text-1xl text-white font-bold mb-1">
                 {feature.title}
               </h3>
-              <p className="text-gray-300 mb-4">{feature.description}</p>
+              <p className="text-gray-300 mb-3 items-start">{feature.description}</p>
             </div>
           ))}
         </div>
