@@ -75,7 +75,8 @@ export default function EstimationPage() {
     ],
   };
 
-  const data = {
+  const mainSectionData = [
+    {
     image: "/solutions/estimation section.jpg", // Path to your left-side image
     title: "Advanced segmentation",
     description: "Avoid sending batch and blast campaigns when you can deliver personalized messages at scale.",
@@ -97,8 +98,8 @@ export default function EstimationPage() {
       },
     ],
    
-  };
-  const data1 = {
+  },
+  {
     image: "/solutions/estimation section-1.jpg", // Path to your left-side image
     imageOnRight :"true",
     title: "Advanced segmentation",
@@ -121,7 +122,8 @@ export default function EstimationPage() {
       },
     ],
    
-  };
+  },
+];
   const featureData = [
     {
       icon: <LucideMousePointerClick className="text-green-700" />,
@@ -290,8 +292,7 @@ export default function EstimationPage() {
       {/* Control Section */}
       <Testimonals {...TestimonalsSectionProps} />
 
-      <Mainsection {...data} />
-      <Mainsection {...data1} imageOnRight={true} />
+      <Mainsection sections={mainSectionData} />
 
       <Emailfeautres features={featureData}  />
       <Featurecards features={features} />
