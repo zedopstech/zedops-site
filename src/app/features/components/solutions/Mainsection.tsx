@@ -36,7 +36,7 @@ const Mainsection: React.FC<{ sections: SectionData[] }> = ({ sections }) => {
               
               {/* Content Section */}
               <div className="md:w-2/3"> 
-                <h4 className="text-[#1BB387] font-semibold uppercase text-sm">Personalization</h4>
+                <h4 className="text-[#1BB387] font-semibold uppercase text-sm ml-4">Personalization</h4>
                 <h2 className="text-6xl font-semibold text-background">{section.title}</h2>
                 <p className="mt-4 text-gray-600 max-w-xs">{section.description}</p>
 
@@ -58,34 +58,33 @@ const Mainsection: React.FC<{ sections: SectionData[] }> = ({ sections }) => {
             </>
           ) : (
             <>
-               {/* Image Section */}
-               <div className="md:w-2/3 ml-28">
-                 <h4 className="text-[#1BB387] font-semibold uppercase text-sm">Personalization</h4>
-                <h2 className="text-6xl font-semibold text-background">{section.title}</h2>
-                <p className="mt-4 text-gray-600 max-w-xs">{section.description}</p>
+             <div className="w-full md:w-3/3 md:ml-40 px-4 md:px-0"> {/* Added padding for mobile */}
+                <h4 className="text-[#1BB387] font-semibold uppercase text-sm ml-4">Personalization</h4>
+               <h2 className="text-6xl font-semibold text-background">{section.title}</h2> {/* Responsive font size */}
+               <p className="mt-4 text-gray-600 max-w-xs">{section.description}</p>
 
-                {/* Features Section */}
-                <div className="mt-7 space-y-7">
-                  {section.features.map((feature, index) => (
-                    <div key={index} className="flex items-start gap-2">
-                      <div className="bg-green-100 p-2 rounded">
-                        <img src={feature.icon} alt={feature.title} className="w-6 h-6" />
-                      </div>
-                      <div>
-                        <h3 className="font-semibold">{feature.title}</h3>
-                        <p className="text-gray-600 max-w-xs">{feature.description}</p>
-                      </div>
-                    </div>
-                  ))}
+                 {/* Features Section */}
+                 <div className="mt-7 space-y-7">
+                 {section.features.map((feature, index) => (
+                 <div key={index} className="flex items-start gap-4"> {/* Adjusted gap for better spacing */}
+                 <div className="bg-green-100 p-2 rounded flex-shrink-0"> {/* Prevent icon from resizing */}
+                 <img src={feature.icon} alt={feature.title} className="w-6 h-6" />
+                  </div>
+                  <div>
+                   <h3 className="font-semibold">{feature.title}</h3>
+                   <p className="text-gray-600 max-w-xs">{feature.description}</p>
+                 </div>
                 </div>
-              </div>
+                 ))}
+                 </div>
+               </div>
               
               {/* Content Section */}
-              <div className="md:w-3/3 w-5/6 mx-auto"> 
+              <div className="md:w-3/3 w-full md:ml-0"> 
               <img 
                   src={section.image} 
                   alt={section.title} 
-                  className="w-full md:max-w-lg lg:max-w-1xl mx-auto"
+                  className="w-full md:max-w-lg lg:max-w-1xl"
                 />
                
               </div>

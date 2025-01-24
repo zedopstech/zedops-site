@@ -13,30 +13,30 @@ interface FeaturesProps {
 const Features: React.FC<FeaturesProps> = ({ features }) => {
   return (
     <div className="bg-black text-white py-24">
-      <div className="container mx-auto px-6 md:px-12 lg:px-48">
+      <div className="container mx-auto px-4 sm:px-6 md:px-12 lg:px-32 xl:px-48">
         {/* Section Heading */}
-        <h2 className="text-[#1BB387] font-semibold text-center mb-4">Resources</h2>
-        <h2 className="text-4xl md:text-5xl font-semibold text-center mb-4">
+        <h2 className="text-[#1BB387] font-semibold text-center mb-1">Resources</h2>
+        <h2 className="text-3xl sm:text-4xl md:text-5xl font-semibold text-center mb-4">
           Master email marketing
         </h2>
-        <p className="text-center text-gray-400 mb-12">
+        <p className="text-center text-gray-400 text-sm sm:text-base mb-12">
           Explore best practices, expert tips, and guides for an effective email marketing strategy.
         </p>
 
         {/* Features Section */}
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8">
           {features.map((feature, index) => (
             <div
               key={index}
-              className="bg-gray-500 p-8 rounded-lg flex flex-col items-start  transform transition-transform duration-300 hover:scale-105 hover:bg-gray-600 hover:shadow-lg"
+              className="bg-gray-700 p-6 md:p-8 rounded-lg flex flex-col items-start transform transition-transform duration-300 hover:scale-105 hover:bg-gray-600 hover:shadow-lg"
             >
-              <div className="bg-black p-2 mb-4 flex items-center justify-center">
+              <div className="bg-black p-4 mb-4 flex items-center justify-center rounded-full">
                 {feature.icon}
               </div>
-              <h3 className="text-xl md:text-1xl text-white font-bold mb-1">
+              <h3 className="text-lg sm:text-xl text-white font-bold mb-2">
                 {feature.title}
               </h3>
-              <p className="text-gray-300 mb-3 items-start">{feature.description}</p>
+              <p className="text-gray-300 text-sm sm:text-base">{feature.description}</p>
             </div>
           ))}
         </div>

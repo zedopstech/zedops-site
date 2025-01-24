@@ -1,12 +1,12 @@
 import React from "react";
 import Hero from "../components/solutions/Hero";
-import HeroSection from "../components/solutions/Herosection";
-import FeaturesSection from "../components/solutions/Featuresection";
+import MainHero from "../components/solutions/MainHero";
+import FeaturesSection from "../components/solutions/FeaturesSection";
 import Testimonals from "../components/solutions/Testimonals";
-import Mainsection from "../components/solutions/Mainsection";
-import Emailfeautres from "../components/solutions/Emailfeatures";
-import Featurecards from "../components/solutions/Featurecards";
-import Ctosection from "../components/solutions/Ctosection";
+import MainSection from "../components/solutions/Mainsection";
+import EmailFeautres from "../components/solutions/Emailfeatures";
+import FeatureCards from "../components/solutions/Featurecards";
+import CtoSection from "../components/solutions/Ctosection";
 import {CircleArrowOutDownLeft,Volume,Sparkles,LucideMousePointerClick,LucideCode ,LucideEye,LucideLink2} from 'lucide-react';
 
 export default function EstimationPage() {
@@ -284,7 +284,7 @@ export default function EstimationPage() {
       <Hero {...heroProps} />
 
       {/* Hero Content Section */}
-      <HeroSection {...heroSectionProps} />
+      <MainHero {...heroSectionProps} />
 
       {/* Features Section */}
       <FeaturesSection {...featuresSectionProps} />
@@ -292,11 +292,11 @@ export default function EstimationPage() {
       {/* Control Section */}
       <Testimonals {...TestimonalsSectionProps} />
 
-      <Mainsection sections={mainSectionData} />
+      <MainSection sections={mainSectionData} />
 
-      <Emailfeautres features={featureData}  />
-      <Featurecards features={features} />
-      <Ctosection {...ctaProps} />
+      <EmailFeautres features={featureData}  />
+      <FeatureCards features={features} />
+      <CtoSection {...ctaProps} />
     
       </div>
 

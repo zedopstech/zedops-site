@@ -20,11 +20,9 @@ const CtaSection: React.FC<CtaSectionProps> = ({
   button2Link,
 }) => {
   return (
-    <div className="bg-green-100 p-20 rounded-lg shadow-md max-w-6xl mx-auto flex flex-col md:flex-row items-center justify-between mt-[-50px]">
-
-
-      <div>
-        <h2 className="text-3xl font-bold text-gray-900">{title}</h2>
+    <div className="bg-green-100 p-20 rounded-lg shadow-md max-w-6xl mx-auto flex flex-col md:flex-row items-center justify-between mt-[-40px]">
+        <div>
+        <h2 className="text-3xl font-semibold text-background">{title}</h2>
         <p className="text-xl text-gray-700 mt-2">{description}</p>
         <ul className="flex space-x-4 text-gray-600 mt-4">
           {benefits.map((benefit, index) => (
