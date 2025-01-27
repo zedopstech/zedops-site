@@ -23,9 +23,9 @@ const ControlSection: React.FC<ControlSectionProps> = ({
 }) => {
   return (
     <section className="bg-white py-16">
-      <div className="max-w-[80rem] mx-auto text-center px-4 lg:px-12">
+      <div className="max-w-[80rem] mx-auto text-center px-4 lg:px-10">
         <h3 className="text-[#1BB387] font-semibold text-lg">{subtitle}</h3>
-        <h2 className="text-5xl lg:text-6xl  text-background mt-2">
+        <h2 className="text-5xl lg:text-5xl font-semibold text-background mt-2">
           {title}
         </h2>
 
@@ -46,7 +46,7 @@ const ControlSection: React.FC<ControlSectionProps> = ({
           {features.map((feature, index) => (
             <div
               key={index}
-              className="flex text-left items-start space-x-4 p-1 hover:shadow-md transition-transform transform hover:scale-105" // Further reduced padding and hover scale
+              className="flex text-left items-start space-x-4 p-5" // Further reduced padding and hover scale
             >
               {/* Icon at Top-Left */}
               {feature.icon && (

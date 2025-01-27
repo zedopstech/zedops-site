@@ -58,16 +58,16 @@ const Mainsection: React.FC<{ sections: SectionData[] }> = ({ sections }) => {
             </>
           ) : (
             <>
-             <div className="w-full md:w-3/3 md:ml-40 px-4 md:px-0"> {/* Added padding for mobile */}
+             <div className="w-full md:w-3/3 md:ml-40 px-4 md:px-0"> 
                 <h4 className="text-[#1BB387] font-semibold uppercase text-sm ml-4">Personalization</h4>
-               <h2 className="text-6xl font-semibold text-background">{section.title}</h2> {/* Responsive font size */}
+               <h2 className="text-6xl font-semibold text-background">{section.title}</h2> 
                <p className="mt-4 text-gray-600 max-w-xs">{section.description}</p>
 
                  {/* Features Section */}
                  <div className="mt-7 space-y-7">
                  {section.features.map((feature, index) => (
-                 <div key={index} className="flex items-start gap-4"> {/* Adjusted gap for better spacing */}
-                 <div className="bg-green-100 p-2 rounded flex-shrink-0"> {/* Prevent icon from resizing */}
+                 <div key={index} className="flex items-start gap-4"> 
+                 <div className="bg-green-100 p-2 rounded flex-shrink-0"> 
                  <img src={feature.icon} alt={feature.title} className="w-6 h-6" />
                   </div>
                   <div>
@@ -80,7 +80,7 @@ const Mainsection: React.FC<{ sections: SectionData[] }> = ({ sections }) => {
                </div>
               
               {/* Content Section */}
-              <div className="md:w-3/3 w-full md:ml-0"> 
+              <div className="md:w-3/3 w-full md:mr-12"> 
               <img 
                   src={section.image} 
                   alt={section.title} 

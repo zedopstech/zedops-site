@@ -22,13 +22,13 @@ const HeroSection: React.FC<HeroSectionProps> = ({
       <h2 className="mt-2 text-lg lg:text-xl font-semibold text-[#1BB387]">
           {subtitle}
         </h2>
-        <h1 className="text-4xl lg:text-6xl  text-background">{title}</h1>
+        <h1 className="text-4xl lg:text-5xl font-semibold text-background">{title}</h1>
        
         <p className="mt-4 text-gray-600 leading-relaxed">{description}</p>
         <div className="mt-6">
           <a
             href={buttonLink}
-            className="px-6 py-3 text-gray-700 rounded-md shadow-md hover:bg-background transition-all"
+            className="px-6 py-3 text-gray-700 rounded-md shadow-md hover:bg-primary  transition-all"
           >
             {buttonLabel}
           </a>

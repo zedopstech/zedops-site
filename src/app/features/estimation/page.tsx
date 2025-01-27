@@ -3,19 +3,18 @@ import Hero from "../components/solutions/Hero";
 import MainHero from "../components/solutions/MainHero";
 import FeaturesSection from "../components/solutions/FeaturesSection";
 import Testimonals from "../components/solutions/Testimonals";
-import MainSection from "../components/solutions/Mainsection";
-import EmailFeautres from "../components/solutions/Emailfeatures";
-import FeatureCards from "../components/solutions/Featurecards";
-import CtoSection from "../components/solutions/Ctosection";
+import MainSection from "../components/solutions/MainSection";
+import EmailFeautres from "../components/solutions/EmailFeatures";
+import FeatureCards from "../components/solutions/FeatureCards";
+import CtoSection from "../components/solutions/CtoSection";
 import {CircleArrowOutDownLeft,Volume,Sparkles,LucideMousePointerClick,LucideCode ,LucideEye,LucideLink2} from 'lucide-react';
 
 export default function EstimationPage() {
   // Props configuration
   const heroProps = {
-    title: "Tendering Management",
     subtitle: "Estimation",
     description:
-      "Accelerate project initiation with precise cost estimates and optimized efficiency.",
+    "Effortlessly estimate your projects with precision. Explore accurate tools designed to simplify planning and streamline your workflow.",
     buttonLabel: "Get Started",
     imageSrc: "/solutions/estimation-hero.jpg",
     imageAlt: "Construction workers using ZedOps",
@@ -57,19 +56,19 @@ export default function EstimationPage() {
       {
         title: "Automated, on-time delivery",
         description:
-          "Leverage campaigns to create automated email touchpoints that build relationships on your behalf.Whether a single email or a series, let automation take the wheel so you can focus on other parts of your business.",
+          "Leverage campaigns to create automated email touchpoints that build relationships on your behalf.Whether a single email or a series, let automation.",
         icon:  <CircleArrowOutDownLeft size={24} />,
       },
       {
-        title: "Evergreen and predictable messaging",
+        title: "Evergreen and predictable",
         description:
-          "Maintain a consistent presence in your subscriber's inbox with regular broadcasts and relevant updates.Whether a single email or a series, let automation take the wheel so you can focus on other parts of your business.",
+          "Maintain a consistent presence in your subscriber's inbox with regular broadcasts and relevant updates.Whether a single email or a.",
         icon: <Volume size={24} />,
       },
       {
-        title: "Optimally timed, perfectly positioned",
+        title: "Optimally timed, perfectly",
         description:
-          "Ensure precise timing and strategic placement of your automated touchpoints and broadcasts.Whether a single email or a series, let automation take the wheel so you can focus on other parts of your business.",
+          "Ensure precise timing and strategic placement of your automated touchpoints and broadcasts.Whether a single email or a series.",
         icon: <Sparkles size={24} />,
       },
     ],
@@ -282,16 +281,12 @@ export default function EstimationPage() {
     <div>
       {/* Hero Section */}
       <Hero {...heroProps} />
-
       {/* Hero Content Section */}
       <MainHero {...heroSectionProps} />
-
       {/* Features Section */}
       <FeaturesSection {...featuresSectionProps} />
-
       {/* Control Section */}
       <Testimonals {...TestimonalsSectionProps} />
-
       <MainSection sections={mainSectionData} />
 
       <EmailFeautres features={featureData}  />
@@ -303,70 +298,4 @@ export default function EstimationPage() {
 )
 }
 
-        {/* <Mainsection/> */}
-        {/* <Ctosection/> */}
-          {/* FAQ Section */}
-    
-     {/* <section id="projects" className="bg-gray-200 ">
-             <div className="mt-18 bg-gray-50 py-16">
-                     <div className="max-w-5xl mx-auto px-6">
-                       <h2 className="text-3xl font-bold text-background text-center sm:text-4xl">
-                         Frequently Asked Questions
-                       </h2>
-                       <p className="mt-4 text-lg text-background text-center">
-                         {" Have questions? We've got answers. Here's what you need to know"}
-                       </p>
-                       <div className="mt-8">
-                         <Accordion type="single" collapsible>
-                           {/* FAQ Item 1 */}
-            //                <AccordionItem value="faq-1">
-            //                  <AccordionTrigger className="lg:text-2xl font-semibold hover:no-underline text-background text-start">
-            //                  What is construction estimation
-            //                </AccordionTrigger>
-            //                  <AccordionContent className="mt-2 lg:text-lg text-background">
-            //                  Construction estimation involves determining the costs, resources, and time 
-            //                  needed to complete a project. It is crucial for
-            //                  budgeting, planning, and ensuring the project's financial feasibility.
-            //                </AccordionContent>
-            //                </AccordionItem>
-             
-            //                {/* FAQ Item 2 */}
-            //                <AccordionItem value="faq-2">
-            //                  <AccordionTrigger className="text-start lg:text-2xl hover:no-underline font-semibold text-background">
-            //                  How do advanced estimation tools improve accuracy?
-            //                  </AccordionTrigger>
-            //                  <AccordionContent className="mt-2 lg:text-lg hover:no-underline text-background">
-            //                  Advanced tools use real-time data, templates, and AI-driven insights to minimize errors, provide detailed breakdowns,
-            //                 and optimize resource allocation, leading to more precise estimates.
-            //                 </AccordionContent>
-            //                </AccordionItem>
-             
-            //                {/* FAQ Item 3 */}
-            //                <AccordionItem value="faq-3">
-            //                  <AccordionTrigger className="lg:text-2xl font-semibold hover:no-underline text-background text-center lg:text-left">
-            //                  What factors influence the cost estimation process?
-            //                </AccordionTrigger>
-            //                  <AccordionContent className="mt-2 lg:text-lg text-background">
-            //                  Key factors include material costs, labor rates, project scope, location, equipment, and potential contingencies.
-            //                  Accurate estimation requires considering all these variables.
-            //                  </AccordionContent>
-            //                </AccordionItem>
-         
-            //               {/* FAQ Item 4 */}
-            //                <AccordionItem value="faq-4">
-            //                  <AccordionTrigger className="lg:text-2xl font-semibold hover:no-underline text-background text-center lg:text-left">
-            //                  Can estimation tools integrate with other project management software?
-            //                </AccordionTrigger>
-            //                  <AccordionContent className="mt-2 lg:text-lg text-background">
-            //                  Yes, modern estimation tools often integrate seamlessly with project management, procurement, 
-            //                  and accounting software, enabling streamlined workflows and better coordination.
-            //               </AccordionContent>
-            //                </AccordionItem>
-            //              </Accordion>
-            //            </div>
-            //          </div>
-            //        </div>
-            // </section> */}
-   
-    
- 
+       

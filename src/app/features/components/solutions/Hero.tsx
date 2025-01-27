@@ -4,7 +4,6 @@ import Link from "next/link";
 import { Button } from "@/Components/UI/button";
 
 interface HeroProps {
-  title ?: string;
   subtitle ?: string;
   description ?: string;
   buttonLabel?: string;
@@ -13,7 +12,7 @@ interface HeroProps {
   linkHref : string;
 }
 
-const Hero: React.FC<HeroProps> = ( { title, subtitle, description, buttonLabel, imageSrc, imageAlt, linkHref } ) => {
+const Hero: React.FC<HeroProps> = ( {subtitle, description, buttonLabel, imageSrc, imageAlt, linkHref } ) => {
  return (
     <section
       id="hero"
@@ -21,15 +20,13 @@ const Hero: React.FC<HeroProps> = ( { title, subtitle, description, buttonLabel,
     >
       {/* Hero Text Section */}
       <div className="flex flex-col md:w-3/4 lg:w-full px-6 lg:px-0 md:items-center justify-between lg:items-start lg:justify-center pt-4 md:pt-8 lg:pt-0 text-center lg:text-left">
-        <h1 className="mt-4 text-3xl text-start md:text-center lg:text-start lg:text-6xl text-primary font-medium">
-          {title}
-        </h1>
+       
         {subtitle && 
-        <h1 className="mt-4 text-3xl text-start md:text-center lg:text-start lg:text-6xl text-primary font-medium">
+        <h1 className="mb-4 text-3xl text-start md:text-center lg:text-start lg:text-6xl text-primary font-medium">
           {subtitle}
         </h1> 
         }
-        <p className="mt-6 text-lg text-[#1BB387] text-start md:text-center lg:text-start font-bold leading-relaxed max-w-xl">
+        <p className="mt-6 text-lg text-[#1BB387] text-start md:text-center lg:text-start font-semibold leading-relaxed max-w-lg">
           {description}
         </p>
         {buttonLabel &&

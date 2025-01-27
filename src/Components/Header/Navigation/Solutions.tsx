@@ -74,12 +74,7 @@ const featuresMenu = [
         description: "Track financial and project budgets in real-time.",
         icon: PieChart,
       },
-      // {
-      //   title: "Accounting Integrations",
-      //   href: "/features/accounting-integrations",
-      //   description: "Seamlessly integrate with accounting software.",
-      //   icon: LineChart,
-      // },
+      
       {
         title: "Invoice Management",
         href: "/features/invoice-management",
