@@ -35,27 +35,26 @@ const ControlSection: React.FC<ControlSectionProps> = ({
             <img
               src={imageSrc}
               alt={imageAlt || "Section Image"}
-              className="mx-auto w-full h-auto object-cover"
-              style={{ width: "100%", height: "80vh" }}
+              className="mx-auto max-w-full h-auto object-cover"
             />
           </div>
         )}
 
         {/* Features Section */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mt-12"> {/* Reduced gap between cards */}
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mt-12">
           {features.map((feature, index) => (
             <div
               key={index}
-              className="flex text-left items-start space-x-4 p-5" // Further reduced padding and hover scale
+              className="flex text-left items-start space-x-4 p-5"
             >
               {/* Icon at Top-Left */}
               {feature.icon && (
-                <div className="flex-shrink-0 w-10 h-10 bg-primary text-gray-900 flex justify-center items-center rounded-full"> {/* Further reduced icon size */}
+                <div className="flex-shrink-0 w-10 h-10 bg-primary text-gray-900 flex justify-center items-center rounded-full">
                   {typeof feature.icon === "string" ? (
                     <img
                       src={feature.icon}
                       alt={feature.title}
-                      className="w-6 h-6 object-contain" // Further reduced image size
+                      className="w-6 h-6 object-contain"
                     />
                   ) : (
                     feature.icon
@@ -65,10 +64,10 @@ const ControlSection: React.FC<ControlSectionProps> = ({
 
               {/* Text Content */}
               <div>
-                <h4 className="text-xl font-semibold text-gray-900"> {/* Reduced title size */}
+                <h4 className="text-xl font-semibold text-gray-900">
                   {feature.title}
                 </h4>
-                <p className="text-gray-600 mt-2 text-base"> {/* Reduced description size */}
+                <p className="text-gray-600 mt-2 text-base">
                   {feature.description}
                 </p>
               </div>

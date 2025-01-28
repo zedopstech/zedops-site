@@ -42,7 +42,7 @@ const featuresMenu = [
       },
       {
         title: "Estimation and Take-off",
-        href: "/features/estimation",
+        href: "/features/TenderingManagement/estimation",
         description: "Accurate project cost estimation tools.",
         icon: DollarSign,
       },

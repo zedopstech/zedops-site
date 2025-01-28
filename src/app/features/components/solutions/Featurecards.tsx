@@ -4,23 +4,28 @@ interface Feature {
   icon: React.ReactNode;
   title: string;
   description: string;
+  
 }
 
 interface FeaturesProps {
   features: Feature[];
+  sectionTitle: string; // For the section's main heading
+  subtitle: string; // For the section's subtitle
+  sectionDescription: string; // For the section's description paragraph
 }
 
-const Features: React.FC<FeaturesProps> = ({ features }) => {
+const Features: React.FC<FeaturesProps> = ({sectionTitle, subtitle, sectionDescription, features }) => {
+   
   return (
     <div className="bg-black text-white py-24">
       <div className="container mx-auto px-4 sm:px-6 md:px-12 lg:px-32 xl:px-48">
         {/* Section Heading */}
-        <h2 className="text-[#1BB387] font-semibold text-center mb-1">Resources</h2>
+        <h2 className="text-[#1BB387] font-semibold text-center mb-1">{sectionTitle}</h2>
         <h2 className="text-3xl sm:text-4xl md:text-5xl font-semibold text-center mb-4">
-          Master email marketing
+          {subtitle}
         </h2>
         <p className="text-center text-gray-400 text-sm sm:text-base mb-12">
-          Explore best practices, expert tips, and guides for an effective email marketing strategy.
+          {sectionDescription}
         </p>
 
         {/* Features Section */}
