@@ -18,7 +18,7 @@ const Features: React.FC<FeaturesProps> = ({title, features }) => {
       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-8 md:gap-16">
         {features.map((feature, index) => (
           <div key={index} className="flex flex-col items-start space-y-4">
-            <div className="bg-green-100 p-4 rounded-md">
+            <div className="bg-lightmint p-2 rounded-md">
               {feature.icon}
             </div>
             <h3 className="font-semibold text-background text-base md:text-lg">{feature.title}</h3>

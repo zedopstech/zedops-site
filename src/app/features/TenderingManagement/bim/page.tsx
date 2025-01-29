@@ -7,33 +7,33 @@ import MainSection from "../../components/solutions/MainSection";
 import EmailFeautres from "../../components/solutions/EmailFeatures";
 import FeatureCards from "../../components/solutions/FeatureCards";
 import CtoSection from "../../components/solutions/CtoSection";
-import { ESTIMATION_PAGE } from "@/Data/data";
+import { BIM_PAGE } from "@/Data/data";
 
-export default function EstimationPage() {
+export default function BimPage() {
   // Props configuration
 
   return (
     <div>
       {/* Hero Section */}
-      <Hero {...ESTIMATION_PAGE.heroProps} />
+      <Hero {...BIM_PAGE.heroProps} />
       {/* Hero Content Section */}
-      <MainHero {...ESTIMATION_PAGE.heroSectionProps} />
+      <MainHero {...BIM_PAGE.heroSectionProps} />
       {/* Features Section */}
-      <FeaturesSection {...ESTIMATION_PAGE.featuresSectionProps} />
+      <FeaturesSection {...BIM_PAGE.featuresSectionProps} />
       {/* Control Section */}
-      <Testimonals {...ESTIMATION_PAGE.TestimonalsSectionProps} />
-      <MainSection sections={ESTIMATION_PAGE.mainSectionData} />
+      <Testimonals {...BIM_PAGE.TestimonalsSectionProps} />
+      <MainSection sections={BIM_PAGE.mainSectionData} />
       <EmailFeautres
-        title="Estimation Features"
-        features={ESTIMATION_PAGE.featureData}
+        title="BIM Features"
+        features={BIM_PAGE.featureData}
       />
       <FeatureCards
         sectionTitle="Resourecs"
-        subtitle="Master Estimation Strategies"
-        sectionDescription="Explore best practices and comprehensive guides for creating accurate and efficient construction project estimates. "
-        features={ESTIMATION_PAGE.features}
+        subtitle="Master BIM Strategies"
+        sectionDescription="Explore best practices and comprehensive guides for effectively qualifying contractors "
+        features={BIM_PAGE.features}
       />
-      <CtoSection {...ESTIMATION_PAGE.ctaProps} />
+      <CtoSection {...BIM_PAGE.ctaProps} />
     </div>
   );
 }

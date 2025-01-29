@@ -1,7 +1,7 @@
 import React from "react";
 
 interface Feature {
-  icon: string;
+  icon: React.ReactNode; // Now accepts a ReactNode for icons
   title: string;
   description: string;
 }
@@ -20,7 +20,7 @@ const Mainsection: React.FC<{ sections: SectionData[] }> = ({ sections }) => {
       {sections?.map((section, sectionIndex) => (
         <div
           key={sectionIndex}
-          className="flex flex-col md:flex-row items-center gap-12 px-4 md:px-8 lg:px-16 max-w-7xl mx-auto w-full min-h-screen mb-16 last:mb-0" // Added margin-bottom for spacing
+          className="flex flex-col md:flex-row items-center gap-12 px-4 md:px-8 lg:px-16 max-w-7xl mx-auto w-full min-h-screen mb-16 last:mb-0"
         >
           {sectionIndex % 2 === 0 ? (
             <>
@@ -38,7 +38,7 @@ const Mainsection: React.FC<{ sections: SectionData[] }> = ({ sections }) => {
                 <h4 className="text-[#1BB387] font-semibold uppercase text-sm">
                   {section.subtitle}
                 </h4>
-                <h2 className="text-4xl md:text-5xl lg:text-6xl font-semibold text-background mt-4">
+                <h2 className="text-4xl md:text-5xl lg:text-5xl font-semibold text-background mt-4">
                   {section.title}
                 </h2>
                 <p className="mt-4 text-gray-600 max-w-prose mx-auto md:mx-0">
@@ -48,12 +48,8 @@ const Mainsection: React.FC<{ sections: SectionData[] }> = ({ sections }) => {
                 <div className="mt-7 space-y-7">
                   {section.features.map((feature, index) => (
                     <div key={index} className="flex items-start gap-4">
-                      <div className="bg-green-100 p-3 rounded flex-shrink-0">
-                        <img
-                          src={feature.icon}
-                          alt={feature.title}
-                          className="w-6 h-6"
-                        />
+                      <div className="bg-lightmint p-2 rounded flex-shrink-0">
+                        <div className="w-6 h-6">{feature.icon}</div>
                       </div>
                       <div>
                         <h3 className="font-semibold">{feature.title}</h3>
@@ -67,12 +63,11 @@ const Mainsection: React.FC<{ sections: SectionData[] }> = ({ sections }) => {
           ) : (
             <>
               {/* Content Section */}
-    
               <div className="md:w-1/2 w-full text-center md:text-left">
                 <h4 className="text-[#1BB387] font-semibold uppercase text-sm">
                   {section.subtitle}
                 </h4>
-                <h2 className="text-4xl md:text-5xl lg:text-6xl font-semibold text-background mt-4">
+                <h2 className="text-4xl md:text-5xl lg:text-5xl font-semibold text-background mt-4">
                   {section.title}
                 </h2>
                 <p className="mt-4 text-gray-600 max-w-prose mx-auto md:mx-0">
@@ -82,12 +77,8 @@ const Mainsection: React.FC<{ sections: SectionData[] }> = ({ sections }) => {
                 <div className="mt-7 space-y-7">
                   {section.features.map((feature, index) => (
                     <div key={index} className="flex items-start gap-4">
-                      <div className="bg-green-100 p-3 rounded flex-shrink-0">
-                        <img
-                          src={feature.icon}
-                          alt={feature.title}
-                          className="w-6 h-6"
-                        />
+                      <div className="bg-lightmint p-2 rounded flex-shrink-0">
+                        <div className="w-6 h-6">{feature.icon}</div>
                       </div>
                       <div>
                         <h3 className="font-semibold">{feature.title}</h3>

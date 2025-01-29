@@ -7,33 +7,33 @@ import MainSection from "../../components/solutions/MainSection";
 import EmailFeautres from "../../components/solutions/EmailFeatures";
 import FeatureCards from "../../components/solutions/FeatureCards";
 import CtoSection from "../../components/solutions/CtoSection";
-import { ESTIMATION_PAGE } from "@/Data/data";
+import { INVENTORY_PAGE } from "@/Data/data";
 
-export default function EstimationPage() {
+export default function PrequalificationPage() {
   // Props configuration
 
   return (
     <div>
       {/* Hero Section */}
-      <Hero {...ESTIMATION_PAGE.heroProps} />
+      <Hero {...INVENTORY_PAGE.heroProps} />
       {/* Hero Content Section */}
-      <MainHero {...ESTIMATION_PAGE.heroSectionProps} />
+      <MainHero {...INVENTORY_PAGE.heroSectionProps} />
       {/* Features Section */}
-      <FeaturesSection {...ESTIMATION_PAGE.featuresSectionProps} />
+      <FeaturesSection {...INVENTORY_PAGE.featuresSectionProps} />
       {/* Control Section */}
-      <Testimonals {...ESTIMATION_PAGE.TestimonalsSectionProps} />
-      <MainSection sections={ESTIMATION_PAGE.mainSectionData} />
+      <Testimonals {...INVENTORY_PAGE.TestimonalsSectionProps} />
+      <MainSection sections={INVENTORY_PAGE.mainSectionData} />
       <EmailFeautres
-        title="Estimation Features"
-        features={ESTIMATION_PAGE.featureData}
+        title="Inventory Features"
+        features={INVENTORY_PAGE.featureData}
       />
       <FeatureCards
         sectionTitle="Resourecs"
-        subtitle="Master Estimation Strategies"
-        sectionDescription="Explore best practices and comprehensive guides for creating accurate and efficient construction project estimates. "
-        features={ESTIMATION_PAGE.features}
+        subtitle="Master Inventory Strategies"
+        sectionDescription="Explore best practices and comprehensive guides for effectively qualifying contractors "
+        features={INVENTORY_PAGE.features}
       />
-      <CtoSection {...ESTIMATION_PAGE.ctaProps} />
+      <CtoSection {...INVENTORY_PAGE.ctaProps} />
     </div>
   );
 }

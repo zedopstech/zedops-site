@@ -35,7 +35,7 @@ const Features: React.FC<FeaturesProps> = ({sectionTitle, subtitle, sectionDescr
               key={index}
               className="bg-[#2E2E2D] p-6 md:p-8 rounded-lg flex flex-col items-start transform transition-transform duration-300 hover:scale-105 hover:bg-gray-800 hover:shadow-lg"
             >
-             <div className="bg-black p-4 mb-4 flex items-center justify-center rounded-full">
+             <div className="bg-black p-2 mb-4 flex items-center justify-center">
                 {feature.icon}
               </div>
               <h3 className="text-lg sm:text-xl text-white font-bold mb-2">

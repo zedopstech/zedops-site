@@ -49,7 +49,7 @@ const ControlSection: React.FC<ControlSectionProps> = ({
             >
               {/* Icon at Top-Left */}
               {feature.icon && (
-                <div className="flex-shrink-0 w-10 h-10 bg-primary text-gray-900 flex justify-center items-center rounded-full">
+                <div className="flex-shrink-0 w-10 h-10 bg-lightmint text-background flex justify-center items-center rounded-full">
                   {typeof feature.icon === "string" ? (
                     <img
                       src={feature.icon}

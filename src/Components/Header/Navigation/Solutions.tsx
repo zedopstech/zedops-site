@@ -30,13 +30,13 @@ const featuresMenu = [
     items: [
       {
         title: "Prequalification",
-        href: "/solutions/prequalification",
+        href: "/features/TenderingManagement/prequalification",
         description: "Manage tenders and streamline bidding processes.",
         icon: ClipboardList,
       },
       {
         title: "BIM",
-        href: "/features/bim",
+        href: "/features/TenderingManagement/bim",
         description: "Building Information Modeling for efficient planning.",
         icon: Building2,
       },
@@ -74,7 +74,7 @@ const featuresMenu = [
         description: "Track financial and project budgets in real-time.",
         icon: PieChart,
       },
-      
+
       {
         title: "Invoice Management",
         href: "/features/invoice-management",
@@ -88,7 +88,7 @@ const featuresMenu = [
     items: [
       {
         title: "Inventory",
-        href: "/features/inventory",
+        href: "/features/MaterialManagement/Inventory",
         description: "Effortless control, seamless inventory management",
         icon: Package,
       },

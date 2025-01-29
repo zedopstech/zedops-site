@@ -23,6 +23,7 @@ export default {
   			background: 'hsl(var(--background))',
 		    foreground: 'hsl(var(--foreground))',
 		    custombg: 'hsl(var(--custombg))',
+		    lightmint: 'hsl(var(--lightmint))',
   			card: {
   				DEFAULT: 'hsl(var(--card))',
   				foreground: 'hsl(var(--card-foreground))'

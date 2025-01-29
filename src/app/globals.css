@@ -17,6 +17,7 @@ body {
     --background: 182 76% 14%; /* Dark Teal Background */
     --foreground: 0 0% 8%; /* Dark Foreground Text */
     --custombg: 0, 3%, 98%; /* HSL value for #FBF9F9 */
+    --lightmint: 90, 70%, 85%;/*light green for icon background*/
     --card: 186 61% 10%; /* Darker Teal for Card Background */
     --card-foreground: 90 100% 90%; /* Light Green Text for Cards */
     --popover: 186 61% 10%; /* Darker Teal for Popover Background */
