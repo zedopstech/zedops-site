@@ -59,7 +59,7 @@ const featuresMenu = [
       },
       {
         title: "Quality & Safety",
-        href: "/features/quality-safety",
+        href: "/features/ProjectExecution/QualityAndSafety",
         description: "Ensure quality and safety standards are met.",
         icon: ShieldCheck,
       },
@@ -70,14 +70,14 @@ const featuresMenu = [
     items: [
       {
         title: "Project Financial",
-        href: "/features/project-financial",
+        href: "/features/FinancialManagement/ProjectFinancial",
         description: "Track financial and project budgets in real-time.",
         icon: PieChart,
       },
 
       {
         title: "Invoice Management",
-        href: "/features/invoice-management",
+        href: "/features/FinancialManagement/InvoiceManagement",
         description: "Simplify invoicing and payment processes.",
         icon: FileText,
       },
@@ -94,7 +94,7 @@ const featuresMenu = [
       },
       {
         title: "Procurement",
-        href: "/features/procurement",
+        href: "/features/MaterialManagement/Procurement",
         description: "Streamline procurement processes efficiently.",
         icon: ShoppingBasket,
       },
@@ -105,19 +105,19 @@ const featuresMenu = [
     items: [
       {
         title: "Predictive Analytics",
-        href: "/features/predictive-analytics",
+        href: "/features/ConstructionIntelligence/PredictiveAnalytics",
         description: "Gain insights with advanced analytics tools.",
         icon: Brain,
       },
       {
         title: "Real-Time Dashboards",
-        href: "/features/real-Time-dashboards",
+        href: "/features/ConstructionIntelligence/RealTimeDashboards",
         description: "Gain insights with advanced analytics tools.",
         icon: LayoutDashboard,
       },
       {
         title: "Reports and Alerts",
-        href: "/features/reports-and-alerts",
+        href: "/features/ConstructionIntelligence/ReportsAndAlerts",
         description: "Gain insights with advanced analytics tools.",
         icon: NotepadText,
       },
