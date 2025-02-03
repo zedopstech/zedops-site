@@ -1,47 +1,98 @@
+import { MoveRight } from "lucide-react";
 import React from "react";
 
 interface Feature {
   icon: React.ReactNode;
   title: string;
   description: string;
-  
 }
 
 interface FeaturesProps {
-  features: Feature[];
-  sectionTitle: string; // For the section's main heading
-  subtitle: string; // For the section's subtitle
-  sectionDescription: string; // For the section's description paragraph
+  featuresData: {
+    title: string;
+    subtitle: string;
+    description: string;
+    features: Feature[];
+    bgColor?: string;
+    tagColor?: string;
+    titleColor?: string;
+    descriptionColor?: string;
+    cardBgColor?: string;
+    hoverColor?: string;
+    iconBgColor?: string;
+  };
 }
 
-const Features: React.FC<FeaturesProps> = ({sectionTitle, subtitle, sectionDescription, features }) => {
-   
+const Features: React.FC<FeaturesProps> = ({ featuresData }) => {
   return (
-    <div className="bg-black text-white py-24">
+    <div className={`py-24 ${featuresData.bgColor || "bg-[#151414]"}`}>
       <div className="container mx-auto px-4 sm:px-6 md:px-12 lg:px-32 xl:px-48">
         {/* Section Heading */}
-        <h2 className="text-[#1BB387] font-semibold text-center mb-1">{sectionTitle}</h2>
-        <h2 className="text-3xl sm:text-4xl md:text-5xl font-semibold text-center mb-4">
-          {subtitle}
+        <h2
+          className={`${
+            featuresData.tagColor || "text-accent"
+          } font-semibold text-center mb-1`}
+        >
+          {featuresData.title}
         </h2>
-        <p className="text-center text-gray-400 text-sm sm:text-base mb-12">
-          {sectionDescription}
+        <h2
+          className={` ${
+            featuresData.titleColor || "text-white"
+          } text-3xl sm:text-4xl md:text-5xl font-semibold text-center mb-4`}
+        >
+          {featuresData.subtitle}
+        </h2>
+        <p
+          className={`  ${
+            featuresData.descriptionColor || "text-white"
+          } text-center text-sm sm:text-lg mb-12`}
+        >
+          {featuresData.description}
         </p>
 
         {/* Features Section */}
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8">
-          {features.map((feature, index) => (
+          {featuresData.features.map((feature, index) => (
             <div
               key={index}
-              className="bg-[#2E2E2D] p-6 md:p-8 rounded-lg flex flex-col items-start transform transition-transform duration-300 hover:scale-105 hover:bg-gray-800 hover:shadow-lg"
+              className={`p-6 md:p-8 ${
+                featuresData.cardBgColor || "bg-backgroundlight"
+              } ${
+                !featuresData.cardBgColor
+                  ? "hover:bg-backgroundlighter"
+                  : "hover:shadow-lg"
+              } rounded-lg flex flex-col items-start transform transition-transform duration-300 hover:scale-105`}
             >
-             <div className="bg-black p-2 mb-4 flex items-center justify-center">
+              <div
+                className={`p-2 mb-4 ${
+                  featuresData.iconBgColor || "bg-black"
+                } flex items-center justify-center `}
+              >
                 {feature.icon}
               </div>
-              <h3 className="text-lg sm:text-xl text-white font-bold mb-2">
+              <h3
+                className={` ${
+                  featuresData.titleColor || "text-white"
+                } text-lg sm:text-xl font-bold mb-2`}
+              >
                 {feature.title}
               </h3>
-              <p className="text-gray-300 text-sm sm:text-base">{feature.description}</p>
+              <p
+                className={` ${
+                  featuresData.descriptionColor || "text-white"
+                } text-sm sm:text-base`}
+              >
+                {feature.description}
+              </p>
+              <div className="mt-auto pt-4">
+              <div className="flex justify-between gap-[10em] items-center w-full cursor-pointer">
+              <span className={`${featuresData.titleColor || "text-white"} text-sm font-medium group-hover:underline`}>
+              Access the guide
+             </span>
+             <MoveRight className="size-4 transition-transform transform group-hover:translate-x-6" />
+            </div>
+
+              </div>
             </div>
           ))}
         </div>

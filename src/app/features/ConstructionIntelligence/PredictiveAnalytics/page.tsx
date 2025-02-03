@@ -28,10 +28,8 @@ export default function PrequalificationPage() {
         features={PREDICTIVEANLYTICS_PAGE.featureData}
       />
       <FeatureCards
-        sectionTitle="Resourecs"
-        subtitle="Master Predictive Strategies"
-        sectionDescription="Explore best practices and comprehensive guides for effectively qualifying contractors "
-        features={PREDICTIVEANLYTICS_PAGE.features}
+        
+        featuresData={PREDICTIVEANLYTICS_PAGE.featuresData}
       />
       <CtoSection {...PREDICTIVEANLYTICS_PAGE.ctaProps} />
     </div>

@@ -28,10 +28,7 @@ export default function BimPage() {
         features={BIM_PAGE.featureData}
       />
       <FeatureCards
-        sectionTitle="Resourecs"
-        subtitle="Master BIM Strategies"
-        sectionDescription="Explore best practices and comprehensive guides for effectively qualifying contractors "
-        features={BIM_PAGE.features}
+        featuresData={BIM_PAGE.featuresData}
       />
       <CtoSection {...BIM_PAGE.ctaProps} />
     </div>

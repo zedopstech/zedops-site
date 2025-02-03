@@ -28,10 +28,8 @@ export default function PrequalificationPage() {
         features={INVENTORY_PAGE.featureData}
       />
       <FeatureCards
-        sectionTitle="Resourecs"
-        subtitle="Master Inventory Strategies"
-        sectionDescription="Explore best practices and comprehensive guides for effectively qualifying contractors "
-        features={INVENTORY_PAGE.features}
+       
+        featuresData={INVENTORY_PAGE.featuresData}
       />
       <CtoSection {...INVENTORY_PAGE.ctaProps} />
     </div>

@@ -28,10 +28,8 @@ export default function PrequalificationPage() {
         features={INVOICEMANAGEMENT_PAGE.featureData}
       />
       <FeatureCards
-        sectionTitle="Resourecs"
-        subtitle="Master Invoice Strategies"
-        sectionDescription="Explore best practices and comprehensive guides for effectively qualifying contractors "
-        features={INVOICEMANAGEMENT_PAGE.features}
+       
+        featuresData={INVOICEMANAGEMENT_PAGE.featuresData}
       />
       <CtoSection {...INVOICEMANAGEMENT_PAGE.ctaProps} />
     </div>

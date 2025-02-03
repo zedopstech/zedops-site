@@ -22,6 +22,9 @@ export default {
   		colors: {
   			background: 'hsl(var(--background))',
 		    foreground: 'hsl(var(--foreground))',
+			backgroundlighter: 'hsl(var(--background-lighter))',
+			backgroundlight: 'hsl(var(--background-light))',
+			foregroundmuted: 'hsl(var(--evergreen-muted))',
 		    custombg: 'hsl(var(--custombg))',
 		    lightmint: 'hsl(var(--lightmint))',
   			card: {

@@ -28,10 +28,7 @@ export default function PrequalificationPage() {
         features={REPORTSANDALERTS_PAGE.featureData}
       />
       <FeatureCards
-        sectionTitle="Resourecs"
-        subtitle="Master Reports Strategies"
-        sectionDescription="Explore best practices and comprehensive guides for effectively qualifying contractors "
-        features={REPORTSANDALERTS_PAGE.features}
+       featuresData={REPORTSANDALERTS_PAGE.featuresData}
       />
       <CtoSection {...REPORTSANDALERTS_PAGE.ctaProps} />
     </div>

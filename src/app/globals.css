@@ -1,6 +1,9 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+
+
 html {
   scroll-behavior: smooth;
   overflow-x: hidden;
@@ -70,6 +73,11 @@ body {
     --sidebar-accent-foreground: 90 100% 90%; /* Sidebar Light Green Accent */
     --sidebar-border: 186 61% 10%; /* Sidebar Border */
     --sidebar-ring: 158 74% 39%; /* Sidebar Green Ring */
+
+    --background-lighter: 30 1% 18%;
+    --background-light: 30 1% 14%;
+
+    --evergreen-muted: 188 69% 10%;
   }
 
   .dark {
@@ -146,6 +154,30 @@ body {
   transition: transform 0.2s ease, filter 0.3s ease;
 }
 
+.transition-button-right {
+  @apply translate-x-0 opacity-100;
+  transition: transform 0.2s ease-out, opacity 0.5s ease-out;
+}
+
+.group:hover .transition-button-right {
+  transform: translateX(3rem);
+  /* Equivalent to Tailwind's translate-x-12 */
+  opacity: 0;
+}
+
+
+.transition-button-left {
+  @apply opacity-0;
+  transform: translateX(-2rem);
+  /* Equivalent to Tailwind's -translate-x-8 */
+  transition: transform 0.2s ease-out, opacity 0.5s ease-out;
+}
+
+.group:hover .transition-button-left {
+  transform: translateX(0);
+  opacity: 1;
+}
+
 .gradient-button:hover {
   filter: brightness(1.2); /* Brightens the gradient on hover */
 }
@@ -155,4 +187,5 @@ body {
 .no-scroll {
   overflow: hidden !important;
 }
+
 

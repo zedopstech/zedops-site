@@ -28,10 +28,7 @@ export default function PrequalificationPage() {
         features={PREQUALIFICATION_PAGE.featureData}
       />
       <FeatureCards
-        sectionTitle="Resourecs"
-        subtitle="Master Prequlaification Strategies"
-        sectionDescription="Explore best practices and comprehensive guides for effectively qualifying contractors "
-        features={PREQUALIFICATION_PAGE.features}
+       featuresData={PREQUALIFICATION_PAGE.featuresData}
       />
       <CtoSection {...PREQUALIFICATION_PAGE.ctaProps} />
     </div>

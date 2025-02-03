@@ -1,35 +1,203 @@
 import {
-  CircleArrowOutDownLeft,Volume,Sparkles,LucideMousePointerClick,LucideCode,
-  LucideEye, LucideLink2, Hammer, KeyRound,TrendingUpDown,CircleDollarSign,
-  CloudDownload, User, ChartNoAxesGantt,MonitorCog, BookCopy,Brain,BrickWall,
-  CloudLightning, Wrench, Boxes, Shuffle, FileText,Container,ChartSpline,
-  Dna,Combine,CarTaxiFront, MonitorSmartphone, GraduationCap,Filter,
-  HandCoins,Pickaxe,ListCollapse,Timer, ChevronsUp, ShieldBan, UserPen,
-  LaptopMinimalCheck,BadgeCheck, Asterisk,ListChecks,MapPinCheck,ArrowBigRight,
-  Scan,Navigation2,CircleFadingPlus,BellRing,Star,Radical,BookDown,Gavel,
-  ContactRound,TicketCheck,Package,FileStack,Equal,ScanSearch,UserRound,
-  PackageSearch, BetweenVerticalStart,StepBack,Wifi,TableOfContents,Construction,
-  Power,Ellipsis,Sword,Logs,Box,HardDriveDownload,CloudCog,Ratio,ReceiptText,
-  ZapOff,FilePlus,ShieldHalf,SquareCode,Cable,SquareActivity,TabletSmartphone,
-  Sun,PlaneTakeoff,MapPinCheckInside,ArrowDownUp,SquareDashedMousePointer,Drill,
-  Braces,Megaphone,SearchCheck,NotebookPen,FileBox,Handshake,ShieldEllipsis,
-  FolderUp,SpellCheck,Layers2,Tags,ArrowDownNarrowWide,TvMinimalPlay,Radio,
-  FolderSync,Usb,LayoutDashboard,ClipboardMinus,ScanBarcode,CircleAlert,
-  ReplyAll,ArrowLeftRight,CloudUpload,ShieldOff,BaggageClaim,Banknote,
-  Shapes,AudioLines,BookOpenCheck,Radiation,ScanQrCode,SquareArrowLeft,
-  ArrowRightToLine,Ribbon,Loader,Warehouse,Biohazard,Route,GitCompare,
-  Kanban,Blocks,BookOpenText,DollarSign,ClipboardList,Truck,FileCheck,
-  BarChartBig,ShoppingCart,FileSpreadsheet,CheckSquare,Users,Smartphone,
-  Cloud,BadgeDollarSign,BarChart4,Layers,FileSignature,PackageCheck,Recycle,
-  BarChart3,FolderCog,Presentation,BarChart2,AlertTriangle,Clock,Search,
-  Monitor,CalendarClock,TrendingUp,Target,FileLineChart,RefreshCcw,
-  Database,PieChart,UploadCloud,Sliders,BatteryCharging,UserCheck,
-  RadarIcon,SearchCheckIcon,FolderClock,Radar,Activity,Eye,ClockAlert,
-  Bell,MapPin,BarChart,Zap,AlertCircle,AlarmCheck,ShieldAlert,ShieldCheck,
-  TrendingDown,ClipboardCheck,LineChart,Calculator,Receipt,FileBarChart,
-  CreditCard,Calendar,
+  CircleArrowOutDownLeft,
+  Volume,
+  Sparkles,
+  LucideMousePointerClick,
+  LucideCode,
+  LucideEye,
+  LucideLink2,
+  Hammer,
+  KeyRound,
+  TrendingUpDown,
+  CircleDollarSign,
+  CloudDownload,
+  User,
+  ChartNoAxesGantt,
+  MonitorCog,
+  BookCopy,
+  Brain,
+  BrickWall,
+  CloudLightning,
+  Wrench,
+  Boxes,
+  Shuffle,
+  FileText,
+  Container,
+  ChartSpline,
+  Dna,
+  Combine,
+  CarTaxiFront,
+  MonitorSmartphone,
+  GraduationCap,
+  Filter,
+  HandCoins,
+  Pickaxe,
+  ListCollapse,
+  Timer,
+  ChevronsUp,
+  ShieldBan,
+  UserPen,
+  LaptopMinimalCheck,
+  BadgeCheck,
+  Asterisk,
+  ListChecks,
+  MapPinCheck,
+  ArrowBigRight,
+  Scan,
+  Navigation2,
+  CircleFadingPlus,
+  BellRing,
+  Star,
+  Radical,
+  BookDown,
+  Gavel,
+  ContactRound,
+  TicketCheck,
+  Package,
+  FileStack,
+  Equal,
+  ScanSearch,
+  UserRound,
+  PackageSearch,
+  BetweenVerticalStart,
+  StepBack,
+  Wifi,
+  TableOfContents,
+  Construction,
+  Power,
+  Ellipsis,
+  Sword,
+  Logs,
+  Box,
+  HardDriveDownload,
+  CloudCog,
+  Ratio,
+  ReceiptText,
+  ZapOff,
+  FilePlus,
+  ShieldHalf,
+  SquareCode,
+  Cable,
+  SquareActivity,
+  TabletSmartphone,
+  Sun,
+  PlaneTakeoff,
+  MapPinCheckInside,
+  ArrowDownUp,
+  SquareDashedMousePointer,
+  Drill,
+  Braces,
+  Megaphone,
+  SearchCheck,
+  NotebookPen,
+  FileBox,
+  Handshake,
+  ShieldEllipsis,
+  FolderUp,
+  SpellCheck,
+  Layers2,
+  Tags,
+  ArrowDownNarrowWide,
+  TvMinimalPlay,
+  Radio,
+  FolderSync,
+  Usb,
+  LayoutDashboard,
+  ClipboardMinus,
+  ScanBarcode,
+  CircleAlert,
+  ReplyAll,
+  ArrowLeftRight,
+  CloudUpload,
+  ShieldOff,
+  BaggageClaim,
+  Banknote,
+  Shapes,
+  AudioLines,
+  BookOpenCheck,
+  Radiation,
+  ScanQrCode,
+  SquareArrowLeft,
+  ArrowRightToLine,
+  Ribbon,
+  Loader,
+  Warehouse,
+  Biohazard,
+  Route,
+  GitCompare,
+  Kanban,
+  Blocks,
+  BookOpenText,
+  DollarSign,
+  ClipboardList,
+  Truck,
+  FileCheck,
+  BarChartBig,
+  ShoppingCart,
+  FileSpreadsheet,
+  CheckSquare,
+  Users,
+  Smartphone,
+  Cloud,
+  BadgeDollarSign,
+  BarChart4,
+  Layers,
+  FileSignature,
+  PackageCheck,
+  Recycle,
+  BarChart3,
+  FolderCog,
+  Presentation,
+  BarChart2,
+  AlertTriangle,
+  Clock,
+  Search,
+  Monitor,
+  CalendarClock,
+  TrendingUp,
+  Target,
+  FileLineChart,
+  RefreshCcw,
+  Database,
+  PieChart,
+  UploadCloud,
+  Sliders,
+  BatteryCharging,
+  UserCheck,
+  RadarIcon,
+  SearchCheckIcon,
+  FolderClock,
+  Radar,
+  Activity,
+  Eye,
+  ClockAlert,
+  Bell,
+  MapPin,
+  BarChart,
+  Zap,
+  AlertCircle,
+  AlarmCheck,
+  ShieldAlert,
+  ShieldCheck,
+  TrendingDown,
+  ClipboardCheck,
+  LineChart,
+  Calculator,
+  Receipt,
+  FileBarChart,
+  CreditCard,
+  Calendar,
   CheckCheck,
-  Thermometer
+  Thermometer,
+  Settings,
+  Briefcase,
+  UserCheck2,
+  HardHat,
+  CheckCheckIcon,
+  MessagesSquare,
+  Mail,
+  PanelsTopLeft,
+  Lock,
 } from "lucide-react";
 
 export const ESTIMATION_PAGE = {
@@ -268,38 +436,44 @@ export const ESTIMATION_PAGE = {
         "Create and update project estimates directly from your mobile device.",
     },
   ],
-  features: [
-    {
-      title: "Want to master estimation?",
-      description: "Join our expert-led workshop.",
-      icon: <GraduationCap className="text-white" />,
-    },
-    {
-      icon: <Filter className="text-white" />,
-      title: "Fundamentals of Cost Estimation",
-      description: "Access the complete guide.",
-    },
-    {
-      icon: <HandCoins className="text-white" />,
-      title: "Advanced Cost Analysis",
-      description: "Learn how to refine your project estimates.",
-    },
-    {
-      icon: <Pickaxe className="text-white" />,
-      title: "Optimizing Material & Labor Estimations",
-      description: "Improve your cost efficiency strategies.",
-    },
-    {
-      icon: <ListCollapse className="text-white" />,
-      title: "Best Practices for Accurate Costing",
-      description: "Enhance your budgeting precision.",
-    },
-    {
-      icon: <Timer className="text-white" />,
-      title: "Time-Efficient Estimation Workflows",
-      description: "Speed up your estimation process.",
-    },
-  ],
+  featuresData: {
+    title: "Resources",
+    subtitle: "Master Estimation Strategies",
+    description:
+      "Explore best practices and comprehensive guides for creating accurate and efficient construction project estimates.",
+    features: [
+      {
+        title: "Want to master estimation?",
+        description: "Join our expert-led workshop.",
+        icon: <GraduationCap className="text-white" />,
+      },
+      {
+        icon: <Filter className="text-white" />,
+        title: "Fundamentals of Cost Estimation",
+        description: "Access the complete guide.",
+      },
+      {
+        icon: <HandCoins className="text-white" />,
+        title: "Advanced Cost Analysis",
+        description: "Learn how to refine your project estimates.",
+      },
+      {
+        icon: <Pickaxe className="text-white" />,
+        title: "Optimizing Material & Labor Estimations",
+        description: "Improve your cost efficiency strategies.",
+      },
+      {
+        icon: <ListCollapse className="text-white" />,
+        title: "Best Practices for Accurate Costing",
+        description: "Enhance your budgeting precision.",
+      },
+      {
+        icon: <Timer className="text-white" />,
+        title: "Time-Efficient Estimation Workflows",
+        description: "Speed up your estimation process.",
+      },
+    ],
+  },
   ctaProps: {
     title: "Start Estimating with Confidence",
     description: "",
@@ -551,38 +725,44 @@ export const PREQUALIFICATION_PAGE = {
         "Gain deeper insights into contractor capabilities and history with in-depth contractor profiles",
     },
   ],
-  features: [
-    {
-      title: "Want to streamline your contractor evaluation?",
-      description: "Watch the tutorial",
-      icon: <StepBack className="text-white" />,
-    },
-    {
-      icon: <Wifi className="text-white" />,
-      title: "Best practices for contractor prequalification",
-      description: "Access the guide",
-    },
-    {
-      icon: <TableOfContents className="text-white" />,
-      title: "How to evaluate contractor financial stability",
-      description: "Access the guide",
-    },
-    {
-      icon: <Construction className="text-white" />,
-      title: "Ensuring compliance in construction projects",
-      description: "Access the guide",
-    },
-    {
-      icon: <Power className="text-white" />,
-      title: "Streamlining contractor onboarding",
-      description: "Access the guide",
-    },
-    {
-      icon: <Ellipsis className="text-white" />,
-      title: "Optimizing contractor evaluation processes",
-      description: "Access the guide",
-    },
-  ],
+  featuresData: {
+    title: "Resources",
+    subtitle: "Prequalification Features",
+    description:
+      "Explore best practices and comprehensive guides for effectively qualifying contractors",
+    features: [
+      {
+        title: "Want to streamline your contractor evaluation?",
+        description: "Watch the tutorial",
+        icon: <StepBack className="text-white" />,
+      },
+      {
+        icon: <Wifi className="text-white" />,
+        title: "Best practices for contractor prequalification",
+        description: "Access the guide",
+      },
+      {
+        icon: <TableOfContents className="text-white" />,
+        title: "How to evaluate contractor financial stability",
+        description: "Access the guide",
+      },
+      {
+        icon: <Construction className="text-white" />,
+        title: "Ensuring compliance in construction projects",
+        description: "Access the guide",
+      },
+      {
+        icon: <Power className="text-white" />,
+        title: "Streamlining contractor onboarding",
+        description: "Access the guide",
+      },
+      {
+        icon: <Ellipsis className="text-white" />,
+        title: "Optimizing contractor evaluation processes",
+        description: "Access the guide",
+      },
+    ],
+  },
   ctaProps: {
     title: "Get started with contractor prequalification",
     description: "",
@@ -832,40 +1012,46 @@ export const BIM_PAGE = {
         "Create and use pre-defined BIM templates tailored for specific projects.",
     },
   ],
-  features: [
-    {
-      title: "Want to learn BIM best practices?",
-      description: "Watch the BIM tutorial",
-      icon: <NotebookPen className="text-white" />,
-    },
-    {
-      icon: <GraduationCap className="text-white" />,
-      title: "Master BIM for construction management",
-      description: "Access the guide",
-    },
-    {
-      icon: <FileBox className="text-white" />,
-      title: "Explore BIM modeling techniques",
-      description: "Access the guide",
-    },
-    {
-      icon: <Handshake className="text-white" />,
-      title: "Master BIM coordination",
-      description: "Learn best practices for seamless project collaboration.",
-    },
-    {
-      icon: <ShieldEllipsis className="text-white" />,
-      title: "Optimize clash detection",
-      description:
-        "Enhance project accuracy with advanced clash resolution strategies.",
-    },
-    {
-      icon: <FolderUp className="text-white" />,
-      title: "Implement BIM for facility management",
-      description:
-        "Leverage BIM data to improve long-term building maintenance and operations.",
-    },
-  ],
+  featuresData: {
+    title: "Resources",
+    subtitle: "Master BIM Strategies",
+    description:
+      "Explore best practices and comprehensive guides for effectively qualifying contractors ",
+    features: [
+      {
+        title: "Want to learn BIM best practices?",
+        description: "Watch the BIM tutorial",
+        icon: <NotebookPen className="text-white" />,
+      },
+      {
+        icon: <GraduationCap className="text-white" />,
+        title: "Master BIM for construction management",
+        description: "Access the guide",
+      },
+      {
+        icon: <FileBox className="text-white" />,
+        title: "Explore BIM modeling techniques",
+        description: "Access the guide",
+      },
+      {
+        icon: <Handshake className="text-white" />,
+        title: "Master BIM coordination",
+        description: "Learn best practices for seamless project collaboration.",
+      },
+      {
+        icon: <ShieldEllipsis className="text-white" />,
+        title: "Optimize clash detection",
+        description:
+          "Enhance project accuracy with advanced clash resolution strategies.",
+      },
+      {
+        icon: <FolderUp className="text-white" />,
+        title: "Implement BIM for facility management",
+        description:
+          "Leverage BIM data to improve long-term building maintenance and operations.",
+      },
+    ],
+  },
   ctaProps: {
     title: "Optimize your projects with BIM",
     description: "",
@@ -1005,7 +1191,7 @@ export const INVENTORY_PAGE = {
         "Manage inventory effortlessly with an easy-to-use interface.",
     },
     {
-      icon: <ClipboardMinus  className="text-background" />,
+      icon: <ClipboardMinus className="text-background" />,
       title: "Customizable Reports",
       description:
         "Generate detailed reports to track inventory trends and costs.",
@@ -1114,38 +1300,44 @@ export const INVENTORY_PAGE = {
         "Analyze supplier efficiency based on delivery times and material quality.",
     },
   ],
-  features: [
-    {
-      title: "Enhance Your Inventory Strategy",
-      description: "Watch the workshop",
-      icon: <Ribbon className="text-white" />,
-    },
-    {
-      icon: <Loader className="text-white" />,
-      title: "Best Practices for Inventory Management",
-      description: "Access the guide",
-    },
-    {
-      icon: <Warehouse className="text-white" />,
-      title: "Optimizing Warehouse Layouts",
-      description: "Access the guide",
-    },
-    {
-      icon: <Biohazard className="text-white" />,
-      title: "Reducing Material Waste",
-      description: "Access the guide",
-    },
-    {
-      icon: <Route className="text-white" />,
-      title: "Cost-Efficient Procurement Strategies",
-      description: "Access the guide",
-    },
-    {
-      icon: <GitCompare className="text-white" />,
-      title: "Effective Inventory Control Techniques",
-      description: "Access the guide",
-    },
-  ],
+  featuresData: {
+    title: "Resources",
+    subtitle: "Master Inventory Strategies",
+    description:
+      "Explore best practices and comprehensive guides for effectively qualifying contractors ",
+    features: [
+      {
+        title: "Enhance Your Inventory Strategy",
+        description: "Watch the workshop",
+        icon: <Ribbon className="text-white" />,
+      },
+      {
+        icon: <Loader className="text-white" />,
+        title: "Best Practices for Inventory Management",
+        description: "Access the guide",
+      },
+      {
+        icon: <Warehouse className="text-white" />,
+        title: "Optimizing Warehouse Layouts",
+        description: "Access the guide",
+      },
+      {
+        icon: <Biohazard className="text-white" />,
+        title: "Reducing Material Waste",
+        description: "Access the guide",
+      },
+      {
+        icon: <Route className="text-white" />,
+        title: "Cost-Efficient Procurement Strategies",
+        description: "Access the guide",
+      },
+      {
+        icon: <GitCompare className="text-white" />,
+        title: "Effective Inventory Control Techniques",
+        description: "Access the guide",
+      },
+    ],
+  },
   ctaProps: {
     title: "Transform Your Construction Inventory",
     description: "",
@@ -1397,39 +1589,45 @@ export const PROCUREMENT_PAGE = {
         "Adapt procurement processes to fit your project’s unique needs.",
     },
   ],
-  features: [
-    {
-      title: "Master Procurement Strategies",
-      description: "Watch the workshop",
-      icon: <Presentation className="text-white" />,
-    },
-    {
-      icon: <FileText className="text-white" />,
-      title: "Best Practices for Construction Procurement",
-      description: "Access the guide",
-    },
-    {
-      icon: <Truck className="text-white" />,
-      title: "Optimizing Supplier & Logistics Coordination",
-      description: "Access the guide",
-    },
-    {
-      icon: <Recycle className="text-white" />,
-      title: "Sustainable & Cost-Effective Sourcing",
-      description: "Access the guide",
-    },
-    {
-      icon: <BadgeDollarSign className="text-white" />,
-      title: "Cost-Efficient Procurement Strategies",
-      description: "Access the guide",
-    },
-    {
-      icon: <ClipboardList className="text-white" />,
-      title: "Procurement Compliance & Risk Management",
-      description: "Access the guide",
-    },
-  ],
-ctaProps: {
+  featuresData: {
+    title: "Resources",
+    subtitle: "Master Procurement Strategies",
+    description:
+      "Explore best practices and comprehensive guides for effectively qualifying contractors ",
+    features: [
+      {
+        title: "Master Procurement Strategies",
+        description: "Watch the workshop",
+        icon: <Presentation className="text-white" />,
+      },
+      {
+        icon: <FileText className="text-white" />,
+        title: "Best Practices for Construction Procurement",
+        description: "Access the guide",
+      },
+      {
+        icon: <Truck className="text-white" />,
+        title: "Optimizing Supplier & Logistics Coordination",
+        description: "Access the guide",
+      },
+      {
+        icon: <Recycle className="text-white" />,
+        title: "Sustainable & Cost-Effective Sourcing",
+        description: "Access the guide",
+      },
+      {
+        icon: <BadgeDollarSign className="text-white" />,
+        title: "Cost-Efficient Procurement Strategies",
+        description: "Access the guide",
+      },
+      {
+        icon: <ClipboardList className="text-white" />,
+        title: "Procurement Compliance & Risk Management",
+        description: "Access the guide",
+      },
+    ],
+  },
+  ctaProps: {
     title: "Optimize Your Construction Procurement",
     description: "",
     benefits: [
@@ -1682,38 +1880,44 @@ export const PREDICTIVEANLYTICS_PAGE = {
         "Identify potential disruptions in the supply chain using predictive models to mitigate delays.",
     },
   ],
-  features: [
-    {
-      title: "Predictive Supply Chain Insights",
-      description: "Access the report",
-      icon: <Search className="text-white" />,
-    },
-    {
-      icon: <Radar className="text-white" />,
-      title: "Material Demand Forecasting",
-      description: "Access the guide",
-    },
-    {
-      icon: <BarChart4 className="text-white" />,
-      title: "Cost Prediction & Budget Optimization",
-      description: "Access the report",
-    },
-    {
-      icon: <Clock className="text-white" />,
-      title: "Project Timeline Forecasting",
-      description: "Access the guide",
-    },
-    {
-      icon: <BatteryCharging className="text-white" />,
-      title: "Energy Consumption Forecasting",
-      description: "Access the guide",
-    },
-    {
-      icon: <Users className="text-white" />,
-      title: "Labor Demand Prediction",
-      description: "Access the report",
-    },
-  ],
+  featuresData: {
+    title: "Resources",
+    subtitle: "Master Predictive Strategies",
+    description:
+      "Explore best practices and comprehensive guides for effectively qualifying contractors ",
+    features: [
+      {
+        title: "Predictive Supply Chain Insights",
+        description: "Access the report",
+        icon: <Search className="text-white" />,
+      },
+      {
+        icon: <Radar className="text-white" />,
+        title: "Material Demand Forecasting",
+        description: "Access the guide",
+      },
+      {
+        icon: <BarChart4 className="text-white" />,
+        title: "Cost Prediction & Budget Optimization",
+        description: "Access the report",
+      },
+      {
+        icon: <Clock className="text-white" />,
+        title: "Project Timeline Forecasting",
+        description: "Access the guide",
+      },
+      {
+        icon: <BatteryCharging className="text-white" />,
+        title: "Energy Consumption Forecasting",
+        description: "Access the guide",
+      },
+      {
+        icon: <Users className="text-white" />,
+        title: "Labor Demand Prediction",
+        description: "Access the report",
+      },
+    ],
+  },
   ctaProps: {
     title: "Unlock the Power of Predictive Analytics",
     description: "",
@@ -1845,7 +2049,7 @@ export const REALTIMEDASHBOARD_PAGE = {
       ],
     },
   ],
- featureData: [
+  featureData: [
     {
       icon: <Monitor className="text-background" />,
       title: "Live Project Tracking",
@@ -1967,38 +2171,50 @@ export const REALTIMEDASHBOARD_PAGE = {
         "Receive instant insights and analytics as data is updated in real-time, allowing for quick decision-making.",
     },
   ],
- features: [
-    {
-      title: "Real-Time Performance",
-      description: "Monitor project metrics and performance in real-time for instant insights.",
-      icon: <Monitor className="text-white" />,
-    },
-    {
-      icon: <Clock className="text-white" />,
-      title: "Live Project Timeline Updates",
-      description: "Get immediate updates on project timelines and any delays or changes.",
-    },
-    {
-      icon: <Activity className="text-white" />,
-      title: "Dynamic Resource Allocation",
-      description: "Adjust resource allocation instantly based on real-time data.",
-    },
-    {
-      icon: <BatteryCharging className="text-white" />,
-      title: "Real-Time Energy Monitoring",
-      description: "Track and manage energy consumption as it happens, ensuring sustainable practices.",
-    },
-    {
-      icon: <TrendingUp className="text-white" />,
-      title: "Live Cost Tracking",
-      description: "Monitor project expenses in real-time and adjust budgets on the fly to stay within financial limits.",
-    },
-    {
-      icon: <Search className="text-white" />,
-      title: "Instant Risk Detection",
-      description: "Identify potential risks and issues in real-time using predictive analytics and data-driven models.",
-    },
-  ],
+  featuresData: {
+    title: "Resources",
+    subtitle: "Master Dashboard Strategies",
+    description:
+      "Explore best practices and comprehensive guides for effectively qualifying contractors ",
+    features: [
+      {
+        title: "Real-Time Performance",
+        description:
+          "Monitor project metrics and performance in real-time for instant insights.",
+        icon: <Monitor className="text-white" />,
+      },
+      {
+        icon: <Clock className="text-white" />,
+        title: "Live Project Timeline Updates",
+        description:
+          "Get immediate updates on project timelines and any delays or changes.",
+      },
+      {
+        icon: <Activity className="text-white" />,
+        title: "Dynamic Resource Allocation",
+        description:
+          "Adjust resource allocation instantly based on real-time data.",
+      },
+      {
+        icon: <BatteryCharging className="text-white" />,
+        title: "Real-Time Energy Monitoring",
+        description:
+          "Track and manage energy consumption as it happens, ensuring sustainable practices.",
+      },
+      {
+        icon: <TrendingUp className="text-white" />,
+        title: "Live Cost Tracking",
+        description:
+          "Monitor project expenses in real-time and adjust budgets on the fly to stay within financial limits.",
+      },
+      {
+        icon: <Search className="text-white" />,
+        title: "Instant Risk Detection",
+        description:
+          "Identify potential risks and issues in real-time using predictive analytics and data-driven models.",
+      },
+    ],
+  },
   ctaProps: {
     title: "Unlock the Potential of Real-Time Dashboard",
     description: "",
@@ -2252,44 +2468,50 @@ export const REPORTSANDALERTS_PAGE = {
         "Generate detailed project reports automatically with up-to-date data, keeping stakeholders.",
     },
   ],
-  features: [
-    {
-      icon: <Bell className="text-white" />,
-      title: "Instant Alert Notifications",
-      description:
-        "Receive instant notifications for any critical updates, such as delays.",
-    },
-    {
-      icon: <ClipboardList className="text-white" />,
-      title: "Progress Report Generation",
-      description:
-        "Automatically generate detailed progress reports, summarizing project status.",
-    },
-    {
-      icon: <AlertTriangle className="text-white" />,
-      title: "Critical Risk Alerts",
-      description:
-        "Get real-time alerts for potential risks and issues, allowing you to address them.",
-    },
-    {
-      icon: <FileText className="text-white" />,
-      title: "Automated Status Reporting",
-      description:
-        "Set up automated reports to monitor ongoing project status.",
-    },
-    {
-      icon: <Cloud className="text-white" />,
-      title: "Cloud-Based Report Access",
-      description:
-        "Access all reports and alerts from anywhere, anytime, with cloud-based integration.",
-    },
-    {
-      icon: <AlarmCheck className="text-white" />,
-      title: "Urgent Issue Alerts",
-      description:
-        "Receive notifications for urgent project issues that require immediate attention.",
-    },
-  ],
+  featuresData: {
+    title: "Resources",
+    subtitle: "Master Reports Strategies",
+    description:
+      "Explore best practices and comprehensive guides for effectively qualifying contractors ",
+    features: [
+      {
+        icon: <Bell className="text-white" />,
+        title: "Instant Alert Notifications",
+        description:
+          "Receive instant notifications for any critical updates, such as delays.",
+      },
+      {
+        icon: <ClipboardList className="text-white" />,
+        title: "Progress Report Generation",
+        description:
+          "Automatically generate detailed progress reports, summarizing project status.",
+      },
+      {
+        icon: <AlertTriangle className="text-white" />,
+        title: "Critical Risk Alerts",
+        description:
+          "Get real-time alerts for potential risks and issues, allowing you to address them.",
+      },
+      {
+        icon: <FileText className="text-white" />,
+        title: "Automated Status Reporting",
+        description:
+          "Set up automated reports to monitor ongoing project status.",
+      },
+      {
+        icon: <Cloud className="text-white" />,
+        title: "Cloud-Based Report Access",
+        description:
+          "Access all reports and alerts from anywhere, anytime, with cloud-based integration.",
+      },
+      {
+        icon: <AlarmCheck className="text-white" />,
+        title: "Urgent Issue Alerts",
+        description:
+          "Receive notifications for urgent project issues that require immediate attention.",
+      },
+    ],
+  },
   ctaProps: {
     title: "Stay Ahead with Real-Time Reports & Alerts",
     description: "",
@@ -2543,44 +2765,50 @@ export const PROJECTFINANCIAL_PAGE = {
         "Analyze project profitability with automated profit and loss reports, ensuring financial health.",
     },
   ],
-  features: [
-    {
-      icon: <DollarSign className="text-white" />,
-      title: "Real-Time Financial Alerts",
-      description:
-        "Receive instant notifications for budget overruns, cost fluctuations.",
-    },
-    {
-      icon: <ClipboardList className="text-white" />,
-      title: "Automated Financial Reports",
-      description:
-        "Generate detailed reports on project expenditures, revenue forecasts.",
-    },
-    {
-      icon: <AlertTriangle className="text-white" />,
-      title: "Budget Risk Warnings",
-      description:
-        "Get real-time alerts for financial risks, such as cost overruns.",
-    },
-    {
-      icon: <PieChart className="text-white" />,
-      title: "Expense Breakdown Analysis",
-      description:
-        "Track and categorize project expenses, ensuring transparency and better cost management.",
-    },
-    {
-      icon: <Banknote className="text-white" />,
-      title: "Cash Flow Monitoring",
-      description:
-        "Monitor incoming and outgoing project cash flow in real-time to maintain financial stability.",
-    },
-    {
-      icon: <TrendingUp className="text-white" />,
-      title: "Profitability Insights",
-      description:
-        "Analyze project financial performance to optimize profitability and maximize returns.",
-    },
-  ],
+  featuresData: {
+    title: "Resources",
+    subtitle: "Master Financial Strategies",
+    description:
+        "Explore best practices and comprehensive guides for effectively qualifying contractors ",
+    features: [
+      {
+        icon: <DollarSign className="text-white" />,
+        title: "Real-Time Financial Alerts",
+        description:
+          "Receive instant notifications for budget overruns, cost fluctuations.",
+      },
+      {
+        icon: <ClipboardList className="text-white" />,
+        title: "Automated Financial Reports",
+        description:
+          "Generate detailed reports on project expenditures, revenue forecasts.",
+      },
+      {
+        icon: <AlertTriangle className="text-white" />,
+        title: "Budget Risk Warnings",
+        description:
+          "Get real-time alerts for financial risks, such as cost overruns.",
+      },
+      {
+        icon: <PieChart className="text-white" />,
+        title: "Expense Breakdown Analysis",
+        description:
+          "Track and categorize project expenses, ensuring transparency and better cost management.",
+      },
+      {
+        icon: <Banknote className="text-white" />,
+        title: "Cash Flow Monitoring",
+        description:
+          "Monitor incoming and outgoing project cash flow in real-time to maintain financial stability.",
+      },
+      {
+        icon: <TrendingUp className="text-white" />,
+        title: "Profitability Insights",
+        description:
+          "Analyze project financial performance to optimize profitability and maximize returns.",
+      },
+    ],
+  },
   ctaProps: {
     title: "Gain Full Control Over Project Finances",
     description: "",
@@ -2834,45 +3062,50 @@ export const INVOICEMANAGEMENT_PAGE = {
         "Monitor invoice due dates, ensuring timely payments to avoid any project delays caused by cash flow issues.",
     },
   ],
-  features: [
-    {
-      icon: <FileText className="text-white" />,
-      title: "Customizable Invoice",
-      description:
-        "Create and customize invoice templates with your brand’s logo, payment terms, and project details.",
-    },
-    {
-      icon: <ClipboardList className="text-white" />,
-      title: "Invoice History & Records",
-      description:
-        "Maintain an organized history of all invoices and payments, ensuring easy access to past financial data.",
-    },
-    {
-      icon: <AlertTriangle className="text-white" />,
-      title: "Invoice Discrepancy Alerts",
-      description:
-        "Get notified about any discrepancies or mismatches between invoices and payments for prompt resolution.",
-    },
-    {
-      icon: <PieChart className="text-white" />,
-      title: "Expense & Revenue Insights",
-      description:
-        "Analyze the breakdown of invoices to gain insights into project costs and revenue patterns.",
-    },
-    {
-      icon: <Receipt className="text-white" />,
-      title: "Comprehensive Billing Reports",
-      description:
-        "Generate billing reports to keep track of project invoicing and ensure financial transparency.",
-    },
-    {
-      icon: <RefreshCcw className="text-white" />,
-      title: "Invoice Updates",
-      description:
-        "Easily update or adjust invoices as project costs change, ensuring your records reflect the latest figures.",
-    },
-  
-  ],
+  featuresData: {
+    title: "Resources",
+    subtitle: "Master Invoice Strategies",
+    description:
+      "Explore best practices and comprehensive guides for effectively qualifying contractors ",
+    features: [
+      {
+        icon: <FileText className="text-white" />,
+        title: "Customizable Invoice",
+        description:
+          "Create and customize invoice templates with your brand’s logo, payment terms, and project details.",
+      },
+      {
+        icon: <ClipboardList className="text-white" />,
+        title: "Invoice History & Records",
+        description:
+          "Maintain an organized history of all invoices and payments, ensuring easy access to past financial data.",
+      },
+      {
+        icon: <AlertTriangle className="text-white" />,
+        title: "Invoice Discrepancy Alerts",
+        description:
+          "Get notified about any discrepancies or mismatches between invoices and payments for prompt resolution.",
+      },
+      {
+        icon: <PieChart className="text-white" />,
+        title: "Expense & Revenue Insights",
+        description:
+          "Analyze the breakdown of invoices to gain insights into project costs and revenue patterns.",
+      },
+      {
+        icon: <Receipt className="text-white" />,
+        title: "Comprehensive Billing Reports",
+        description:
+          "Generate billing reports to keep track of project invoicing and ensure financial transparency.",
+      },
+      {
+        icon: <RefreshCcw className="text-white" />,
+        title: "Invoice Updates",
+        description:
+          "Easily update or adjust invoices as project costs change, ensuring your records reflect the latest figures.",
+      },
+    ],
+  },
   ctaProps: {
     title: "Streamline Your Invoice Management Process",
     description: "",
@@ -3132,44 +3365,50 @@ export const QUALITYANDSAFETY_PAGE = {
     },
   ],
 
-  features: [
-    {
-      icon: <ShieldAlert className="text-white" />,
-      title: "Safety Hazard Identification",
-      description:
-        "Automatically identify and flag potential hazards on-site to prevent accidents.",
-    },
-    {
-      icon: <ClipboardList className="text-white" />,
-      title: "Safety Compliance Records",
-      description:
-        "Maintain an organized history of safety inspections, audits, and compliance.",
-    },
-    {
-      icon: <AlertTriangle className="text-white" />,
-      title: "Safety Violation Alerts",
-      description:
-        "Receive instant alerts when safety violations or risks are detected.",
-    },
-    {
-      icon: <BarChart className="text-white" />,
-      title: "Incident & Risk Analytics",
-      description:
-        "Analyze safety incident data to identify trends, improve risk management strategies, and enhance site safety.",
-    },
-    {
-      icon: <FileText className="text-white" />,
-      title: "Safety Training Records",
-      description:
-        "Track and manage safety training programs for all workers to ensure compliance with site safety standards.",
-    },
-    {
-      icon: <RefreshCcw className="text-white" />,
-      title: "Dynamic Safety Protocol",
-      description:
-        "Easily update safety protocols in real-time as new risks or regulations emerge to keep your team safe and compliant.",
-    },
-  ],
+  featuresData: {
+    title: "Resources",
+    subtitle: "Master Quality Strategies",
+    description:
+      "Explore best practices and comprehensive guides for effectively qualifying contractors ",
+    features: [
+      {
+        title: "Safety Hazard Identification",
+        description:
+          "Automatically identify and flag potential hazards on-site to prevent accidents.",
+        icon: <ShieldAlert className="text-white" />,
+      },
+      {
+        icon: <ClipboardList className="text-white" />,
+        title: "Safety Compliance Records",
+        description:
+          "Maintain an organized history of safety inspections, audits, and compliance.",
+      },
+      {
+        icon: <AlertTriangle className="text-white" />,
+        title: "Safety Violation Alerts",
+        description:
+          "Receive instant alerts when safety violations or risks are detected.",
+      },
+      {
+        icon: <BarChart className="text-white" />,
+        title: "Incident & Risk Analytics",
+        description:
+          "Analyze safety incident data to identify trends, improve risk management strategies, and enhance site safety.",
+      },
+      {
+        icon: <FileText className="text-white" />,
+        title: "Safety Training Records",
+        description:
+          "Track and manage safety training programs for all workers to ensure compliance with site safety standards.",
+      },
+      {
+        icon: <RefreshCcw className="text-white" />,
+        title: "Dynamic Safety Protocol",
+        description:
+          "Easily update safety protocols in real-time as new risks or regulations emerge to keep your team safe and compliant.",
+      },
+    ],
+  },
 
   ctaProps: {
     title: "Enhance Construction Site Safety and Quality",
@@ -3183,5 +3422,629 @@ export const QUALITYANDSAFETY_PAGE = {
     button1Link: "/book-a-demo",
     button2Label: "Start a trial",
     button2Link: "/start-trial",
+  },
+};
+export const PROJECTMANAGEMENT_PAGE = {
+  heroProps: {
+    subtitle: "Project Management",
+    description:
+      "Optimize project planning, execution, and tracking with powerful management tools. Stay on schedule, control costs, and improve collaboration across teams.",
+    buttonLabel: "Get Started",
+    imageSrc: "/solutions/estimation-hero.jpg",
+    imageAlt: "Construction project management overview",
+    linkHref: "/book-a-demo",
+  },
+
+  heroSectionProps: {
+    subtitle: "STREAMLINE PROJECT EXECUTION",
+    title: "Plan and Deliver Projects Efficiently",
+    description:
+      "Improve project workflows, track progress in real-time, and enhance communication for seamless project execution.",
+    buttonLabel: "Explore Features",
+    buttonLink: "/project-management-features",
+  },
+
+  featuresSectionProps: {
+    features: [
+      {
+        title: "Real-Time Project Tracking",
+        description:
+          "Monitor project progress in real-time, ensuring tasks stay on schedule and within budget.",
+        imageSrc: "/solutions/estimation-1.jpg",
+      },
+      {
+        title: "Task & Resource Management",
+        description:
+          "Effectively allocate resources, assign tasks, and track milestones for efficient project execution.",
+        imageSrc: "/solutions/estimation-2.jpg",
+      },
+    ],
+  },
+
+  TestimonalsSectionProps: {
+    subtitle: "STREAMLINE PROJECT MANAGEMENT",
+    title: "Optimize Project Execution & Collaboration",
+    imageSrc: "/solutions/estimation-testimonal.jpg",
+    imageAlt: "Illustration showing project management features",
+    features: [
+      {
+        title: "Real-Time Project Tracking",
+        description:
+          "Monitor project progress in real-time, ensuring tasks stay on schedule and teams stay aligned.",
+        icon: <Clock size={24} />,
+      },
+      {
+        title: "Task & Workflow Automation",
+        description:
+          "Automate task assignments, approvals, and workflows to boost efficiency and reduce delays.",
+        icon: <Settings size={24} />,
+      },
+      {
+        title: "Team Collaboration",
+        description:
+          "Enhance team communication with centralized reporting and real-time updates on project milestones.",
+        icon: <Users size={24} />,
+      },
+    ],
+  },
+
+  mainSectionData: [
+    {
+      image: "/solutions/estimation section.jpg",
+      title: "Projects",
+      subtitle: "Seamlessly Manage Projects from Start to Finish",
+      description:
+        "Track project progress, manage tasks efficiently, and ensure seamless collaboration to deliver projects on time and within budget.",
+      features: [
+        {
+          icon: <Briefcase size={24} className="text-background" />,
+          title: "Project Planning & Scheduling",
+          description:
+            "Plan project timelines, allocate resources, and set milestones to keep everything on track.",
+        },
+        {
+          icon: <Activity size={24} className="text-background" />,
+          title: "Live Progress Tracking",
+          description:
+            "Monitor project updates in real-time and make data-driven decisions to improve efficiency.",
+        },
+        {
+          icon: <TrendingUp size={24} className="text-background" />,
+          title: "Performance Analytics",
+          description:
+            "Analyze project performance with key metrics and insights to optimize future workflows.",
+        },
+      ],
+    },
+    {
+      image: "/solutions/estimation section-1.jpg",
+      imageOnRight: "true",
+      title: "Daily Logs",
+      subtitle: "Keep Track of Daily Project Activities",
+      description:
+        "Maintain detailed daily logs to document work progress, track site activities, and ensure clear communication among teams.",
+      features: [
+        {
+          icon: <FileText size={24} className="text-background" />,
+          title: "Automated Daily Reports",
+          description:
+            "Generate structured daily reports, including work completed, issues encountered, and progress updates.",
+        },
+        {
+          icon: <Users size={24} className="text-background" />,
+          title: "Crew & Equipment Tracking",
+          description:
+            "Log crew attendance, equipment usage, and material deliveries to maintain accurate records.",
+        },
+        {
+          icon: <Bell size={24} className="text-background" />,
+          title: "Incident & Issue Logging",
+          description:
+            "Record site incidents, delays, and safety concerns to ensure prompt resolution and accountability.",
+        },
+      ],
+    },
+    {
+      image: "/solutions/estimation section.jpg",
+      title: "Scheduling",
+      subtitle: "Optimize Project Timelines with Smart Scheduling",
+      description:
+        "Enhance efficiency with precise scheduling tools. Plan tasks, allocate resources, and prevent delays to ensure smooth project execution.",
+      features: [
+        {
+          icon: <Calendar size={24} className="text-background" />,
+          title: "Advanced Project Scheduling",
+          description:
+            "Create detailed project schedules with dependencies, milestones, and deadlines for better coordination.",
+        },
+        {
+          icon: <Clock size={24} className="text-background" />,
+          title: "Real-Time Timeline Adjustments",
+          description:
+            "Adjust schedules dynamically based on project changes, ensuring flexibility and efficiency.",
+        },
+        {
+          icon: <AlertCircle size={24} className="text-background" />,
+          title: "Conflict & Delay Alerts",
+          description:
+            "Get instant alerts on potential scheduling conflicts or delays, allowing for proactive problem-solving.",
+        },
+      ],
+    },
+  ],
+
+  featureData: [
+    {
+      icon: <Calendar className="text-background" />,
+      title: "Project Scheduling",
+      description:
+        "Plan and manage project timelines efficiently, ensuring tasks are completed on schedule.",
+    },
+    {
+      icon: <ClipboardList className="text-background" />,
+      title: "Task Management",
+      description:
+        "Assign, track, and update project tasks in real-time to keep the team aligned and productive.",
+    },
+    {
+      icon: <Users className="text-background" />,
+      title: "Team Collaboration",
+      description:
+        "Enhance communication and coordination between teams with shared project data and updates.",
+    },
+    {
+      icon: <Clock className="text-background" />,
+      title: "Real-Time Progress Tracking",
+      description:
+        "Monitor project progress in real-time and adjust workflows dynamically to avoid delays.",
+    },
+    {
+      icon: <FileText className="text-background" />,
+      title: "Daily Logs & Reports",
+      description:
+        "Maintain accurate daily logs and reports for documentation and accountability across projects.",
+    },
+    {
+      icon: <TrendingUp className="text-background" />,
+      title: "Project Performance",
+      description:
+        "Analyze key project metrics to identify bottlenecks, optimize resources, and improve efficiency.",
+    },
+    {
+      icon: <FilePlus className="text-background" />,
+      title: "Automated Reporting",
+      description:
+        "Generate detailed project reports automatically for tracking progress and decision-making.",
+    },
+    {
+      icon: <AlertCircle className="text-background" />,
+      title: "Risk & Issue Management",
+      description:
+        "Identify, track, and mitigate potential project risks to ensure smooth execution.",
+    },
+    {
+      icon: <DollarSign className="text-background" />,
+      title: "Budget & Cost Tracking",
+      description:
+        "Monitor budgets, control costs, and track financial data to ensure profitability.",
+    },
+    {
+      icon: <Database className="text-background" />,
+      title: "Centralized Project Data",
+      description:
+        "Store and manage all project-related documents, drawings, and records in one secure platform.",
+    },
+    {
+      icon: <FileBarChart className="text-background" />,
+      title: "Project Insights & Forecasting",
+      description:
+        "Leverage data-driven insights to improve project planning and anticipate future challenges.",
+    },
+    {
+      icon: <Settings className="text-background" />,
+      title: "Workflow Automation",
+      description:
+        "Automate repetitive tasks and approvals to streamline project management processes.",
+    },
+    {
+      icon: <MapPin className="text-background" />,
+      title: "Site & Location Tracking",
+      description:
+        "Track site activities, equipment locations, and material deliveries for better oversight.",
+    },
+    {
+      icon: <UserCheck2 className="text-background" />,
+      title: "Resource Allocation",
+      description:
+        "Efficiently assign workforce and equipment to projects to optimize utilization and productivity.",
+    },
+    {
+      icon: <ShieldCheck className="text-background" />,
+      title: "Compliance",
+      description:
+        "Ensure all project activities meet industry regulations and maintain compliance records.",
+    },
+    {
+      icon: <ClipboardCheck className="text-background" />,
+      title: "Quality Control & Inspections",
+      description:
+        "Conduct quality checks and inspections to maintain high construction standards.",
+    },
+    {
+      icon: <RefreshCcw className="text-background" />,
+      title: "Change Order Management",
+      description:
+        "Track and manage change orders efficiently, ensuring adjustments are documented and approved.",
+    },
+    {
+      icon: <Bell className="text-background" />,
+      title: "Instant Notifications & Alerts",
+      description:
+        "Get real-time alerts for task updates, deadline changes, and critical project events.",
+    },
+    {
+      icon: <HardHat className="text-background" />,
+      title: "Safety & Compliance",
+      description:
+        "Integrate safety protocols within project management to ensure compliance and reduce risks.",
+    },
+    {
+      icon: <CheckCheckIcon className="text-background" />,
+      title: "Project Completion",
+      description:
+        "Ensure smooth project handover with final inspections, documentation, and approvals.",
+    },
+  ],
+
+  featuresData: {
+    title: "Resources",
+    subtitle: "Master Project Strategies",
+    description:
+      "Explore best practices and comprehensive guides for effectively qualifying contractors ",
+    features: [
+      {
+        icon: <Calendar className="text-white" />,
+        title: "Project Scheduling & Planning",
+        description:
+          "Create, manage, and adjust project schedules to keep tasks on track and meet deadlines efficiently.",
+      },
+      {
+        icon: <ClipboardList className="text-white" />,
+        title: "Task & Workflow Management",
+        description:
+          "Organize and assign project tasks, ensuring teams stay aligned and workflows run smoothly.",
+      },
+      {
+        icon: <AlertCircle className="text-white" />,
+        title: "Risk & Issue Tracking",
+        description:
+          "Identify potential project risks early, track issues, and implement solutions proactively.",
+      },
+      {
+        icon: <BarChart className="text-white" />,
+        title: "Project Performance Analytics",
+        description:
+          "Analyze key project metrics, identify bottlenecks, and optimize workflows for better efficiency.",
+      },
+      {
+        icon: <FileText className="text-white" />,
+        title: "Project Documentation",
+        description:
+          "Maintain comprehensive project records, daily logs, and reports for transparency.",
+      },
+      {
+        icon: <RefreshCcw className="text-white" />,
+        title: "Real-Time Project Updates",
+        description:
+          "Ensure all stakeholders have up-to-date project information with live progress.",
+      },
+    ],
+  },
+
+  ctaProps: {
+    title: "Streamline Project Management for Efficiency",
+    description: "",
+    benefits: [
+      "Seamless project",
+      "Real-time task tracking",
+      "Data-driven project insights",
+    ],
+    button1Label: "Book a demo",
+    button1Link: "/book-a-demo",
+    button2Label: "Start a trial",
+    button2Link: "/start-trial",
+  },
+};
+
+export const PLATFORM_PAGE = {
+  heroprops: {
+    title: "Planning + Building",
+    subtitle: "All-in-One Construction Solutions Platform",
+    description:
+      "Streamline project planning, execution, and tracking with advanced management tools. Stay on schedule, control costs, and enhance team collaboration for seamless project success.",
+    buttonLabel: "Get Started",
+    imageAlt: "Construction project management overview",
+    linkHref: "/book-a-demo",
+  },
+  campaignChannels: {
+    sectionTitle: "Connect on preferred channels",
+    subtitle: "CAMPAIGN CHANNELS",
+    description:
+      "Create unique customer interactions across mobile and web through channels like email, push, in-app, and SMS.",
+    features: [
+      {
+        icon: <Mail size={24} className="text-background" />,
+        title: "Email marketing",
+        description:
+          "Automated journeys, one-time sends, and transactional messages.",
+      },
+      {
+        icon: <Smartphone size={24} className="text-background" />,
+        title: "In-app messages",
+        description: "Embedded experiences in your website and app.",
+      },
+      {
+        icon: <Bell size={24} className="text-background" />,
+        title: "Push notifications",
+        description:
+          "Rich informational messages with deep linking capability.",
+      },
+      {
+        icon: <MessagesSquare size={24} className="text-background" />,
+        title: "SMS",
+        description: "Deliver text, multimedia (MMS), and WhatsApp messages.",
+      },
+    ],
+  },
+  featuresData: {
+    title: "Resources",
+    subtitle: "Master Invoice Strategies",
+    description:
+      "Explore best practices and comprehensive guides for effectively qualifying contractors ",
+    tagColor: "text-accent",
+    bgColor: "bg-custombg",
+    titleColor: "text-black",
+    descriptionColor: "text-foreground-muted",
+    cardBgColor: "bg-gray-100",
+    hoverColor: "#3A3A3A",
+    iconBgColor: "bg-white",
+    features: [
+      {
+        icon: <FileText />,
+        title: "Customizable Invoice",
+        description:
+          "Create and customize invoice templates with your brand’s logo, payment terms, and project details.",
+      },
+      {
+        icon: <ClipboardList />,
+        title: "Invoice History & Records",
+        description:
+          "Maintain an organized history of all invoices and payments, ensuring easy access to past financial data.",
+      },
+      {
+        icon: <AlertTriangle />,
+        title: "Invoice Discrepancy Alerts",
+        description:
+          "Get notified about any discrepancies or mismatches between invoices and payments for prompt resolution.",
+      },
+      {
+        icon: <PieChart />,
+        title: "Expense & Revenue Insights",
+        description:
+          "Analyze the breakdown of invoices to gain insights into project costs and revenue patterns.",
+      },
+      {
+        icon: <Receipt />,
+        title: "Comprehensive Billing Reports",
+        description:
+          "Generate billing reports to keep track of project invoicing and ensure financial transparency.",
+      },
+      {
+        icon: <RefreshCcw />,
+        title: "Invoice Updates",
+        description:
+          "Easily update or adjust invoices as project costs change, ensuring your records reflect the latest figures.",
+      },
+    ],
+  },
+  mainSection: [
+    {
+      image: "/solutions/estimation section.jpg",
+      title: "Scheduling",
+      subtitle: "Optimize Project Timelines with Smart Scheduling",
+      description:
+        "Enhance efficiency with precise scheduling tools. Plan tasks, allocate resources, and prevent delays to ensure smooth project execution.",
+      features: [
+        {
+          icon: <Calendar className="text-background" />,
+          title: "Advanced Project Scheduling",
+          description:
+            "Create detailed project schedules with dependencies, milestones, and deadlines for better coordination.",
+        },
+        {
+          icon: <ClipboardList className="text-background" />,
+          title: "Task Management",
+          description:
+            "Assign, track, and update project tasks in real-time to keep the team aligned and productive.",
+        },
+        {
+          icon: <AlertCircle className="text-background" />,
+          title: "Conflict & Delay Alerts",
+          description:
+            "Get instant alerts on potential scheduling conflicts or delays, allowing for proactive problem-solving.",
+        },
+      ],
+    },
+  ],
+  ctaProps: {
+    title: "Streamline Project Management for Efficiency",
+    description: "",
+    benefits: [
+      "Seamless project",
+      "Real-time task tracking",
+      "Data-driven project insights",
+    ],
+    button1Label: "Get Started",
+    button1Link: "/book-a-demo",
+    button2Label: "Start a trial",
+    button2Link: "/start-trial",
+  },
+
+  stickySection: {
+    title: "Designed for your entire team",
+    subtitle: "Platform features",
+    description: "Tailored for universal usability, our platform minimizes operational overhead, guaranteeing maximum ROI for brands of all sizes.",
+    features: [
+      { title: "Workspaces", description: "Workspaces enable seamless management across multiple products...", icon: <PanelsTopLeft className="size-6 text-background" /> },
+      { title: "User permissions", description: "Admin-level users can control who on your team can create...", icon: <Lock className="size-6 text-background" /> },
+      { title: "Compliance", description: "As a data company, we understand the importance of keeping...", icon: <ShieldCheck className="size-6 text-background" /> },
+      { title: "Integrations", description: "Flexible integrations your developers will love...", icon: <Layers className="size-6 text-background" /> },
+    ]
   }
 };
+
+export const ALL_FEATURES = {
+  heroprops: {
+    title: "Comprehensive Construction Management Features",
+    subtitle: "Complete Feature Suite",
+    description: "Discover our full range of construction management tools designed to streamline your projects. From estimation and scheduling to resource management and compliance tracking, our platform provides everything you need to deliver successful construction projects.",
+    buttonLabel: "Explore Features",
+    imageAlt: "Overview of construction management software features including project scheduling, cost tracking, and resource management",
+    linkHref: "/book-a-demo",
+  },
+  features: [
+    {
+      icon: <Calendar className="text-background" />,
+      title: "Project Scheduling",
+      description:
+        "Plan and manage project timelines efficiently, ensuring tasks are completed on schedule.",
+    },
+    {
+      icon: <ClipboardList className="text-background" />,
+      title: "Task Management",
+      description:
+        "Assign, track, and update project tasks in real-time to keep the team aligned and productive.",
+    },
+    {
+      icon: <Users className="text-background" />,
+      title: "Team Collaboration",
+      description:
+        "Enhance communication and coordination between teams with shared project data and updates.",
+    },
+    {
+      icon: <Clock className="text-background" />,
+      title: "Real-Time Progress Tracking",
+      description:
+        "Monitor project progress in real-time and adjust workflows dynamically to avoid delays.",
+    },
+    {
+      icon: <FileText className="text-background" />,
+      title: "Daily Logs & Reports",
+      description:
+        "Maintain accurate daily logs and reports for documentation and accountability across projects.",
+    },
+    {
+      icon: <TrendingUp className="text-background" />,
+      title: "Project Performance",
+      description:
+        "Analyze key project metrics to identify bottlenecks, optimize resources, and improve efficiency.",
+    },
+    {
+      icon: <FilePlus className="text-background" />,
+      title: "Automated Reporting",
+      description:
+        "Generate detailed project reports automatically for tracking progress and decision-making.",
+    },
+    {
+      icon: <AlertCircle className="text-background" />,
+      title: "Risk & Issue Management",
+      description:
+        "Identify, track, and mitigate potential project risks to ensure smooth execution.",
+    },
+    {
+      icon: <DollarSign className="text-background" />,
+      title: "Budget & Cost Tracking",
+      description:
+        "Monitor budgets, control costs, and track financial data to ensure profitability.",
+    },
+    {
+      icon: <Database className="text-background" />,
+      title: "Centralized Project Data",
+      description:
+        "Store and manage all project-related documents, drawings, and records in one secure platform.",
+    },
+    {
+      icon: <FileBarChart className="text-background" />,
+      title: "Project Insights & Forecasting",
+      description:
+        "Leverage data-driven insights to improve project planning and anticipate future challenges.",
+    },
+    {
+      icon: <Settings className="text-background" />,
+      title: "Workflow Automation",
+      description:
+        "Automate repetitive tasks and approvals to streamline project management processes.",
+    },
+    {
+      icon: <MapPin className="text-background" />,
+      title: "Site & Location Tracking",
+      description:
+        "Track site activities, equipment locations, and material deliveries for better oversight.",
+    },
+    {
+      icon: <UserCheck2 className="text-background" />,
+      title: "Resource Allocation",
+      description:
+        "Efficiently assign workforce and equipment to projects to optimize utilization and productivity.",
+    },
+    {
+      icon: <ShieldCheck className="text-background" />,
+      title: "Compliance",
+      description:
+        "Ensure all project activities meet industry regulations and maintain compliance records.",
+    },
+    {
+      icon: <ClipboardCheck className="text-background" />,
+      title: "Quality Control & Inspections",
+      description:
+        "Conduct quality checks and inspections to maintain high construction standards.",
+    },
+    {
+      icon: <RefreshCcw className="text-background" />,
+      title: "Change Order Management",
+      description:
+        "Track and manage change orders efficiently, ensuring adjustments are documented and approved.",
+    },
+    {
+      icon: <Bell className="text-background" />,
+      title: "Instant Notifications & Alerts",
+      description:
+        "Get real-time alerts for task updates, deadline changes, and critical project events.",
+    },
+    {
+      icon: <HardHat className="text-background" />,
+      title: "Safety & Compliance",
+      description:
+        "Integrate safety protocols within project management to ensure compliance and reduce risks.",
+    },
+    {
+      icon: <CheckCheckIcon className="text-background" />,
+      title: "Project Completion",
+      description:
+        "Ensure smooth project handover with final inspections, documentation, and approvals.",
+    },
+  ],
+  ctaProps: {
+    title: "Streamline Project Management for Efficiency",
+    description: "",
+    benefits: [
+      "Seamless project",
+      "Real-time task tracking",
+      "Data-driven project insights",
+    ],
+    button1Label: "Get Started",
+    button1Link: "/book-a-demo",
+    button2Label: "Start a trial",
+    button2Link: "/start-trial",
+  }
+}

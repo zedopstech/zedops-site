@@ -11,7 +11,7 @@ interface SectionData {
   title: string;
   subtitle?: string;
   description: string;
-  features: Feature[];
+  features?: Feature[]; // Make features optional
 }
 
 const Mainsection: React.FC<{ sections: SectionData[] }> = ({ sections }) => {
@@ -45,19 +45,22 @@ const Mainsection: React.FC<{ sections: SectionData[] }> = ({ sections }) => {
                   {section.description}
                 </p>
 
-                <div className="mt-7 space-y-7">
-                  {section.features.map((feature, index) => (
-                    <div key={index} className="flex items-start gap-4">
-                      <div className="bg-lightmint p-2 rounded flex-shrink-0">
-                        <div className="w-6 h-6">{feature.icon}</div>
+                {/* Features Section (Optional) */}
+                {section.features && (
+                  <div className="mt-7 space-y-7">
+                    {section.features.map((feature, index) => (
+                      <div key={index} className="flex items-start gap-4">
+                        <div className="bg-lightmint p-2 rounded flex-shrink-0">
+                          <div className="w-6 h-6">{feature.icon}</div>
+                        </div>
+                        <div>
+                          <h3 className="font-semibold">{feature.title}</h3>
+                          <p className="text-gray-600">{feature.description}</p>
+                        </div>
                       </div>
-                      <div>
-                        <h3 className="font-semibold">{feature.title}</h3>
-                        <p className="text-gray-600">{feature.description}</p>
-                      </div>
-                    </div>
-                  ))}
-                </div>
+                    ))}
+                  </div>
+                )}
               </div>
             </>
           ) : (
@@ -74,19 +77,22 @@ const Mainsection: React.FC<{ sections: SectionData[] }> = ({ sections }) => {
                   {section.description}
                 </p>
 
-                <div className="mt-7 space-y-7">
-                  {section.features.map((feature, index) => (
-                    <div key={index} className="flex items-start gap-4">
-                      <div className="bg-lightmint p-2 rounded flex-shrink-0">
-                        <div className="w-6 h-6">{feature.icon}</div>
+                {/* Features Section (Optional) */}
+                {section.features && (
+                  <div className="mt-7 space-y-7">
+                    {section.features.map((feature, index) => (
+                      <div key={index} className="flex items-start gap-4">
+                        <div className="bg-lightmint p-2 rounded flex-shrink-0">
+                          <div className="w-6 h-6">{feature.icon}</div>
+                        </div>
+                        <div>
+                          <h3 className="font-semibold">{feature.title}</h3>
+                          <p className="text-gray-600">{feature.description}</p>
+                        </div>
                       </div>
-                      <div>
-                        <h3 className="font-semibold">{feature.title}</h3>
-                        <p className="text-gray-600">{feature.description}</p>
-                      </div>
-                    </div>
-                  ))}
-                </div>
+                    ))}
+                  </div>
+                )}
               </div>
 
               {/* Image Section */}

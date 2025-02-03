@@ -28,10 +28,8 @@ export default function PrequalificationPage() {
         features={REALTIMEDASHBOARD_PAGE.featureData}
       />
       <FeatureCards
-        sectionTitle="Resourecs"
-        subtitle="Master Dashboard Strategies"
-        sectionDescription="Explore best practices and comprehensive guides for effectively qualifying contractors "
-        features={REALTIMEDASHBOARD_PAGE.features}
+       
+        featuresData={REALTIMEDASHBOARD_PAGE.featuresData}
       />
       <CtoSection {...REALTIMEDASHBOARD_PAGE.ctaProps} />
     </div>

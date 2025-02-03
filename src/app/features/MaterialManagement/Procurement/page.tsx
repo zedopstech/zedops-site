@@ -28,10 +28,8 @@ export default function PrequalificationPage() {
         features={PROCUREMENT_PAGE.featureData}
       />
       <FeatureCards
-        sectionTitle="Resourecs"
-        subtitle="Master Procurement Strategies"
-        sectionDescription="Explore best practices and comprehensive guides for effectively qualifying contractors "
-        features={PROCUREMENT_PAGE.features}
+       
+        featuresData={PROCUREMENT_PAGE.featuresData}
       />
       <CtoSection {...PROCUREMENT_PAGE.ctaProps} />
     </div>

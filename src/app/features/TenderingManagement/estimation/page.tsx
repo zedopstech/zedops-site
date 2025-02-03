@@ -28,10 +28,7 @@ export default function EstimationPage() {
         features={ESTIMATION_PAGE.featureData}
       />
       <FeatureCards
-        sectionTitle="Resourecs"
-        subtitle="Master Estimation Strategies"
-        sectionDescription="Explore best practices and comprehensive guides for creating accurate and efficient construction project estimates. "
-        features={ESTIMATION_PAGE.features}
+       featuresData={ESTIMATION_PAGE.featuresData}
       />
       <CtoSection {...ESTIMATION_PAGE.ctaProps} />
     </div>

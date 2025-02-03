@@ -28,10 +28,7 @@ export default function PrequalificationPage() {
         features={QUALITYANDSAFETY_PAGE.featureData}
       />
       <FeatureCards
-        sectionTitle="Resourecs"
-        subtitle="Master Quality Strategies"
-        sectionDescription="Explore best practices and comprehensive guides for effectively qualifying contractors "
-        features={QUALITYANDSAFETY_PAGE.features}
+        featuresData={QUALITYANDSAFETY_PAGE.featuresData}
       />
       <CtoSection {...QUALITYANDSAFETY_PAGE.ctaProps} />
     </div>

@@ -53,7 +53,7 @@ const featuresMenu = [
     items: [
       {
         title: "Project Management",
-        href: "/features/project-management",
+        href: "/features/ProjectExecution/ProjectManagement",
         description: "Organize and execute projects effectively.",
         icon: HardHat,
       },
@@ -128,7 +128,7 @@ const featuresMenu = [
 const featureNav = [
   {
     title: "Platform Overview",
-    href: "/",
+    href: "/features/Platform",
     description: "Get a high-level overview of ZedOps.",
     icon: Grid,
   },
