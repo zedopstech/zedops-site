@@ -11,7 +11,7 @@ interface FeaturesProps {
   features: Feature[];
 }
 
-const Features: React.FC<FeaturesProps> = ({title, features }) => {
+const EmailFeatures: React.FC<FeaturesProps> = ({title, features }) => {
   return (
     <div className="bg-custombg w-full mx-auto p-6 md:p-16 lg:p-44">
       <h2 className="text-3xl md:text-5xl font-semibold text-background mb-8 md:mb-16">{title}</h2>
@@ -30,4 +30,4 @@ const Features: React.FC<FeaturesProps> = ({title, features }) => {
   );
 };
 
-export default Features;
+export default EmailFeatures;

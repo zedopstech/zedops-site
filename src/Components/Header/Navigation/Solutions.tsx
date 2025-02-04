@@ -134,13 +134,13 @@ const featureNav = [
   },
   {
     title: "All Features",
-    href: "/",
+    href: "/features/all-features ",
     description: "Explore all the features ZedOps has to offer.",
     icon: Grip,
   },
   {
     title: "Integrations",
-    href: "/",
+    href: "/features/integration",
     description: "Discover the integrations ZedOps supports.",
     icon: Blocks,
   },
