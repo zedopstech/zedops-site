@@ -1,0 +1,28 @@
+{
+    "category": "Customer data",
+    "subCategory": "Personalization",
+    "title": "Tailor product recommendations for every industry",
+    "description": "Isn't it great when a brand knows you so well that they recommend exactly what you need—even before you know you need it? Let's explore how personalized recommendations can be used in industries like edtech, fintech, SaaS, healthcare, and e-commerce.",
+    "authors": [
+        { "name": "Jess Cvija", "role": "Customer Success Manager", "image": "/blog/blog profile-1.png" },
+        { "name": "Alexandra Hubley", "role": "Sr. Content Strategist", "image": "/blog/blog profile-1.png" }
+    ],
+    "imageSrc": "/blog/blog1.png",
+    "altText": "Personalized Product Recommendations",
+    "paragraph": "Personalized product recommendations use customer data and advanced algorithms to suggest items that are most likely to resonate with a particular consumer. In industries such as edtech, fintech, and e-commerce, businesses can leverage this technology to improve customer experience and increase sales. In this article, we will explore how personalized recommendations can be applied in these sectors to drive growth and customer satisfaction.",
+    "additionalContent": "The adoption of personalized recommendations leads to increased engagement, higher conversion rates, and better customer loyalty. As industries like healthcare continue to digitize, they can take advantage of personalized recommendations to provide tailored treatment options and improve overall patient care.",
+    "Maintitle": "Tailor product recommendations for every industry",
+    "subtitle": "Edtech",
+    "bulletPoints": [ 
+        "Improved customer experience",
+        "Increased conversion rates",
+        "Better customer engagement",
+        "Personalized treatment options in healthcare"
+    ],
+    "profile": {
+        "name": "Wouter Hol",
+        "role": "CEO at Suitsupply",
+        "image": "/blog/blog profile-1.png",
+        "quote": "Personalization is a huge thing for Suitsupply in general. We need to find the perfect fit, and this doesn't just go for our suits, but for customers as well."
+    }
+}

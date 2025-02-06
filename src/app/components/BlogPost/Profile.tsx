@@ -9,16 +9,17 @@ interface ProfileProps {
 
 const Profile: React.FC<ProfileProps> = ({ name, role, image, quote }) => {
   return (
-    <section className="flex flex-col space-y-4 py-8 px-48 bg-gray-100 text-black items-end">
-      {/* Quote */}
-      <p className="text-lg italic text-gray-700 max-w-xl text-left">{quote}</p>
+    <section className="flex flex-col space-y-4 py-8 px-8 md:px-8 lg:px-96 bg-gray-100 text-black">
+      {/* Quote with darker color for the quotation marks */}
+      <p className="text-lg italic font-bold text-gray-900 max-w-xl ml-96">
+        <span className="text-black font-bold text-5xl">"</span>{quote}
+      </p>
 
-      {/* Profile Details */}
-      <div className="flex flex-col items-start px-96 space-y-4 mt-4">
+      {/* Profile Details (Maintaining Alignment) */}
+      <div className="flex flex-col items-start space-y-4 mt-4 ml-96">
         {/* Profile Image */}
         <div className="w-10 h-10 rounded-full overflow-hidden">
           <img src={image} alt={name} className="object-cover w-full h-full" />
-
         </div>
 
         {/* Profile Name and Role */}
