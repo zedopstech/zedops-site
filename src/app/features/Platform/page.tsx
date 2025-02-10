@@ -11,7 +11,7 @@ import LeadSection from "../components/solutions/LeadSection"
 import FeatureCards from "../components/solutions/Featurecards"
 import { PLATFORM_PAGE } from "@/Data/data";
 import Mainsection from "../components/solutions/Mainsection";
-import CtaSection from "../components/solutions/Ctosection";
+import CtoSection from "../components/solutions/Ctosection";
 import FeatureSticky from "../components/solutions/FeatureSticky";
 import { Layers, Lock, ShieldCheck } from "lucide-react";
 import { PanelsTopLeft } from "lucide-react";
@@ -27,7 +27,7 @@ export default function PrequalificationPage() {
       <FeatureCards featuresData={PLATFORM_PAGE.featuresData} />
       <Mainsection sections={PLATFORM_PAGE.mainSection} />
       <FeatureSticky {...PLATFORM_PAGE.stickySection} />
-      <CtaSection {...PLATFORM_PAGE.ctaProps} />
+      <CtoSection {...PLATFORM_PAGE.ctaProps} />
       {/* Hero Content Section */}
       {/* <MainHero {...PROJECTMANAGEMENT_PAGE.heroSectionProps} /> */}
       {/* Features Section */}

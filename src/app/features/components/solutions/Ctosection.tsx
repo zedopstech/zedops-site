@@ -1,6 +1,6 @@
 import React from "react";
 
-interface CtaSectionProps {
+interface CtoSectionProps {
   title: string;
   description: string;
   benefits: string[];
@@ -10,7 +10,7 @@ interface CtaSectionProps {
   button2Link: string;
 }
 
-const CtaSection: React.FC<CtaSectionProps> = ({
+const CtoSection: React.FC<CtoSectionProps> = ({
   title,
   description,
   benefits,
@@ -55,4 +55,4 @@ const CtaSection: React.FC<CtaSectionProps> = ({
   );
 };
 
-export default CtaSection;
+export default CtoSection;
