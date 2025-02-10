@@ -204,12 +204,12 @@ export const ESTIMATION_PAGE = {
   heroProps: {
     subtitle: "Estimation",
     description:
-      "Streamline your construction project estimation with precision. Use accurate tools to forecast costs, manage resources, and optimize planning effortlessly.",
+      "Win more bids and boost your bottom line with our construction estimating software. Generate precise and reliable estimates in a fraction of the time, minimizing errors and maximizing profitability.",
     buttonLabel: "Get Started",
     imageSrc: "/solutions/estimation-hero.jpg",
-
-    imageAlt: "Construction professionals using estimation software",
-    linkHref: "/book-a-demo",
+    imageAlt:
+      "Construction estimator using software with detailed cost breakdown",
+    linkHref: "/estimation-demo",
   },
   heroSectionProps: {
     subtitle: "ACCURATE COST PREDICTIONS",
@@ -492,7 +492,7 @@ export const PREQUALIFICATION_PAGE = {
   heroProps: {
     subtitle: "Prequalification",
     description:
-      "Streamline your construction project prequalification process. Gain insights and ensure that you're working with the right contractors for every project.",
+      "Ensure project success starts with qualified contractors.  Our platform streamlines the entire prequalification process, saving you time, reducing risk, and giving you confidence in your team.",
     buttonLabel: "Get Started",
     imageSrc: "/solutions/estimation-hero.jpg",
     imageAlt: "Construction workers reviewing prequalification forms",
@@ -781,11 +781,11 @@ export const BIM_PAGE = {
   heroProps: {
     subtitle: "BIM",
     description:
-      "Transform your construction projects with cutting-edge BIM technology. Effortlessly manage, visualize, and collaborate on your building designs with precision and efficiency.",
-    buttonLabel: "Get Started",
-    imageSrc: "/solutions/estimation-hero.jpg",
-    imageAlt: "Construction professionals working with BIM technology",
-    linkHref: "/book-a-demo",
+      "Revolutionize your construction workflow with BIM. From enhanced visualization to streamlined collaboration, build smarter, faster, and with greater accuracy.",
+    buttonLabel:"Get started",
+    imageSrc: "/solutions/bim-hero.jpg", //Update this!
+    imageAlt: "Interactive BIM model on a large display",
+    linkHref: "/bim-solutions",
   },
   heroSectionProps: {
     subtitle: "REVOLUTIONIZE YOUR PROJECTS",
@@ -818,7 +818,7 @@ export const BIM_PAGE = {
     imageAlt: "Professionals using BIM for a collaborative project",
     features: [
       {
-        title: "Accurate modeling for fewer errors",
+        title: "Accurate modeling for fewer",
         description:
           "Minimize costly mistakes and rework with BIM's ability to provide precise, detailed models of your construction projects.",
         icon: <SpellCheck size={24} />,
@@ -1068,13 +1068,13 @@ export const BIM_PAGE = {
 };
 export const INVENTORY_PAGE = {
   heroProps: {
-    subtitle: "Inventory Management",
+    subtitle: "Inventory",
     description:
-      "Optimize your construction inventory with real-time tracking and smart resource allocation. Reduce waste, improve efficiency, and keep projects on schedule with accurate inventory insights.",
+      "Control construction costs with our inventory management solution. Track materials in real-time, minimize waste, and eliminate costly delays caused by missing or misplaced items.",
     buttonLabel: "Get Started",
-    imageSrc: "/solutions/estimation-hero.jpg",
-    imageAlt: "Construction site inventory management",
-    linkHref: "/book-a-demo",
+    imageSrc: "/solutions/inventory-hero.jpg", // Update this!
+    imageAlt: "Construction worker scanning inventory using a mobile device",
+    linkHref: "/inventory-management-demo",
   },
   heroSectionProps: {
     subtitle: "STREAMLINE YOUR INVENTORY",
@@ -1306,37 +1306,37 @@ export const INVENTORY_PAGE = {
     description:
       "Explore best practices and comprehensive guides for effectively qualifying contractors ",
     features: [
-      {
-        title: "Enhance Your Inventory Strategy",
-        description: "Watch the workshop",
-        icon: <Ribbon className="text-white" />,
-      },
-      {
-        icon: <Loader className="text-white" />,
-        title: "Best Practices for Inventory Management",
-        description: "Access the guide",
-      },
-      {
-        icon: <Warehouse className="text-white" />,
-        title: "Optimizing Warehouse Layouts",
-        description: "Access the guide",
-      },
-      {
-        icon: <Biohazard className="text-white" />,
-        title: "Reducing Material Waste",
-        description: "Access the guide",
-      },
-      {
-        icon: <Route className="text-white" />,
-        title: "Cost-Efficient Procurement Strategies",
-        description: "Access the guide",
-      },
-      {
-        icon: <GitCompare className="text-white" />,
-        title: "Effective Inventory Control Techniques",
-        description: "Access the guide",
-      },
-    ],
+  {
+    title: "Enhance Your Inventory Strategy",
+    description: "Watch the workshop to refine your approach.",
+    icon: <Ribbon className="text-white" />,
+  },
+  {
+    icon: <Loader className="text-white" />,
+    title: "Best Practices for Inventory Management",
+    description: "Access the guide for optimized workflows.",
+  },
+  {
+    icon: <Warehouse className="text-white" />,
+    title: "Optimizing Warehouse Layouts",
+    description: "Access the guide to maximize space and efficiency.",
+  },
+  {
+    icon: <Biohazard className="text-white" />,
+    title: "Reducing Material Waste",
+    description: "Access the guide to minimize loss and improve sustainability.",
+  },
+  {
+    icon: <Route className="text-white" />,
+    title: "Cost-Efficient Procurement",
+    description: "Access the guide to lower material expenses.",
+  },
+  {
+    icon: <GitCompare className="text-white" />,
+    title: "Effective Inventory Control Techniques",
+    description: "Access the guide to maintain optimal stock levels.",
+  },
+],
   },
   ctaProps: {
     title: "Transform Your Construction Inventory",
@@ -1354,13 +1354,13 @@ export const INVENTORY_PAGE = {
 };
 export const PROCUREMENT_PAGE = {
   heroProps: {
-    subtitle: "Procurement Management",
+    subtitle: "Procurement",
     description:
-      "Enhance your construction procurement process with smart sourcing, cost control, and supplier management. Ensure timely deliveries, reduce expenses, and streamline material acquisition for seamless project execution.",
+      "Control costs and streamline your construction procurement. From smarter sourcing to optimized supplier management, ensure timely deliveries, reduce expenses, and drive project profitability.",
     buttonLabel: "Get Started",
-    imageSrc: "/solutions/estimation-hero.jpg",
-    imageAlt: "Construction site procurement process",
-    linkHref: "/book-a-demo",
+    imageSrc: "/solutions/procurement-hero.jpg", // Update this!
+    imageAlt: "Construction Procurement Management Software Dashboard",
+    linkHref: "/procurement-demo",
   },
   heroSectionProps: {
     subtitle: "SIMPLIFY YOUR PROCUREMENT",
@@ -1595,37 +1595,37 @@ export const PROCUREMENT_PAGE = {
     description:
       "Explore best practices and comprehensive guides for effectively qualifying contractors ",
     features: [
-      {
-        title: "Master Procurement Strategies",
-        description: "Watch the workshop",
-        icon: <Presentation className="text-white" />,
-      },
-      {
-        icon: <FileText className="text-white" />,
-        title: "Best Practices for Construction Procurement",
-        description: "Access the guide",
-      },
-      {
-        icon: <Truck className="text-white" />,
-        title: "Optimizing Supplier & Logistics Coordination",
-        description: "Access the guide",
-      },
-      {
-        icon: <Recycle className="text-white" />,
-        title: "Sustainable & Cost-Effective Sourcing",
-        description: "Access the guide",
-      },
-      {
-        icon: <BadgeDollarSign className="text-white" />,
-        title: "Cost-Efficient Procurement Strategies",
-        description: "Access the guide",
-      },
-      {
-        icon: <ClipboardList className="text-white" />,
-        title: "Procurement Compliance & Risk Management",
-        description: "Access the guide",
-      },
-    ],
+  {
+    title: "Master Procurement Strategies",
+    description: "Watch the workshop to elevate your skills.",
+    icon: <Presentation className="text-white" />,
+  },
+  {
+    icon: <FileText className="text-white" />,
+    title: "Best Practices for Construction Procurement",
+    description: "Access the guide for streamlined processes.",
+  },
+  {
+    icon: <Truck className="text-white" />,
+    title: "Optimizing Supplier & Logistics Coordination",
+    description: "Access the guide for efficient delivery and reduced delays.",
+  },
+  {
+    icon: <Recycle className="text-white" />,
+    title: "Sustainable & Cost-Effective Sourcing",
+    description: "Access the guide to lower expenses with green practices.",
+  },
+  {
+    icon: <BadgeDollarSign className="text-white" />,
+    title: "Cost-Efficient Procurement Strategies",
+    description: "Access the guide to maximize budget control.",
+  },
+  {
+    icon: <ClipboardList className="text-white" />,
+    title: "Procurement Compliance & Risk Management",
+    description: "Access the guide to safeguard against regulatory issues.",
+  },
+],
   },
   ctaProps: {
     title: "Optimize Your Construction Procurement",
@@ -1645,11 +1645,12 @@ export const PREDICTIVEANLYTICS_PAGE = {
   heroProps: {
     subtitle: "Predictive Analytics",
     description:
-      "Leverage AI-driven insights to forecast project demands, optimize resource allocation, and minimize risks. Enhance decision-making with real-time data analysis and predictive modeling for better project outcomes.",
+      "Stop project overruns and maximize ROI with AI-powered predictive analytics. Forecast potential delays, optimize resource allocation, and proactively mitigate risks for more profitable projects.",
     buttonLabel: "Get Started",
-    imageSrc: "/solutions/estimation-hero.jpg",
-    imageAlt: "Construction site predictive analytics dashboard",
-    linkHref: "/book-a-demo",
+    imageSrc: "/solutions/estimation-hero.jpg", // MUST UPDATE
+    imageAlt:
+      "Construction project timeline with AI-predicted risks highlighted",
+    linkHref: "/predictive-analytics-demo",
   },
   heroSectionProps: {
     subtitle: "HARNESS THE POWER OF DATA",
@@ -1885,38 +1886,38 @@ export const PREDICTIVEANLYTICS_PAGE = {
     subtitle: "Master Predictive Strategies",
     description:
       "Explore best practices and comprehensive guides for effectively qualifying contractors ",
-    features: [
-      {
-        title: "Predictive Supply Chain Insights",
-        description: "Access the report",
-        icon: <Search className="text-white" />,
-      },
-      {
-        icon: <Radar className="text-white" />,
-        title: "Material Demand Forecasting",
-        description: "Access the guide",
-      },
-      {
-        icon: <BarChart4 className="text-white" />,
-        title: "Cost Prediction & Budget Optimization",
-        description: "Access the report",
-      },
-      {
-        icon: <Clock className="text-white" />,
-        title: "Project Timeline Forecasting",
-        description: "Access the guide",
-      },
-      {
-        icon: <BatteryCharging className="text-white" />,
-        title: "Energy Consumption Forecasting",
-        description: "Access the guide",
-      },
-      {
-        icon: <Users className="text-white" />,
-        title: "Labor Demand Prediction",
-        description: "Access the report",
-      },
-    ],
+   features: [
+  {
+    title: "Predictive Supply Chain Insights",
+    description: "Access the report for optimized procurement strategies.",
+    icon: <Search className="text-white" />,
+  },
+  {
+    icon: <Radar className="text-white" />,
+    title: "Material Demand Forecasting",
+    description: "Access the guide for proactive inventory planning.",
+  },
+  {
+    icon: <BarChart4 className="text-white" />,
+    title: "Cost Prediction & Budget Optimization",
+    description: "Access the report for enhanced financial control.",
+  },
+  {
+    icon: <Clock className="text-white" />,
+    title: "Project Timeline Forecasting",
+    description: "Access the guide for on-time project delivery.",
+  },
+  {
+    icon: <BatteryCharging className="text-white" />,
+    title: "Energy Consumption Forecasting",
+    description: "Access the guide for sustainable and cost-effective operations.",
+  },
+  {
+    icon: <Users className="text-white" />,
+    title: "Labor Demand Prediction",
+    description: "Access the report for efficient workforce management.",
+  },
+],
   },
   ctaProps: {
     title: "Unlock the Power of Predictive Analytics",
@@ -1936,11 +1937,11 @@ export const REALTIMEDASHBOARD_PAGE = {
   heroProps: {
     subtitle: "Real-Time Dashboard",
     description:
-      "Access live data insights, track project performance, and make informed decisions instantly with a real-time dashboard. Stay updated with key metrics and progress across multiple projects at once.",
+      "Stop Reacting, Start Leading. Gain instant insights and take immediate action with our real-time construction dashboard. Track performance, identify problems, and stay in control.",
     buttonLabel: "Get Started",
-    imageSrc: "/solutions/estimation-hero.jpg",
-    imageAlt: "Construction site real-time dashboard overview",
-    linkHref: "/book-a-demo",
+    imageSrc: "/solutions/estimation-hero.jpg", // MUST UPDATE
+    imageAlt: "Interactive construction project dashboard on a large screen",
+    linkHref: "/real-time-dashboard-demo",
   },
   heroSectionProps: {
     subtitle: "STAY ON TOP OF EVERY DETAIL",
@@ -2233,11 +2234,12 @@ export const REPORTSANDALERTS_PAGE = {
   heroProps: {
     subtitle: "Reports & Alerts",
     description:
-      "Stay ahead with comprehensive reports and instant alerts. Get real-time updates on project progress, resource usage, and potential issues so you can take immediate action.",
+      "Don't wait for problems, get ahead of them. Our construction reports and alerts system provides real-time insights and instant notifications, so you can take action *before* issues escalate.",
     buttonLabel: "Get Started",
-    imageSrc: "/solutions/estimation-hero.jpg",
-    imageAlt: "Construction site reports and alerts overview",
-    linkHref: "/book-a-demo",
+    imageSrc: "/solutions/estimation-hero.jpg", // MUST UPDATE
+    imageAlt:
+      "Example of a real-time construction alert notification on a mobile device",
+    linkHref: "/reports-alerts-demo",
   },
   heroSectionProps: {
     subtitle: "NEVER MISS A KEY UPDATE",
@@ -2530,11 +2532,12 @@ export const PROJECTFINANCIAL_PAGE = {
   heroProps: {
     subtitle: "Project Financials",
     description:
-      "Gain complete control over your project's financial health. Track budgets, monitor costs, and forecast future expenses to ensure financial success.",
+      "Unlock project profitability with real-time financial control. Track budgets, manage costs, and forecast expenses to maximize your margins.",
     buttonLabel: "Get Started",
-    imageSrc: "/solutions/estimation-hero.jpg",
-    imageAlt: "Construction site project financials overview",
-    linkHref: "/book-a-demo",
+    imageSrc: "/solutions/estimation-hero.jpg", // MUST UPDATE!
+    imageAlt:
+      "Construction project manager reviewing financial performance dashboard on a laptop.",
+    linkHref: "/project-financials-demo",
   },
   heroSectionProps: {
     subtitle: "MANAGE YOUR PROJECTS' BOTTOM LINE",
@@ -2769,7 +2772,7 @@ export const PROJECTFINANCIAL_PAGE = {
     title: "Resources",
     subtitle: "Master Financial Strategies",
     description:
-        "Explore best practices and comprehensive guides for effectively qualifying contractors ",
+      "Explore best practices and comprehensive guides for effectively qualifying contractors ",
     features: [
       {
         icon: <DollarSign className="text-white" />,
@@ -2827,11 +2830,11 @@ export const INVOICEMANAGEMENT_PAGE = {
   heroProps: {
     subtitle: "Invoice",
     description:
-      "Streamline your invoicing process with automated billing, real-time tracking, and seamless payment management. Ensure accuracy and efficiency in all financial transactions.",
+      "Get paid faster with our automated construction invoicing system. Streamline billing, track invoices in real-time, and simplify payment management for improved cash flow.",
     buttonLabel: "Get Started",
-    imageSrc: "/solutions/estimation-hero.jpg",
-    imageAlt: "Construction site invoice management overview",
-    linkHref: "/book-a-demo",
+    imageSrc: "/solutions/estimation-hero.jpg", // MUST UPDATE
+    imageAlt: "Construction invoice management software showing payment status",
+    linkHref: "/invoice-management-demo",
   },
   heroSectionProps: {
     subtitle: "SIMPLIFY YOUR BILLING PROCESS",
@@ -3124,11 +3127,11 @@ export const QUALITYANDSAFETY_PAGE = {
   heroProps: {
     subtitle: "Quality & Safety",
     description:
-      "Ensure the highest standards of quality and safety on your construction projects. Streamline compliance, track safety metrics, and proactively manage risks to protect both your team and assets.",
+      "Protect your team, projects, and reputation with our comprehensive quality and safety management solution. Proactively identify risks, streamline inspections, and ensure a safe and compliant work environment.",
     buttonLabel: "Get Started",
-    imageSrc: "/solutions/estimation-hero.jpg",
-    imageAlt: "Construction site quality and safety overview",
-    linkHref: "/book-a-demo",
+    imageSrc: "/solutions/estimation-hero.jpg", // MUST UPDATE
+    imageAlt: "Construction site safety inspection using a mobile app",
+    linkHref: "/quality-safety-demo",
   },
 
   heroSectionProps: {
@@ -3428,11 +3431,11 @@ export const PROJECTMANAGEMENT_PAGE = {
   heroProps: {
     subtitle: "Project Management",
     description:
-      "Optimize project planning, execution, and tracking with powerful management tools. Stay on schedule, control costs, and improve collaboration across teams.",
+      "Deliver projects on time and under budget with our comprehensive construction project management platform. Gain real-time visibility, streamline workflows, and empower your teams for success.",
     buttonLabel: "Get Started",
-    imageSrc: "/solutions/estimation-hero.jpg",
-    imageAlt: "Construction project management overview",
-    linkHref: "/book-a-demo",
+    imageSrc: "/solutions/estimation-hero.jpg", // REQUIRED UPDATE!
+    imageAlt: "Construction project manager reviewing a Gantt chart on a tablet.",
+    linkHref: "/project-management-demo",
   },
 
   heroSectionProps: {

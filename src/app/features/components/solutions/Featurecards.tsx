@@ -55,7 +55,7 @@ const Features: React.FC<FeaturesProps> = ({ featuresData }) => {
           {featuresData.features.map((feature, index) => (
             <div
               key={index}
-              className={`p-6 md:p-8 ${
+              className={`group p-6 md:p-8 ${
                 featuresData.cardBgColor || "bg-backgroundlight"
               } ${
                 !featuresData.cardBgColor
@@ -66,7 +66,7 @@ const Features: React.FC<FeaturesProps> = ({ featuresData }) => {
               <div
                 className={`p-2 mb-4 ${
                   featuresData.iconBgColor || "bg-black"
-                } flex items-center justify-center `}
+                } flex items-center justify-center rounded-md`}
               >
                 {feature.icon}
               </div>
@@ -84,14 +84,17 @@ const Features: React.FC<FeaturesProps> = ({ featuresData }) => {
               >
                 {feature.description}
               </p>
-              <div className="mt-auto pt-4">
-              <div className="flex justify-between gap-[10em] items-center w-full cursor-pointer">
-              <span className={`${featuresData.titleColor || "text-white"} text-sm font-medium group-hover:underline`}>
-              Access the guide
-             </span>
-             <MoveRight className="size-4 transition-transform transform group-hover:translate-x-6" />
-            </div>
-
+              <div className="mt-auto pt-4 w-full">
+                <div className="flex justify-between items-center w-full cursor-pointer group">
+                  <span
+                    className={`${
+                      featuresData.titleColor || "text-white"
+                    } text-sm font-medium group-hover:underline`}
+                  >
+                    Access the guide
+                  </span>
+                  <MoveRight className="size-4 text-white transition-transform transform group-hover:translate-x-2" />
+                </div>
               </div>
             </div>
           ))}

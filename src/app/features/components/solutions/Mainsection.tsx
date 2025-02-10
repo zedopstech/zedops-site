@@ -38,7 +38,7 @@ const Mainsection: React.FC<{ sections: SectionData[] }> = ({ sections }) => {
                 <h4 className="text-[#1BB387] font-semibold uppercase text-sm">
                   {section.subtitle}
                 </h4>
-                <h2 className="text-4xl md:text-5xl lg:text-5xl font-semibold text-background mt-4">
+                <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-5xl font-semibold text-background mt-4">
                   {section.title}
                 </h2>
                 <p className="mt-4 text-gray-600 max-w-prose mx-auto md:mx-0">
@@ -54,8 +54,12 @@ const Mainsection: React.FC<{ sections: SectionData[] }> = ({ sections }) => {
                           <div className="w-6 h-6">{feature.icon}</div>
                         </div>
                         <div>
-                          <h3 className="font-semibold">{feature.title}</h3>
-                          <p className="text-gray-600">{feature.description}</p>
+                          <h3 className="font-semibold text-left sm:text-xl">
+                            {feature.title}
+                          </h3>
+                          <p className="text-gray-600 text-left sm:text-base">
+                            {feature.description}
+                          </p>
                         </div>
                       </div>
                     ))}
@@ -70,7 +74,7 @@ const Mainsection: React.FC<{ sections: SectionData[] }> = ({ sections }) => {
                 <h4 className="text-[#1BB387] font-semibold uppercase text-sm">
                   {section.subtitle}
                 </h4>
-                <h2 className="text-4xl md:text-5xl lg:text-5xl font-semibold text-background mt-4">
+                <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-5xl font-semibold text-background mt-4">
                   {section.title}
                 </h2>
                 <p className="mt-4 text-gray-600 max-w-prose mx-auto md:mx-0">
@@ -86,8 +90,12 @@ const Mainsection: React.FC<{ sections: SectionData[] }> = ({ sections }) => {
                           <div className="w-6 h-6">{feature.icon}</div>
                         </div>
                         <div>
-                          <h3 className="font-semibold">{feature.title}</h3>
-                          <p className="text-gray-600">{feature.description}</p>
+                          <h3 className="font-semibold text-left sm:text-xl">
+                            {feature.title}
+                          </h3>
+                          <p className="text-gray-600 text-left sm:text-base">
+                            {feature.description}
+                          </p>
                         </div>
                       </div>
                     ))}
