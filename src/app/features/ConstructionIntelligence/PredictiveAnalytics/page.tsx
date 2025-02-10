@@ -9,7 +9,7 @@ import FeatureCards from "@/Components/solutions/Featurecards";
 import CtoSection from "@/Components/solutions/Ctosection";
 import { PREDICTIVEANLYTICS_PAGE} from "@/Data/data";
 
-export default function PrequalificationPage() {
+export default function PredictiveanalyticsPage() {
   // Props configuration
 
   return (

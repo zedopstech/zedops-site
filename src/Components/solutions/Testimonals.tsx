@@ -9,6 +9,7 @@ interface ControlFeature {
 interface ControlSectionProps {
   subtitle: string;
   title: string;
+  description?: string;
   features: ControlFeature[];
   imageSrc?: string; // Optional image for the section
   imageAlt?: string; // Alt text for the image
@@ -17,6 +18,7 @@ interface ControlSectionProps {
 const ControlSection: React.FC<ControlSectionProps> = ({
   subtitle,
   title,
+  description,
   features,
   imageSrc,
   imageAlt,
@@ -27,6 +29,10 @@ const ControlSection: React.FC<ControlSectionProps> = ({
         <h3 className="text-[#1BB387] font-semibold text-lg">{subtitle}</h3>
         <h2 className="text-5xl lg:text-5xl font-semibold text-background mt-2">
           {title}
+        </h2>
+        
+        <h2 className="text-3xl lg:text-lg mx-auto max-w-[60ch]  text-gray-600 mt-6">
+          {description}
         </h2>
 
         {/* Centered Image */}

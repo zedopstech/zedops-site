@@ -47,7 +47,7 @@ const resource = [
   {
     title: "Security",
     content: "Your data is secured with top-notch security measures.",
-    href: "",
+    href: "/features/Security",
     icon: Shield,
   },
 ];
