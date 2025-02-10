@@ -26,7 +26,7 @@ interface FeaturesProps {
 const Features: React.FC<FeaturesProps> = ({ featuresData }) => {
   return (
     <div className={`py-24 ${featuresData.bgColor || "bg-[#151414]"}`}>
-      <div className="container mx-auto px-4 sm:px-6 md:px-12 lg:px-32 xl:px-48">
+      <div className="container mx-auto max-w-6xl">
         {/* Section Heading */}
         <h2
           className={`${
