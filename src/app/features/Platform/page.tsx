@@ -8,10 +8,10 @@ import React from "react";
 // import CtoSection from "../../components/solutions/CtoSection";
 import IntroSection from "../components/solutions/IntroSection"
 import LeadSection from "../components/solutions/LeadSection"
-import FeatureCards from "../components/solutions/FeatureCards"
+import FeatureCards from "../components/solutions/Featurecards"
 import { PLATFORM_PAGE } from "@/Data/data";
-import Mainsection from "../components/solutions/MainSection";
-import CtaSection from "../components/solutions/CtoSection";
+import Mainsection from "../components/solutions/Mainsection";
+import CtaSection from "../components/solutions/Ctosection";
 import FeatureSticky from "../components/solutions/FeatureSticky";
 import { Layers, Lock, ShieldCheck } from "lucide-react";
 import { PanelsTopLeft } from "lucide-react";

@@ -3,10 +3,10 @@ import Hero from "../../components/solutions/Hero";
 import MainHero from "../../components/solutions/MainHero";
 import FeaturesSection from "../../components/solutions/FeaturesSection";
 import Testimonals from "../../components/solutions/Testimonals";
-import MainSection from "../../components/solutions/MainSection";
-import EmailFeautres from "../../components/solutions/EmailFeatures";
-import FeatureCards from "../../components/solutions/FeatureCards";
-import CtoSection from "../../components/solutions/CtoSection";
+import MainSection from "../../components/solutions/Mainsection";
+import EmailFeautres from "../../components/solutions/Emailfeatures";
+import FeatureCards from "../../components/solutions/Featurecards";
+import CtoSection from "../../components/solutions/Ctosection";
 import { ESTIMATION_PAGE } from "@/Data/data";
 
 export default function EstimationPage() {

@@ -17,7 +17,7 @@ const Hero: FC<HeroProps> = ({
   linkHref,
 }) => {
   return (
-    <section className="overflow-x-clip mx-auto py-12 sm:py-20 md:py-24 lg:py-28 bg-background relative -mt-header flex min-h-[500px] items-center text-foreground lg:pb-28 lg:pt-24">
+    <section className="overflow-x-clip max-w-6xl mx-auto py-12 sm:py-20 md:py-24 lg:py-28 bg-background relative -mt-header flex min-h-[500px] items-center text-foreground lg:pb-28 lg:pt-24">
       <div className="container flex flex-col gap-6 pt-header text-center">
         <div>
           {title && (
