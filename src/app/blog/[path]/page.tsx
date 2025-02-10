@@ -1,11 +1,11 @@
-import Hero from "../../components/BlogPost/Hero";
-import Paragraph from "../../components/BlogPost/Paragraph";
-import Title from "../../components/BlogPost/Title";
-import Bulleting from "../../components/BlogPost/Bulleting";  // Import the Bullet component
-import Profile from "../../components/BlogPost/Profile";  // Import the Profile component
+import Hero from "@/Components/BlogPost/Hero";
+import Paragraph from "@/Components/BlogPost/Paragraph";
+import Title from "@/Components/BlogPost/Title";
+import Bulleting from "@/Components/BlogPost/Bulleting";  // Import the Bullet component
+import Profile from "@/Components/BlogPost/Profile";  // Import the Profile component
 import path from 'path';
 import { promises as fs } from 'fs';
-import Toc from "@/app/components/BlogPost/Toc";
+import Toc from "@/Components/BlogPost/Toc";
 
 const readJsonFile = async (params: { path: string }) => {
   try {

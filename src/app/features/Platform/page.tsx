@@ -1,18 +1,11 @@
 import React from "react";
-// import Hero from "../../components/solutions/Hero";
-// import MainHero from "../../components/solutions/MainHero";
-// import FeaturesSection from "../../components/solutions/FeaturesSection";
-// import Testimonals from "../../components/solutions/Testimonals";
-// import EmailFeautres from "../../components/solutions/EmailFeatures";
-// import FeatureCards from "../../components/solutions/FeatureCards";
-// import CtoSection from "../../components/solutions/CtoSection";
-import IntroSection from "../components/solutions/IntroSection"
-import LeadSection from "../components/solutions/LeadSection"
-import FeatureCards from "../components/solutions/Featurecards"
+import IntroSection from "@/Components/solutions/IntroSection"
+import LeadSection from "@/Components/solutions/LeadSection"
+import FeatureCards from "@/Components/solutions/Featurecards"
 import { PLATFORM_PAGE } from "@/Data/data";
-import Mainsection from "../components/solutions/Mainsection";
-import CtoSection from "../components/solutions/Ctosection";
-import FeatureSticky from "../components/solutions/FeatureSticky";
+import Mainsection from "@/Components/solutions/Mainsection";
+import CtoSection from "@/Components/solutions/Ctosection";
+import FeatureSticky from "@/Components/solutions/FeatureSticky";
 import { Layers, Lock, ShieldCheck } from "lucide-react";
 import { PanelsTopLeft } from "lucide-react";
 
