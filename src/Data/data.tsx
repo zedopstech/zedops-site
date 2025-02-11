@@ -201,6 +201,9 @@ import {
   Camera,
   Key,
   BellRingIcon,
+  PlayCircle,
+  Book,
+  BookOpen,
 } from "lucide-react";
 
 export const ESTIMATION_PAGE = {
@@ -4351,6 +4354,9 @@ export const KNOWLEDGE_PAGE = {
   searchSectionProps: {
     title: "What can we help you find?",
     placeholder: "Search",
+    icons: {
+      search: <Search size={20} />,
+    },
   },
   cardSectionProps: {
     cards: [
@@ -4409,7 +4415,12 @@ export const WEBINARS_PAGE = {
     title: "What can we help you find?",
     placeholder: "Search",
     videoUrl: "videos",
+    videoName:"Videos",
     description: "Searching for more videos? Check out our video library.",
+    icons: {
+      search: <Search size={20} />,
+      video: <PlayCircle size={40} className="text-black fill-white" />,
+    },
   },
 
   cardSectionProps: {
@@ -4437,6 +4448,52 @@ export const WEBINARS_PAGE = {
       },
       {
         imageSrc: "/solutions/card3.png",
+        title: "All-in-One Construction Control: Labor & Equipment Simplified",
+      },
+    ],
+  },
+};  
+
+export const CASESTUDIES_PAGE = {
+  searchSectionProps: {
+    subtitle: "Featured Story",
+    title: "Oxford streamlines global projects with Zedops",
+    placeholder: "Search",
+    videoUrl: "video",
+    videoName: "case",
+    description:
+      "Looking for more case studies? Explore our case study library",
+    icons: {
+      search: <Search size={20} />,
+      video: <BookOpen size={30} />,
+    },
+  },
+
+  cardSectionProps: {
+    sectionTitle: "Case Studies",
+    cards: [
+      {
+        imageSrc: "/solutions/case1.jpg",
+        title: "Streamline Labor & Equipment Management: One Powerful Platform",
+      },
+      {
+        imageSrc: "/solutions/case2.jpg",
+        title: "Optimize Workforce & Equipment: Simplify Operations",
+      },
+      {
+        imageSrc: "/solutions/case3.jpg",
+        title: "Boost Efficiency: Unified Labor & Equipment Oversight",
+      },
+      {
+        imageSrc: "/solutions/case4.jpg",
+        title: "Seamless Jobsite Coordination: Labor & Equipment Synced",
+      },
+      {
+        imageSrc: "/solutions/case5.jpg",
+        title: "Smart Construction Management: One Integrated Solution",
+      },
+      {
+        imageSrc: "/solutions/case6.jpg",
         title: "All-in-One Construction Control: Labor & Equipment Simplified",
       },
     ],

@@ -26,16 +26,16 @@ const resource = [
     href: "/features/Webinars",
     icon: Video,
   },
-  {
-    title: "Blog",
-    content: "Stay updated with trends and insights from our blog.",
-    href: "",
-    icon: FileText,
-  },
+  // {
+  //   title: "Blog",
+  //   content: "Stay updated with trends and insights from our blog.",
+  //   href: "",
+  //   icon: FileText,
+  // },
   {
     title: "Case Studies",
     content: "Learn from success stories and case studies.",
-    href: "",
+    href: "/features/case-studies",
     icon: Briefcase,
   },
   {

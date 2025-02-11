@@ -1,20 +1,18 @@
 import React from "react";
 
-import { WEBINARS_PAGE } from "@/Data/data";
+import { CASESTUDIES_PAGE } from "@/Data/data";
 
 import SearchSection from "@/Components/solutions/SearchSection";
 import Card from "@/Components/solutions/Card";
 
-
-export default function WEBINARSPage() {
+export default function CASESTUDIESPage() {
   // Props configuration
 
   return (
     <div>
       {/* Hero Section */}
-      <SearchSection {...WEBINARS_PAGE.searchSectionProps} />
-      <Card {...WEBINARS_PAGE.cardSectionProps} />
-      
+      <SearchSection {...CASESTUDIES_PAGE.searchSectionProps} />
+      <Card {...CASESTUDIES_PAGE.cardSectionProps} />
     </div>
   );
 }
