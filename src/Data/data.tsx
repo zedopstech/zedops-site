@@ -4204,7 +4204,7 @@ export const SECURITY_PAGE = {
     subtitle: "Security",
     description:
       "Ensure safety and security on your construction sites with advanced surveillance, access control, and real-time monitoring solutions.",
-    imageSrc: "/solutions/estimation-hero.jpg", // Update this!
+    imageSrc: "/solutions/security.png", // Update this!
     imageAlt: "Construction site with advanced security systems",
     linkHref: "/security-solutions",
   },
@@ -4346,3 +4346,100 @@ export const SECURITY_PAGE = {
     button2Link: "/free-security-audit",
   },
 };
+
+export const KNOWLEDGE_PAGE = {
+  searchSectionProps: {
+    title: "What can we help you find?",
+    placeholder: "Search",
+  },
+  cardSectionProps: {
+    cards: [
+      {
+        imageSrc: "/solutions/card1.png",
+        title:
+          "Introducing ZedAI: The Smart Agent from ZedOps kjksjkjdklsjsfnd,mfnsmdjdsfhdfkj",
+      },
+      {
+        imageSrc: "/solutions/card2.png",
+        title:
+          "Reimagining Construction Management with AI: A Game-Changer for SMBs",
+      },
+      {
+        imageSrc: "/solutions/card3.png",
+        title:
+          "10 Essential Features Every Construction Management System Should Have",
+      },
+    ],
+  },
+  getStartedProps: {
+    title: "Get Started",
+    items: [
+      {
+        title: "Project Overview",
+        description: "Learn the fundamentals of construction management.",
+      },
+      {
+        title: "Quick Start Guide",
+        description:
+          "Get started with estimating, scheduling, and resource planning.",
+      },
+      {
+        title: "Workforce Management",
+        description: "Optimize labor allocation and on-site efficiency.",
+      },
+      {
+        title: "Material Tracking",
+        description: "Monitor and manage construction materials in real-time.",
+      },
+      {
+        title: "Safety Compliance",
+        description: "Ensure adherence to safety regulations and protocols.",
+      },
+      {
+        title: "Project Analytics",
+        description:
+          "Analyze performance, costs, and risk factors effectively.",
+      },
+    ],
+  },
+};
+
+export const WEBINARS_PAGE = {
+  searchSectionProps: {
+    title: "What can we help you find?",
+    placeholder: "Search",
+    videoUrl: "videos",
+    description: "Searching for more videos? Check out our video library.",
+  },
+
+  cardSectionProps: {
+    sectionTitle: "Webinars",
+    cards: [
+      {
+        imageSrc: "/solutions/card1.png",
+        title: "Streamline Labor & Equipment Management: One Powerful Platform",
+      },
+      {
+        imageSrc: "/solutions/card2.png",
+        title: "Optimize Workforce & Equipment: Simplify Operations",
+      },
+      {
+        imageSrc: "/solutions/card3.png",
+        title: "Boost Efficiency: Unified Labor & Equipment Oversight",
+      },
+      {
+        imageSrc: "/solutions/card3.png",
+        title: "Seamless Jobsite Coordination: Labor & Equipment Synced",
+      },
+      {
+        imageSrc: "/solutions/card3.png",
+        title: "Smart Construction Management: One Integrated Solution",
+      },
+      {
+        imageSrc: "/solutions/card3.png",
+        title: "All-in-One Construction Control: Labor & Equipment Simplified",
+      },
+    ],
+  },
+};  
+  

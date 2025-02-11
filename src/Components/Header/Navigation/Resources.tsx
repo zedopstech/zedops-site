@@ -17,13 +17,13 @@ const resource = [
   {
     title: "Knowledge Base",
     content: "Explore articles and guides to understand our services better.",
-    href: "",
+    href: "/features/Knowledge",
     icon: Book,
   },
   {
     title: "Webinars",
     content: "Watch sessions and webinars by industry experts.",
-    href: "",
+    href: "/features/Webinars",
     icon: Video,
   },
   {
