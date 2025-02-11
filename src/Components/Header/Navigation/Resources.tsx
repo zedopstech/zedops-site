@@ -41,7 +41,7 @@ const resource = [
   {
     title: "FAQs",
     content: "Find answers to common questions in our FAQ section.",
-    href: "",
+    href: "/features/faq",
     icon: HelpCircle,
   },
   {

@@ -4534,4 +4534,19 @@ export const CASESTUDIES_PAGE = {
     ],
   },
 };  
+export const FAQ_PAGE = {
+  searchSectionProps: {
+    subtitle: "Featured Story",
+    title: "Oxford streamlines global projects with Zedops",
+    placeholder: "Search",
+    videoUrl: "video",
+    videoName: "case",
+    description:
+      "Looking for more case studies? Explore our case study library",
+    icons: {
+      search: <Search size={20} />,
+      video: <BookOpen size={30} />,
+    },
+  },
+}
   
