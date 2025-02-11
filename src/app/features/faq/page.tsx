@@ -13,16 +13,16 @@ export default function Page() {
         </div>
       </header> */}
       <SearchSection {...FAQ_PAGE.searchSectionProps} />
-      <main className="container bg-custombg  px-4 py-12">
+      <main className="bg-custombg  px-4 py-12 ">
         <div className="mx-auto max-w-6xl">
-          <div className="mb-8">
-            {/* <input
+          {/* <div className="mb-8">
+            <input
               type="text"
               id="searchInput"
               placeholder="Search for help..."
               className="w-full p-4 text-lg border rounded-lg shadow focus:ring-2 focus:ring-[#006A4E] focus:outline-none"
-            /> */}
-          </div>
+            />
+          </div> */}
 
           {/* Categories Section */}
           <section className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
