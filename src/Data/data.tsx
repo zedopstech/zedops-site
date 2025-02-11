@@ -4359,6 +4359,7 @@ export const KNOWLEDGE_PAGE = {
     },
   },
   cardSectionProps: {
+    sectionTitle: "Knowledge",
     cards: [
       {
         imageSrc: "/solutions/card1.png",
@@ -4381,30 +4382,64 @@ export const KNOWLEDGE_PAGE = {
     title: "Get Started",
     items: [
       {
-        title: "Project Overview",
-        description: "Learn the fundamentals of construction management.",
-      },
-      {
-        title: "Quick Start Guide",
+        title: "Subscriptions",
         description:
-          "Get started with estimating, scheduling, and resource planning.",
+          "Manage your subscription details and billing information.",
       },
       {
-        title: "Workforce Management",
-        description: "Optimize labor allocation and on-site efficiency.",
-      },
-      {
-        title: "Material Tracking",
-        description: "Monitor and manage construction materials in real-time.",
-      },
-      {
-        title: "Safety Compliance",
-        description: "Ensure adherence to safety regulations and protocols.",
-      },
-      {
-        title: "Project Analytics",
+        title: "Account & Projects",
         description:
-          "Analyze performance, costs, and risk factors effectively.",
+          "Manage your account settings and access all your construction projects.",
+      },
+      {
+        title: "Plans",
+        description:
+          "View, share, and manage your construction plans and blueprints.",
+      },
+      {
+        title: "Tasks",
+        description:
+          "Create, assign, and track individual tasks related to your projects.",
+      },
+      {
+        title: "Reports",
+        description:
+          "Generate and access detailed reports on project progress, costs, and performance.",
+      },
+      {
+        title: "Photos",
+        description:
+          "Upload, organize, and share photos documenting project progress and site conditions.",
+      },
+      {
+        title: "Forms",
+        description:
+          "Access and manage digital forms for inspections, safety checklists, and other site documentation.",
+      },
+      {
+        title: "Files",
+        description:
+          "Store, organize, and share all project-related documents, including contracts, permits, and specifications.",
+      },
+      {
+        title: "3D Models (BIM)",
+        description:
+          "Visualize and interact with Building Information Models (BIM) for enhanced project understanding.",
+      },
+      {
+        title: "Submittals",
+        description:
+          "Manage and track the submittal process, ensuring timely approval of materials and equipment.",
+      },
+      {
+        title: "Change Order",
+        description:
+          "Create, track, and manage change orders to effectively address project modifications and their impact.",
+      },
+      {
+        title: "Budget",
+        description:
+          "Track project costs against the budget, identify variances, and manage financial performance.",
       },
     ],
   },
