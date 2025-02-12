@@ -6,8 +6,7 @@ import { PLATFORM_PAGE } from "@/Data/data";
 import Mainsection from "@/Components/solutions/Mainsection";
 import CtoSection from "@/Components/solutions/Ctosection";
 import FeatureSticky from "@/Components/solutions/FeatureSticky";
-import { Layers, Lock, ShieldCheck } from "lucide-react";
-import { PanelsTopLeft } from "lucide-react";
+
 
 export default function PrequalificationPage() {
   // Props configuration

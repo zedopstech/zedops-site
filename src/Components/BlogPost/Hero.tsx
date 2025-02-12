@@ -42,7 +42,7 @@ const Hero: React.FC<HeroProps> = ({
           <div className="flex items-center justify-start gap-4 mt-6">
             {authors.map((author, index) => (
               <div key={index} className="flex items-center gap-2">
-                <img className="w-8 h-8 rounded-full" src={author.image} alt={author.name} />
+                <Image className="w-8 h-8 rounded-full" src={author.image} alt={author.name} />
                 <span className="text-sm">
                   {author.name} <br />
                   <span className="text-gray-400">{author.role}</span>

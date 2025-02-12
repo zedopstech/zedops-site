@@ -1,0 +1,9 @@
+# *
+User-agent: *
+Allow: /
+
+# Host
+Host: https://www.zedops.com
+
+# Sitemaps
+Sitemap: https://www.zedops.com/sitemap.xml

@@ -1,4 +1,5 @@
 import React from "react";
+import Image from "next/image";
 
 interface ControlFeature {
   title: string;
@@ -38,7 +39,7 @@ const ControlSection: React.FC<ControlSectionProps> = ({
         {/* Centered Image */}
         {imageSrc && (
           <div className="mt-10">
-            <img
+            <Image
               src={imageSrc}
               alt={imageAlt || "Section Image"}
               className="mx-auto max-w-full h-auto object-cover"
@@ -57,7 +58,7 @@ const ControlSection: React.FC<ControlSectionProps> = ({
               {feature.icon && (
                 <div className="flex-shrink-0 w-10 h-10 bg-lightmint text-background flex justify-center items-center rounded-full">
                   {typeof feature.icon === "string" ? (
-                    <img
+                    <Image
                       src={feature.icon}
                       alt={feature.title}
                       className="w-6 h-6 object-contain"

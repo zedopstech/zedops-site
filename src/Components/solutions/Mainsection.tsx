@@ -1,4 +1,5 @@
 import React from "react";
+import Image from "next/image";
 
 interface Feature {
   icon: React.ReactNode; // Now accepts a ReactNode for icons
@@ -26,7 +27,7 @@ const Mainsection: React.FC<{ sections: SectionData[] }> = ({ sections }) => {
             <>
               {/* Image Section */}
               <div className="md:w-1/2 w-full">
-                <img
+                <Image
                   src={section.image}
                   alt={section.title}
                   className="w-full h-auto object-cover"
@@ -105,7 +106,7 @@ const Mainsection: React.FC<{ sections: SectionData[] }> = ({ sections }) => {
 
               {/* Image Section */}
               <div className="md:w-1/2 w-full">
-                <img
+                <Image
                   src={section.image}
                   alt={section.title}
                   className="w-full h-auto object-cover"

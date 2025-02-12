@@ -1,4 +1,5 @@
 import React from "react";
+import Image from "next/image";
 
 interface CardData {
   imageSrc: string;
@@ -26,7 +27,7 @@ const CardSection: React.FC<CardSectionProps> = ({ sectionTitle, cards }) => {
             key={index}
             className="bg-white shadow-md rounded-lg overflow-hidden p-4 transition-transform duration-300 hover:shadow-xl hover:scale-[1.02]"
           >
-            <img
+            <Image
               src={card.imageSrc}
               alt={card.title}
               className="w-full h-35 object-cover rounded-md"

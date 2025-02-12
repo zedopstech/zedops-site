@@ -10,7 +10,7 @@ export default function BlogCategories({
   title: string;
   description: string;
   color: string;
-  icon: any;
+  icon: React.ReactNode;
 }) {
   return (
       <a href="https://learn.customer.io/case-studies">

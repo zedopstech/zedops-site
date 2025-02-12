@@ -1,14 +1,28 @@
-const Toc = ({ blogContent }: { blogContent: any }) => {
-    const sections = [
-      { id: "branding", title: "Tailoring" },
-      { id: "data", title: "Using" },
-      { id: "marketing", title: "Fashioning" },
-    ];
+interface Profile {
+  name: string;
+  role: string;
+  image: string;
+  quote: string;
+}
+
+interface BlogContentItem {
+  title?: string;
+  id?: string;
+  paragraph?: string;
+  bulletPoints?: string[];
+  additionalContent?: string;
+  subtitle?: string;
+  profile?: Profile;
+}
+const Toc = ({ blogContent }: { blogContent: BlogContentItem[] }
+ ) => {
   
-    return (
-      <aside className="sticky  rounded-sm border p-4 text-foreground transition-colors duration-400 md:top-[calc(70px+5rem)] md:border-none md:p-0">
-        <nav className="flex flex-col gap-4 ml-44  max-w-xs pr-0 sm:pr-4 md:pr-8 lg:pr-16">
-          {blogContent.map((section: any, index: number) => (
+
+  return (
+    <aside className="sticky  rounded-sm border p-4 text-foreground transition-colors duration-400 md:top-[calc(70px+5rem)] md:border-none md:p-0">
+      <nav className="flex flex-col gap-4 ml-44  max-w-xs pr-0 sm:pr-4 md:pr-8 lg:pr-16">
+        {blogContent.map(
+          (section: BlogContentItem, index: number) =>
             Object.keys(section)[0] === "title" && (
               <a
                 key={blogContent[index].id}
@@ -18,13 +32,10 @@ const Toc = ({ blogContent }: { blogContent: any }) => {
                 {blogContent[index].title}
               </a>
             )
-          ))}
-        </nav>
-        
-      </aside>
-     
-    );
-  };
-  
-  export default Toc;
-  
+        )}
+      </nav>
+    </aside>
+  );
+};
+
+export default Toc;

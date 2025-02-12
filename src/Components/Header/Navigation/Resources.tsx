@@ -1,6 +1,6 @@
 import * as NavigationMenu from "@radix-ui/react-navigation-menu";
 import {
-  FileText,
+  
   Shield,
   HelpCircle,
   Briefcase,

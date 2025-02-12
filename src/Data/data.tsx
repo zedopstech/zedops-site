@@ -202,7 +202,6 @@ import {
   Key,
   BellRingIcon,
   PlayCircle,
-  Book,
   BookOpen,
   MessageCircleQuestion,
 } from "lucide-react";
@@ -213,7 +212,7 @@ export const ESTIMATION_PAGE = {
     description:
       "Win more bids and boost your bottom line with our construction estimating software. Generate precise and reliable estimates in a fraction of the time, minimizing errors and maximizing profitability.",
     buttonLabel: "Get Started",
-    imageSrc: "/solutions/estimation-hero.jpg",
+    imageSrc: "/Solutions/estimation-hero.jpg",
     imageAlt:
       "Construction estimator using software with detailed cost breakdown",
     linkHref: "/estimation-demo",
@@ -232,20 +231,20 @@ export const ESTIMATION_PAGE = {
         title: "Drag-and-Drop Estimation",
         description:
           "Easily create detailed project estimates with our intuitive, user-friendly interface no technical expertise required.",
-        imageSrc: "/solutions/estimation-1.jpg",
+        imageSrc: "/Solutions/estimation-1.jpg",
       },
       {
         title: "Advanced Cost Breakdown",
         description:
           "Break down materials, labor, and equipment costs with granular control, ensuring precise budget planning.",
-        imageSrc: "/solutions/estimation-2.jpg",
+        imageSrc: "/Solutions/estimation-2.jpg",
       },
     ],
   },
   TestimonalsSectionProps: {
     subtitle: "BUDGET WITH CONFIDENCE",
     title: "Control Your Project Costs",
-    imageSrc: "/solutions/estimation-testimonal.jpg",
+    imageSrc: "/Solutions/estimation-testimonal.jpg",
     imageAlt: "Illustration showing cost control in construction projects",
     features: [
       {
@@ -270,7 +269,7 @@ export const ESTIMATION_PAGE = {
   },
   mainSectionData: [
     {
-      image: "/solutions/estimation section.jpg",
+      image: "/Solutions/estimation-section.jpg",
 
       title: "Smart Cost",
       subtitle: "Detailed Budgeting",
@@ -298,7 +297,7 @@ export const ESTIMATION_PAGE = {
       ],
     },
     {
-      image: "/solutions/estimation section-1.jpg",
+      image: "/Solutions/estimation section-1.jpg",
 
       imageOnRight: "true",
       title: "Estimation Software",
@@ -501,7 +500,7 @@ export const PREQUALIFICATION_PAGE = {
     description:
       "Ensure project success starts with qualified contractors.  Our platform streamlines the entire prequalification process, saving you time, reducing risk, and giving you confidence in your team.",
     buttonLabel: "Get Started",
-    imageSrc: "/solutions/estimation-hero.jpg",
+    imageSrc: "/Solutions/estimation-hero.jpg",
     imageAlt: "Construction workers reviewing prequalification forms",
     linkHref: "/book-a-demo",
   },
@@ -519,20 +518,20 @@ export const PREQUALIFICATION_PAGE = {
         title: "Automated Prequalification",
         description:
           "Effortlessly collect and evaluate contractor data through automated prequalification forms tailored to your project's needs.",
-        imageSrc: "/solutions/estimation-1.jpg",
+        imageSrc: "/Solutions/estimation-1.jpg",
       },
       {
         title: "Risk Assessment Tools",
         description:
           "Leverage built-in risk assessment tools to evaluate contractors' financial health, compliance, and past project performance.",
-        imageSrc: "/solutions/estimation-2.jpg",
+        imageSrc: "/Solutions/estimation-2.jpg",
       },
     ],
   },
   TestimonalsSectionProps: {
     subtitle: "PREQUALIFY WITH CONFIDENCE",
     title: "Trust through Prequalification",
-    imageSrc: "/solutions/estimation-testimonal.jpg",
+    imageSrc: "/Solutions/estimation-testimonal.jpg",
     imageAlt: "Illustration showing contractor evaluations",
     features: [
       {
@@ -557,7 +556,7 @@ export const PREQUALIFICATION_PAGE = {
   },
   mainSectionData: [
     {
-      image: "/solutions/estimation section.jpg", // Path to your left-side image
+      image: "/Solutions/estimation-section.jpg", // Path to your left-side image
       title: "Contractor Profiles",
       subtitle: "Detailed Information",
       description:
@@ -584,7 +583,7 @@ export const PREQUALIFICATION_PAGE = {
       ],
     },
     {
-      image: "/solutions/estimation section-1.jpg", // Path to your left-side image
+      image: "/Solutions/estimation section-1.jpg", // Path to your left-side image
       imageOnRight: "true",
       title: "Contractor Assessment",
       subtitle: "Comprehensive Evaluation",
@@ -789,8 +788,8 @@ export const BIM_PAGE = {
     subtitle: "BIM",
     description:
       "Revolutionize your construction workflow with BIM. From enhanced visualization to streamlined collaboration, build smarter, faster, and with greater accuracy.",
-    buttonLabel:"Get started",
-    imageSrc: "/solutions/bim-hero.jpg", //Update this!
+    buttonLabel: "Get started",
+    imageSrc: "/Solutions/bim-hero.jpg", //Update this!
     imageAlt: "Interactive BIM model on a large display",
     linkHref: "/bim-solutions",
   },
@@ -808,20 +807,20 @@ export const BIM_PAGE = {
         title: "Collaborative platform",
         description:
           "Ensure all project stakeholders, from architects to contractors, stay aligned with a centralized BIM platform that facilitates real-time collaboration.",
-        imageSrc: "/solutions/estimation-1.jpg",
+        imageSrc: "/Solutions/estimation-1.jpg",
       },
       {
         title: "3D modeling and visualization",
         description:
           "Create detailed 3D models of your projects, visualize designs, and detect potential issues before construction begins.",
-        imageSrc: "/solutions/estimation-2.jpg",
+        imageSrc: "/Solutions/estimation-2.jpg",
       },
     ],
   },
   TestimonalsSectionProps: {
     subtitle: "TEAMWORK AND ACCURACY",
     title: "Efficiency with BIM at the core",
-    imageSrc: "/solutions/estimation-testimonal.jpg",
+    imageSrc: "/Solutions/estimation-testimonal.jpg",
     imageAlt: "Professionals using BIM for a collaborative project",
     features: [
       {
@@ -846,7 +845,7 @@ export const BIM_PAGE = {
   },
   mainSectionData: [
     {
-      image: "/solutions/estimation section.jpg", // Path to your left-side image
+      image: "/Solutions/estimation-section.jpg", // Path to your left-side image
       title: "Seamless collaboration",
       subtitle: "Bringing teams together",
       description:
@@ -873,7 +872,7 @@ export const BIM_PAGE = {
       ],
     },
     {
-      image: "/solutions/estimation section-1.jpg", // Path to your right-side image
+      image: "/Solutions/estimation section-1.jpg", // Path to your right-side image
       imageOnRight: "true",
       title: "Accurate data management",
       subtitle: "Data at your fingertips",
@@ -1079,7 +1078,7 @@ export const INVENTORY_PAGE = {
     description:
       "Control construction costs with our inventory management solution. Track materials in real-time, minimize waste, and eliminate costly delays caused by missing or misplaced items.",
     buttonLabel: "Get Started",
-    imageSrc: "/solutions/inventory-hero.jpg", // Update this!
+    imageSrc: "/Solutions/inventory-hero.jpg", // Update this!
     imageAlt: "Construction worker scanning inventory using a mobile device",
     linkHref: "/inventory-management-demo",
   },
@@ -1097,20 +1096,20 @@ export const INVENTORY_PAGE = {
         title: "Real-time Inventory Tracking",
         description:
           "Monitor stock levels, track material usage, and automate reordering to ensure uninterrupted workflows.",
-        imageSrc: "/solutions/estimation-1.jpg",
+        imageSrc: "/Solutions/estimation-1.jpg",
       },
       {
         title: "Seamless Asset Management",
         description:
           "Keep track of equipment location, condition, and availability to reduce losses and improve project efficiency.",
-        imageSrc: "/solutions/estimation-2.jpg",
+        imageSrc: "/Solutions/estimation-2.jpg",
       },
     ],
   },
   TestimonalsSectionProps: {
     subtitle: "EFFICIENT RESOURCE MANAGEMENT",
     title: "Take Full Control of Your Inventory",
-    imageSrc: "/solutions/estimation-testimonal.jpg",
+    imageSrc: "/Solutions/estimation-testimonal.jpg",
     imageAlt: "Illustration showing inventory control features",
     features: [
       {
@@ -1135,7 +1134,7 @@ export const INVENTORY_PAGE = {
   },
   mainSectionData: [
     {
-      image: "/solutions/estimation section.jpg",
+      image: "/Solutions/estimation-section.jpg",
       title: "Smart Inventory Categorization",
       subtitle: "Organized & Accessible",
       description:
@@ -1162,7 +1161,7 @@ export const INVENTORY_PAGE = {
       ],
     },
     {
-      image: "/solutions/estimation section-1.jpg",
+      image: "/Solutions/estimation section-1.jpg",
       imageOnRight: "true",
       title: "Warehouse & Site Synchronization",
       subtitle: "Connected & Efficient",
@@ -1313,37 +1312,38 @@ export const INVENTORY_PAGE = {
     description:
       "Explore best practices and comprehensive guides for effectively qualifying contractors ",
     features: [
-  {
-    title: "Enhance Your Inventory Strategy",
-    description: "Watch the workshop to refine your approach.",
-    icon: <Ribbon className="text-white" />,
-  },
-  {
-    icon: <Loader className="text-white" />,
-    title: "Best Practices for Inventory Management",
-    description: "Access the guide for optimized workflows.",
-  },
-  {
-    icon: <Warehouse className="text-white" />,
-    title: "Optimizing Warehouse Layouts",
-    description: "Access the guide to maximize space and efficiency.",
-  },
-  {
-    icon: <Biohazard className="text-white" />,
-    title: "Reducing Material Waste",
-    description: "Access the guide to minimize loss and improve sustainability.",
-  },
-  {
-    icon: <Route className="text-white" />,
-    title: "Cost-Efficient Procurement",
-    description: "Access the guide to lower material expenses.",
-  },
-  {
-    icon: <GitCompare className="text-white" />,
-    title: "Effective Inventory Control Techniques",
-    description: "Access the guide to maintain optimal stock levels.",
-  },
-],
+      {
+        title: "Enhance Your Inventory Strategy",
+        description: "Watch the workshop to refine your approach.",
+        icon: <Ribbon className="text-white" />,
+      },
+      {
+        icon: <Loader className="text-white" />,
+        title: "Best Practices for Inventory Management",
+        description: "Access the guide for optimized workflows.",
+      },
+      {
+        icon: <Warehouse className="text-white" />,
+        title: "Optimizing Warehouse Layouts",
+        description: "Access the guide to maximize space and efficiency.",
+      },
+      {
+        icon: <Biohazard className="text-white" />,
+        title: "Reducing Material Waste",
+        description:
+          "Access the guide to minimize loss and improve sustainability.",
+      },
+      {
+        icon: <Route className="text-white" />,
+        title: "Cost-Efficient Procurement",
+        description: "Access the guide to lower material expenses.",
+      },
+      {
+        icon: <GitCompare className="text-white" />,
+        title: "Effective Inventory Control Techniques",
+        description: "Access the guide to maintain optimal stock levels.",
+      },
+    ],
   },
   ctaProps: {
     title: "Transform Your Construction Inventory",
@@ -1365,7 +1365,7 @@ export const PROCUREMENT_PAGE = {
     description:
       "Control costs and streamline your construction procurement. From smarter sourcing to optimized supplier management, ensure timely deliveries, reduce expenses, and drive project profitability.",
     buttonLabel: "Get Started",
-    imageSrc: "/solutions/procurement-hero.jpg", // Update this!
+    imageSrc: "/Solutions/procurement-hero.jpg", // Update this!
     imageAlt: "Construction Procurement Management Software Dashboard",
     linkHref: "/procurement-demo",
   },
@@ -1383,20 +1383,20 @@ export const PROCUREMENT_PAGE = {
         title: "Smart Sourcing & Supplier Management",
         description:
           "Identify reliable suppliers, compare pricing, and streamline negotiations to secure the best deals for your projects.",
-        imageSrc: "/solutions/estimation-1.jpg",
+        imageSrc: "/Solutions/estimation-1.jpg",
       },
       {
         title: "Efficient Purchase Order Processing",
         description:
           "Automate purchase orders, track approvals, and manage procurement workflows to ensure timely material deliveries.",
-        imageSrc: "/solutions/estimation-2.jpg",
+        imageSrc: "/Solutions/estimation-2.jpg",
       },
     ],
   },
   TestimonalsSectionProps: {
     subtitle: "SMART PROCUREMENT SOLUTIONS",
     title: "Optimize Your Sourcing and Purchasing",
-    imageSrc: "/solutions/estimation-testimonal.jpg",
+    imageSrc: "/Solutions/estimation-testimonal.jpg",
     imageAlt: "Illustration showing procurement management features",
     features: [
       {
@@ -1421,7 +1421,7 @@ export const PROCUREMENT_PAGE = {
   },
   mainSectionData: [
     {
-      image: "/solutions/estimation section.jpg",
+      image: "/Solutions/estimation-section.jpg",
       title: "Streamlined Procurement Workflow",
       subtitle: "Efficient & Cost-Effective",
       description:
@@ -1448,7 +1448,7 @@ export const PROCUREMENT_PAGE = {
       ],
     },
     {
-      image: "/solutions/estimation section-1.jpg",
+      image: "/Solutions/estimation section-1.jpg",
       imageOnRight: "true",
       title: "Optimized Procurement & Logistics",
       subtitle: "Seamless & Reliable",
@@ -1602,37 +1602,38 @@ export const PROCUREMENT_PAGE = {
     description:
       "Explore best practices and comprehensive guides for effectively qualifying contractors ",
     features: [
-  {
-    title: "Master Procurement Strategies",
-    description: "Watch the workshop to elevate your skills.",
-    icon: <Presentation className="text-white" />,
-  },
-  {
-    icon: <FileText className="text-white" />,
-    title: "Best Practices for Construction Procurement",
-    description: "Access the guide for streamlined processes.",
-  },
-  {
-    icon: <Truck className="text-white" />,
-    title: "Optimizing Supplier & Logistics Coordination",
-    description: "Access the guide for efficient delivery and reduced delays.",
-  },
-  {
-    icon: <Recycle className="text-white" />,
-    title: "Sustainable & Cost-Effective Sourcing",
-    description: "Access the guide to lower expenses with green practices.",
-  },
-  {
-    icon: <BadgeDollarSign className="text-white" />,
-    title: "Cost-Efficient Procurement Strategies",
-    description: "Access the guide to maximize budget control.",
-  },
-  {
-    icon: <ClipboardList className="text-white" />,
-    title: "Procurement Compliance & Risk Management",
-    description: "Access the guide to safeguard against regulatory issues.",
-  },
-],
+      {
+        title: "Master Procurement Strategies",
+        description: "Watch the workshop to elevate your skills.",
+        icon: <Presentation className="text-white" />,
+      },
+      {
+        icon: <FileText className="text-white" />,
+        title: "Best Practices for Construction Procurement",
+        description: "Access the guide for streamlined processes.",
+      },
+      {
+        icon: <Truck className="text-white" />,
+        title: "Optimizing Supplier & Logistics Coordination",
+        description:
+          "Access the guide for efficient delivery and reduced delays.",
+      },
+      {
+        icon: <Recycle className="text-white" />,
+        title: "Sustainable & Cost-Effective Sourcing",
+        description: "Access the guide to lower expenses with green practices.",
+      },
+      {
+        icon: <BadgeDollarSign className="text-white" />,
+        title: "Cost-Efficient Procurement Strategies",
+        description: "Access the guide to maximize budget control.",
+      },
+      {
+        icon: <ClipboardList className="text-white" />,
+        title: "Procurement Compliance & Risk Management",
+        description: "Access the guide to safeguard against regulatory issues.",
+      },
+    ],
   },
   ctaProps: {
     title: "Optimize Your Construction Procurement",
@@ -1654,7 +1655,7 @@ export const PREDICTIVEANLYTICS_PAGE = {
     description:
       "Stop project overruns and maximize ROI with AI-powered predictive analytics. Forecast potential delays, optimize resource allocation, and proactively mitigate risks for more profitable projects.",
     buttonLabel: "Get Started",
-    imageSrc: "/solutions/estimation-hero.jpg", // MUST UPDATE
+    imageSrc: "/Solutions/estimation-hero.jpg", // MUST UPDATE
     imageAlt:
       "Construction project timeline with AI-predicted risks highlighted",
     linkHref: "/predictive-analytics-demo",
@@ -1673,20 +1674,20 @@ export const PREDICTIVEANLYTICS_PAGE = {
         title: "AI-Driven Demand Forecasting",
         description:
           "Predict material and labor requirements with AI-powered analytics to prevent shortages and reduce waste.",
-        imageSrc: "/solutions/estimation-1.jpg",
+        imageSrc: "/Solutions/estimation-1.jpg",
       },
       {
         title: "Real-Time Risk Assessment",
         description:
           "Identify potential project risks using predictive models, enabling proactive decision-making and risk mitigation.",
-        imageSrc: "/solutions/estimation-2.jpg",
+        imageSrc: "/Solutions/estimation-2.jpg",
       },
     ],
   },
   TestimonalsSectionProps: {
     subtitle: "SMART PREDICTIVE ANALYTICS",
     title: "Enhance Your Project Forecasting",
-    imageSrc: "/solutions/estimation-testimonal.jpg",
+    imageSrc: "/Solutions/estimation-testimonal.jpg",
     imageAlt: "Illustration showing predictive analytics features",
     features: [
       {
@@ -1711,7 +1712,7 @@ export const PREDICTIVEANLYTICS_PAGE = {
   },
   mainSectionData: [
     {
-      image: "/solutions/estimation section.jpg",
+      image: "/Solutions/estimation-section.jpg",
       title: "Enhanced Project Forecasting",
       subtitle: "Data-Driven & Insightful",
       description:
@@ -1738,7 +1739,7 @@ export const PREDICTIVEANLYTICS_PAGE = {
       ],
     },
     {
-      image: "/solutions/estimation section-1.jpg",
+      image: "/Solutions/estimation section-1.jpg",
       imageOnRight: "true",
       title: "Predictive Resource Optimization",
       subtitle: "Intelligent & Scalable",
@@ -1893,38 +1894,39 @@ export const PREDICTIVEANLYTICS_PAGE = {
     subtitle: "Master Predictive Strategies",
     description:
       "Explore best practices and comprehensive guides for effectively qualifying contractors ",
-   features: [
-  {
-    title: "Predictive Supply Chain Insights",
-    description: "Access the report for optimized procurement strategies.",
-    icon: <Search className="text-white" />,
-  },
-  {
-    icon: <Radar className="text-white" />,
-    title: "Material Demand Forecasting",
-    description: "Access the guide for proactive inventory planning.",
-  },
-  {
-    icon: <BarChart4 className="text-white" />,
-    title: "Cost Prediction & Budget Optimization",
-    description: "Access the report for enhanced financial control.",
-  },
-  {
-    icon: <Clock className="text-white" />,
-    title: "Project Timeline Forecasting",
-    description: "Access the guide for on-time project delivery.",
-  },
-  {
-    icon: <BatteryCharging className="text-white" />,
-    title: "Energy Consumption Forecasting",
-    description: "Access the guide for sustainable and cost-effective operations.",
-  },
-  {
-    icon: <Users className="text-white" />,
-    title: "Labor Demand Prediction",
-    description: "Access the report for efficient workforce management.",
-  },
-],
+    features: [
+      {
+        title: "Predictive Supply Chain Insights",
+        description: "Access the report for optimized procurement strategies.",
+        icon: <Search className="text-white" />,
+      },
+      {
+        icon: <Radar className="text-white" />,
+        title: "Material Demand Forecasting",
+        description: "Access the guide for proactive inventory planning.",
+      },
+      {
+        icon: <BarChart4 className="text-white" />,
+        title: "Cost Prediction & Budget Optimization",
+        description: "Access the report for enhanced financial control.",
+      },
+      {
+        icon: <Clock className="text-white" />,
+        title: "Project Timeline Forecasting",
+        description: "Access the guide for on-time project delivery.",
+      },
+      {
+        icon: <BatteryCharging className="text-white" />,
+        title: "Energy Consumption Forecasting",
+        description:
+          "Access the guide for sustainable and cost-effective operations.",
+      },
+      {
+        icon: <Users className="text-white" />,
+        title: "Labor Demand Prediction",
+        description: "Access the report for efficient workforce management.",
+      },
+    ],
   },
   ctaProps: {
     title: "Unlock the Power of Predictive Analytics",
@@ -1946,7 +1948,7 @@ export const REALTIMEDASHBOARD_PAGE = {
     description:
       "Stop Reacting, Start Leading. Gain instant insights and take immediate action with our real-time construction dashboard. Track performance, identify problems, and stay in control.",
     buttonLabel: "Get Started",
-    imageSrc: "/solutions/estimation-hero.jpg", // MUST UPDATE
+    imageSrc: "/Solutions/estimation-hero.jpg", // MUST UPDATE
     imageAlt: "Interactive construction project dashboard on a large screen",
     linkHref: "/real-time-dashboard-demo",
   },
@@ -1964,20 +1966,20 @@ export const REALTIMEDASHBOARD_PAGE = {
         title: "Live Project Tracking",
         description:
           "Monitor real-time progress of your construction projects with up-to-date performance metrics, including time, costs, and quality control.",
-        imageSrc: "/solutions/estimation-1.jpg",
+        imageSrc: "/Solutions/estimation-1.jpg",
       },
       {
         title: "Instant Data Visualization",
         description:
           "Transform raw project data into clear visualizations to make quick, informed decisions with interactive charts, graphs, and dashboards.",
-        imageSrc: "/solutions/estimation-2.jpg",
+        imageSrc: "/Solutions/estimation-2.jpg",
       },
     ],
   },
   TestimonalsSectionProps: {
     subtitle: "SMART REAL-TIME DASHBOARD",
     title: "Enhance Your Project Monitoring",
-    imageSrc: "/solutions/estimation-testimonal.jpg",
+    imageSrc: "/Solutions/estimation-testimonal.jpg",
     imageAlt: "Illustration showing real-time dashboard features",
     features: [
       {
@@ -2002,7 +2004,7 @@ export const REALTIMEDASHBOARD_PAGE = {
   },
   mainSectionData: [
     {
-      image: "/solutions/estimation section.jpg",
+      image: "/Solutions/estimation-section.jpg",
       title: "Real-Time Project Monitoring",
       subtitle: "Immediate Insights & Control",
       description:
@@ -2029,7 +2031,7 @@ export const REALTIMEDASHBOARD_PAGE = {
       ],
     },
     {
-      image: "/solutions/estimation section-1.jpg",
+      image: "/Solutions/estimation section-1.jpg",
       imageOnRight: "true",
       title: "Optimized Resource Allocation",
       subtitle: "Efficient & Adaptive",
@@ -2243,7 +2245,7 @@ export const REPORTSANDALERTS_PAGE = {
     description:
       "Don't wait for problems, get ahead of them. Our construction reports and alerts system provides real-time insights and instant notifications, so you can take action *before* issues escalate.",
     buttonLabel: "Get Started",
-    imageSrc: "/solutions/estimation-hero.jpg", // MUST UPDATE
+    imageSrc: "/Solutions/estimation-hero.jpg", // MUST UPDATE
     imageAlt:
       "Example of a real-time construction alert notification on a mobile device",
     linkHref: "/reports-alerts-demo",
@@ -2262,20 +2264,20 @@ export const REPORTSANDALERTS_PAGE = {
         title: "Real-Time Alerts & Notifications",
         description:
           "Receive instant notifications for project risks, delays, and performance deviations to take immediate action and prevent disruptions.",
-        imageSrc: "/solutions/estimation-1.jpg",
+        imageSrc: "/Solutions/estimation-1.jpg",
       },
       {
         title: "Comprehensive Project Reports",
         description:
           "Generate detailed, customizable reports on key project metrics, including costs, timelines, and resource usage, to keep all stakeholders informed.",
-        imageSrc: "/solutions/estimation-2.jpg",
+        imageSrc: "/Solutions/estimation-2.jpg",
       },
     ],
   },
   TestimonalsSectionProps: {
     subtitle: "SMART REPORTS & ALERTS",
     title: "Enhance Your Project Reporting",
-    imageSrc: "/solutions/estimation-testimonal.jpg",
+    imageSrc: "/Solutions/estimation-testimonal.jpg",
     imageAlt: "Illustration showing reports and alerts features",
     features: [
       {
@@ -2300,7 +2302,7 @@ export const REPORTSANDALERTS_PAGE = {
   },
   mainSectionData: [
     {
-      image: "/solutions/estimation section.jpg",
+      image: "/Solutions/estimation-section.jpg",
       title: "Real-Time Reporting",
       subtitle: "Instant Insights & Actionable Data",
       description:
@@ -2327,7 +2329,7 @@ export const REPORTSANDALERTS_PAGE = {
       ],
     },
     {
-      image: "/solutions/estimation section-1.jpg",
+      image: "/Solutions/estimation section-1.jpg",
       imageOnRight: "true",
       title: "Proactive Risk Management",
       subtitle: "Early Detection & Mitigation",
@@ -2541,7 +2543,7 @@ export const PROJECTFINANCIAL_PAGE = {
     description:
       "Unlock project profitability with real-time financial control. Track budgets, manage costs, and forecast expenses to maximize your margins.",
     buttonLabel: "Get Started",
-    imageSrc: "/solutions/estimation-hero.jpg", // MUST UPDATE!
+    imageSrc: "/Solutions/estimation-hero.jpg", // MUST UPDATE!
     imageAlt:
       "Construction project manager reviewing financial performance dashboard on a laptop.",
     linkHref: "/project-financials-demo",
@@ -2560,20 +2562,20 @@ export const PROJECTFINANCIAL_PAGE = {
         title: "Real-Time Budget Tracking",
         description:
           "Monitor your project's financial health by tracking real-time expenses, helping to keep your project within budget and prevent overruns.",
-        imageSrc: "/solutions/estimation-1.jpg",
+        imageSrc: "/Solutions/estimation-1.jpg",
       },
       {
         title: "Financial Reports",
         description:
           "Generate detailed, customizable financial reports, including cost breakdowns, budget allocations, and projected.",
-        imageSrc: "/solutions/estimation-2.jpg",
+        imageSrc: "/Solutions/estimation-2.jpg",
       },
     ],
   },
   TestimonalsSectionProps: {
     subtitle: "SMART PROJECT FINANCIALS",
     title: "Optimize Your Project's Financial Health",
-    imageSrc: "/solutions/estimation-testimonal.jpg",
+    imageSrc: "/Solutions/estimation-testimonal.jpg",
     imageAlt: "Illustration showing financial tracking and reports",
     features: [
       {
@@ -2598,7 +2600,7 @@ export const PROJECTFINANCIAL_PAGE = {
   },
   mainSectionData: [
     {
-      image: "/solutions/estimation section.jpg",
+      image: "/Solutions/estimation-section.jpg",
       title: "Real-Time Financial Reporting",
       subtitle: "Instant Budget Insights",
       description:
@@ -2625,7 +2627,7 @@ export const PROJECTFINANCIAL_PAGE = {
       ],
     },
     {
-      image: "/solutions/estimation section-1.jpg",
+      image: "/Solutions/estimation section-1.jpg",
       imageOnRight: "true",
       title: "Proactive Financial Management",
       subtitle: "Early Alerts & Mitigation",
@@ -2839,7 +2841,7 @@ export const INVOICEMANAGEMENT_PAGE = {
     description:
       "Get paid faster with our automated construction invoicing system. Streamline billing, track invoices in real-time, and simplify payment management for improved cash flow.",
     buttonLabel: "Get Started",
-    imageSrc: "/solutions/estimation-hero.jpg", // MUST UPDATE
+    imageSrc: "/Solutions/estimation-hero.jpg", // MUST UPDATE
     imageAlt: "Construction invoice management software showing payment status",
     linkHref: "/invoice-management-demo",
   },
@@ -2857,20 +2859,20 @@ export const INVOICEMANAGEMENT_PAGE = {
         title: "Automated Invoice Generation",
         description:
           "Create and send invoices automatically, reducing manual work and ensuring accuracy in billing.",
-        imageSrc: "/solutions/estimation-1.jpg",
+        imageSrc: "/Solutions/estimation-1.jpg",
       },
       {
         title: "Real-Time Payment Tracking",
         description:
           "Monitor invoice statuses and track payments in real-time to improve cash flow and financial planning.",
-        imageSrc: "/solutions/estimation-2.jpg",
+        imageSrc: "/Solutions/estimation-2.jpg",
       },
     ],
   },
   TestimonalsSectionProps: {
     subtitle: "SMART INVOICE MANAGEMENT",
     title: "Streamline Your Billing Process",
-    imageSrc: "/solutions/estimation-testimonal.jpg",
+    imageSrc: "/Solutions/estimation-testimonal.jpg",
     imageAlt: "Illustration showing invoice management features",
     features: [
       {
@@ -2895,7 +2897,7 @@ export const INVOICEMANAGEMENT_PAGE = {
   },
   mainSectionData: [
     {
-      image: "/solutions/estimation section.jpg",
+      image: "/Solutions/estimation-section.jpg",
       title: "Real-Time Invoice Tracking",
       subtitle: "Stay on Top of Your Billing",
       description:
@@ -2922,7 +2924,7 @@ export const INVOICEMANAGEMENT_PAGE = {
       ],
     },
     {
-      image: "/solutions/estimation section-1.jpg",
+      image: "/Solutions/estimation section-1.jpg",
       imageOnRight: "true",
       title: "Smart Invoice Management",
       subtitle: "Optimize Billing & Collections",
@@ -3136,7 +3138,7 @@ export const QUALITYANDSAFETY_PAGE = {
     description:
       "Protect your team, projects, and reputation with our comprehensive quality and safety management solution. Proactively identify risks, streamline inspections, and ensure a safe and compliant work environment.",
     buttonLabel: "Get Started",
-    imageSrc: "/solutions/estimation-hero.jpg", // MUST UPDATE
+    imageSrc: "/Solutions/estimation-hero.jpg", // MUST UPDATE
     imageAlt: "Construction site safety inspection using a mobile app",
     linkHref: "/quality-safety-demo",
   },
@@ -3156,13 +3158,13 @@ export const QUALITYANDSAFETY_PAGE = {
         title: "Real-Time Safety Monitoring",
         description:
           "Track safety metrics in real-time to ensure a safe working environment and prevent accidents.",
-        imageSrc: "/solutions/estimation-1.jpg",
+        imageSrc: "/Solutions/estimation-1.jpg",
       },
       {
         title: "Quality Control Tracking",
         description:
           "Monitor quality standards throughout the project with detailed inspections and performance tracking.",
-        imageSrc: "/solutions/estimation-2.jpg",
+        imageSrc: "/Solutions/estimation-2.jpg",
       },
     ],
   },
@@ -3170,7 +3172,7 @@ export const QUALITYANDSAFETY_PAGE = {
   TestimonalsSectionProps: {
     subtitle: "ENSURE TOP-QUALITY AND SAFE PROJECTS",
     title: "Enhance Quality & Safety Standards",
-    imageSrc: "/solutions/estimation-testimonal.jpg",
+    imageSrc: "/Solutions/estimation-testimonal.jpg",
     imageAlt: "Illustration showing quality and safety features",
     features: [
       {
@@ -3196,7 +3198,7 @@ export const QUALITYANDSAFETY_PAGE = {
 
   mainSectionData: [
     {
-      image: "/solutions/estimation section.jpg",
+      image: "/Solutions/estimation-section.jpg",
       title: "Real-Time Safety Monitoring",
       subtitle: "Stay Ahead of Potential Hazards",
       description:
@@ -3223,7 +3225,7 @@ export const QUALITYANDSAFETY_PAGE = {
       ],
     },
     {
-      image: "/solutions/estimation section-1.jpg",
+      image: "/Solutions/estimation section-1.jpg",
       imageOnRight: "true",
       title: "Quality Assurance & Control",
       subtitle: "Maintain High Standards of Construction",
@@ -3440,8 +3442,9 @@ export const PROJECTMANAGEMENT_PAGE = {
     description:
       "Deliver projects on time and under budget with our comprehensive construction project management platform. Gain real-time visibility, streamline workflows, and empower your teams for success.",
     buttonLabel: "Get Started",
-    imageSrc: "/solutions/estimation-hero.jpg", // REQUIRED UPDATE!
-    imageAlt: "Construction project manager reviewing a Gantt chart on a tablet.",
+    imageSrc: "/Solutions/estimation-hero.jpg", // REQUIRED UPDATE!
+    imageAlt:
+      "Construction project manager reviewing a Gantt chart on a tablet.",
     linkHref: "/project-management-demo",
   },
 
@@ -3460,13 +3463,13 @@ export const PROJECTMANAGEMENT_PAGE = {
         title: "Real-Time Project Tracking",
         description:
           "Monitor project progress in real-time, ensuring tasks stay on schedule and within budget.",
-        imageSrc: "/solutions/estimation-1.jpg",
+        imageSrc: "/Solutions/estimation-1.jpg",
       },
       {
         title: "Task & Resource Management",
         description:
           "Effectively allocate resources, assign tasks, and track milestones for efficient project execution.",
-        imageSrc: "/solutions/estimation-2.jpg",
+        imageSrc: "/Solutions/estimation-2.jpg",
       },
     ],
   },
@@ -3474,7 +3477,7 @@ export const PROJECTMANAGEMENT_PAGE = {
   TestimonalsSectionProps: {
     subtitle: "STREAMLINE PROJECT MANAGEMENT",
     title: "Optimize Project Execution & Collaboration",
-    imageSrc: "/solutions/estimation-testimonal.jpg",
+    imageSrc: "/Solutions/estimation-testimonal.jpg",
     imageAlt: "Illustration showing project management features",
     features: [
       {
@@ -3500,7 +3503,7 @@ export const PROJECTMANAGEMENT_PAGE = {
 
   mainSectionData: [
     {
-      image: "/solutions/estimation section.jpg",
+      image: "/Solutions/estimation-section.jpg",
       title: "Projects",
       subtitle: "Seamlessly Manage Projects from Start to Finish",
       description:
@@ -3527,7 +3530,7 @@ export const PROJECTMANAGEMENT_PAGE = {
       ],
     },
     {
-      image: "/solutions/estimation section-1.jpg",
+      image: "/Solutions/estimation section-1.jpg",
       imageOnRight: "true",
       title: "Daily Logs",
       subtitle: "Keep Track of Daily Project Activities",
@@ -3555,7 +3558,7 @@ export const PROJECTMANAGEMENT_PAGE = {
       ],
     },
     {
-      image: "/solutions/estimation section.jpg",
+      image: "/Solutions/estimation-section.jpg",
       title: "Scheduling",
       subtitle: "Optimize Project Timelines with Smart Scheduling",
       description:
@@ -3859,7 +3862,7 @@ export const PLATFORM_PAGE = {
   },
   mainSection: [
     {
-      image: "/solutions/estimation section.jpg",
+      image: "/Solutions/estimation-section.jpg",
       title: "Scheduling",
       subtitle: "Optimize Project Timelines with Smart Scheduling",
       description:
@@ -3903,23 +3906,45 @@ export const PLATFORM_PAGE = {
   stickySection: {
     title: "Designed for your entire team",
     subtitle: "Platform features",
-    description: "Tailored for universal usability, our platform minimizes operational overhead, guaranteeing maximum ROI for brands of all sizes.",
+    description:
+      "Tailored for universal usability, our platform minimizes operational overhead, guaranteeing maximum ROI for brands of all sizes.",
     features: [
-      { title: "Workspaces", description: "Workspaces enable seamless management across multiple products...", icon: <PanelsTopLeft className="size-6 text-background" /> },
-      { title: "User permissions", description: "Admin-level users can control who on your team can create...", icon: <Lock className="size-6 text-background" /> },
-      { title: "Compliance", description: "As a data company, we understand the importance of keeping...", icon: <ShieldCheck className="size-6 text-background" /> },
-      { title: "Integrations", description: "Flexible integrations your developers will love...", icon: <Layers className="size-6 text-background" /> },
-    ]
-  }
+      {
+        title: "Workspaces",
+        description:
+          "Workspaces enable seamless management across multiple products...",
+        icon: <PanelsTopLeft className="size-6 text-background" />,
+      },
+      {
+        title: "User permissions",
+        description:
+          "Admin-level users can control who on your team can create...",
+        icon: <Lock className="size-6 text-background" />,
+      },
+      {
+        title: "Compliance",
+        description:
+          "As a data company, we understand the importance of keeping...",
+        icon: <ShieldCheck className="size-6 text-background" />,
+      },
+      {
+        title: "Integrations",
+        description: "Flexible integrations your developers will love...",
+        icon: <Layers className="size-6 text-background" />,
+      },
+    ],
+  },
 };
 
 export const ALL_FEATURES = {
   heroprops: {
     title: "Comprehensive Construction Management Features",
     subtitle: "Complete Feature Suite",
-    description: "Discover our full range of construction management tools designed to streamline your projects. From estimation and scheduling to resource management and compliance tracking, our platform provides everything you need to deliver successful construction projects.",
+    description:
+      "Discover our full range of construction management tools designed to streamline your projects. From estimation and scheduling to resource management and compliance tracking, our platform provides everything you need to deliver successful construction projects.",
     buttonLabel: "Explore Features",
-    imageAlt: "Overview of construction management software features including project scheduling, cost tracking, and resource management",
+    imageAlt:
+      "Overview of construction management software features including project scheduling, cost tracking, and resource management",
     linkHref: "/book-a-demo",
   },
   features: [
@@ -4056,16 +4081,18 @@ export const ALL_FEATURES = {
     button1Link: "/book-a-demo",
     button2Label: "Start a trial",
     button2Link: "/start-trial",
-  }
-}
+  },
+};
 
 export const INTEGRATION = {
   heroprops: {
     title: "Comprehensive Construction Management Features",
     subtitle: "Complete Feature Suite",
-    description: "Discover our full range of construction management tools designed to streamline your projects. From estimation and scheduling to resource management and compliance tracking, our platform provides everything you need to deliver successful construction projects.",
+    description:
+      "Discover our full range of construction management tools designed to streamline your projects. From estimation and scheduling to resource management and compliance tracking, our platform provides everything you need to deliver successful construction projects.",
     buttonLabel: "Explore Features",
-    imageAlt: "Overview of construction management software features including project scheduling, cost tracking, and resource management",
+    imageAlt:
+      "Overview of construction management software features including project scheduling, cost tracking, and resource management",
     linkHref: "/book-a-demo",
   },
   featureIntegration: {
@@ -4073,142 +4100,140 @@ export const INTEGRATION = {
     subtitle: "Featured integrations",
     apps: [
       {
-          href: "https://customer.io/docs/journeys/amazon-s3-data-out",
-          image: "/solutions/amazon-s3.png",
+        href: "https://customer.io/docs/journeys/amazon-s3-data-out",
+        image: "/Solutions/amazon-s3.png",
 
-          name: "Amazon S3",
-          description: "Streamline data transfer from Customer.io to Amazon S3 storage, including messages, people, metrics, and more.",
+        name: "Amazon S3",
+        description:
+          "Streamline data transfer from Customer.io to Amazon S3 storage, including messages, people, metrics, and more.",
       },
       {
         href: "https://customer.io/docs/journeys/amazon-s3-data-out",
-        image: "/solutions/amplitude.png",
+        image: "/Solutions/amplitude.png",
         name: "Amplitude",
-        description: "Streamline data transfer from Customer.io to Amazon S3 storage, including messages, people, metrics, and more.",
-
+        description:
+          "Streamline data transfer from Customer.io to Amazon S3 storage, including messages, people, metrics, and more.",
       },
-      
+
       {
         href: "https://customer.io/docs/journeys/amazon-s3-data-out",
-        image: "/solutions/amplitude.png",
+        image: "/Solutions/amplitude.png",
         name: "Amplitude",
-        description: "Streamline data transfer from Customer.io to Amazon S3 storage, including messages, people, metrics, and more.",
-
+        description:
+          "Streamline data transfer from Customer.io to Amazon S3 storage, including messages, people, metrics, and more.",
       },
-      
+
       {
         href: "https://customer.io/docs/journeys/amazon-s3-data-out",
-        image: "/solutions/amplitude.png",
+        image: "/Solutions/amplitude.png",
         name: "Amplitude",
-        description: "Streamline data transfer from Customer.io to Amazon S3 storage, including messages, people, metrics, and more.",
-
+        description:
+          "Streamline data transfer from Customer.io to Amazon S3 storage, including messages, people, metrics, and more.",
       },
-      
+
       {
         href: "https://customer.io/docs/journeys/amazon-s3-data-out",
-        image: "/solutions/amplitude.png",
+        image: "/Solutions/amplitude.png",
         name: "Amplitude",
-        description: "Streamline data transfer from Customer.io to Amazon S3 storage, including messages, people, metrics, and more.",
-
+        description:
+          "Streamline data transfer from Customer.io to Amazon S3 storage, including messages, people, metrics, and more.",
       },
-      
+
       {
         href: "https://customer.io/docs/journeys/amazon-s3-data-out",
-        image: "/solutions/amplitude.png",
+        image: "/Solutions/amplitude.png",
         name: "Amplitude",
-        description: "Streamline data transfer from Customer.io to Amazon S3 storage, including messages, people, metrics, and more.",
-
-      },
-      {
-        href: "https://customer.io/docs/journeys/amazon-s3-data-out",
-        image: "/solutions/amplitude.png",
-        name: "Amplitude",
-        description: "Streamline data transfer from Customer.io to Amazon S3 storage, including messages, people, metrics, and more.",
-
+        description:
+          "Streamline data transfer from Customer.io to Amazon S3 storage, including messages, people, metrics, and more.",
       },
       {
         href: "https://customer.io/docs/journeys/amazon-s3-data-out",
-        image: "/solutions/amplitude.png",
+        image: "/Solutions/amplitude.png",
         name: "Amplitude",
-        description: "Streamline data transfer from Customer.io to Amazon S3 storage, including messages, people, metrics, and more.",
-
+        description:
+          "Streamline data transfer from Customer.io to Amazon S3 storage, including messages, people, metrics, and more.",
       },
       {
         href: "https://customer.io/docs/journeys/amazon-s3-data-out",
-        image: "/solutions/amplitude.png",
+        image: "/Solutions/amplitude.png",
         name: "Amplitude",
-        description: "Streamline data transfer from Customer.io to Amazon S3 storage, including messages, people, metrics, and more.",
-
+        description:
+          "Streamline data transfer from Customer.io to Amazon S3 storage, including messages, people, metrics, and more.",
       },
-      
-
-
-  ]
+      {
+        href: "https://customer.io/docs/journeys/amazon-s3-data-out",
+        image: "/Solutions/amplitude.png",
+        name: "Amplitude",
+        description:
+          "Streamline data transfer from Customer.io to Amazon S3 storage, including messages, people, metrics, and more.",
+      },
+    ],
   },
   featuresData: {
-  title: "Resources",
-  subtitle: "Master Project Strategies",
-  description:
-    "Explore best practices and comprehensive guides for effectively qualifying contractors ",
-  features: [
-    {
-      icon: <Calendar className="text-white" />,
-      title: "Project Scheduling & Planning",
-      description:
-        "Create, manage, and adjust project schedules to keep tasks on track and meet deadlines efficiently.",
-    },
-    {
-      icon: <ClipboardList className="text-white" />,
-      title: "Task & Workflow Management",
-      description:
-        "Organize and assign project tasks, ensuring teams stay aligned and workflows run smoothly.",
-    },
-    {
-      icon: <AlertCircle className="text-white" />,
-      title: "Risk & Issue Tracking",
-      description:
-        "Identify potential project risks early, track issues, and implement solutions proactively.",
-    },
-    {
-      icon: <BarChart className="text-white" />,
-      title: "Project Performance Analytics",
-      description:
-        "Analyze key project metrics, identify bottlenecks, and optimize workflows for better efficiency.",
-    },
-    {
-      icon: <FileText className="text-white" />,
-      title: "Project Documentation",
-      description:
-        "Maintain comprehensive project records, daily logs, and reports for transparency.",
-    },
-    {
-      icon: <RefreshCcw className="text-white" />,
-      title: "Real-Time Project Updates",
-      description:
-        "Ensure all stakeholders have up-to-date project information with live progress.",
-    },
-  ],
+    title: "Resources",
+    subtitle: "Master Project Strategies",
+    description:
+      "Explore best practices and comprehensive guides for effectively qualifying contractors ",
+    features: [
+      {
+        icon: <Calendar className="text-white" />,
+        title: "Project Scheduling & Planning",
+        description:
+          "Create, manage, and adjust project schedules to keep tasks on track and meet deadlines efficiently.",
+      },
+      {
+        icon: <ClipboardList className="text-white" />,
+        title: "Task & Workflow Management",
+        description:
+          "Organize and assign project tasks, ensuring teams stay aligned and workflows run smoothly.",
+      },
+      {
+        icon: <AlertCircle className="text-white" />,
+        title: "Risk & Issue Tracking",
+        description:
+          "Identify potential project risks early, track issues, and implement solutions proactively.",
+      },
+      {
+        icon: <BarChart className="text-white" />,
+        title: "Project Performance Analytics",
+        description:
+          "Analyze key project metrics, identify bottlenecks, and optimize workflows for better efficiency.",
+      },
+      {
+        icon: <FileText className="text-white" />,
+        title: "Project Documentation",
+        description:
+          "Maintain comprehensive project records, daily logs, and reports for transparency.",
+      },
+      {
+        icon: <RefreshCcw className="text-white" />,
+        title: "Real-Time Project Updates",
+        description:
+          "Ensure all stakeholders have up-to-date project information with live progress.",
+      },
+    ],
   },
   ctaProps: {
-  title: "Streamline Project Management for Efficiency",
-  description: "",
-  benefits: [
-    "Seamless project",
-    "Real-time task tracking",
-    "Data-driven project insights",
-  ],
-  button1Label: "Get Started",
-  button1Link: "/book-a-demo",
-  button2Label: "Start a trial",
-  button2Link: "/start-trial",
-}
-}
+    title: "Streamline Project Management for Efficiency",
+    description: "",
+    benefits: [
+      "Seamless project",
+      "Real-time task tracking",
+      "Data-driven project insights",
+    ],
+    button1Label: "Get Started",
+    button1Link: "/book-a-demo",
+    button2Label: "Start a trial",
+    button2Link: "/start-trial",
+  },
+};
 
 export const SECURITY_PAGE = {
   heroProps: {
     subtitle: "Security",
     description:
       "Ensure safety and security on your construction sites with advanced surveillance, access control, and real-time monitoring solutions.",
-    imageSrc: "/solutions/security.png", // Update this!
+    imageSrc: "/Solutions/security.png", // Update this!
     imageAlt: "Construction site with advanced security systems",
     linkHref: "/security-solutions",
   },
@@ -4363,17 +4388,17 @@ export const KNOWLEDGE_PAGE = {
     sectionTitle: "Knowledge",
     cards: [
       {
-        imageSrc: "/solutions/card1.png",
+        imageSrc: "/Solutions/card1.png",
         title:
           "Introducing ZedAI: The Smart Agent from ZedOps kjksjkjdklsjsfnd,mfnsmdjdsfhdfkj",
       },
       {
-        imageSrc: "/solutions/card2.png",
+        imageSrc: "/Solutions/card2.png",
         title:
           "Reimagining Construction Management with AI: A Game-Changer for SMBs",
       },
       {
-        imageSrc: "/solutions/card3.png",
+        imageSrc: "/Solutions/card3.png",
         title:
           "10 Essential Features Every Construction Management System Should Have",
       },
@@ -4451,7 +4476,7 @@ export const WEBINARS_PAGE = {
     title: "What can we help you find?",
     placeholder: "Search",
     videoUrl: "videos",
-    videoName:"Videos",
+    videoName: "Videos",
     description: "Searching for more videos? Check out our video library.",
     icons: {
       search: <Search size={20} />,
@@ -4463,32 +4488,32 @@ export const WEBINARS_PAGE = {
     sectionTitle: "Webinars",
     cards: [
       {
-        imageSrc: "/solutions/card1.png",
+        imageSrc: "/Solutions/card1.png",
         title: "Streamline Labor & Equipment Management: One Powerful Platform",
       },
       {
-        imageSrc: "/solutions/card2.png",
+        imageSrc: "/Solutions/card2.png",
         title: "Optimize Workforce & Equipment: Simplify Operations",
       },
       {
-        imageSrc: "/solutions/card3.png",
+        imageSrc: "/Solutions/card3.png",
         title: "Boost Efficiency: Unified Labor & Equipment Oversight",
       },
       {
-        imageSrc: "/solutions/card3.png",
+        imageSrc: "/Solutions/card3.png",
         title: "Seamless Jobsite Coordination: Labor & Equipment Synced",
       },
       {
-        imageSrc: "/solutions/card3.png",
+        imageSrc: "/Solutions/card3.png",
         title: "Smart Construction Management: One Integrated Solution",
       },
       {
-        imageSrc: "/solutions/card3.png",
+        imageSrc: "/Solutions/card3.png",
         title: "All-in-One Construction Control: Labor & Equipment Simplified",
       },
     ],
   },
-};  
+};
 
 export const CASESTUDIES_PAGE = {
   searchSectionProps: {
@@ -4509,32 +4534,32 @@ export const CASESTUDIES_PAGE = {
     sectionTitle: "Case Studies",
     cards: [
       {
-        imageSrc: "/solutions/case1.jpg",
+        imageSrc: "/Solutions/case1.jpg",
         title: "Streamline Labor & Equipment Management: One Powerful Platform",
       },
       {
-        imageSrc: "/solutions/case2.jpg",
+        imageSrc: "/Solutions/case2.jpg",
         title: "Optimize Workforce & Equipment: Simplify Operations",
       },
       {
-        imageSrc: "/solutions/case3.jpg",
+        imageSrc: "/Solutions/case3.jpg",
         title: "Boost Efficiency: Unified Labor & Equipment Oversight",
       },
       {
-        imageSrc: "/solutions/case4.jpg",
+        imageSrc: "/Solutions/case4.jpg",
         title: "Seamless Jobsite Coordination: Labor & Equipment Synced",
       },
       {
-        imageSrc: "/solutions/case5.jpg",
+        imageSrc: "/Solutions/case5.jpg",
         title: "Smart Construction Management: One Integrated Solution",
       },
       {
-        imageSrc: "/solutions/case6.jpg",
+        imageSrc: "/Solutions/case6.jpg",
         title: "All-in-One Construction Control: Labor & Equipment Simplified",
       },
     ],
   },
-};  
+};
 export const FAQ_PAGE = {
   searchSectionProps: {
     subtitle: "Have Questions? We’ve Got Answers",
@@ -4542,12 +4567,10 @@ export const FAQ_PAGE = {
     placeholder: "Search",
     videoUrl: "video",
     videoName: "Faq's",
-    description:
-      "Have more questions? Browse our comprehensive FAQ library.",
+    description: "Have more questions? Browse our comprehensive FAQ library.",
     icons: {
       search: <Search size={20} />,
       video: <MessageCircleQuestion size={30} />,
     },
   },
 };
-  

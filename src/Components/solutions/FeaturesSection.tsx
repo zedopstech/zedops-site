@@ -1,4 +1,5 @@
 import React from "react";
+import Image from "next/image";
 
 interface Feature {
   title: string;
@@ -20,7 +21,7 @@ const FeaturesSection: React.FC<FeaturesSectionProps> = ({ features }) => {
             <h3 className="text-3xl font-semibold text-background text-left">{feature.title}</h3>
             <p className="text-gray-600 mt-4 text-lg text-left">{feature.description}</p>
             <div className="mt-6">
-              <img
+              <Image
                 src={feature.imageSrc}
                 alt={feature.imageAlt || feature.title}
                 className="w-full h-auto"
