@@ -21,7 +21,7 @@ const SearchSection: React.FC<SearchSectionProps> = ({
 }) => {
   return (
     <div className="bg-black py-44 px-4 flex flex-col items-center justify-center text-center relative">
-      {subtitle && <p className="text-lg text-gray-300 mt-2">{subtitle}</p>}
+      {subtitle && <p className="text-lg text-gray-300 mt-2 py-2">{subtitle}</p>}
 
       <h2 className="text-2xl md:text-3xl font-bold text-white">{title}</h2>
 
