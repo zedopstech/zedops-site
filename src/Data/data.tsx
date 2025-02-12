@@ -204,6 +204,7 @@ import {
   PlayCircle,
   Book,
   BookOpen,
+  MessageCircleQuestion,
 } from "lucide-react";
 
 export const ESTIMATION_PAGE = {
@@ -4536,17 +4537,17 @@ export const CASESTUDIES_PAGE = {
 };  
 export const FAQ_PAGE = {
   searchSectionProps: {
-    subtitle: "Featured Story",
-    title: "Oxford streamlines global projects with Zedops",
+    subtitle: "Have Questions? We’ve Got Answers",
+    title: "Your Guide to Oxford’s Zedops Integration – FAQs",
     placeholder: "Search",
     videoUrl: "video",
-    videoName: "case",
+    videoName: "Faq's",
     description:
-      "Looking for more case studies? Explore our case study library",
+      "Have more questions? Browse our comprehensive FAQ library.",
     icons: {
       search: <Search size={20} />,
-      video: <BookOpen size={30} />,
+      video: <MessageCircleQuestion size={30} />,
     },
   },
-}
+};
   
