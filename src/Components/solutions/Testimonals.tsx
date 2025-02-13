@@ -31,7 +31,7 @@ const ControlSection: React.FC<ControlSectionProps> = ({
         <h2 className="text-5xl lg:text-5xl font-semibold text-background mt-2">
           {title}
         </h2>
-        
+
         <h2 className="text-3xl lg:text-lg mx-auto max-w-[60ch]  text-gray-600 mt-6">
           {description}
         </h2>
@@ -40,6 +40,9 @@ const ControlSection: React.FC<ControlSectionProps> = ({
         {imageSrc && (
           <div className="mt-10">
             <Image
+              layout="intrinsic"
+              width={1920} // Large width to ensure responsiveness
+              height={1080}
               src={imageSrc}
               alt={imageAlt || "Section Image"}
               className="mx-auto max-w-full h-auto object-cover"
@@ -59,6 +62,8 @@ const ControlSection: React.FC<ControlSectionProps> = ({
                 <div className="flex-shrink-0 w-10 h-10 bg-lightmint text-background flex justify-center items-center rounded-full">
                   {typeof feature.icon === "string" ? (
                     <Image
+                      width={100}
+                      height={100}
                       src={feature.icon}
                       alt={feature.title}
                       className="w-6 h-6 object-contain"

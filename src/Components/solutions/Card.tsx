@@ -28,6 +28,9 @@ const CardSection: React.FC<CardSectionProps> = ({ sectionTitle, cards }) => {
             className="bg-white shadow-md rounded-lg overflow-hidden p-4 transition-transform duration-300 hover:shadow-xl hover:scale-[1.02]"
           >
             <Image
+              layout="intrinsic"
+              width={1920} // Large width to ensure responsiveness
+              height={1080}
               src={card.imageSrc}
               alt={card.title}
               className="w-full h-35 object-cover rounded-md"

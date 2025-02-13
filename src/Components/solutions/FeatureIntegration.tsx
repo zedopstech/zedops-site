@@ -41,6 +41,9 @@ export default function FeatureIntegration({
                   <div className="flex flex-col gap-4">
                     <div className="relative">
                       <Image
+                        layout="intrinsic"
+                        width={1920} // Large width to ensure responsiveness
+                        height={1080}
                         src={app.image}
                         alt={app.name}
                         className="object-fit size-12 object-left"

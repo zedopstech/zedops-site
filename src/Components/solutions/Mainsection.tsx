@@ -28,6 +28,9 @@ const Mainsection: React.FC<{ sections: SectionData[] }> = ({ sections }) => {
               {/* Image Section */}
               <div className="md:w-1/2 w-full">
                 <Image
+                  layout="intrinsic"
+                  width={1920} // Large width to ensure responsiveness
+                  height={1080}
                   src={section.image}
                   alt={section.title}
                   className="w-full h-auto object-cover"
@@ -107,6 +110,9 @@ const Mainsection: React.FC<{ sections: SectionData[] }> = ({ sections }) => {
               {/* Image Section */}
               <div className="md:w-1/2 w-full">
                 <Image
+                  layout="intrinsic"
+                  width={1920} // Large width to ensure responsiveness
+                  height={1080}
                   src={section.image}
                   alt={section.title}
                   className="w-full h-auto object-cover"
