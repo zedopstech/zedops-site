@@ -3,6 +3,7 @@ import Footer from "@/Components/Footer";
 import { ReactNode } from "react";
 import { Metadata } from "next";
 import Header from "@/Components/Header";
+import { Toaster } from "@/Components/UI/toaster";
 
 export const metadata: Metadata = {
   title: "ZedOps - AI-Powered Construction Management",
@@ -76,6 +77,7 @@ export default function RootLayout({ children }: { children: ReactNode }) {
       <body className="antialiased">
         <Header />
         {children}
+        <Toaster />
         <Footer />
       </body>
     </html>

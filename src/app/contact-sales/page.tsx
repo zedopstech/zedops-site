@@ -3,6 +3,8 @@
 import React, { useState } from "react";
 import { Mail, Phone, MapPin } from "lucide-react"; // Lucide icons for contact details
 import { Button } from "@/Components/UI/button";
+import { useToast } from "@/hooks/use-toast";
+
 
 const ContactSales = () => {
   const [formData, setFormData] = useState({
@@ -43,27 +45,56 @@ const ContactSales = () => {
 
     return Object.keys(newErrors).length === 0;
   };
-
-  const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
+  const { toast } = useToast();
+  const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
 
     if (validateForm()) {
-      console.log("Form submitted:", formData);
-      alert("Your message has been sent successfully.");
-      setFormData({
-        firstName: "",
-        lastName: "",
-        email: "",
-        phone: "",
-        message: "",
-      });
-      setErrors({});
+      try {
+        const response = await fetch("/api/sendmail", {
+          method: "POST",
+          headers: { "Content-Type": "application/json" },
+          body: JSON.stringify(formData),
+        });
+
+        const data = await response.json(); // Parse JSON response
+        if (data.success) {
+          toast({
+            title: "✅ Success",
+            description: data.message,
+          });
+        } else {
+          toast({
+            title: "❌ Error",
+            description: data.message,
+          });
+        }
+
+        // Reset form only on success
+        if (data.success) {
+          setFormData({
+            firstName: "",
+            lastName: "",
+            email: "",
+            phone: "",
+            message: "",
+          });
+          setErrors({});
+        }
+      } catch (error) {
+        console.log(error)
+        toast({
+          title: "❌ Network Error",
+          description: "Failed to send request. Please try again.",
+        });
+      }
     }
   };
 
   return (
     <div className="min-h-screen flex flex-col text-background">
       {/* Header Section */}
+     
       <header className=" text-white py-10">
         <div className="max-w-6xl mx-auto px-6 lg:px-0 text-center">
           <h1 className="text-3xl font-extrabold lg:text-4xl">
