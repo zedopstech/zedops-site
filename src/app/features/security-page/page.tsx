@@ -6,7 +6,7 @@ import FeatureSticky from "@/Components/solutions/FeatureSticky";
 import { SECURITY_PAGE } from "@/Data/data";
 import Faq from "@/Components/solutions/Faq";
 
-export default function SECURITYPage() {
+export default function SecurityPage() {
   // Props configuration
 
   return (
