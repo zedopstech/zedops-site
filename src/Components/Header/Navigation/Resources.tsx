@@ -3,12 +3,13 @@ import {
   
   Shield,
   HelpCircle,
-  Briefcase,
+  // Briefcase,
   Book,
   ChevronDown,
-  Video,
+  // Video,
   ArrowRightIcon,
   Megaphone,
+  FileText
 } from "lucide-react";
 import Link from "next/link";
 import React from "react";
@@ -17,27 +18,27 @@ const resource = [
   {
     title: "Knowledge Base",
     content: "Explore articles and guides to understand our services better.",
-    href: "/features/Knowledge",
+    href: "/features/knowledge",
     icon: Book,
   },
-  {
-    title: "Webinars",
-    content: "Watch sessions and webinars by industry experts.",
-    href: "/features/Webinars",
-    icon: Video,
-  },
   // {
-  //   title: "Blog",
-  //   content: "Stay updated with trends and insights from our blog.",
-  //   href: "",
-  //   icon: FileText,
+  //   title: "Webinars",
+  //   content: "Watch sessions and webinars by industry experts.",
+  //   href: "/features/webinars",
+  //   icon: Video,
   // },
   {
-    title: "Case Studies",
-    content: "Learn from success stories and case studies.",
-    href: "/features/case-studies",
-    icon: Briefcase,
+    title: "Blog",
+    content: "Stay updated with trends and insights from our blog.",
+    href: "",
+    icon: FileText,
   },
+  // {
+  //   title: "Case Studies",
+  //   content: "Learn from success stories and case studies.",
+  //   href: "/features/case-studies",
+  //   icon: Briefcase,
+  // },
   {
     title: "FAQs",
     content: "Find answers to common questions in our FAQ section.",
@@ -47,7 +48,7 @@ const resource = [
   {
     title: "Security",
     content: "Your data is secured with top-notch security measures.",
-    href: "/features/Security",
+    href: "/features/security",
     icon: Shield,
   },
 ];
