@@ -27,19 +27,19 @@ export const featuresMenu = [
     items: [
       {
         title: "Prequalification",
-        href: "/features/TenderingManagement/prequalification",
+        href: "/features/tendering-management/prequalification",
         description: "Manage tenders and streamline bidding processes.",
         icon: ClipboardList,
       },
       {
         title: "BIM",
-        href: "/features/TenderingManagement/bim",
+        href: "/features/tendering-management/bim",
         description: "Building Information Modeling for efficient planning.",
         icon: Building2,
       },
       {
         title: "Estimation and Take-off",
-        href: "/features/TenderingManagement/estimation",
+        href: "/features/tendering-management/estimation",
         description: "Accurate project cost estimation tools.",
         icon: DollarSign,
       },
@@ -50,13 +50,13 @@ export const featuresMenu = [
     items: [
       {
         title: "Project Management",
-        href: "/features/ProjectExecution/ProjectManagement",
+        href: "/features/project-execution/project-management",
         description: "Organize and execute projects effectively.",
         icon: HardHat,
       },
       {
         title: "Quality & Safety",
-        href: "/features/ProjectExecution/QualityAndSafety",
+        href: "/features/project-execution/quality-and-safety",
         description: "Ensure quality and safety standards are met.",
         icon: ShieldCheck,
       },
@@ -67,13 +67,13 @@ export const featuresMenu = [
     items: [
       {
         title: "Project Financial",
-        href: "/features/FinancialManagement/ProjectFinancial",
+        href: "/features/financial-management/project-financial",
         description: "Track financial and project budgets in real-time.",
         icon: PieChart,
       },
       {
         title: "Invoice Management",
-        href: "/features/FinancialManagement/InvoiceManagement",
+        href: "/features/financial-management/invoice-management",
         description: "Simplify invoicing and payment processes.",
         icon: FileText,
       },
@@ -84,13 +84,13 @@ export const featuresMenu = [
     items: [
       {
         title: "Inventory",
-        href: "/features/MaterialManagement/Inventory",
+        href: "/features/material-management/inventory",
         description: "Effortless control, seamless inventory management",
         icon: Package,
       },
       {
         title: "Procurement",
-        href: "/features/MaterialManagement/Procurement",
+        href: "/features/material-management/procurement",
         description: "Streamline procurement processes efficiently.",
         icon: ShoppingBasket,
       },
@@ -101,19 +101,19 @@ export const featuresMenu = [
     items: [
       {
         title: "Predictive Analytics",
-        href: "/features/ConstructionIntelligence/PredictiveAnalytics",
+        href: "/features/construction-intelligence/predictive-analytics",
         description: "Gain insights with advanced analytics tools.",
         icon: Brain,
       },
       {
         title: "Real-Time Dashboards",
-        href: "/features/ConstructionIntelligence/RealTimeDashboards",
+        href: "/features/construction-intelligence/real-time-dashboards",
         description: "Gain insights with advanced analytics tools.",
         icon: LayoutDashboard,
       },
       {
         title: "Reports and Alerts",
-        href: "/features/ConstructionIntelligence/ReportsAndAlerts",
+        href: "/features/construction-intelligence/reports-and-alerts",
         description: "Gain insights with advanced analytics tools.",
         icon: NotepadText,
       },
