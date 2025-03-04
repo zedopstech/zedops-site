@@ -1,56 +1,8 @@
 import * as NavigationMenu from "@radix-ui/react-navigation-menu";
-import {
-  
-  Shield,
-  HelpCircle,
-  Briefcase,
-  Book,
-  ChevronDown,
-  Video,
-  ArrowRightIcon,
-  Megaphone,
-} from "lucide-react";
+import { ChevronDown, ArrowRightIcon, Megaphone } from "lucide-react";
 import Link from "next/link";
 import React from "react";
-
-const resource = [
-  {
-    title: "Knowledge Base",
-    content: "Explore articles and guides to understand our services better.",
-    href: "/features/Knowledge",
-    icon: Book,
-  },
-  {
-    title: "Webinars",
-    content: "Watch sessions and webinars by industry experts.",
-    href: "/features/Webinars",
-    icon: Video,
-  },
-  // {
-  //   title: "Blog",
-  //   content: "Stay updated with trends and insights from our blog.",
-  //   href: "",
-  //   icon: FileText,
-  // },
-  {
-    title: "Case Studies",
-    content: "Learn from success stories and case studies.",
-    href: "/features/case-studies",
-    icon: Briefcase,
-  },
-  {
-    title: "FAQs",
-    content: "Find answers to common questions in our FAQ section.",
-    href: "/features/faq",
-    icon: HelpCircle,
-  },
-  {
-    title: "Security",
-    content: "Your data is secured with top-notch security measures.",
-    href: "/features/Security",
-    icon: Shield,
-  },
-];
+import { resourcesMenu } from "../Navigation/data"; // Import the updated data
 
 const ResourcesList = () => {
   return (
@@ -62,10 +14,10 @@ const ResourcesList = () => {
           aria-hidden="true"
         />
       </NavigationMenu.Trigger>
-      <NavigationMenu.Content className="absolute left-0  top-0 w-full sm:w-auto shadow-md ">
+      <NavigationMenu.Content className="absolute left-0 top-0 w-full sm:w-auto shadow-md ">
         <div className="flex justify-between w-full bg-background">
           <ul className="bg-white grid grid-cols-3 p-10 gap-4 w-3/4 text-background">
-            {resource.map((item, index) => (
+            {resourcesMenu.map((item, index) => (
               <Link
                 key={index}
                 href={item.href}
@@ -80,7 +32,7 @@ const ResourcesList = () => {
                 </div>
                 <div className="">
                   <p className="font-semibold">{item.title}</p>
-                  <p className="text-xs mt-1">{item.content}</p>
+                  <p className="text-xs mt-1">{item.description}</p>
                 </div>
               </Link>
             ))}
@@ -98,7 +50,7 @@ const ResourcesList = () => {
                 Experience the power of ZedOps firsthand
               </span>
               <Link
-                href=""
+                href="/register"
                 className="underline text-white flex flex-row items-center gap-1 hover:text-primary"
               >
                 Register Now <ArrowRightIcon className="w-4 h-4" />

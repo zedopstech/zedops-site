@@ -6,53 +6,13 @@ import {
   AccordionItem,
   AccordionTrigger,
   AccordionContent,
-} from "@/Components/UI/accordion"; // Example from ShadCN
+} from "@/Components/UI/accordion";
 import Link from "next/link";
-
-const featuresMenu = [
-  {
-    category: "Preconstruction",
-    items: [
-      { title: "Tender Management", href: "/features/tender-management" },
-      { title: "BIM", href: "/features/bim" },
-      { title: "Estimating", href: "/features/estimating" },
-    ],
-  },
-  {
-    category: "Project Execution",
-    items: [
-      { title: "Project Management", href: "/features/project-management" },
-      { title: "Quality & Safety", href: "/features/quality-safety" },
-    ],
-  },
-  {
-    category: "Financial Management",
-    items: [
-      { title: "Project Financial", href: "/features/project-financial" },
-      {
-        title: "Accounting Integrations",
-        href: "/features/accounting-integrations",
-      },
-      { title: "Invoice Management", href: "/features/invoice-management" },
-    ],
-  },
-  {
-    category: "Resource Management",
-    items: [
-      { title: "Resource Tracking", href: "/features/resource-tracking" },
-    ],
-  },
-  {
-    category: "Construction Intelligence",
-    items: [{ title: "Analytics", href: "/features/analytics" }],
-  },
-];
-
-const resourcesMenu = [
-  { title: "Blog", href: "/resources/blog" },
-  { title: "Case Study", href: "/resources/case-study" },
-  { title: "Guides", href: "/resources/guides" },
-];
+import {
+  featuresMenu,
+  featureNav,
+  resourcesMenu,
+} from "../Header/Navigation/data"; // Import the data
 
 export default function MobileNavigation({
   expanded,
@@ -63,21 +23,40 @@ export default function MobileNavigation({
 }) {
   useEffect(() => {
     if (expanded) {
-      document.body.classList.add("overflow-hidden"); // Disable scrolling
+      document.documentElement.style.overflow = "hidden"; // Prevent scrolling on <html>
+      document.body.style.overflow = "hidden"; // Prevent scrolling on <body>
     } else {
-      document.body.classList.remove("overflow-hidden"); // Re-enable scrolling
+      document.documentElement.style.overflow = ""; // Restore scrolling
+      document.body.style.overflow = "";
     }
 
-    // Cleanup on unmount
     return () => {
-      document.body.classList.remove("overflow-hidden");
+      document.documentElement.style.overflow = ""; // Ensure scrolling is restored on unmount
+      document.body.style.overflow = "";
     };
   }, [expanded]);
 
+  useEffect(() => {
+    const handleResize = () => {
+      if (window.innerWidth >= 1024) {
+        setExpanded(false); // Close mobile menu when screen is resized to desktop
+      }
+    };
+
+    window.addEventListener("resize", handleResize);
+    return () => window.removeEventListener("resize", handleResize);
+  }, [setExpanded]); // Ensure effect runs only when setExpanded changes
+
   const navigationOptions = [
     {
-      name: "Features",
-      subMenu: featuresMenu,
+      name: "Solutions",
+      subMenu: [
+        ...featuresMenu,
+        {
+          category: "Take a tour of zedops",
+          items: featureNav,
+        },
+      ],
       icon: <Layers className="w-5 h-5 mr-2 text-gray-700" />,
     },
     {
@@ -104,7 +83,6 @@ export default function MobileNavigation({
 
   return (
     <div className="fixed inset-0 top-20 bg-white z-50 flex flex-col overflow-y-auto">
-      {/* Navigation */}
       <div className="flex-grow px-4 py-6">
         <Accordion type="single" collapsible>
           {navigationOptions.map((option, index) =>
@@ -135,6 +113,7 @@ export default function MobileNavigation({
                                   href={item.href}
                                   title={item.title}
                                   className="text-lg text-gray-700 hover:text-orange-500"
+                                  onClick={() => setExpanded(false)}
                                 >
                                   {item.title}
                                 </Link>
@@ -148,6 +127,7 @@ export default function MobileNavigation({
                             href={itemOrCategory.href}
                             title={itemOrCategory.title}
                             className="text-lg text-gray-700 hover:text-orange-500"
+                            onClick={() => setExpanded(false)}
                           >
                             {itemOrCategory.title}
                           </Link>
@@ -174,7 +154,6 @@ export default function MobileNavigation({
         </Accordion>
       </div>
 
-      {/* Footer */}
       <div className="border-t border-gray-200 p-4">
         <Button className="block w-full py-3 text-lg font-semibold">
           Get Started
