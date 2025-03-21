@@ -55,7 +55,13 @@ export default function RootLayout({ children }: { children: ReactNode }) {
               "@type": "Organization",
               name: "ZedOps",
               url: "https://www.zedops.com",
-              logo: "https://www.zedops.com/seo/logo.png",
+              logo: {
+                "@type": "ImageObject",
+                "url": "https://www.zedops.com/seo/logo.png",
+                "width": 112,
+                "height": 112,
+                "caption": "ZedOps Logo"
+              },
               description:
                 "AI-powered construction management to streamline workflows, boost collaboration, and deliver projects smarter.",
               sameAs: [
