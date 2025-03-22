@@ -7,11 +7,9 @@ import {
   Carousel,
   CarouselContent,
   CarouselItem,
-  CarouselNext,
-  CarouselPrevious,
-} from "@/Components/UI/carousel";
-import type { CarouselApi } from "@/Components/UI/carousel";
-import { Button } from "../UI/button";
+} from "@/components/ui/carousel";
+import type { CarouselApi } from "@/components/ui/carousel";
+import { Button } from "../ui/button";
 
 const content = {
   mainTitle: "Construction Management Built for Modern Teams",
@@ -131,16 +129,15 @@ const FeatureCard = ({ feature }: { feature: typeof content.features[0] }) => (
 );
 
 const CoreFeatures: React.FC = () => {
-  const [isMobile, setIsMobile] = useState(false);
-  
   // Refs for the two carousels
   const [firstCarouselApi, setFirstCarouselApi] = useState<CarouselApi>();
   const [secondCarouselApi, setSecondCarouselApi] = useState<CarouselApi>();
 
-  // Check if we're on mobile for responsive layout
+  // Check window size for responsive layout
   useEffect(() => {
     const checkIfMobile = () => {
-      setIsMobile(window.innerWidth < 768);
+      // We're using CSS media queries for responsive design
+      // No need to track mobile state in JS
     };
     
     checkIfMobile();
@@ -179,88 +176,64 @@ const CoreFeatures: React.FC = () => {
           </p>
         </div>
 
-        {/* Features Carousel */}
-        {isMobile ? (
-          // Mobile view - single carousel with all features
+        {/* Features Carousel - Two rows for both mobile and desktop */}
+        <div className="space-y-4 sm:space-y-8 relative mx-4">
           <Carousel
             opts={{
               align: "start",
               loop: true,
             }}
+            setApi={setFirstCarouselApi}
             className="w-full"
           >
-            <CarouselContent>
-              {content.features.map((feature) => (
-                <CarouselItem key={feature.id} className="md:basis-1/2 lg:basis-1/3">
+            <CarouselContent className="mb-4 sm:mb-8">
+              {featureGroups[0].map((feature) => (
+                <CarouselItem key={feature.id} className="basis-full sm:basis-1/2 lg:basis-1/3">
                   <FeatureCard feature={feature} />
                 </CarouselItem>
               ))}
             </CarouselContent>
-            <div className="flex justify-center mt-8">
-              <CarouselPrevious className="relative mr-2 hover:bg-background text-background  " />
-              <CarouselNext className="relative ml-2 hover:bg-background text-background" />
-            </div>
           </Carousel>
-        ) : (
-          // Desktop view - two row carousel with synchronized navigation
-          <div className="space-y-8 relative mx-4">
-            <Carousel
-              opts={{
-                align: "start",
-                loop: true,
-              }}
-              setApi={setFirstCarouselApi}
-              className="w-full"
+          
+          <Carousel
+            opts={{
+              align: "start",
+              loop: true,
+            }}
+            setApi={setSecondCarouselApi}
+            className="w-full"
+          >
+            <CarouselContent className="mb-4 sm:mb-8">
+              {featureGroups[1].map((feature) => (
+                <CarouselItem key={feature.id} className="basis-full sm:basis-1/2 lg:basis-1/3">
+                  <FeatureCard feature={feature} />
+                </CarouselItem>
+              ))}
+            </CarouselContent>
+          </Carousel>
+          
+          {/* Centralized navigation controls for both carousels */}
+          <div className="flex justify-center mt-8">
+            <Button
+              variant="outline"
+              size="icon"
+              onClick={scrollPrev}
+              className="relative mr-2 rounded-full text-primary hover:bg-background" 
             >
-              <CarouselContent className="mb-8">
-                {featureGroups[0].map((feature) => (
-                  <CarouselItem key={feature.id} className="md:basis-1/2 lg:basis-1/3">
-                    <FeatureCard feature={feature} />
-                  </CarouselItem>
-                ))}
-              </CarouselContent>
-            </Carousel>
-            
-            <Carousel
-              opts={{
-                align: "start",
-                loop: true,
-              }}
-              setApi={setSecondCarouselApi}
-              className="w-full"
+              <ChevronLeft className="h-5 w-5" />
+              <span className="sr-only">Previous slide</span>
+            </Button>
+            <Button
+              variant="outline"
+              size="icon"
+              onClick={scrollNext}
+              className="relative ml-2 rounded-full text-primary hover:bg-background"
             >
-              <CarouselContent className="mb-8">
-                {featureGroups[1].map((feature) => (
-                  <CarouselItem key={feature.id} className="md:basis-1/2 lg:basis-1/3">
-                    <FeatureCard feature={feature} />
-                  </CarouselItem>
-                ))}
-              </CarouselContent>
-            </Carousel>
-            
-            {/* Centralized navigation controls for both carousels */}
-            <div className="flex justify-center mt-8">
-              <Button
-                variant="outline"
-                size="icon"
-                onClick={scrollPrev}
-                className="relative mr-2 rounded-full text-background hover:bg-background" 
-              >
-                <ChevronLeft className="h-5 w-5" />
-                <span className="sr-only">Previous slide</span>
-              </Button>
-              <Button
-                variant="outline"
-                size="icon"
-                onClick={scrollNext}
-                className="relative ml-2 rounded-full text-background hover:bg-background"
-              >
-                <ChevronRight className="h-5 w-5" />
-                <span className="sr-only">Next slide</span>
-              </Button>
-            </div>
+              <ChevronRight className="h-5 w-5" />
+              <span className="sr-only">Next slide</span>
+            </Button>
           </div>
-        )}
+        </div>
 
         {/* CTA Button */}
         <div className="mt-20 text-center">

@@ -1,8 +1,8 @@
 import { INTEGRATION } from "@/Data/data";
-import IntroSection from "@/Components/solutions/IntroSection";
-import FeatureIntegration from "@/Components/solutions/FeatureIntegration";
-import FeatureCards from "@/Components/solutions/Featurecards";
-import CtoSection from "@/Components/solutions/Ctosection";
+import IntroSection from "@/components/solutions/IntroSection";
+import FeatureIntegration from "@/components/solutions/FeatureIntegration";
+import FeatureCards from "@/components/solutions/Featurecards";
+import CtoSection from "@/components/solutions/Ctosection";
 export default function page() {
   return (
     <>

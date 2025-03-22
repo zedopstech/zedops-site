@@ -1,4 +1,4 @@
-import { Button } from "@/Components/UI/button";
+import { Button } from "@/components/ui/button";
 import { cn } from "@/lib/utils";
 import * as NavigationMenu from "@radix-ui/react-navigation-menu";
 import Link from "next/link";

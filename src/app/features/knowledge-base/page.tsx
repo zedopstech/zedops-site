@@ -3,9 +3,9 @@ import React from "react";
 
 import { KNOWLEDGE_PAGE} from "@/Data/data";
 
-import SearchSection from "@/Components/solutions/SearchSection";
-import Card from "@/Components/solutions/Card";
-import GetStartedSection from "@/Components/solutions/GetStartedSection";
+import SearchSection from "@/components/solutions/SearchSection";
+import Card from "@/components/solutions/Card";
+import GetStartedSection from "@/components/solutions/GetStartedSection";
 
 export default function KNOWLEDGEPage() {
   // Props configuration

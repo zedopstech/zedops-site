@@ -1,7 +1,7 @@
-import Support from "@/Components/Home/Support";
-import Features from "@/Components/Home/Features";
-import Hero from "@/Components/Home/Hero";
-import ProblemStatement from "@/Components/Home/ProblemStatement";
+import Support from "@/components/Home/Support";
+import Features from "@/components/Home/Features";
+import Hero from "@/components/Home/Hero";
+import ProblemStatement from "@/components/Home/ProblemStatement";
 
 export default function Home() {
   return (

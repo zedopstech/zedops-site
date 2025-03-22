@@ -1,11 +1,11 @@
-import SearchSection from "@/Components/solutions/SearchSection";
+import SearchSection from "@/components/solutions/SearchSection";
 import { FAQ_PAGE } from "@/Data/data";
 import {
   Accordion,
   AccordionItem,
   AccordionContent,
   AccordionTrigger,
-} from "@/Components/UI/accordion";
+} from "@/components/ui/accordion";
 
 
 export default function Page() {

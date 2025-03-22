@@ -2,7 +2,7 @@ import React from "react";
 import Image from "next/image";
 import { Building2, CheckCircle, TrendingUp, Users } from "lucide-react";
 import Link from "next/link";
-import { Button } from "@/Components/UI/button";
+import { Button } from "@/components/ui/button";
 
 const aboutUsContent = {
   hero: {

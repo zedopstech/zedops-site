@@ -2,7 +2,7 @@
 
 import React, { useState } from "react";
 import { Mail, Phone, MapPin } from "lucide-react"; // Lucide icons for contact details
-import { Button } from "@/Components/UI/button";
+import { Button } from "@/components/ui/button";
 import { useToast } from "@/hooks/use-toast";
 
 
