@@ -185,7 +185,6 @@ const SolutionsList = () => {
                             <div className="font-medium text-sm flex items-center gap-2 text-background group-hover:text-white">
                               <span>{item.title}</span>
                             </div>
-                            <ArrowRightIcon className="w-4 h-4 hidden text-background group-hover:text-white group-hover:flex items-end mr-4 animate-grow" />
                           </div>
                         </Link>
                       </li>

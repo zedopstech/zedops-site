@@ -2,9 +2,8 @@
 
 import React, { useState, useEffect, useMemo } from "react";
 import { Button } from "@/Components/UI/button";
-import { CheckCircle, Building2, Clock, Users, Workflow, Shield, ArrowRight, Calendar, ClipboardList, LineChart, CalendarDays, FileText, FolderOpen, Layers, BarChart, MessageSquare, XCircle, Cpu } from "lucide-react";
+import { CheckCircle, Building2, Clock, Users, Workflow, Shield, ArrowRight, Calendar, ClipboardList, LineChart, CalendarDays, FileText, FolderOpen, Layers, BarChart, XCircle, Cpu } from "lucide-react";
 import Link from "next/link";
-import { Carousel, CarouselContent, CarouselItem, CarouselPrevious, CarouselNext } from "@/Components/UI/carousel";
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/Components/UI/accordion";
 import { Input } from "@/Components/UI/input";
 import { Label } from "@/Components/UI/label";
@@ -105,43 +104,38 @@ const BookDemo = () => {
 
   return (
     <div className="min-h-screen flex flex-col bg-background text-foreground">
-      {/* Hero Section with animated background */}
-      {/* <div className="relative overflow-hidden bg-gradient-to-b from-secondary via-secondary/90 to-secondary/80">
-        <div className="relative py-24 px-6 z-10">
-          <div className="max-w-7xl mx-auto">
-            <div className="text-center max-w-3xl mx-auto mb-12">
-              <h1 className="text-5xl md:text-6xl font-bold text-primary mb-6 leading-tight">
-                Revolutionize Your <span className="relative inline-block">
-                  <span className="relative z-10 text-white">Construction Management</span>
-                  <span className="absolute bottom-2 left-0 w-full h-3 bg-accent/30 -rotate-1"></span>
-                </span>
-              </h1>
-              
-              <p className="text-xl text-card-foreground/80 leading-relaxed mb-8">
-                Experience how our AI-powered platform can reduce costs, improve efficiency, and help deliver projects on time.
-              </p>
-              
-              <div className="flex flex-wrap justify-center gap-4 mb-8">
-                <div className="flex items-center bg-muted px-4 py-2 rounded-full shadow-md hover:shadow-lg hover:bg-muted/80 transition-all duration-300">
-                  <Bot className="w-5 h-5 text-accent mr-2" />
-                  <span className="text-sm font-medium text-card-foreground">AI-Powered Insights</span>
-                </div>
-                
-                <div className="flex items-center bg-muted px-4 py-2 rounded-full shadow-md hover:shadow-lg hover:bg-muted/80 transition-all duration-300">
-                  <Shield className="w-5 h-5 text-accent mr-2" />
-                  <span className="text-sm font-medium text-card-foreground">Enterprise-Grade Security</span>
-                </div>
+      {/* Hero Section with animated background - simplified for secondary page */}
+      {/* <div className="relative overflow-hidden bg-gradient-to-r from-secondary/90 to-secondary/80 py-12">
+        <div className="absolute inset-0 opacity-5">
+          <div className="absolute top-0 right-0 w-40 h-40 rounded-full bg-accent blur-3xl"></div>
+          <div className="absolute bottom-0 left-0 w-40 h-40 rounded-full bg-primary blur-3xl"></div>
+        </div>
+        
+        <div className="relative z-10 max-w-5xl mx-auto px-6">
+          <div className="text-center mb-8">
+            <h1 className="text-3xl md:text-4xl font-bold text-white mb-4">
+              <span className="relative inline-block">
+                <span className="relative z-10">Book Your</span>
+              </span>
+              {" "}
+              <span className="relative inline-block">
+                <span className="relative z-10 bg-clip-text text-transparent bg-gradient-to-r from-accent to-primary font-extrabold">ZedOps Demo</span>
+                <span className="absolute -bottom-1 left-0 w-full h-2 bg-accent/30"></span>
+              </span>
+            </h1>
+            
+            <p className="text-lg text-white/90 max-w-2xl mx-auto">
+              See how our <span className="font-semibold text-accent">AI-powered construction management platform</span> can streamline your workflows and improve project outcomes.
+            </p>
+          </div>
+          
+          <div className="flex flex-wrap justify-center gap-4 mb-6">
+            {["30-Min Demo", "Live Q&A", "Personalized Walkthrough"].map((feature, idx) => (
+              <div key={idx} className="flex items-center bg-white/10 px-3 py-1.5 rounded-full border border-white/10 shadow-sm hover:bg-white/15 transition-all duration-300">
+                <CheckCircle className="w-4 h-4 text-accent mr-1.5" />
+                <span className="text-sm text-white font-medium">{feature}</span>
               </div>
-              
-              <div className="flex flex-wrap justify-center gap-3 text-sm text-card-foreground/70">
-                {["Predictive Analytics", "Real-time Dashboards", "Mobile Access", "Custom Reporting"].map((feature, idx) => (
-                  <div key={idx} className="flex items-center">
-                    <CheckCircle className="w-4 h-4 text-accent mr-1" />
-                    <span>{feature}</span>
-                  </div>
-                ))}
-              </div>
-            </div>
+            ))}
           </div>
         </div>
       </div> */}
@@ -178,54 +172,6 @@ const BookDemo = () => {
                         </div>
                       </div>
                     ))}
-                  </div>
-                </div>
-
-                {/* Product Showcase */}
-                <div className="bg-muted rounded-xl shadow-lg p-8 border border-muted/50 relative overflow-hidden">
-                  <div className="absolute top-0 left-0 w-32 h-32 bg-accent/10 rounded-br-full -z-0"></div>
-                  <div className="absolute bottom-0 right-0 w-40 h-40 bg-primary/10 rounded-tl-full -z-0"></div>
-                  
-                  <div className="relative z-10">
-                    <h2 className="text-2xl font-bold text-primary mb-6">Powerful Features</h2>
-                    
-                    <Carousel className="w-full">
-                      <CarouselContent>
-                        {[
-                          {
-                            title: "Smart Scheduling",
-                            description: "AI algorithms that optimize project timelines and resource allocation",
-                            icon: <Clock className="w-8 h-8" />
-                          },
-                          {
-                            title: "Real-time Analytics",
-                            description: "Instant insights into project performance and financial metrics",
-                            icon: <LineChart className="w-8 h-8" />
-                          },
-                          {
-                            title: "Document Control",
-                            description: "Centralized system for all project documentation with version control",
-                            icon: <FileText className="w-8 h-8" />
-                          }
-                        ].map((item, idx) => (
-                          <CarouselItem key={idx}>
-                            <div className="p-4">
-                              <div className="flex flex-col items-center text-center p-6 bg-card rounded-xl h-full">
-                                <div className="w-16 h-16 bg-accent/20 rounded-full flex items-center justify-center mb-4">
-                                  <div className="text-accent">{item.icon}</div>
-                                </div>
-                                <h3 className="text-xl font-bold text-primary mb-2">{item.title}</h3>
-                                <p className="text-card-foreground/70">{item.description}</p>
-                              </div>
-                            </div>
-                          </CarouselItem>
-                        ))}
-                      </CarouselContent>
-                      <div className="flex justify-center gap-2 mt-4">
-                        <CarouselPrevious className="relative inset-0 translate-y-0 bg-accent/20 text-accent hover:bg-accent hover:text-white" />
-                        <CarouselNext className="relative inset-0 translate-y-0 bg-accent/20 text-accent hover:bg-accent hover:text-white" />
-                      </div>
-                    </Carousel>
                   </div>
                 </div>
 
@@ -497,21 +443,6 @@ const BookDemo = () => {
               </div>
             </div>
           )}
-        </div>
-      </div>
-
-      {/* Footer with accent color */}
-      <div className="bg-card py-8 px-6 border-t border-muted/30">
-        <div className="max-w-7xl mx-auto text-center">
-          <p className="text-card-foreground/70 mb-4">Ready to transform your construction management?</p>
-          <div className="flex justify-center gap-4">
-            <Button asChild className="bg-card border border-accent/50 text-accent hover:bg-accent/10 shadow-md hover:shadow-lg transition-all duration-300">
-              <Link href="/contact">
-                <MessageSquare className="w-4 h-4 mr-2" />
-                Contact Sales
-              </Link>
-            </Button>
-          </div>
         </div>
       </div>
     </div>
