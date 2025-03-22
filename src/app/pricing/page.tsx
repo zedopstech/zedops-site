@@ -5,7 +5,6 @@ import {
   AccordionTrigger,
 } from "@/components/ui/accordion";
 import { Button } from "@/components/ui/button";
-
 import { Headset } from "lucide-react";
 import Link from "next/link";
 import React from "react";
@@ -39,7 +38,8 @@ const Pricing: React.FC = () => {
               </p>
             </div>
             <Link href="/contact-sales" title="Contact Sales">
-              <Button size={"lg"} icon={Headset}>
+              <Button size={"lg"}>
+                <Headset />
                 Contact Sales
               </Button>
             </Link>
