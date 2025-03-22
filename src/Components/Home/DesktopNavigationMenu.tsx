@@ -7,7 +7,7 @@ import {
   NavigationMenuItem,
   NavigationMenuList,
   NavigationMenuTrigger,
-} from "../ui/navigation-menu";
+} from "../UI/navigation-menu";
 import { cn } from "@/lib/utils";
 import Link from "next/link";
 import {

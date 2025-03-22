@@ -1,8 +1,8 @@
 import { ALL_FEATURES } from '@/Data/data'
 import React from 'react'
-import IntroSection from '@/components/solutions/IntroSection'
-import EmailFeatures from '@/components/solutions/Emailfeatures'
-import CtoSection from '@/components/solutions/Ctosection'
+import IntroSection from '@/Components/solutions/IntroSection'
+import EmailFeatures from '@/Components/solutions/Emailfeatures'
+import CtoSection from '@/Components/solutions/Ctosection'
 
 export default function page() {
   return (

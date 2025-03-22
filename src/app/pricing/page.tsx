@@ -3,8 +3,8 @@ import {
   AccordionItem,
   AccordionContent,
   AccordionTrigger,
-} from "@/components/ui/accordion";
-import { Button } from "@/components/ui/button";
+} from "@/Components/UI/accordion";
+import { Button } from "@/Components/UI/button";
 import { Headset } from "lucide-react";
 import Link from "next/link";
 import React from "react";

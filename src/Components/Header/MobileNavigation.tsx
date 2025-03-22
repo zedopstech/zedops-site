@@ -1,12 +1,12 @@
 import React from "react";
 import { Headset, DollarSign, Info, Layers, Book } from "lucide-react";
-import { Button } from "@/components/ui/button";
+import { Button } from "@/Components/UI/button";
 import {
   Accordion,
   AccordionItem,
   AccordionTrigger,
   AccordionContent,
-} from "@/components/ui/accordion"; // Example from ShadCN
+} from "@/Components/UI/accordion"; // Example from ShadCN
 import Link from "next/link";
 
 const featuresMenu = [

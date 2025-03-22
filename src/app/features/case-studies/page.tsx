@@ -2,8 +2,8 @@ import React from "react";
 
 import { CASESTUDIES_PAGE } from "@/Data/data";
 
-import SearchSection from "@/components/solutions/SearchSection";
-import Card from "@/components/solutions/Card";
+import SearchSection from "@/Components/solutions/SearchSection";
+import Card from "@/Components/solutions/Card";
 
 export default function CASESTUDIESPage() {
   // Props configuration

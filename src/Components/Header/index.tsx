@@ -2,7 +2,7 @@
 import React, { useState } from "react";
 import Logo from "../Common/Logo";
 import Link from "next/link";
-import { Button } from "../ui/button";
+import { Button } from "../UI/button";
 import { Headset, Menu, X } from "lucide-react";
 import MobileNavigation from "./MobileNavigation";
 import DesktopNavigationMenu from "./Navigation/Desktop";

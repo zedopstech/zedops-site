@@ -1,9 +1,9 @@
 import "./globals.css";
-import Footer from "@/components/Footer";
+import Footer from "@/Components/Footer";
 import { ReactNode } from "react";
 import { Metadata } from "next";
-import Header from "@/components/Header";
-import { Toaster } from "@/components/ui/toaster";
+import Header from "@/Components/Header";
+import { Toaster } from "@/Components/UI/toaster";
 
 export const metadata: Metadata = {
   title: "ZedOps - AI-Powered Construction Management",

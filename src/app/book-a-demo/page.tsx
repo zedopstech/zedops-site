@@ -1,16 +1,16 @@
 "use client";
 
 import React, { useState, useEffect, useMemo } from "react";
-import { Button } from "@/components/ui/button";
+import { Button } from "@/Components/UI/button";
 import { CheckCircle, Building2, Clock, Users, Workflow, Shield, ArrowRight, Calendar, ClipboardList, LineChart, CalendarDays, FileText, FolderOpen, Layers, BarChart, MessageSquare, XCircle, Cpu } from "lucide-react";
 import Link from "next/link";
-import { Carousel, CarouselContent, CarouselItem, CarouselPrevious, CarouselNext } from "@/components/ui/carousel";
-import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
-import { Input } from "@/components/ui/input";
-import { Label } from "@/components/ui/label";
-import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select";
-import { Checkbox } from "@/components/ui/checkbox";
-import { Textarea } from "@/components/ui/textarea";
+import { Carousel, CarouselContent, CarouselItem, CarouselPrevious, CarouselNext } from "@/Components/UI/carousel";
+import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/Components/UI/accordion";
+import { Input } from "@/Components/UI/input";
+import { Label } from "@/Components/UI/label";
+import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/Components/UI/select";
+import { Checkbox } from "@/Components/UI/checkbox";
+import { Textarea } from "@/Components/UI/textarea";
 
 const BookDemo = () => {
   const [formData, setFormData] = useState({

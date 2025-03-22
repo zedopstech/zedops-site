@@ -7,9 +7,9 @@ import {
   Carousel,
   CarouselContent,
   CarouselItem,
-} from "@/components/ui/carousel";
-import type { CarouselApi } from "@/components/ui/carousel";
-import { Button } from "../ui/button";
+} from "@/Components/UI/carousel";
+import type { CarouselApi } from "@/Components/UI/carousel";
+import { Button } from "../UI/button";
 
 const content = {
   mainTitle: "Construction Management Built for Modern Teams",

@@ -1,9 +1,9 @@
-import BlogHeader from "@/components/blog/BlogHeader";
-import BlogCategories from "@/components/blog/BlogCategories";
-import BlogGrid from "@/components/blog/BlogGrid";
+import BlogHeader from "@/Components/blog/BlogHeader";
+import BlogCategories from "@/Components/blog/BlogCategories";
+import BlogGrid from "@/Components/blog/BlogGrid";
 import { BLOG_DATA, MAIN_CATEGORY_DATA } from "@/Data/blogData";
 import { BookOpen, Laptop, Tv } from "lucide-react";
-import BlogMainCategories from "@/components/blog/BlogMainCategories";
+import BlogMainCategories from "@/Components/blog/BlogMainCategories";
 
 
 

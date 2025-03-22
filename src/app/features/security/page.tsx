@@ -1,10 +1,10 @@
 import React from "react";
-import Hero from "@/components/solutions/Hero";
-import Testimonals from "@/components/solutions/Testimonals";
-import CtoSection from "@/components/solutions/Ctosection";
-import FeatureSticky from "@/components/solutions/FeatureSticky";
+import Hero from "@/Components/solutions/Hero";
+import Testimonals from "@/Components/solutions/Testimonals";
+import CtoSection from "@/Components/solutions/Ctosection";
+import FeatureSticky from "@/Components/solutions/FeatureSticky";
 import { SECURITY_PAGE } from "@/Data/data";
-import Faq from "@/components/solutions/Faq";
+import Faq from "@/Components/solutions/Faq";
 
 export default function SecurityPage() {
   // Props configuration

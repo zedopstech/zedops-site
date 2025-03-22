@@ -1,5 +1,5 @@
 import { ArrowUpRight, Headset, Mail, MessageSquare, Clock, Shield, BookOpen, PuzzleIcon } from "lucide-react";
-import { Button } from "../ui/button";
+import { Button } from "../UI/button";
 import Link from "next/link";
 
 const CtoContent = {
