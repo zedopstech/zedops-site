@@ -54,25 +54,13 @@ const Support: React.FC = () => {
   return (
     <section
       id="support"
-      className="bg-gradient-to-b from-white via-white to-gray-50 text-background py-24 px-6 flex justify-center items-center relative overflow-hidden"
+      className="bg-white text-gray-800 py-24 px-6 flex justify-center items-center relative overflow-hidden"
     >
-      {/* Background Elements */}
-      <div className="absolute inset-0 opacity-10">
-        <div
-          className="h-full w-full bg-no-repeat bg-center bg-cover"
-          style={{ backgroundImage: "url('/world-map.webp')" }}
-        ></div>
-      </div>
-      
-      {/* Decorative elements */}
-      <div className="absolute top-0 left-0 w-96 h-96 bg-primary/5 rounded-full -translate-x-1/2 -translate-y-1/2 blur-xl"></div>
-      <div className="absolute bottom-0 right-0 w-96 h-96 bg-secondary/5 rounded-full translate-x-1/4 translate-y-1/4 blur-xl"></div>
-
       {/* Content */}
       <div className="relative z-10 mx-auto max-w-7xl w-full">
         {/* Header */}
         <div className="text-center max-w-3xl mx-auto mb-16">
-          <span className="px-4 py-1.5 text-sm font-semibold tracking-wider text-white rounded-full bg-secondary inline-block mb-5 shadow-sm">Early Access Program</span>
+          <span className="px-4 py-1.5 text-sm font-semibold tracking-wider text-white rounded-full bg-secondary inline-block mb-5 shadow-md">Early Access Program</span>
           <h2 className="text-3xl sm:text-4xl font-bold text-gray-900">
             <span className="text-secondary">{CtoContent.mainTitle}</span>
           </h2>
@@ -86,17 +74,17 @@ const Support: React.FC = () => {
           {CtoContent.subTitles.map((item, index) => (
             <div
               key={index}
-              className="bg-gradient-to-br from-white via-white to-gray-50 rounded-xl p-6 shadow-lg border border-gray-100 group cursor-pointer transform transition-all duration-300 hover:-translate-y-2 hover:shadow-xl hover:border-primary/20 relative overflow-hidden"
+              className="rounded-xl p-6 border border-gray-200 group cursor-pointer transform transition-all duration-300 hover:-translate-y-2 shadow-xl border-secondary/50 relative overflow-hidden"
             >
               {/* Gradient overlay effect */}
-              <div className="absolute inset-0 bg-gradient-to-br from-secondary/5 to-primary/5 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+              <div className="absolute inset-0 bg-gradient-to-br from-secondary/5 to-secondary/10 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
               
-              {/* Subtle background decoration */}
-              <div className="absolute -bottom-10 -right-10 w-24 h-24 rounded-full bg-secondary/5 group-hover:bg-secondary/10 transition-colors duration-300"></div>
+              {/* Decorative circle */}
+              <div className="absolute -right-8 -bottom-8 w-32 h-32 rounded-full bg-secondary/5 group-hover:bg-secondary/10 transition-colors duration-300"></div>
               
               {/* Content with relative positioning */}
               <div className="relative z-10">
-                <div className="mb-4 inline-flex items-center justify-center w-16 h-16 rounded-xl bg-secondary/10 text-secondary group-hover:bg-secondary group-hover:text-white transition-colors duration-300 shadow-md">
+                <div className="mb-4 inline-flex items-center justify-center w-16 h-16 rounded-xl bg-gradient-to-br from-gray-100 to-gray-200 text-secondary group-hover:text-secondary transition-colors duration-300 shadow-md">
                   <item.icon className="w-8 h-8" />
                 </div>
                 
@@ -108,10 +96,10 @@ const Support: React.FC = () => {
                   {item.content}
                 </p>
                 
-                {/* Icon Button */}
+                {/* Arrow icon */}
                 <div className="mt-4 self-end inline-flex">
                   <div
-                    className="p-2 rounded-full border border-gray-200 text-gray-400 group-hover:bg-secondary group-hover:text-white group-hover:border-secondary group-hover:scale-110 transition-all duration-300"
+                    className="p-2 rounded-full border border-gray-300 text-gray-500 group-hover:bg-secondary/20 group-hover:text-secondary group-hover:border-secondary/50 group-hover:scale-110 transition-all duration-300"
                     aria-label="Learn More"
                   >
                     <ArrowUpRight className="w-5 h-5" />

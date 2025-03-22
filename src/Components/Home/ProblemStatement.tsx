@@ -105,7 +105,7 @@ const featureGroups = [
 
 const FeatureCard = ({ feature }: { feature: typeof content.features[0] }) => (
   <div 
-    className="bg-gradient-to-br from-white via-white to-gray-50 rounded-xl p-6 shadow-md hover:shadow-xl transition-all duration-300 hover:scale-[1.03] hover:-translate-y-1 group border border-gray-100 relative overflow-hidden h-full"
+    className="bg-gradient-to-br from-gray-50 via-gray-50 to-gray-100 rounded-xl p-6 shadow-sm hover:shadow-md transition-all duration-300 hover:scale-[1.02] hover:-translate-y-1 group border border-gray-100/50 relative overflow-hidden h-full"
   >
     {/* Gradient overlay effect */}
     <div className="absolute inset-0 bg-gradient-to-br from-secondary/5 to-primary/5 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
@@ -115,15 +115,15 @@ const FeatureCard = ({ feature }: { feature: typeof content.features[0] }) => (
       {/* Subtle background decoration */}
       <div className="absolute -bottom-10 -right-10 w-24 h-24 rounded-full bg-secondary/5 group-hover:bg-secondary/10 transition-colors duration-300"></div>
       
-      <div className="mb-5 inline-flex items-center justify-center w-14 h-14 rounded-xl bg-secondary/10 text-secondary group-hover:bg-secondary group-hover:text-white transition-all duration-300 shadow-sm group-hover:shadow-md">
+      <div className="mb-5 inline-flex items-center justify-center w-14 h-14 rounded-xl bg-secondary/10 text-secondary group-hover:bg-secondary/20 group-hover:text-secondary transition-all duration-300 shadow-sm">
         <feature.icon size={26} />
       </div>
       
-      <h3 className="text-xl font-bold text-gray-800 mb-3 group-hover:text-secondary transition-colors duration-300">
+      <h3 className="text-xl font-bold text-gray-700 mb-3 group-hover:text-secondary transition-colors duration-300">
         {feature.text}
       </h3>
       
-      <p className="text-gray-600 group-hover:text-gray-700 transition-colors duration-300 relative z-10">
+      <p className="text-gray-500 group-hover:text-gray-600 transition-colors duration-300 relative z-10">
         {feature.description}
       </p>
     </div>
@@ -165,13 +165,13 @@ const CoreFeatures: React.FC = () => {
   return (
     <section
       id="core-features"
-      className="py-20 lg:py-28 px-6 lg:px-0 relative overflow-hidden bg-gradient-to-b from-white to-gray-50"
+      className="py-20 lg:py-28 px-6 lg:px-0 relative overflow-hidden bg-gradient-to-b from-gray-50 to-gray-100/50"
     >
       <div className="mx-auto max-w-7xl relative z-10">
         {/* Section Header */}
         <div className="max-w-3xl mx-auto text-center mb-16">
-          <span className="inline-block px-4 py-1.5 rounded-full bg-secondary/15 text-secondary text-sm font-semibold mb-5 shadow-sm">Core Capabilities</span>
-          <h2 className="text-3xl leading-tight text-gray-900 sm:text-4xl xl:text-5xl font-bold mb-6">
+          <span className="inline-block px-4 py-1.5 rounded-full bg-secondary/10 text-secondary text-sm font-semibold mb-5 shadow-sm">Core Capabilities</span>
+          <h2 className="text-3xl leading-tight text-gray-800 sm:text-4xl xl:text-5xl font-bold mb-6">
             <span className="text-secondary">{content.mainTitle}</span>
           </h2>
           <p className="text-gray-600 text-lg max-w-2xl mx-auto">
@@ -266,7 +266,7 @@ const CoreFeatures: React.FC = () => {
         <div className="mt-20 text-center">
           <Link 
             href={content.cta.link}
-            className="inline-flex items-center px-8 py-3.5 bg-secondary hover:bg-secondary/90 text-white font-semibold rounded-lg shadow-lg hover:shadow-xl hover:scale-105 transition-all duration-300"
+            className="inline-flex items-center px-8 py-3.5 bg-secondary/90 hover:bg-secondary text-white font-semibold rounded-lg shadow-md hover:shadow-lg hover:scale-[1.02] transition-all duration-300"
           >
             {content.cta.text}
             <svg className="ml-2 w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path></svg>

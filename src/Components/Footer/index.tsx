@@ -1,11 +1,9 @@
-import { Instagram, Linkedin, Twitter, Mail, MapPin, ArrowUpRight } from "lucide-react";
+import { Instagram, Linkedin, Twitter, ArrowUpRight } from "lucide-react";
 import Logo from "../Common/Logo";
 import Link from "next/link";
 
 const Footer = () => {
   const FooterContent = {
-    logoContent:
-      "Streamlining construction operations with advanced intelligence to optimize workflows, improve collaboration, and ensure project success. Build efficiently and deliver exceptional results with ZedOps.",
     socialMedia: [
       { icon: Twitter, url: "https://x.com/zedopstech" },
       { icon: Linkedin, url: "https://www.linkedin.com/company/zedops/" },
@@ -66,9 +64,31 @@ const Footer = () => {
               <Link href="#" title="ZedOps Home" className="inline-block">
                 <Logo variant="primary" />
               </Link>
-              <p className="mt-6 text-gray-200 text-base leading-relaxed max-w-md">
-                {FooterContent.logoContent}
-              </p>
+              
+              {/* Contact Info */}
+              <div className="mt-6 space-y-4">
+              <div className="flex items-start">
+                  <div>
+                    <p className="text-sm font-medium text-primary">Our Location</p>
+                    <p className="text-sm text-gray-200 mt-1">
+                      {FooterContent.contactInfo.address}
+                    </p>
+                  </div>
+                </div>
+                <a 
+                  href={`mailto:${FooterContent.contactInfo.email}`}
+                  className="flex items-start group"
+                >
+                  <div>
+                    <p className="text-sm font-medium text-primary group-hover:text-white transition-colors duration-200">Email Us</p>
+                    <p className="text-sm text-gray-200 group-hover:text-primary/80 transition-colors duration-200">
+                      {FooterContent.contactInfo.email}
+                    </p>
+                  </div>
+                </a>
+                
+             
+              </div>
               
               {/* Social Media */}
               <div className="mt-8">
@@ -90,9 +110,9 @@ const Footer = () => {
             </div>
 
             {/* Navigation Sections */}
-            <div className="lg:col-span-4">
-              <div className="grid grid-cols-2 gap-8">
-                {FooterContent.sections.slice(0, 2).map((section, index) => (
+            <div className="lg:col-span-7">
+              <div className="grid grid-cols-3 gap-8">
+                {FooterContent.sections.map((section, index) => (
                   <div key={index}>
                     <p className="text-sm font-bold text-primary uppercase tracking-wider mb-4">
                       {section.title}
@@ -113,63 +133,6 @@ const Footer = () => {
                     </ul>
                   </div>
                 ))}
-              </div>
-              
-              {/* Legal Section */}
-              <div className="mt-8">
-                <p className="text-sm font-bold text-primary uppercase tracking-wider mb-4">
-                  {FooterContent.sections[2].title}
-                </p>
-                <ul className="space-y-3">
-                  {FooterContent.sections[2].options.map((option, idx) => (
-                    <li key={idx}>
-                      <Link
-                        href={option.url}
-                        title={option.name}
-                        className="group flex items-center text-gray-200 hover:text-white transition-all duration-200 transform hover:translate-x-1"
-                      >
-                        <span>{option.name}</span>
-                        <ArrowUpRight className="w-3.5 h-3.5 ml-1 opacity-0 group-hover:opacity-100 transition-opacity duration-200" />
-                      </Link>
-                    </li>
-                  ))}
-                </ul>
-              </div>
-            </div>
-
-            {/* Contact Info */}
-            <div className="lg:col-span-3">
-              <p className="text-sm font-bold text-primary uppercase tracking-wider mb-4">
-                {FooterContent.contactInfo.title}
-              </p>
-              
-              <div className="space-y-4">
-                <a 
-                  href={`mailto:${FooterContent.contactInfo.email}`}
-                  className="flex items-start group"
-                >
-                  <div className="mr-3 mt-1 flex-shrink-0 w-8 h-8 flex items-center justify-center rounded-full bg-secondary transition-colors duration-300">
-                    <Mail className="w-4 h-4" />
-                  </div>
-                  <div>
-                    <p className="text-sm font-medium text-gray-200 group-hover:text-white transition-colors duration-200">Email Us</p>
-                    <p className="text-sm text-primary group-hover:text-primary/80 transition-colors duration-200">
-                      {FooterContent.contactInfo.email}
-                    </p>
-                  </div>
-                </a>
-                
-                <div className="flex items-start">
-                  <div className="mr-3 mt-1 flex-shrink-0 w-8 h-8 flex items-center justify-center rounded-full bg-secondary">
-                    <MapPin className="w-4 h-4" />
-                  </div>
-                  <div>
-                    <p className="text-sm font-medium text-gray-300">Our Location</p>
-                    <p className="text-sm text-gray-200 mt-1">
-                      {FooterContent.contactInfo.address}
-                    </p>
-                  </div>
-                </div>
               </div>
             </div>
           </div>

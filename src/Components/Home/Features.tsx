@@ -65,7 +65,6 @@ import {
   Workflow,
   Wrench
 } from "lucide-react";
-import { motion } from "framer-motion";
 
 const FeatureContent = [
   {
@@ -295,26 +294,14 @@ const Features: React.FC = () => {
               } order-1`}
             >
               <div className="relative h-96 rounded-xl overflow-hidden group">
-                {/* Animated border */}
-                <motion.div 
-                  className="absolute inset-0 rounded-xl"
-                  initial={{ borderColor: 'rgba(255, 255, 255, 0.1)' }}
-                  whileHover={{ borderColor: 'rgba(158, 255, 142, 0.3)' }}
-                  transition={{ duration: 0.5 }}
-                />
-                
                 {/* Main feature icon - large and centered */}
-                <motion.div 
-                  className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2"
-                >
-                  <motion.div 
-                    className={`w-32 h-32 rounded-full bg-gradient-to-br from-primary to-secondary flex items-center justify-center shadow-lg main-icon-pulse`}
-                  >
+                <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2">
+                  <div className={`w-32 h-32 rounded-full bg-gradient-to-br from-primary to-secondary flex items-center justify-center shadow-lg main-icon-pulse`}>
                     <item.icon className="w-16 h-16 text-primary" />
-                  </motion.div>
-                </motion.div>
+                  </div>
+                </div>
                 
-                {/* Orbiting elements using Framer Motion */}
+                {/* Orbiting elements using CSS animations */}
                 <div className="absolute top-1/2 left-1/2 w-full h-full -translate-x-1/2 -translate-y-1/2 pointer-events-none">
                   {/* Generate orbiting icons in a circular pattern */}
                   {item.orbitIcons && item.orbitIcons.map((OrbitIcon, index) => {
@@ -329,12 +316,8 @@ const Features: React.FC = () => {
                     const x = Math.round(Math.cos(angle) * adjustedRadius * 100) / 100;
                     const y = Math.round(Math.sin(angle) * adjustedRadius * 100) / 100;
                     
-                    // Calculate animation duration with slight variations
-                    // Use fewer variations to reduce calculations
-                    const baseDuration = index % 2 === 0 ? 25 : 30;
-                    
-                    // Determine rotation direction
-                    const clockwise = index % 2 === 0;
+                    // Determine rotation direction for CSS class
+                    const orbitClass = index % 2 === 0 ? 'orbit-clockwise' : 'orbit-counter-clockwise';
                     
                     // Vary icon sizes - use fewer size options
                     const sizeVariants = ["w-8 h-8", "w-10 h-10"];
@@ -344,88 +327,36 @@ const Features: React.FC = () => {
                     const iconColor = "text-primary";
                     const bgClass = "bg-primary/10";
                     
-                    // Vary background opacity and add colored backgrounds - simplified
-                    // Only render a subset of icons for better performance
                     // Skip rendering some icons when there are too many
                     if (totalIcons > 6 && index % 2 !== 0 && index > 4) {
                       return null;
                     }
                     
                     return (
-                      <motion.div
+                      <div
                         key={index}
-                        className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2"
-                        initial={{ rotate: clockwise ? 0 : 360 }}
-                        animate={{ rotate: clockwise ? 360 : 0 }}
-                        transition={{ 
-                          duration: baseDuration, 
-                          repeat: Infinity, 
-                          ease: "linear",
-                          repeatType: "loop"
-                        }}
+                        className={`absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 ${orbitClass}`}
                         style={{
                           willChange: "transform"
                         }}
                       >
-                        <motion.div 
+                        <div 
                           className="absolute transform -translate-x-1/2 -translate-y-1/2"
-                          style={{ x, y }}
-                          whileHover={{ 
-                            scale: 1.25, 
-                            x: x > 0 ? x + 10 : x - 10, 
-                            y: y > 0 ? y + 10 : y - 10,
-                            transition: { type: "spring", stiffness: 300, damping: 10 }
-                          }}
+                          style={{ transform: `translate(${x}px, ${y}px)` }}
                         >
-                          <motion.div 
-                            className={`${iconSize} rounded-lg ${bgClass} backdrop-blur-sm border border-white/20 flex items-center justify-center shadow-lg ${index % 3 === 0 ? 'orbit-icon-pulse' : index % 3 === 1 ? 'orbit-icon-pulse-slow' : 'orbit-icon-pulse-fast'}`}
-                            whileHover={{ 
-                              scale: 1.2, 
-                              backgroundColor: "rgba(255, 255, 255, 0.25)",
-                              boxShadow: "0 15px 30px -5px rgba(0, 0, 0, 0.15), 0 10px 15px -6px rgba(0, 0, 0, 0.15)",
-                              borderColor: "rgba(255, 255, 255, 0.4)",
-                              transition: { type: "spring", stiffness: 400, damping: 15 }
-                            }}
+                          <div 
+                            className={`${iconSize} rounded-lg ${bgClass} backdrop-blur-sm border border-white/20 flex items-center justify-center shadow-lg`}
                           >
                             {React.createElement(OrbitIcon, { 
                               className: `${index % 2 === 0 ? "w-5 h-5" : "w-6 h-6"} ${iconColor}`,
                               style: { filter: "drop-shadow(0 0 3px rgba(255, 255, 255, 0.3))" }
                             })}
-                          </motion.div>
-                        </motion.div>
-                      </motion.div>
+                          </div>
+                        </div>
+                      </div>
                     );
                   })}
                 </div>
-                
-                {/* Animated pulse rings using Framer Motion */}
-                <motion.div
-                  className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-40 h-40 rounded-full border border-white/20"
-                  initial={{ scale: 1, opacity: 0 }}
-                  whileHover={{ 
-                    scale: [1, 1.5, 1],
-                    opacity: [0, 0.5, 0],
-                    transition: { 
-                      repeat: Infinity,
-                      duration: 3,
-                      ease: "easeInOut"
-                    }
-                  }}
-                />
-                <motion.div
-                  className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-48 h-48 rounded-full border border-white/10"
-                  initial={{ scale: 1, opacity: 0 }}
-                  whileHover={{ 
-                    scale: [1, 1.5, 1],
-                    opacity: [0, 0.3, 0],
-                    transition: { 
-                      repeat: Infinity,
-                      duration: 3,
-                      delay: 0.5,
-                      ease: "easeInOut"
-                    }
-                  }}
-                />
                 
                 {/* Corner accent */}
                 <div className="absolute bottom-0 right-0 w-24 h-24 bg-gradient-to-tl from-secondary/20 to-transparent rounded-tl-3xl"></div>
