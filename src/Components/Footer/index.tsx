@@ -1,4 +1,4 @@
-import { Instagram, Linkedin, Twitter, Mail, MapPin, Phone, ArrowUpRight } from "lucide-react";
+import { Instagram, Linkedin, Twitter, Mail, MapPin, ArrowUpRight } from "lucide-react";
 import Logo from "../Common/Logo";
 import Link from "next/link";
 

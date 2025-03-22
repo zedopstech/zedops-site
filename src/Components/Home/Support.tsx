@@ -1,7 +1,6 @@
-import { ArrowUpRight, Headset, Link2, Mail, MessageSquare, Clock, Shield, BookOpen } from "lucide-react";
+import { ArrowUpRight, Headset, Mail, MessageSquare, Clock, Shield, BookOpen, PuzzleIcon } from "lucide-react";
 import { Button } from "../UI/button";
 import Link from "next/link";
-import Image from "next/image";
 
 const CtoContent = {
   mainTitle: "Expert Support for Your Construction Team",
@@ -10,7 +9,7 @@ const CtoContent = {
   subTitles: [
     {
       title: "Seamless Integration",
-      icon: Link2,
+      icon: PuzzleIcon,
       content: "Integrate with your existing tools with minimal disruption to current operations.",
     },
     {

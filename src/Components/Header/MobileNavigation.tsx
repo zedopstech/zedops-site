@@ -55,10 +55,8 @@ const resourcesMenu = [
 ];
 
 export default function MobileNavigation({
-  expanded,
   setExpanded,
 }: {
-  expanded: boolean;
   setExpanded: React.Dispatch<React.SetStateAction<boolean>>;
 }) {
   // No need for useEffect to handle scroll locking here anymore

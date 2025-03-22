@@ -205,7 +205,7 @@ export default function DesktopNavigation() {
                                 <li key={i}>
                                   <Link
                                     href={dropdownItem.href}
-                                    className="flex items-center space-x-3 block px-4 py-2 text-sm font-semibold text-gray-700 hover:bg-accent hover:text-accent-foreground"
+                                    className="flex items-center space-x-3 px-4 py-2 text-sm font-semibold text-gray-700 hover:bg-accent hover:text-accent-foreground"
                                   >
                                     {dropdownItem.icon &&
                                       React.createElement(dropdownItem.icon, {

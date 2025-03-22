@@ -1,7 +1,7 @@
 "use client";
 import { Building2, ClipboardCheck, Clock, Coins, FileText, HardHat, LineChart, Ruler, ShieldCheck, Users, Workflow, BadgeDollarSign, ChevronLeft, ChevronRight } from "lucide-react";
 import Link from "next/link";
-import { useEffect, useState, useRef } from "react";
+import { useEffect, useState } from "react";
 
 import {
   Carousel,

@@ -70,7 +70,7 @@ const Header: React.FC = () => {
 
       {/* Mobile Navigation */}
       {expanded && (
-        <MobileNavigation expanded={expanded} setExpanded={setExpanded} />
+        <MobileNavigation setExpanded={setExpanded} />
       )}
     </header>
   );

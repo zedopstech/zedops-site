@@ -27,7 +27,6 @@ import {
   DollarSign,
   Eye,
   FileCode,
-  FileJson,
   FileCog,
   FileText,
   FlaskConical,
@@ -46,7 +45,6 @@ import {
   MessageSquare,
   Navigation,
   Paperclip,
-  Phone,
   PieChart,
   Receipt,
   RefreshCw,
@@ -229,7 +227,7 @@ const FeatureContent = [
     color: "from-teal-500 to-emerald-600",
     bgGradient: "from-teal-500/10 via-emerald-500/5 to-transparent",
     accentColor: "teal",
-    orbitIcons: [MessageSquare, Share, LinkIcon, GitPullRequest, GitBranch, UserCog, Mail, Phone],
+    orbitIcons: [MessageSquare, Share, LinkIcon, GitPullRequest, GitBranch, UserCog, Mail, ],
     subTitles: [
       {
         id: 1,
@@ -343,8 +341,8 @@ const Features: React.FC = () => {
                     const iconSize = sizeVariants[index % sizeVariants.length];
                     
                     // Set icon colors to a consistent scheme
-                    let iconColor = "text-primary";
-                    let bgClass = "bg-primary/10";
+                    const iconColor = "text-primary";
+                    const bgClass = "bg-primary/10";
                     
                     // Vary background opacity and add colored backgrounds - simplified
                     // Only render a subset of icons for better performance
