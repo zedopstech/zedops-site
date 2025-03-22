@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import React from "react";
 import { Headset, DollarSign, Info, Layers, Book } from "lucide-react";
 import { Button } from "@/Components/UI/button";
 import {
@@ -61,18 +61,8 @@ export default function MobileNavigation({
   expanded: boolean;
   setExpanded: React.Dispatch<React.SetStateAction<boolean>>;
 }) {
-  useEffect(() => {
-    if (expanded) {
-      document.body.classList.add("overflow-hidden"); // Disable scrolling
-    } else {
-      document.body.classList.remove("overflow-hidden"); // Re-enable scrolling
-    }
-
-    // Cleanup on unmount
-    return () => {
-      document.body.classList.remove("overflow-hidden");
-    };
-  }, [expanded]);
+  // No need for useEffect to handle scroll locking here anymore
+  // It's now handled in the Header component
 
   const navigationOptions = [
     {
@@ -103,7 +93,7 @@ export default function MobileNavigation({
   ];
 
   return (
-    <div className="fixed inset-0 top-20 bg-white z-50 flex flex-col overflow-y-auto">
+    <div className="fixed inset-0 top-[72px] bg-white z-40 flex flex-col overflow-y-auto">
       {/* Navigation */}
       <div className="flex-grow px-4 py-6">
         <Accordion type="single" collapsible>

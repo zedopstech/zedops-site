@@ -1,4 +1,4 @@
-import { Instagram, Linkedin, Twitter } from "lucide-react";
+import { Instagram, Linkedin, Twitter, Mail, MapPin, Phone, ArrowUpRight } from "lucide-react";
 import Logo from "../Common/Logo";
 import Link from "next/link";
 
@@ -43,6 +43,7 @@ const Footer = () => {
     contactInfo: {
       title: "Contact Us",
       email: "sales@zedops.com",
+      phone: "+91 9876543210",
       address: (
         <>
           <span className="font-bold">ZedOps HQ</span>
@@ -55,76 +56,132 @@ const Footer = () => {
   };
 
   return (
-    <footer className="text-white px-6 lg:px-0">
-      <div className="pt-12 sm:pt-16 lg:pt-20 mx-auto max-w-6xl">
-        <div className="grid grid-cols-2 gap-x-8 gap-y-16 md:grid-cols-3 lg:grid-cols-6 lg:gap-x-20">
-          {/* Logo Section */}
-          <div className="col-span-2 md:col-span-3 lg:col-span-2">
-            <Link href="#" title="">
-              <Logo variant="primary" />
-            </Link>
-            <p className="max-w-md mt-6 text-md leading-6">
-              {FooterContent.logoContent}
-            </p>
-          </div>
-
-          {/* Footer Sections */}
-          {FooterContent.sections.map((section, index) => (
-            <div key={index}>
-              <p className="text-xs font-bold text-primary uppercase">
-                {section.title}
+    <footer className="bg-background text-white relative overflow-hidden">
+      <div className="relative z-10 px-6 lg:px-0 pt-16 pb-8">
+        <div className="mx-auto max-w-7xl">
+          {/* Main Footer Content */}
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-12 gap-x-8 gap-y-12">
+            {/* Logo Section */}
+            <div className="lg:col-span-5">
+              <Link href="#" title="ZedOps Home" className="inline-block">
+                <Logo variant="primary" />
+              </Link>
+              <p className="mt-6 text-gray-200 text-base leading-relaxed max-w-md">
+                {FooterContent.logoContent}
               </p>
-              <ul className="mt-6 space-y-5">
-                {section.options.map((option, idx) => (
-                  <li key={idx}>
-                    <Link
-                      href={option.url}
-                      title={option.name}
-                      className="flex text-sm font-normal transition-all duration-200 transform hover:translate-x-1 hover:text-primary"
-                    >
-                      {option.name}
-                    </Link>
-                  </li>
-                ))}
-              </ul>
-            </div>
-          ))}
-
-          {/* Contact Info */}
-          <div className="col-span-2 md:col-span-1 lg:col-span-2">
-            <p className="text-xs font-bold uppercase">
-              {FooterContent.contactInfo.title}
-            </p>
-            <div className="mt-2">
-              <p className="text-base font-semibold text-primary">
-                <a href={`mailto:${FooterContent.contactInfo.email}`}>
-                  {FooterContent.contactInfo.email}
-                </a>
-              </p>
-              <ul className="flex items-center mt-4 space-x-2">
-                {FooterContent.socialMedia.map((item, idx) => (
-                  <li key={idx}>
+              
+              {/* Social Media */}
+              <div className="mt-8">
+                <p className="text-sm font-semibold text-gray-100 mb-3">Follow Us</p>
+                <div className="flex items-center space-x-4">
+                  {FooterContent.socialMedia.map((item, idx) => (
                     <a
+                      key={idx}
                       href={item.url}
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="inline-flex items-center justify-center transition-all duration-200 hover:text-primary"
+                      className="inline-flex items-center justify-center w-10 h-10 rounded-full bg-primary hover:bg-secondary text-secondary hover:text-white  transition-all duration-300 hover:scale-110 hover:shadow-lg"
                     >
                       <item.icon className="w-5 h-5" />
                     </a>
-                  </li>
+                  ))}
+                </div>
+              </div>
+            </div>
+
+            {/* Navigation Sections */}
+            <div className="lg:col-span-4">
+              <div className="grid grid-cols-2 gap-8">
+                {FooterContent.sections.slice(0, 2).map((section, index) => (
+                  <div key={index}>
+                    <p className="text-sm font-bold text-primary uppercase tracking-wider mb-4">
+                      {section.title}
+                    </p>
+                    <ul className="space-y-3">
+                      {section.options.map((option, idx) => (
+                        <li key={idx}>
+                          <Link
+                            href={option.url}
+                            title={option.name}
+                            className="group flex items-center text-gray-200 hover:text-white transition-all duration-200 transform hover:translate-x-1"
+                          >
+                            <span>{option.name}</span>
+                            <ArrowUpRight className="w-3.5 h-3.5 ml-1 opacity-0 group-hover:opacity-100 transition-opacity duration-200" />
+                          </Link>
+                        </li>
+                      ))}
+                    </ul>
+                  </div>
                 ))}
-              </ul>
+              </div>
+              
+              {/* Legal Section */}
+              <div className="mt-8">
+                <p className="text-sm font-bold text-primary uppercase tracking-wider mb-4">
+                  {FooterContent.sections[2].title}
+                </p>
+                <ul className="space-y-3">
+                  {FooterContent.sections[2].options.map((option, idx) => (
+                    <li key={idx}>
+                      <Link
+                        href={option.url}
+                        title={option.name}
+                        className="group flex items-center text-gray-200 hover:text-white transition-all duration-200 transform hover:translate-x-1"
+                      >
+                        <span>{option.name}</span>
+                        <ArrowUpRight className="w-3.5 h-3.5 ml-1 opacity-0 group-hover:opacity-100 transition-opacity duration-200" />
+                      </Link>
+                    </li>
+                  ))}
+                </ul>
+              </div>
+            </div>
+
+            {/* Contact Info */}
+            <div className="lg:col-span-3">
+              <p className="text-sm font-bold text-primary uppercase tracking-wider mb-4">
+                {FooterContent.contactInfo.title}
+              </p>
+              
+              <div className="space-y-4">
+                <a 
+                  href={`mailto:${FooterContent.contactInfo.email}`}
+                  className="flex items-start group"
+                >
+                  <div className="mr-3 mt-1 flex-shrink-0 w-8 h-8 flex items-center justify-center rounded-full bg-secondary transition-colors duration-300">
+                    <Mail className="w-4 h-4" />
+                  </div>
+                  <div>
+                    <p className="text-sm font-medium text-gray-200 group-hover:text-white transition-colors duration-200">Email Us</p>
+                    <p className="text-sm text-primary group-hover:text-primary/80 transition-colors duration-200">
+                      {FooterContent.contactInfo.email}
+                    </p>
+                  </div>
+                </a>
+                
+                <div className="flex items-start">
+                  <div className="mr-3 mt-1 flex-shrink-0 w-8 h-8 flex items-center justify-center rounded-full bg-secondary">
+                    <MapPin className="w-4 h-4" />
+                  </div>
+                  <div>
+                    <p className="text-sm font-medium text-gray-300">Our Location</p>
+                    <p className="text-sm text-gray-200 mt-1">
+                      {FooterContent.contactInfo.address}
+                    </p>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
+          
+          {/* Footer Bottom / Copyright */}
+          <div className="mt-16 pt-8 flex flex-col md:flex-row justify-center items-center">
+            <p className="text-sm text-gray-100">
+              &copy; {new Date().getFullYear()}, All Rights Reserved by{" "}
+              <span className="text-primary font-semibold">ZedOps</span>
+            </p>
+          </div>
         </div>
-      </div>
-      {/* Footer Bottom */}
-      <div className=" h-16 w-full flex flex-col items-center justify-center">
-        <p className="text-sm font-normal leading-6 ">
-          &copy; 2024, All Rights Reserved by{" "}
-          <span className="text-primary font-bold">ZedOps</span>
-        </p>
       </div>
     </footer>
   );

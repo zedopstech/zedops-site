@@ -10,9 +10,14 @@ html {
 }
 
 body {
-  .overflow-hidden {
-    overflow: hidden;
-  }
+  overflow-x: hidden;
+}
+
+body.no-scroll {
+  overflow: hidden;
+  height: 100vh;
+  position: fixed;
+  width: 100%;
 }
 
 @layer base {
@@ -29,7 +34,7 @@ body {
     --primary: 81 100% 90%; /* Green for Buttons or Primary Elements */
     --primary-foreground: 182 76% 14%; /* Light Green Text for Primary Buttons */
 
-    --secondary: 186 61% 10%; /* Dark Teal for Secondary Elements */
+    --secondary: 182 76% 14%; /* Dark Teal for Secondary Elements */
     --secondary-foreground: 182 76% 14%; /* Light Green Text for Secondary Elements */
 
     --muted: 186 61% 10%; /* Dark Muted Background */
@@ -188,4 +193,157 @@ body {
   overflow: hidden !important;
 }
 
+/* Animation for slow ping effect used in feature illustrations */
+@keyframes ping-slow {
+  0% {
+    transform: scale(1);
+    opacity: 0.8;
+  }
+  50% {
+    opacity: 0.4;
+  }
+  100% {
+    transform: scale(1.5);
+    opacity: 0;
+  }
+}
 
+.animate-ping-slow {
+  animation: ping-slow 3s cubic-bezier(0, 0, 0.2, 1) infinite;
+}
+
+/* Circular motion animations for feature icons */
+@keyframes orbit-clockwise {
+  0% {
+    transform: rotate(0deg) translateX(70px) rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg) translateX(70px) rotate(-360deg);
+  }
+}
+
+@keyframes orbit-counter-clockwise {
+  0% {
+    transform: rotate(0deg) translateX(80px) rotate(0deg);
+  }
+  100% {
+    transform: rotate(-360deg) translateX(80px) rotate(360deg);
+  }
+}
+
+@keyframes orbit-clockwise-inner {
+  0% {
+    transform: rotate(0deg) translateX(40px) rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg) translateX(40px) rotate(-360deg);
+  }
+}
+
+@keyframes orbit-counter-clockwise-inner {
+  0% {
+    transform: rotate(0deg) translateX(50px) rotate(0deg);
+  }
+  100% {
+    transform: rotate(-360deg) translateX(50px) rotate(360deg);
+  }
+}
+
+.orbit-clockwise {
+  animation: orbit-clockwise 15s linear infinite;
+  transform-origin: center center;
+}
+
+.orbit-counter-clockwise {
+  animation: orbit-counter-clockwise 18s linear infinite;
+  transform-origin: center center;
+}
+
+.orbit-clockwise-inner {
+  animation: orbit-clockwise-inner 12s linear infinite;
+  transform-origin: center center;
+}
+
+.orbit-counter-clockwise-inner {
+  animation: orbit-counter-clockwise-inner 10s linear infinite;
+  transform-origin: center center;
+}
+
+.animation-delay-500 {
+  animation-delay: 500ms;
+}
+
+.animation-delay-1000 {
+  animation-delay: 1000ms;
+}
+
+.animation-delay-2000 {
+  animation-delay: 2000ms;
+}
+
+.animation-delay-3000 {
+  animation-delay: 3000ms;
+}
+
+.animation-paused {
+  animation-play-state: paused;
+}
+
+.group:hover .animation-play-on-hover {
+  animation-play-state: running;
+}
+
+/* Create a grid pattern SVG for the background */
+@layer utilities {
+  .bg-grid-pattern {
+    background-image: 
+      linear-gradient(to right, rgba(255, 255, 255, 0.05) 1px, transparent 1px),
+      linear-gradient(to bottom, rgba(255, 255, 255, 0.05) 1px, transparent 1px);
+    background-size: 20px 20px;
+  }
+}
+
+/* Main feature icon pulse animation */
+@keyframes mainIconPulse {
+  0% {
+    box-shadow: 0 0 0 0 rgba(255, 255, 255, 0.4);
+  }
+  70% {
+    box-shadow: 0 0 0 20px rgba(255, 255, 255, 0);
+  }
+  100% {
+    box-shadow: 0 0 0 0 rgba(255, 255, 255, 0);
+  }
+}
+
+.main-icon-pulse {
+  animation: mainIconPulse 4s infinite;
+}
+
+/* Orbit icon pulse animation */
+@keyframes orbitPulse {
+  0% {
+    box-shadow: 0 0 0 0 rgba(255, 255, 255, 0.3);
+  }
+  70% {
+    box-shadow: 0 0 0 10px rgba(255, 255, 255, 0);
+  }
+  100% {
+    box-shadow: 0 0 0 0 rgba(255, 255, 255, 0);
+  }
+}
+
+.orbit-icon-pulse {
+  animation: orbitPulse 3s infinite cubic-bezier(0.4, 0, 0.2, 1);
+  will-change: box-shadow;
+}
+
+.orbit-icon-pulse-slow {
+  animation: orbitPulse 5s infinite cubic-bezier(0.4, 0, 0.2, 1);
+  will-change: box-shadow;
+}
+
+.orbit-icon-pulse-fast {
+  animation: orbitPulse 2s infinite cubic-bezier(0.4, 0, 0.2, 1);
+  will-change: box-shadow;
+}

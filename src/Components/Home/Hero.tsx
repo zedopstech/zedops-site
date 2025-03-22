@@ -1,5 +1,4 @@
-import { PlayIcon } from "lucide-react";
-import Image from "next/image";
+import { PlayIcon, BarChart3, ClipboardCheck, Clock, Wand2 } from "lucide-react";
 import Link from "next/link";
 import { Button } from "../UI/button";
 
@@ -7,94 +6,87 @@ const Hero = () => {
   return (
     <section
       id="hero"
-      className="mx-auto max-w-6xl min-h-[94vh] gap-8 flex flex-col lg:grid lg:grid-cols-2 lg:gap-0 items-center overflow-hidden justify-between"
+      className="relative mx-auto max-w-7xl min-h-[94vh] overflow-hidden flex items-center justify-center"
     >
-      {/* Hero Text Section */}
-      <div className="flex flex-col md:w-3/4 lg:w-full px-6 lg:px-0 md:items-center justify-between lg:items-start lg:justify-center pt-4 md:pt-8 lg:pt-0 text-center lg:text-left">
-        <h1 className="mt-4 text-3xl text-start md:text-center lg:text-start lg:text-6xl  text-primary font-medium ">
-          Transform Your Construction Workflow with AI Insights and Unmatched
-          Support
-        </h1>
-
-        <p className="mt-6 text-lg text-[#1BB387] text-start md:text-center lg:text-start font-medium leading-relaxed max-w-xl">
-          <span className="font-black text-xl text-primary">
-            Save 40% of your time,
-          </span>{" "}
-          improve collaboration, and achieve exceptional results across all
-          phases of construction.
-        </p>
-        <div className="mt-8 flex flex-row justify-start md:justify-center lg:justify-start items-center gap-4">
-          <Link href="/book-a-demo" title="Book a demo">
-            <Button className="px-8 py-6 font-medium">Get Started</Button>
-          </Link>
-          <Link
-            href="#"
-            className="font-medium text-sm text-primary hover:text-white transition-all flex items-center gap-2"
+      
+      {/* Content Container */}
+      <div className="relative z-10 w-full flex flex-col items-center justify-center gap-8 px-6 lg:px-0 py-12">
+        {/* Hero Text Section */}
+        <div className="flex flex-col w-full max-w-3xl mx-auto items-center text-center">
+          <div
+            className="mb-6 px-4 py-1.5 rounded-full bg-[length:200%_100%] bg-gradient-to-r from-teal-500/20 via-teal-500/40 to-teal-500  text-white/90 text-sm font-semibold flex items-center gap-2"
           >
-            <PlayIcon className="w-5 h-5" />
-            Why ZedOps?
-          </Link>
-        </div>
-      </div>
+            <Wand2 className="h-4 w-4" />
+            AI-Powered Construction Management Platform
+          </div>
+          
+          <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold leading-tight">
+            <span className="text-white">Simplify Construction</span>
+            <br />
+            <span className="text-primary">Management</span>
+            <br />
+            <span className="relative text-white">
+              With Modern Tools
+              <span className="absolute bottom-1 left-0 w-full h-2 bg-primary/40 -z-10 transform skew-x-3"></span>
+            </span>
+          </h1>
 
-      {/* Hero Image Section */}
-      <div className="md:h-[60vh] lg:h-auto">
-        <Image
-          src="/hero-image.jpeg"
-          width={800}
-          height={400}
-          alt="Construction workers using ZedOps"
-          objectPosition="top center"
-          className="lg:rounded-xl shadow-lg"
-        />
-      </div>
-      {/* <div className="h-full w-full">
-        <div className="mx-auto max-w-6xl flex items-center justify-between">
-          <div className="flex flex-col gap-4 items-center justify-between w-full py-4">
-            <h2 className="text-2xl text-primary font-medium">
-              Trusted by the Best
-            </h2>
-            <div className="flex items-center justify-between gap-4">
-              <Image
-                src="/images/clients/airbnb-logo.png"
-                width={100}
-                height={50}
-                alt="Airbnb"
-              />
-              <Image
-                src="/images/clients/lyft-logo.png"
-                width={100}
-                height={50}
-                alt="Lyft"
-              />
-              <Image
-                src="/images/clients/uber-logo.png"
-                width={100}
-                height={50}
-                alt="Uber"
-              />
-              <Image
-                src="/images/clients/airbnb-logo.png"
-                width={100}
-                height={50}
-                alt="Airbnb"
-              />
-              <Image
-                src="/images/clients/lyft-logo.png"
-                width={100}
-                height={50}
-                alt="Lyft"
-              />
-              <Image
-                src="/images/clients/uber-logo.png"
-                width={100}
-                height={50}
-                alt="Uber"
-              />
+          <p className="mt-6 text-lg text-white/90 font-medium leading-relaxed max-w-xl">
+            <span className="font-black text-xl text-primary">
+              Save valuable time and resources
+            </span>{" "}
+            with a platform that streamlines workflows, enhances team communication, and delivers projects on schedule.
+          </p>
+          
+          <div className="mt-10 flex flex-wrap justify-center items-center gap-5">
+            <Link href="/book-a-demo" title="Request early access">
+              <Button className="px-8 py-6 font-medium bg-primary text-secondary hover:bg-primary/90 hover:shadow-lg group">
+                Early Access
+              </Button>
+            </Link>
+            <Link
+              href="#core-features"
+              className="font-medium text-primary hover:text-white transition-all duration-300 flex items-center gap-2 group"
+            >
+              <div className="p-2 rounded-full bg-white/10 group-hover:bg-primary/20 transition-colors duration-300">
+                <PlayIcon className="w-5 h-5 text-white" />
+              </div>
+              <span className="group-hover:underline">See How It Works</span>
+            </Link>
+          </div>
+          
+          {/* Key Benefits */}
+          <div className="mt-12 grid grid-cols-1 sm:grid-cols-3 gap-6 w-full max-w-2xl mx-auto">
+            <div className="flex items-center gap-3 group">
+              <div className="p-3 rounded-lg bg-white/10 group-hover:bg-primary/20 transition-colors duration-300">
+                <Clock className="text-primary w-5 h-5" />
+              </div>
+              <div className="text-start">
+                <p className="text-sm font-semibold text-white">Save 30+ hours</p>
+                <p className="text-xs text-white/70">Automate repetitive tasks</p>
+              </div>
+            </div>
+            <div className="flex items-center gap-3 group">
+              <div className="p-3 rounded-lg bg-white/10 group-hover:bg-primary/20 transition-colors duration-300">
+                <BarChart3 className="text-primary w-5 h-5" />
+              </div>
+              <div>
+                <p className="text-sm font-semibold text-white">Real-time insights</p>
+                <p className="text-xs text-white/70">Data-driven decisions</p>
+              </div>
+            </div>
+            <div className="flex items-center gap-3 group">
+              <div className="p-3 rounded-lg bg-white/10 group-hover:bg-primary/20 transition-colors duration-300">
+                <ClipboardCheck className="text-primary w-5 h-5" />
+              </div>
+              <div>
+                <p className="text-sm font-semibold text-white">Easy implementation</p>
+                <p className="text-xs text-white/70">Quick team onboarding</p>
+              </div>
             </div>
           </div>
         </div>
-      </div> */}
+      </div>
     </section>
   );
 };

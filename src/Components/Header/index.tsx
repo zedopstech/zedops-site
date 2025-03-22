@@ -12,12 +12,21 @@ const Header: React.FC = () => {
 
   // Disable body scroll when mobile menu is open
   React.useEffect(() => {
-    document.body.style.overflow = expanded ? "hidden" : "";
+    if (expanded) {
+      document.body.classList.add("no-scroll");
+    } else {
+      document.body.classList.remove("no-scroll");
+    }
+    
+    // Cleanup function to ensure scroll is re-enabled if component unmounts while menu is open
+    return () => {
+      document.body.classList.remove("no-scroll");
+    };
   }, [expanded]);
 
   return (
-    <header className="sticky top-0 z-50 bg-background py-4 shadow-sm">
-      <div className="mx-auto px-6 lg:px-0 max-w-6xl flex items-center justify-between">
+    <header className="fixed top-0 left-0 right-0 z-50 bg-background py-4 shadow-sm w-full">
+      <div className="mx-auto px-6 lg:px-0 max-w-7xl flex items-center justify-between">
         {/* Logo Section */}
         <div className="shrink-0 flex-1 text-center lg:text-left lg:flex-none">
           <Link href="/" title="Home">
