@@ -104,41 +104,49 @@ const BookDemo = () => {
 
   return (
     <div className="min-h-screen flex flex-col bg-background text-foreground">
-      {/* Hero Section with animated background - simplified for secondary page */}
-      {/* <div className="relative overflow-hidden bg-gradient-to-r from-secondary/90 to-secondary/80 py-12">
-        <div className="absolute inset-0 opacity-5">
-          <div className="absolute top-0 right-0 w-40 h-40 rounded-full bg-accent blur-3xl"></div>
-          <div className="absolute bottom-0 left-0 w-40 h-40 rounded-full bg-primary blur-3xl"></div>
+      {/* Hero Section with animated background */}
+      <div className="relative overflow-hidden bg-gradient-to-br from-secondary via-secondary/90 to-secondary/80 py-16">
+        {/* Decorative elements */}
+        <div className="absolute inset-0 opacity-10">
+          <div className="absolute top-0 right-0 w-64 h-64 rounded-full bg-accent blur-[100px] animate-pulse-slow"></div>
+          <div className="absolute bottom-0 left-0 w-72 h-72 rounded-full bg-primary blur-[120px] animate-pulse-slow"></div>
+          <div className="absolute top-1/2 left-1/4 w-40 h-40 rounded-full bg-secondary blur-[80px] animate-float"></div>
         </div>
         
+        {/* Subtle grid pattern overlay */}
+        <div className="absolute inset-0 bg-grid-white/[0.05] bg-[size:20px_20px]"></div>
+        
         <div className="relative z-10 max-w-5xl mx-auto px-6">
-          <div className="text-center mb-8">
-            <h1 className="text-3xl md:text-4xl font-bold text-white mb-4">
+          <div className="text-center mb-10">
+            <h1 className="text-4xl md:text-5xl font-bold text-white mb-6">
               <span className="relative inline-block">
-                <span className="relative z-10">Book Your</span>
+                <span className="relative z-10">Experience</span>
               </span>
               {" "}
               <span className="relative inline-block">
-                <span className="relative z-10 bg-clip-text text-transparent bg-gradient-to-r from-accent to-primary font-extrabold">ZedOps Demo</span>
-                <span className="absolute -bottom-1 left-0 w-full h-2 bg-accent/30"></span>
+                <span className="relative z-10 bg-clip-text text-transparent bg-gradient-to-r from-accent to-primary font-extrabold">ZedOps in Action</span>
+                <span className="absolute -bottom-1 left-0 w-full h-3 bg-accent/40 rounded-full"></span>
               </span>
             </h1>
             
-            <p className="text-lg text-white/90 max-w-2xl mx-auto">
-              See how our <span className="font-semibold text-accent">AI-powered construction management platform</span> can streamline your workflows and improve project outcomes.
+            <p className="text-xl text-white/90 max-w-2xl mx-auto leading-relaxed">
+              Discover how our <span className="font-semibold text-accent">intelligent construction platform</span> can transform your project delivery and boost your team's productivity.
             </p>
           </div>
           
-          <div className="flex flex-wrap justify-center gap-4 mb-6">
-            {["30-Min Demo", "Live Q&A", "Personalized Walkthrough"].map((feature, idx) => (
-              <div key={idx} className="flex items-center bg-white/10 px-3 py-1.5 rounded-full border border-white/10 shadow-sm hover:bg-white/15 transition-all duration-300">
-                <CheckCircle className="w-4 h-4 text-accent mr-1.5" />
-                <span className="text-sm text-white font-medium">{feature}</span>
+          <div className="flex flex-wrap justify-center gap-5 mb-8">
+            {["Interactive Demo", "Custom Solutions", "ROI Analysis"].map((feature, idx) => (
+              <div 
+                key={idx} 
+                className="flex items-center bg-white/10 px-4 py-2 rounded-full border border-white/20 shadow-lg hover:bg-white/20 hover:scale-105 hover:shadow-xl transition-all duration-300"
+              >
+                <CheckCircle className="w-5 h-5 text-accent mr-2" />
+                <span className="text-sm font-medium text-white">{feature}</span>
               </div>
             ))}
           </div>
         </div>
-      </div> */}
+      </div>
 
       {/* Main Content */}
       <div className="flex-grow py-16 px-6 bg-gradient-to-b from-secondary/95 to-secondary">
@@ -204,7 +212,7 @@ const BookDemo = () => {
                   <div className="relative z-10">
                     <div className="text-center mb-8">
                       <span className="inline-block px-3 py-1 text-xs font-semibold bg-accent/20 text-primary rounded-full mb-3">
-                        15-Minute Demo
+                        60-Minute Demo
                       </span>
                       <h2 className="text-3xl font-bold text-primary">See ZedOps in Action</h2>
                       <p className="mt-3 text-card-foreground/70">

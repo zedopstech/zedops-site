@@ -85,13 +85,13 @@ const Hero = () => {
           <div className="mt-8 flex flex-col sm:flex-row justify-center items-center gap-5">
           <Link
               href="/book-a-demo" title="Request early access"
-              className="bg-primary hover:text-white hover:bg-accent transition-all duration-300 flex items-center gap-2 group px-6 py-3 rounded-xl border border-white/10 backdrop-blur-sm"
+              className="bg-primary hover:text-white hover:bg-accent transition-all duration-300 flex items-center gap-2 group px-6 py-3 rounded-lg border border-white/10 backdrop-blur-sm"
             >
               Get Early Access
             </Link>
             <Link
               href="#core-features"
-              className=" text-white hover:text-primary transition-all duration-300 flex items-center gap-2 group bg-white/10 hover:bg-white/20 px-6 py-3 rounded-xl border border-white/10 backdrop-blur-sm"
+              className=" text-white hover:text-primary transition-all duration-300 flex items-center gap-2 group bg-white/10 hover:bg-white/20 px-6 py-3 rounded-lg border border-white/10 backdrop-blur-sm"
             >
               <div>
                 <PlayIcon className="w-5 h-5" />
