@@ -130,7 +130,7 @@ const BookDemo = () => {
             </h1>
             
             <p className="text-xl text-white/90 max-w-2xl mx-auto leading-relaxed">
-              Discover how our <span className="font-semibold text-accent">intelligent construction platform</span> can transform your project delivery and boost your team's productivity.
+              Discover how our <span className="font-semibold text-accent">intelligent construction platform</span> can transform your project delivery and boost your team&apos;s productivity.
             </p>
           </div>
           
