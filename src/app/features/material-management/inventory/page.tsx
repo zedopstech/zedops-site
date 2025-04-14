@@ -7,7 +7,7 @@ import MainSection from "@/Components/solutions/Mainsection";
 import EmailFeautres from "@/Components/solutions/Emailfeatures";
 import FeatureCards from "@/Components/solutions/Featurecards";
 import CtoSection from "@/Components/solutions/Ctosection";
-import { INVENTORY_PAGE } from "@/Data/data";
+import { INVENTORY_PAGE } from "@/Data/features/inventory";
 
 export default function PrequalificationPage() {
   // Props configuration

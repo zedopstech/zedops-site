@@ -1,4 +1,4 @@
-import { INTEGRATION } from "@/Data/data";
+import { INTEGRATION } from "@/Data/platform/integration";
 import IntroSection from "@/Components/solutions/IntroSection";
 import FeatureIntegration from "@/Components/solutions/FeatureIntegration";
 import FeatureCards from "@/Components/solutions/Featurecards";

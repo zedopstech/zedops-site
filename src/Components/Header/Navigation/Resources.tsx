@@ -18,14 +18,15 @@ const resource = [
   {
     title: "Knowledge Base",
     content: "Explore articles and guides to understand our services better.",
-    href: "/features/knowledge",
+    href: "/resources/knowledge-base",
     icon: Book,
   },
   // {
   //   title: "Webinars",
   //   content: "Watch sessions and webinars by industry experts.",
-  //   href: "/features/webinars",
-  //   icon: Video,
+  //   href: "/resources/webinars",
+  //   // icon: Video, // Uncomment and import if you want a video icon
+  //   icon: Megaphone,
   // },
   {
     title: "Blog",
@@ -36,19 +37,20 @@ const resource = [
   // {
   //   title: "Case Studies",
   //   content: "Learn from success stories and case studies.",
-  //   href: "/features/case-studies",
-  //   icon: Briefcase,
+  //   href: "/resources/case-studies",
+  //   // icon: Briefcase, // Uncomment and import if you want a briefcase icon
+  //   icon: FileText,
   // },
   {
     title: "FAQs",
     content: "Find answers to common questions in our FAQ section.",
-    href: "/features/faq",
+    href: "/resources/faq",
     icon: HelpCircle,
   },
   {
     title: "Security",
     content: "Your data is secured with top-notch security measures.",
-    href: "/features/security",
+    href: "/resources/security",
     icon: Shield,
   },
 ];

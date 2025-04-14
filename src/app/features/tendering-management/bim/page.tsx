@@ -7,7 +7,7 @@ import MainSection from "@/Components/solutions/Mainsection";
 import EmailFeautres from "@/Components/solutions/Emailfeatures";
 import FeatureCards from "@/Components/solutions/Featurecards";
 import CtoSection from "@/Components/solutions/Ctosection";
-import { BIM_PAGE } from "@/Data/data";
+import { BIM_PAGE } from "@/Data/features/bim";
 
 export default function BimPage() {
   // Props configuration

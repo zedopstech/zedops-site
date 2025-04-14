@@ -1,5 +1,5 @@
 import SearchSection from "@/Components/solutions/SearchSection";
-import { FAQ_PAGE } from "@/Data/data";
+import { FAQ_PAGE } from "@/Data/resources/faq";
 import {
   Accordion,
   AccordionItem,

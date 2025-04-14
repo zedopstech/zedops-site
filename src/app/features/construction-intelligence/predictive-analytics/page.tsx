@@ -7,7 +7,7 @@ import MainSection from "@/Components/solutions/Mainsection";
 import EmailFeautres from "@/Components/solutions/Emailfeatures";
 import FeatureCards from "@/Components/solutions/Featurecards";
 import CtoSection from "@/Components/solutions/Ctosection";
-import { PREDICTIVEANLYTICS_PAGE} from "@/Data/data";
+import { PREDICTIVEANLYTICS_PAGE} from "@/Data/features/predictive-analytics";
 
 export default function PredictiveanalyticsPage() {
   // Props configuration

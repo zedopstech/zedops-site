@@ -7,7 +7,7 @@ import MainSection from "@/Components/solutions/Mainsection";
 import EmailFeautres from "@/Components/solutions/Emailfeatures";
 import FeatureCards from "@/Components/solutions/Featurecards";
 import CtoSection from "@/Components/solutions/Ctosection";
-import {  REALTIMEDASHBOARD_PAGE } from "@/Data/data";
+import {  REALTIMEDASHBOARD_PAGE } from "@/Data/features/real-time-dashboard";
 
 export default function PrequalificationPage() {
   // Props configuration

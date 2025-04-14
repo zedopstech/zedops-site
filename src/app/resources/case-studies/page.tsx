@@ -1,6 +1,6 @@
 import React from "react";
 
-import { CASESTUDIES_PAGE } from "@/Data/data";
+import { CASESTUDIES_PAGE } from "@/Data/resources/case-studies";
 
 import SearchSection from "@/Components/solutions/SearchSection";
 import Card from "@/Components/solutions/Card";

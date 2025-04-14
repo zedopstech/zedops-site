@@ -3,7 +3,7 @@ import Hero from "@/Components/solutions/Hero";
 import Testimonals from "@/Components/solutions/Testimonals";
 import CtoSection from "@/Components/solutions/Ctosection";
 import FeatureSticky from "@/Components/solutions/FeatureSticky";
-import { SECURITY_PAGE } from "@/Data/data";
+import { SECURITY_PAGE } from "@/Data/resources/security";
 import Faq from "@/Components/solutions/Faq";
 
 export default function SecurityPage() {

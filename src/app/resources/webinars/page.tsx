@@ -1,6 +1,6 @@
 import React from "react";
 
-import { WEBINARS_PAGE } from "@/Data/data";
+import { WEBINARS_PAGE } from "@/Data/resources/webinar";
 
 import SearchSection from "@/Components/solutions/SearchSection";
 import Card from "@/Components/solutions/Card";

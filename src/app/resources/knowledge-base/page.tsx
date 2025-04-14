@@ -1,7 +1,7 @@
 import React from "react";
 
 
-import { KNOWLEDGE_PAGE} from "@/Data/data";
+import { KNOWLEDGE_PAGE} from "@/Data/resources/knowledge";
 
 import SearchSection from "@/Components/solutions/SearchSection";
 import Card from "@/Components/solutions/Card";
