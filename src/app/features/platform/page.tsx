@@ -15,9 +15,14 @@ export default function PrequalificationPage() {
     <div>
       {/* Hero Section */}
       <IntroSection {...PLATFORM_PAGE.heroprops} />
+      {/* Use original section name 'campaignChannels' (content updated in data file) */}
       <LeadSection data={PLATFORM_PAGE.campaignChannels} />
+      {/* Use original section name 'featuresData' */}
       <FeatureCards featuresData={PLATFORM_PAGE.featuresData} />
+      {/* Use original section name 'mainSection' */}
       <Mainsection sections={PLATFORM_PAGE.mainSection} />
+      {/* Remove added sections for safety & analytics */}
+      {/* Sticky section and CTA remain */}
       <FeatureSticky {...PLATFORM_PAGE.stickySection} />
       <CtoSection {...PLATFORM_PAGE.ctaProps} />
       {/* Hero Content Section */}

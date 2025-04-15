@@ -16,72 +16,67 @@ export const INTEGRATION = {
       subtitle: "Featured integrations",
       apps: [
         {
-          href: "https://customer.io/docs/journeys/amazon-s3-data-out",
-          image: "/Solutions/amazon-s3.png",
-  
-          name: "Amazon S3",
+          href: "#",
+          image: "",
+          name: "QuickBooks Online",
           description:
-            "Streamline data transfer from Customer.io to Amazon S3 storage, including messages, people, metrics, and more.",
+            "Sync project financials, invoices, and payments for streamlined accounting.",
         },
         {
-          href: "https://customer.io/docs/journeys/amazon-s3-data-out",
-          image: "/Solutions/amplitude.png",
-          name: "Amplitude",
+          href: "#",
+          image: "",
+          name: "Procore",
           description:
-            "Streamline data transfer from Customer.io to Amazon S3 storage, including messages, people, metrics, and more.",
-        },
-  
-        {
-          href: "https://customer.io/docs/journeys/amazon-s3-data-out",
-          image: "/Solutions/amplitude.png",
-          name: "Amplitude",
-          description:
-            "Streamline data transfer from Customer.io to Amazon S3 storage, including messages, people, metrics, and more.",
-        },
-  
-        {
-          href: "https://customer.io/docs/journeys/amazon-s3-data-out",
-          image: "/Solutions/amplitude.png",
-          name: "Amplitude",
-          description:
-            "Streamline data transfer from Customer.io to Amazon S3 storage, including messages, people, metrics, and more.",
-        },
-  
-        {
-          href: "https://customer.io/docs/journeys/amazon-s3-data-out",
-          image: "/Solutions/amplitude.png",
-          name: "Amplitude",
-          description:
-            "Streamline data transfer from Customer.io to Amazon S3 storage, including messages, people, metrics, and more.",
-        },
-  
-        {
-          href: "https://customer.io/docs/journeys/amazon-s3-data-out",
-          image: "/Solutions/amplitude.png",
-          name: "Amplitude",
-          description:
-            "Streamline data transfer from Customer.io to Amazon S3 storage, including messages, people, metrics, and more.",
+            "Connect project management data, ensuring consistency across platforms.",
         },
         {
-          href: "https://customer.io/docs/journeys/amazon-s3-data-out",
-          image: "/Solutions/amplitude.png",
-          name: "Amplitude",
+          href: "#",
+          image: "",
+          name: "Autodesk Construction Cloud",
           description:
-            "Streamline data transfer from Customer.io to Amazon S3 storage, including messages, people, metrics, and more.",
+            "Integrate with BIM 360 for seamless design and construction data exchange.",
         },
         {
-          href: "https://customer.io/docs/journeys/amazon-s3-data-out",
-          image: "/Solutions/amplitude.png",
-          name: "Amplitude",
+          href: "#",
+          image: "",
+          name: "Sage 300 CRE",
           description:
-            "Streamline data transfer from Customer.io to Amazon S3 storage, including messages, people, metrics, and more.",
+            "Synchronize financial data, job costing, and vendor information.",
         },
         {
-          href: "https://customer.io/docs/journeys/amazon-s3-data-out",
-          image: "/Solutions/amplitude.png",
-          name: "Amplitude",
+          href: "#",
+          image: "",
+          name: "Bluebeam Revu",
           description:
-            "Streamline data transfer from Customer.io to Amazon S3 storage, including messages, people, metrics, and more.",
+            "Link documents, markups, and RFIs for improved collaboration.",
+        },
+        {
+          href: "#",
+          image: "",
+          name: "Xero",
+          description:
+            "Connect invoices, bills, and payments for simplified bookkeeping.",
+        },
+        {
+          href: "#",
+          image: "",
+          name: "Microsoft Project",
+          description:
+            "Sync project schedules and tasks between ZedOps and MS Project.",
+        },
+        {
+          href: "#",
+          image: "",
+          name: "Salesforce",
+          description:
+            "Link project opportunities and client data with your CRM workflow.",
+        },
+        {
+          href: "#",
+          image: "",
+          name: "Slack",
+          description:
+            "Receive project notifications and updates directly in your Slack channels.",
         },
       ],
     },

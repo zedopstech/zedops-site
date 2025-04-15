@@ -103,9 +103,9 @@ const BookDemo = () => {
   ];
 
   return (
-    <div className="min-h-screen flex flex-col bg-background text-foreground">
+    <div className="min-h-screen flex flex-col bg-white text-foreground">
       {/* Hero Section with animated background */}
-      <div className="relative overflow-hidden bg-gradient-to-br from-secondary via-secondary/90 to-secondary/80 py-16">
+      <div className="relative overflow-hidden  py-16">
         {/* Decorative elements */}
         <div className="absolute inset-0 opacity-10">
           <div className="absolute top-0 right-0 w-64 h-64 rounded-full bg-accent blur-[100px] animate-pulse-slow"></div>
@@ -118,18 +118,18 @@ const BookDemo = () => {
         
         <div className="relative z-10 max-w-5xl mx-auto px-6">
           <div className="text-center mb-10">
-            <h1 className="text-4xl md:text-5xl font-bold text-white mb-6">
+            <h1 className="text-4xl md:text-5xl font-bold text-foreground mb-6">
               <span className="relative inline-block">
                 <span className="relative z-10">Experience</span>
               </span>
               {" "}
               <span className="relative inline-block">
-                <span className="relative z-10 bg-clip-text text-transparent bg-gradient-to-r from-accent to-primary font-extrabold">ZedOps in Action</span>
+                <span className="relative z-10  font-extrabold">ZedOps in Action</span>
                 <span className="absolute -bottom-1 left-0 w-full h-3 bg-accent/40 rounded-full"></span>
               </span>
             </h1>
             
-            <p className="text-xl text-white/90 max-w-2xl mx-auto leading-relaxed">
+            <p className="text-xl text-foreground/90 max-w-2xl mx-auto leading-relaxed">
               Discover how our <span className="font-semibold text-accent">intelligent construction platform</span> can transform your project delivery and boost your team&apos;s productivity.
             </p>
           </div>
@@ -138,10 +138,10 @@ const BookDemo = () => {
             {["Interactive Demo", "Custom Solutions", "ROI Analysis"].map((feature, idx) => (
               <div 
                 key={idx} 
-                className="flex items-center bg-white/10 px-4 py-2 rounded-full border border-white/20 shadow-lg hover:bg-white/20 hover:scale-105 hover:shadow-xl transition-all duration-300"
+                className="flex items-center bg-white/10 px-4 py-2 rounded-full border border-foreground/20 shadow-lg hover:bg-white/20 hover:scale-105 hover:shadow-xl transition-all duration-300"
               >
                 <CheckCircle className="w-5 h-5 text-accent mr-2" />
-                <span className="text-sm font-medium text-white">{feature}</span>
+                <span className="text-sm font-medium text-foreground">{feature}</span>
               </div>
             ))}
           </div>
@@ -149,7 +149,7 @@ const BookDemo = () => {
       </div>
 
       {/* Main Content */}
-      <div className="flex-grow py-16 px-6 bg-gradient-to-b from-secondary/95 to-secondary">
+      <div className="flex-grow py-16 px-6 ">
         <div className="max-w-7xl mx-auto">
           {formSubmitted ? (
             <ThankYouMessage />
