@@ -3,7 +3,7 @@ import React, { useState } from "react";
 import Logo from "../Common/Logo";
 import Link from "next/link";
 import { Button } from "../UI/button";
-import { Headset, Menu, X } from "lucide-react";
+import { ArrowRight, Calendar, Headset, Menu, X } from "lucide-react";
 import MobileNavigation from "./MobileNavigation";
 import DesktopNavigationMenu from "./Navigation/Desktop";
 
@@ -17,7 +17,7 @@ const Header: React.FC = () => {
     } else {
       document.body.classList.remove("no-scroll");
     }
-    
+
     // Cleanup function to ensure scroll is re-enabled if component unmounts while menu is open
     return () => {
       document.body.classList.remove("no-scroll");
@@ -39,15 +39,12 @@ const Header: React.FC = () => {
 
         {/* Actions Section for Medium Screens and Above */}
         <div className="hidden sm:flex sm:items-center sm:space-x-4">
-          <Link
-            href="/contact-sales"
-            title="Contact Sales"
-            className="flex items-center px-4 py-2 text-base font-medium text-primary hover:text-white"
-          >
-            <Headset className="w-5 h-5 mr-2" />
-            Contact Sales
+          <Link href="/book-a-demo">
+            <Button className="px-10 font-semibold">
+              <Calendar />
+              Book a Demo
+            </Button>
           </Link>
-          <Button className="px-10">Login</Button>
         </div>
 
         {/* Mobile Menu Button */}
@@ -69,9 +66,7 @@ const Header: React.FC = () => {
       </div>
 
       {/* Mobile Navigation */}
-      {expanded && (
-        <MobileNavigation setExpanded={setExpanded} />
-      )}
+      {expanded && <MobileNavigation setExpanded={setExpanded} />}
     </header>
   );
 };

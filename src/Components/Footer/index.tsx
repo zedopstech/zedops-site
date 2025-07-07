@@ -13,8 +13,8 @@ const Footer = () => {
       {
         title: "Explore",
         options: [
-          { name: "Home", url: "#hero" },
-          { name: "Solutions", url: "#solutions" },
+          { name: "Home", url: "/" },
+          { name: "Solutions", url: "/features" },
           { name: "About Us", url: "/about-us" },
           { name: "Book a Demo", url: "/book-a-demo" },
         ],
@@ -22,12 +22,12 @@ const Footer = () => {
       {
         title: "Resources",
         options: [
-          { name: "Knowledge Base", url: "" },
-          { name: "Webinars", url: "" },
+         { name: "Knowledge Base", url: "/knowledge-base" },
+          // { name: "Webinars", url: "" },
           { name: "Blog", url: "" },
           { name: "Case Studies", url: "" },
-          { name: "FAQs", url: "" },
-          { name: "Security", url: "" },
+          { name: "FAQs", url: "/resources/faq" },
+          // { name: "Security", url: "" },
         ],
       },
       {

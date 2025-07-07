@@ -1,65 +1,77 @@
 import React from "react";
 
+interface Highlight {
+  label: string;
+  value: string;
+}
+
 interface SearchSectionProps {
   title: string;
   subtitle?: string;
   placeholder: string;
   videoUrl?: string;
-    videoName?: string;
+  videoName?: string;
   description?: string;
-  icons?: { [key: string]: React.ReactNode }; // Common icon prop
+  highlights?: Highlight[];
+  icons?: {
+    search?: React.ReactNode;
+    video?: React.ReactNode;
+  };
 }
 
 const SearchSection: React.FC<SearchSectionProps> = ({
   title,
   subtitle,
   placeholder,
-    videoUrl,
+  videoUrl,
   videoName,
   description,
+  highlights,
   icons,
 }) => {
   return (
-    <div className="bg-black py-44 px-4 flex flex-col items-center justify-center text-center relative">
-      {subtitle && <p className="text-lg text-gray-300 mt-2 py-2">{subtitle}</p>}
+    <section className="relative bg-secondary text-white py-20 px-6 overflow-hidden">
+      <div className="max-w-3xl mx-auto text-center relative z-10">
+        {/* Title */}
+        <h1 className="text-4xl font-bold mb-4">{title}</h1>
 
-      <h2 className="text-2xl md:text-3xl font-bold text-white">{title}</h2>
+        {/* Subtitle */}
+        {subtitle && (
+          <p className="text-lg text-white/90 mb-6">{subtitle}</p>
+        )}
 
-      <div className="mt-6 w-full max-w-sm sm:max-w-md md:max-w-lg relative">
-              <div className="relative flex items-center">
-                  
-          <div className="absolute left-4 text-gray-400">{icons?.search}</div>
-          <input
-            type="text"
-            placeholder={placeholder}
-            className="w-full p-4 pl-12 rounded-lg border border-gray-300 focus:outline-none text-sm sm:text-base"
-          />
-        </div>
-      </div>
+        {/* 🔹 Highlight Badges */}
+        {Array.isArray(highlights) && highlights.length > 0 && (
+          <div className="flex justify-center gap-4 mt-6 flex-wrap">
+            {highlights.map((badge, index) => (
+              <div
+                key={index}
+                className="px-5 py-2 bg-white/10 rounded-xl border border-white/20 backdrop-blur-md shadow-md text-center"
+              >
+                <div className="text-xl font-bold">{badge.value}</div>
+                <div className="text-sm text-white/80">{badge.label}</div>
+              </div>
+            ))}
+          </div>
+        )}
 
-      {(videoUrl || description) && (
-        <div className="w-full max-w-xl flex justify-start">
-          <div className="absolute left-0 mt-10 sm:mt-16 md:mt-24 ml-4 sm:ml-10 md:ml-24 lg:ml-36 xl:ml-44">
-            {videoUrl && (
-              <div className="flex items-center space-x-2 text-white">
-                {icons?.video}
-                <a
-                  href={videoUrl}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="font-medium underline"
-                >
-                {videoName}
-                </a>
+        {/* 🔍 Search Input */}
+        <div className="max-w-xl mx-auto mt-8">
+          <div className="relative flex items-center">
+            {icons?.search && (
+              <div className="absolute left-4 text-gray-300">
+                {icons.search}
               </div>
             )}
-            {description && (
-              <p className="mt-2 text-gray-300 text-sm">{description}</p>
-            )}
+            <input
+              type="text"
+              placeholder={placeholder}
+              className="w-full py-3 pl-12 pr-4 rounded-lg text-black focus:outline-none text-base shadow-md"
+            />
           </div>
         </div>
-      )}
-    </div>
+      </div>
+    </section>
   );
 };
 

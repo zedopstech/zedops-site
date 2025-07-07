@@ -91,7 +91,7 @@ const successMailTemplate = (email: string) => {
                           target="_blank"
                           data-saferedirecturl="https://www.google.com/url?q=https://track.Appracadabra.co/CL0/https:%252F%252Fdevpishon.Appracadabra.dev/1/01090191209a7945-91b6bcac-46c7-4edb-8aea-9e0d7fe88079-000000/bHd8Eze9phuazvmaFO0gwiqDaFuss6gcX6yEGZp5Yk8%3D166&amp;source=gmail&amp;ust=1722915541782000&amp;usg=AOvVaw2K32y-aV1FgjmHVFawH9w9"
                         >
-                          Zedops's build
+                          ZedOps's build
                         </a>
                       </h1>
                     </td>
@@ -183,8 +183,8 @@ const successMailTemplate = (email: string) => {
               <a href="https://zedops.com" style="outline: 0;" target="_blank">
                  <img
                  src="https://www.zedops.com/images/logo-with-text-svg.svg"
-                 alt="Zedops logo"
-                 title="Zedops logo"
+                 alt="ZedOps logo"
+                 title="ZedOps logo"
                 style="text-decoration: none; height: auto; border: 0; width: 100%; max-width: 130px; display: block;"
                  class="CToWUd"
                  data-bit="iit"
@@ -204,7 +204,7 @@ const successMailTemplate = (email: string) => {
                         target="_blank"
                         data-saferedirecturl="https://www.google.com/url?q=https://devpishon.Appracadabra.dev&amp;source=gmail&amp;ust=1722915541782000&amp;usg=AOvVaw2F50jcb_25JA8mNDl6c5-w"
                       >
-                        https://Zedops.com
+                        https://ZedOps.com
                       </a>
                       .
                     </span>
