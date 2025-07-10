@@ -67,7 +67,6 @@ const ComingSoon = () => {
                   <div className="mb-5 inline-flex items-center justify-center w-14 h-14 rounded-xl text-secondary bg-secondary/20 group-hover:bg-secondary/30 group-hover:text-secondary transition-all duration-300 shadow-sm">
                     {item.icon}
                   </div>
-
                   <h3 className="text-lg uppercase font-black mb-3 text-secondary transition-colors duration-300">
                     {item.title}
                   </h3>

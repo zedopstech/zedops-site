@@ -14,7 +14,7 @@ const Footer = () => {
         title: "Explore",
         options: [
           { name: "Home", url: "/" },
-          { name: "Solutions", url: "/features" },
+          { name: "Solutions", url: "/#features" },
           { name: "About Us", url: "/about-us" },
           { name: "Book a Demo", url: "/book-a-demo" },
         ],
@@ -22,7 +22,7 @@ const Footer = () => {
       {
         title: "Resources",
         options: [
-         { name: "Knowledge Base", url: "/knowledge-base" },
+         { name: "Knowledge Base", url: "/resources/knowledge-base" },
           // { name: "Webinars", url: "" },
           { name: "Blog", url: "" },
           { name: "Case Studies", url: "" },

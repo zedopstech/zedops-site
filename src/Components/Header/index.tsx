@@ -3,7 +3,7 @@ import React, { useState } from "react";
 import Logo from "../Common/Logo";
 import Link from "next/link";
 import { Button } from "../UI/button";
-import { ArrowRight, Calendar, Headset, Menu, X } from "lucide-react";
+import { Calendar, Menu, X } from "lucide-react";
 import MobileNavigation from "./MobileNavigation";
 import DesktopNavigationMenu from "./Navigation/Desktop";
 

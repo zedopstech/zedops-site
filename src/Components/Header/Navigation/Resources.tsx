@@ -13,7 +13,7 @@ import {
 } from "lucide-react";
 import Link from "next/link";
 import React from "react";
-import {router} from "next/client";
+// import {router} from "next/client";
 
 const resource = [
     {

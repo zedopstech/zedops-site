@@ -1,6 +1,6 @@
 import React from "react";
 import Link from "next/link";
-import { Rocket, FileText } from "lucide-react";
+import { FileText } from "lucide-react";
 
 interface GetStartedItem {
   title: string;

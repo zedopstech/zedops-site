@@ -12,7 +12,7 @@ export default function WEBINARSPage() {
   return (
     <div>
       {/* Hero Section */}
-      <SearchSection {...WEBINARS_PAGE.searchSectionProps} />
+      <SearchSection articles={[]} {...WEBINARS_PAGE.searchSectionProps} />
       <Card {...WEBINARS_PAGE.cardSectionProps} />
       
     </div>

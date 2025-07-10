@@ -2,7 +2,6 @@
 
 import React, { useState, useEffect, useMemo } from "react";
 import { Button } from "@/Components/UI/button";
-import { useRouter } from "next/navigation";
 import {
     CheckCircle,
     Building2,
@@ -52,7 +51,7 @@ import { collection, addDoc, Timestamp } from "firebase/firestore";
 
 declare global {
     interface Window {
-        Calendly: any;
+        Calendly: unknown;
     }
 }
 
@@ -75,7 +74,6 @@ const BookDemo = () => {
     const [isSubmitting, setIsSubmitting] = useState(false); // new state
     const [activeFeature, setActiveFeature] = useState(0);
     const [emailError, setEmailError] = useState("");
-    const router = useRouter();
 
     // const [phoneError, setPhoneError] = useState("");
 
@@ -143,34 +141,32 @@ const BookDemo = () => {
     };
 
 
-    const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
-        e.preventDefault();
+  const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
+  e.preventDefault();
+  setIsSubmitting(true);
 
-        // Check phone number validity before submitting
-        // if (!formData.phone || !isValidPhoneNumber(formData.phone)) {
-        //   alert("Please enter a valid phone number with country code.");
-        //   return;
-        // }
-
-
-        setIsSubmitting(true); // Start loading
-
-        try {
-            const dataToSubmit = {
-                ...formData,
-                timestamp: Timestamp.now(),
-            };
-
-            await addDoc(collection(db, "demoRequests"), dataToSubmit);
-
-            setFormSubmitted(true); // trigger useEffect
-            window.scrollTo({ top: 500, behavior: "smooth" });
-        } catch (error: any) {
-            console.error("Error submitting form:", error.message);
-            alert("Submission failed. Please try again.");
-            setIsSubmitting(false); // Re-enable on error
-        }
+  try {
+    const dataToSubmit = {
+      ...formData,
+      timestamp: Timestamp.now(),
     };
+
+    await addDoc(collection(db, "demoRequests"), dataToSubmit);
+    setFormSubmitted(true);
+    window.scrollTo({ top: 500, behavior: "smooth" });
+  } catch (error: unknown) {
+    if (error instanceof Error) {
+      console.error("Error submitting form:", error.message);
+      alert("Submission failed. Please try again.");
+    } else {
+      console.error("Unknown error occurred.");
+      alert("Something went wrong. Please try again.");
+    }
+
+    setIsSubmitting(false);
+  }
+};
+
 
 
     useEffect(() => {

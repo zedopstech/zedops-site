@@ -1,5 +1,5 @@
-import { featuredArticles, quickStartSteps } from "@/Data/resources/knowledge";
-import { FileText } from "lucide-react";
+import { quickStartSteps } from "@/Data/resources/knowledge";
+// import { FileText } from "lucide-react";
 
 const Feature = () => {
   return (

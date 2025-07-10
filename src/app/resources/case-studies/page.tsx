@@ -11,7 +11,7 @@ export default function CASESTUDIESPage() {
   return (
     <div>
       {/* Hero Section */}
-      <SearchSection {...CASESTUDIES_PAGE.searchSectionProps} />
+      <SearchSection articles={[]} {...CASESTUDIES_PAGE.searchSectionProps} />
       <Card {...CASESTUDIES_PAGE.cardSectionProps} />
     </div>
   );
