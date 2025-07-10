@@ -104,7 +104,7 @@ export default function ComingSoon() {
                 role="alert"
               >
                 <span className="font-medium">
-                  Thank you for showing interest in Zedops Construction
+                  Thank you for showing interest in ZedOps Construction
                   Management Software!
                 </span>{" "}
                 Our team will reach out to you shortly.

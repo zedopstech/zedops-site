@@ -1,21 +1,21 @@
+// app/resources/knowledge-base/page.tsx
+
 import React from "react";
-
-
-import { KNOWLEDGE_PAGE} from "@/Data/resources/knowledge";
-
+import { KNOWLEDGE_PAGE } from "@/Data/resources/knowledge";
 import SearchSection from "@/Components/solutions/SearchSection";
-import Card from "@/Components/solutions/Card";
+// import { Search, PlayCircle } from "lucide-react";
 import GetStartedSection from "@/Components/solutions/GetStartedSection";
+import Feature from "@/Components/solutions/Features";
 
-export default function KNOWLEDGEPage() {
-  // Props configuration
-
+export default function KnowledgePage() {
   return (
     <div>
-      {/* Hero Section */}
+      {/* 🔹 Hero / Welcome Section */}
       <SearchSection {...KNOWLEDGE_PAGE.searchSectionProps} />
-      <Card {...KNOWLEDGE_PAGE.cardSectionProps} />
+      {/* 🔹 Get Started Cards */}
       <GetStartedSection {...KNOWLEDGE_PAGE.getStartedProps} />
+      {/* 🔹 Featured Articles + Quick Start */}
+      <Feature />
     </div>
   );
 }

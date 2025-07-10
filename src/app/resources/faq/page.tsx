@@ -11,7 +11,7 @@ import {
 export default function Page() {
   return (
     <>
-      <SearchSection {...FAQ_PAGE.searchSectionProps} />
+      <SearchSection articles={[]} {...FAQ_PAGE.searchSectionProps} />
       <main className="bg-custombg px-4 py-12">
         <div className="mx-auto max-w-6xl">
           {/* Categories Section */}

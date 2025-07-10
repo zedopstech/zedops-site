@@ -150,7 +150,7 @@ const SolutionsList = () => {
   return (
     <NavigationMenu.Item>
       <NavigationMenu.Trigger className="group flex select-none items-center justify-between gap-0.5 px-3 py-2 text-base font-medium leading-none hover:text-white">
-        Solutions
+        <Link href="/#features">Solutions</Link>
         <ChevronDown
           className="relative top-[1px] ml-1 h-3 w-3 transition duration-300 group-data-[state=open]:rotate-180"
           aria-hidden="true"

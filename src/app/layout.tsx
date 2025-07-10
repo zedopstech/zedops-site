@@ -6,6 +6,7 @@ import Header from "@/Components/Header";
 import { Toaster } from "@/Components/UI/toaster";
 
 export const metadata: Metadata = {
+  metadataBase: new URL("https://www.zedops.com"), // 👈 ADD THIS LINE
   title: "ZedOps - AI-Powered Construction Management",
   description:
     "AI-powered construction management to streamline workflows, boost collaboration, and deliver projects smarter.",
@@ -57,10 +58,10 @@ export default function RootLayout({ children }: { children: ReactNode }) {
               url: "https://www.zedops.com",
               logo: {
                 "@type": "ImageObject",
-                "url": "https://www.zedops.com/seo/logo.png",
-                "width": 112,
-                "height": 112,
-                "caption": "ZedOps Logo"
+                url: "https://www.zedops.com/seo/logo.png",
+                width: 112,
+                height: 112,
+                caption: "ZedOps Logo",
               },
               description:
                 "AI-powered construction management to streamline workflows, boost collaboration, and deliver projects smarter.",
@@ -82,9 +83,7 @@ export default function RootLayout({ children }: { children: ReactNode }) {
       </head>
       <body className="antialiased">
         <Header />
-        <main className="pt-20">
-          {children}
-        </main>
+        <main className="pt-20">{children}</main>
         <Toaster />
         <Footer />
       </body>
