@@ -98,15 +98,20 @@ const SearchSection: React.FC<SearchSectionProps> = ({
           </div>
 
           {/* Dropdown List */}
-          {showDropdown && (
-            <ul className="absolute left-0 right-0 mt-2 bg-custombg text-black rounded-lg shadow-md max-h-28 overflow-y-auto z-50 scrollbar-hidden">
+           {showDropdown && (
+            <ul className="absolute left-0 mt-2 w-full bg-custombg text-black rounded-lg shadow-md max-h-32 overflow-y-auto z-50 scrollbar-hidden text-left">
               {filtered.map((article, i) => (
                 <li
                   key={i}
                   onClick={() => handleSelect(article.slug)}
-                  className="px-4 py-2 hover:bg-gray-200 cursor-pointer"
+                  className="flex items-center gap-2 px-4 py-2 hover:bg-gray-200 cursor-pointer"
                 >
-                  {article.title}
+                  {icons?.search && (
+                    <span className="text-gray-300 w-4 h-4 left-4">
+                      {icons.search}
+                    </span>
+                  )}
+                  <span className="pl-2 text-black">{article.title}</span>
                 </li>
               ))}
             </ul>

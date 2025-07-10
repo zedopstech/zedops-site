@@ -1,6 +1,8 @@
 import { getMdxComponent } from "@/lib/mdx";
 import { notFound } from "next/navigation";
 import Breadcrumbs from "@/Components/Common/Breadcrumbs";
+import BackToFolderButton from "@/Components/Common/BackToFolderButton";
+
 
 export default async function KnowledgeBasePage({
   params,
@@ -16,7 +18,11 @@ export default async function KnowledgeBasePage({
     return (
       <section className="min-h-screen px-4 md:px-6 py-12 bg-custombg">
         <div className="max-w-4xl mx-auto">
-          <Breadcrumbs slug={slug} baseurl={'/resources/knowledge-base'} />
+          <Breadcrumbs slug={slug} baseurl={"/resources/knowledge-base"} />
+
+          {/* Back to Folder button */}
+          {slug.length > 2 && <BackToFolderButton slug={slug} />}
+
           {/* Page Content */}
           <div className="rounded-xl shadow-md border border-gray-200">
             {/* Title with background */}
@@ -34,7 +40,7 @@ export default async function KnowledgeBasePage({
         </div>
       </section>
     );
-  } catch{
+  } catch {
     notFound();
   }
 }

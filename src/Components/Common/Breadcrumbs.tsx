@@ -12,8 +12,8 @@ type Props = {
 export default function Breadcrumbs({ slug, baseurl }: Props) {
   return (
     <nav className="text-sm text-muted-foreground mb-6 flex items-center font-medium flex-wrap gap-1 text-gray-500">
-      <Link href={baseurl} className="hover:underline">
-        Knowledge
+      <Link href={baseurl} className="hover:underline font-bold">
+        <span className="text-gray-500 font-bold">Knowledge</span>
       </Link>
 
       {slug.map((part, idx) => {
