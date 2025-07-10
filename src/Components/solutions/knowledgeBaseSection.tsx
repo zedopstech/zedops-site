@@ -120,7 +120,7 @@ export default function KnowledgeBaseSection({
                 onClick={() => setSelectedFolder(null)}
                 className="inline-flex items-center gap-1 text-sm font-semibold text-secondary bg-primary border border-secondary px-3 py-1.5 rounded-md hover:bg-secondary hover:text-white transition-colors duration-200 mb-4"
               >
-                ← Back to Folders
+                ← Back
               </button>
 
               {subGroups
