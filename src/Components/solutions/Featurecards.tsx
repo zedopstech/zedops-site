@@ -56,10 +56,10 @@ const Features: React.FC<FeaturesProps> = ({ featuresData }) => {
             <div
               key={index}
               className={`group p-6 md:p-8 ${
-                featuresData.cardBgColor || "bg-backgroundlight"
+                featuresData.cardBgColor || "bg-[#1D1D1C]"
               } ${
                 !featuresData.cardBgColor
-                  ? "hover:bg-backgroundlighter"
+                  ? "hover:bg-[#1D1D1C]"
                   : "hover:shadow-lg"
               } rounded-lg flex flex-col items-start transform transition-transform duration-300 hover:scale-105`}
             >

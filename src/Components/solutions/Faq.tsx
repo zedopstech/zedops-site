@@ -27,7 +27,7 @@ const Faq: React.FC<FaqProps> = ({
   contactDescription,
 }) => {
   return (
-    <div className="bg-black py-12">
+    <div className="bg-[#151414] py-12">
       <div className="max-w-5xl mx-auto px-6">
         {/* FAQ Section */}
         <h2 className="text-3xl font-bold text-white text-center sm:text-4xl">

@@ -27,25 +27,25 @@ const Mainsection: React.FC<{ sections: SectionData[] }> = ({ sections }) => {
             <>
               {/* Image Section */}
               <div className="md:w-1/2 w-full">
-                <Image
+                {/* <Image
                   layout="intrinsic"
                   width={1920} // Large width to ensure responsiveness
                   height={1080}
                   src={section.image}
                   alt={section.title}
                   className="w-full h-auto object-cover"
-                />
+                /> */}
               </div>
 
               {/* Content Section */}
               <div className="md:w-1/2 w-full text-center md:text-left">
-                <h4 className="text-[#1BB387] font-semibold uppercase text-sm">
+                <h4 className="text-primary font-semibold uppercase text-sm">
                   {section.subtitle}
                 </h4>
-                <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-5xl font-semibold text-background mt-4">
+                <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-5xl font-semibold text-secondary mt-4">
                   {section.title}
                 </h2>
-                <p className="mt-4 text-gray-600 max-w-prose mx-auto md:mx-0">
+                <p className="mt-4 text-secondary max-w-prose mx-auto md:mx-0">
                   {section.description}
                 </p>
 
@@ -54,7 +54,7 @@ const Mainsection: React.FC<{ sections: SectionData[] }> = ({ sections }) => {
                   <div className="mt-7 space-y-7">
                     {section.features.map((feature, index) => (
                       <div key={index} className="flex items-start gap-4">
-                        <div className="bg-lightmint p-2 rounded flex-shrink-0">
+                        <div className="bg-primary p-2 rounded flex-shrink-0">
                           <div className="w-6 h-6">{feature.icon}</div>
                         </div>
                         <div>
@@ -75,13 +75,13 @@ const Mainsection: React.FC<{ sections: SectionData[] }> = ({ sections }) => {
             <>
               {/* Content Section */}
               <div className="md:w-1/2 w-full text-center md:text-left">
-                <h4 className="text-[#1BB387] font-semibold uppercase text-sm">
+                <h4 className="text-primary font-semibold uppercase text-sm">
                   {section.subtitle}
                 </h4>
-                <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-5xl font-semibold text-background mt-4">
+                <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-5xl font-semibold text-secondary mt-4">
                   {section.title}
                 </h2>
-                <p className="mt-4 text-gray-600 max-w-prose mx-auto md:mx-0">
+                <p className="mt-4 text-secondary max-w-prose mx-auto md:mx-0">
                   {section.description}
                 </p>
 
@@ -90,7 +90,7 @@ const Mainsection: React.FC<{ sections: SectionData[] }> = ({ sections }) => {
                   <div className="mt-7 space-y-7">
                     {section.features.map((feature, index) => (
                       <div key={index} className="flex items-start gap-4">
-                        <div className="bg-lightmint p-2 rounded flex-shrink-0">
+                        <div className="bg-primary p-2 rounded flex-shrink-0">
                           <div className="w-6 h-6">{feature.icon}</div>
                         </div>
                         <div>
@@ -109,14 +109,14 @@ const Mainsection: React.FC<{ sections: SectionData[] }> = ({ sections }) => {
 
               {/* Image Section */}
               <div className="md:w-1/2 w-full">
-                <Image
+                {/* <Image
                   layout="intrinsic"
                   width={1920} // Large width to ensure responsiveness
                   height={1080}
                   src={section.image}
                   alt={section.title}
                   className="w-full h-auto object-cover"
-                />
+                /> */}
               </div>
             </>
           )}

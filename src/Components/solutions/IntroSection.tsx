@@ -1,5 +1,7 @@
 import { FC } from "react";
+import Link from "next/link";
 import { Play } from "lucide-react";
+import { Button } from "@/Components/UI/button"; // It's better to use your existing Button component for consistency
 
 interface HeroProps {
   title: string;
@@ -17,46 +19,49 @@ const Hero: FC<HeroProps> = ({
   linkHref,
 }) => {
   return (
-    <section className="overflow-x-clip max-w-6xl mx-auto py-12 sm:py-20 md:py-24 lg:py-28 bg-background relative -mt-header flex min-h-[500px] items-center text-foreground lg:pb-28 lg:pt-24">
-      <div className="container flex flex-col gap-6 pt-header text-center">
-        <div>
-          {title && (
-            <div className="mb-2 inline-block max-h-8 text-accent ">
-              <div className="inline-flex items-center gap-x-3 text-sm font-bold text-accent uppercase tracking-wide">
-                {title}
-              </div>
-            </div>
-          )}
-          {subtitle && (
-            <h1 className="mx-auto max-w-[20ch] text-primary first-letter:capitalize text-4xl md:text-7xl font-semibold ">
-              {subtitle}
-            </h1>
-          )}
-        </div>
-        {description && (
-          <div>
-            <p className="mx-auto max-w-[60ch] text-primary text-md">
-              {description}
-            </p>
+    <section className="bg-orange-50 text-foreground py-20 md:py-32">
+      <div className="max-w-4xl mx-auto px-4 text-center">
+        
+        {/* Title / Pre-headline */}
+        {title && (
+          <div className="mb-4">
+            <span className="inline-block px-4 py-1.5 text-sm font-bold text-primary uppercase tracking-wider bg-primary/10 rounded-full">
+              {title}
+            </span>
           </div>
         )}
+        
+        {/* Main Headline */}
+        {subtitle && (
+          <h1 className="text-4xl md:text-6xl font-bold text-secondary capitalize leading-tight md:leading-tight">
+            {subtitle}
+          </h1>
+        )}
+        
+        {/* Description */}
+        {description && (
+          <p className="mt-6 mx-auto max-w-2xl text-lg text-secondary/80 leading-relaxed">
+            {description}
+          </p>
+        )}
 
+        {/* Action Buttons */}
         {buttonLabel && linkHref && (
-          <div className="flex items-center justify-center gap-2 pt-12 md:pt-8 ">
-            <button className="group relative z-[1] inline-flex items-center justify-center whitespace-nowrap rounded-full font-bold leading-[50%] ring-offset-background transition-all duration-100 after:absolute after:inset-0 after:z-[-1] after:rounded-full after:bg-primary after:transition-all after:duration-300 after:ease-out-fast hover:after:border-foreground hover:after:bg-primary hover:after:scale-105 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 active:after:bg-foreground active:after:scale-100 disabled:pointer-events-none disabled:opacity-50 after:border-2 after:border-transparent h-12 px-5 py-2 gap-3 pl-1 hover:cursor-pointer text-background">
-              <div className="inline-flex size-10 items-center justify-center rounded-full bg-background">
-                <span className="relative flex size-10 items-center justify-center overflow-hidden text-primary">
-                  <span className="relative transition-button-right">
-                    <Play className=" h-4 w-5" />
-                  </span>
-                  <span className="absolute transition-button-left">
-                    <Play className=" h-4 w-5" />
-                  </span>
-                </span>
-              </div>
-              Product tour
-            </button>
-            <div className="flex flex-col space-y-1.5 text-center sm:text-left"></div>
+          <div className="mt-10 flex items-center justify-center gap-4">
+            <Link href={linkHref}>
+              <Button size="lg" className="px-8 py-6 text-lg font-semibold bg-primary text-white shadow-sm hover:shadow-lg hover:bg-secondary transition-all duration-300 group">
+                {buttonLabel}
+                {/* Optional: Add an icon if you want */}
+              </Button>
+            </Link>
+            
+            {/* Example of a secondary "Product Tour" button */}
+            {/* <Link href="/product-tour" className="text-secondary hover:text-primary">
+              <Button size="lg" className="px-8 py-6 text-lg transition-colors duration-300 group bg-transparent">
+                <Play className="w-5 h-5 mr-3 transition-transform duration-300 group-hover:scale-110" />
+                Product Tour
+              </Button>
+            </Link> */}
           </div>
         )}
       </div>

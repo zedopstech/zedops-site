@@ -27,295 +27,257 @@ import {
   Presentation,
   FileText,
   ArrowDownUp,
+  GanttChartSquare, // New Icon
+  BookCheck,
+  Send,        // New Icon
 } from "lucide-react";
 
 export const PROCUREMENT_PAGE = {
+  // --- HERO SECTION ---
   heroProps: {
-    subtitle: "Procurement",
+    subtitle: "Buy Smarter. Build Faster.",
     description:
-      "Control costs and streamline your construction procurement. From smarter sourcing to optimized supplier management, ensure timely deliveries, reduce expenses, and drive project profitability.",
-    buttonLabel: "Get Started",
-    imageSrc: "/Solutions/procurement-hero.jpg", // Update this!
-    imageAlt: "Construction Procurement Management Software Dashboard",
-    linkHref: "/procurement-demo",
+      "Transform your procurement from a cost center into a strategic advantage. Zedops streamlines everything from supplier sourcing to final delivery, giving you the control to reduce costs, mitigate risks, and keep your projects on schedule.",
+    buttonLabel: "Optimize Your Procurement",
+    imageSrc: "/Solutions/procurement/procurement_hero.jpg", // Update this!
+    imageAlt: "A procurement manager analyzing supplier bids on a clean software dashboard.",
+    linkHref: "/book-a-demo",
+    floatingCards: [
+      {
+        icon: Send,
+        title: "RFQ Sent to 5 Suppliers",
+        subtitle: "Project Alpha - Concrete Package",
+        positionClasses: "top-1/3 -left-24 hidden lg:block",
+      },
+      {
+        icon: FileCheck,
+        title: "PO #1024 Approved",
+        subtitle: "Approved by Project Director",
+        positionClasses: "top-10 -right-16 hidden lg:block",
+      },
+      {
+        icon: Truck,
+        title: "Delivery En Route",
+        subtitle: "ETA: Tomorrow, 10:00 AM",
+        positionClasses: "bottom-1/4 -right-16 hidden lg:block",
+      },
+    ],
   },
+  
+  // --- SUB-HERO / VALUE PROPOSITION ---
   heroSectionProps: {
-    subtitle: "SIMPLIFY YOUR PROCUREMENT",
-    title: "Source, Purchase, and Optimize",
+    subtitle: "From Request To Receipt",
+    title: "A Seamless Procurement Workflow",
     description:
-      "Manage suppliers, control costs, and ensure the timely delivery of materials and equipment.",
-    buttonLabel: "Explore Features",
-    buttonLink: "/procurement-features",
+      "Connect your teams, data, and suppliers on a single platform. Eliminate the chaos of manual purchase orders, endless email chains, and uncertain delivery schedules.",
+    buttonLabel: "Request a Demo",
+    buttonLink: "/book-a-demo",
   },
+  
+  // --- CORE FEATURES ---
   featuresSectionProps: {
     features: [
       {
-        title: "Smart Sourcing & Supplier Management",
+        title: "Strategic Supplier Management",
         description:
-          "Identify reliable suppliers, compare pricing, and streamline negotiations to secure the best deals for your projects.",
+          "Create a centralized database of your trusted suppliers. Track performance, manage contracts, and easily send out Requests for Quotes (RFQs) to get the best price every time.",
         imageSrc: "/Solutions/estimation-1.jpg",
       },
       {
-        title: "Efficient Purchase Order Processing",
+        title: "Automated Purchase Order Lifecycle",
         description:
-          "Automate purchase orders, track approvals, and manage procurement workflows to ensure timely material deliveries.",
+          "Create, approve, and track purchase orders in minutes. Automate approval workflows and gain real-time visibility into the status of every order, from sent to delivered.",
         imageSrc: "/Solutions/estimation-2.jpg",
       },
     ],
   },
+  
+  // --- BENEFITS / OUTCOMES ---
   TestimonalsSectionProps: {
-    subtitle: "SMART PROCUREMENT SOLUTIONS",
-    title: "Optimize Your Sourcing and Purchasing",
+    subtitle: "Why ZedOps Procurement?",
+    title: "The Power to Protect Your Bottom Line",
     imageSrc: "/Solutions/estimation-testimonal.jpg",
-    imageAlt: "Illustration showing procurement management features",
+    imageAlt: "An illustration showing a dollar sign shielded, symbolizing cost control.",
     features: [
       {
-        title: "Supplier Management",
+        title: "Drive Down Material Costs",
         description:
-          "Build strong supplier relationships, track performance, and ensure quality materials for every project.",
+          "Leverage competitive bidding and performance data to negotiate better rates with suppliers and reduce procurement spend.",
         icon: <Handshake size={24} />,
       },
       {
-        title: "Cost Control & Budgeting",
+        title: "Eliminate Budget Surprises",
         description:
-          "Keep procurement costs in check with detailed expense tracking, forecasting, and cost analysis tools.",
+          "Gain real-time visibility into committed costs. Track every purchase order against your project budget to prevent overruns before they happen.",
         icon: <DollarSign size={24} />,
       },
       {
-        title: "Automated Purchase Orders",
+        title: "Ensure On-Time Deliveries",
         description:
-          "Streamline procurement with auto-generated purchase orders, approval workflows, and real-time tracking.",
+          "Proactively track order statuses and delivery schedules to prevent material shortages that can bring a job site to a halt.",
         icon: <ClipboardList size={24} />,
       },
     ],
   },
+
+  // --- DETAILED FEATURE SECTIONS ---
   mainSectionData: [
     {
       image: "/Solutions/estimation-section.jpg",
-      title: "Streamlined Procurement Workflow",
-      subtitle: "Efficient & Cost-Effective",
+      title: "Intelligent Sourcing",
+      subtitle: "Find the Best Partners",
       description:
-        "Optimize your procurement process with seamless supplier management, automated approvals, and cost tracking.",
+        "Build a robust, competitive, and reliable supply chain. Our tools help you vet suppliers, compare quotes fairly, and make data-driven sourcing decisions.",
       features: [
         {
           icon: <Truck size={24} className="text-background" />,
-          title: "Reliable Supplier Network",
-          description:
-            "Connect with trusted vendors and streamline sourcing for quality materials.",
+          title: "Supplier Database & Scorecards",
+          description: "Maintain detailed profiles and performance scorecards for all your vendors and subcontractors.",
         },
         {
           icon: <FileCheck size={24} className="text-background" />,
-          title: "Automated Approval Process",
-          description:
-            "Reduce delays with digital purchase approvals and tracking.",
+          title: "RFQ & Bid Leveling",
+          description: "Issue RFQs to multiple vendors and easily compare their quotes side-by-side in a standardized format.",
         },
         {
           icon: <BarChartBig size={24} className="text-background" />,
-          title: "Real-Time Cost Monitoring",
-          description:
-            "Track expenses and stay within budget with real-time procurement insights.",
+          title: "Historical Performance Analytics",
+          description: "Analyze past delivery times, material quality, and pricing to select the most reliable partners.",
         },
       ],
     },
     {
       image: "/Solutions/estimation section-1.jpg",
       imageOnRight: "true",
-      title: "Optimized Procurement & Logistics",
-      subtitle: "Seamless & Reliable",
+      title: "Purchase Order Automation",
+      subtitle: "Execute with Speed & Control",
       description:
-        "Ensure timely material deliveries and streamlined procurement workflows for uninterrupted project execution.",
+        "Automate your entire purchase order lifecycle. Reduce manual data entry, streamline approvals, and maintain a perfect audit trail of every purchase.",
       features: [
         {
           icon: <PackageSearch size={24} className="text-background" />,
-          title: "Real-Time Order Tracking",
-          description:
-            "Monitor purchase orders and deliveries with live status updates.",
+          title: "From Requisition to PO in Clicks",
+          description: "Convert material requisitions from the field or estimates into professional purchase orders instantly.",
         },
         {
           icon: <ArrowLeftRight size={24} className="text-background" />,
-          title: "Automated Supplier Coordination",
-          description:
-            "Improve efficiency with smart supplier communication and order scheduling.",
+          title: "Customizable Approval Workflows",
+          description: "Set up multi-step approval chains based on PO value or project type to ensure proper oversight.",
         },
         {
           icon: <Warehouse size={24} className="text-background" />,
-          title: "Centralized Procurement Hub",
-          description:
-            "Manage all purchasing activities from a single, intuitive dashboard.",
+          title: "Three-Way Matching",
+          description: "Automatically match purchase orders, goods receipt notes, and invoices to prevent payment errors.",
         },
       ],
     },
   ],
+  
+  // --- GRID OF ALL FEATURES ---
   featureData: [
     {
       icon: <ShoppingCart className="text-background" />,
-      title: "Centralized Procurement Hub",
-      description: "Manage all purchasing activities from a single platform.",
+      title: "Centralized Procurement Dashboard",
+      description: "Manage all requisitions, RFQs, and purchase orders from a single view.",
     },
     {
       icon: <FileSpreadsheet className="text-background" />,
-      title: "Customizable Procurement",
-      description:
-        "Generate detailed reports to track purchase orders, costs, and supplier performance.",
+      title: "Customizable Reporting",
+      description: "Generate reports on spend, supplier performance, and procurement cycles.",
     },
     {
       icon: <CheckSquare className="text-background" />,
       title: "Automated Purchase Orders",
-      description:
-        "Streamline order creation and approval processes for faster procurement.",
+      description: "Reduce manual entry and speed up your buying process.",
     },
     {
       icon: <BellRing className="text-background" />,
-      title: "Real-Time Order Alerts",
-      description:
-        "Receive notifications for purchase approvals, delays, and fulfillment updates.",
-    },
-    {
-      icon: <Users className="text-background" />,
-      title: "Multi-User Role Management",
-      description:
-        "Enable role-based access for procurement teams and stakeholders.",
+      title: "Real-Time Status Alerts",
+      description: "Receive notifications for approvals, shipments, and deliveries.",
     },
     {
       icon: <Handshake className="text-background" />,
-      title: "Supplier Relationship",
-      description:
-        "Track vendor performance and streamline communication for reliable sourcing.",
+      title: "Supplier Relationship Management",
+      description: "Track contracts, compliance documents, and communication history.",
     },
     {
       icon: <Smartphone className="text-background" />,
-      title: "Mobile Procurement Access",
-      description: "Manage purchase requests and approvals on the go.",
-    },
-    {
-      icon: <Cloud className="text-background" />,
-      title: "Cloud-Based Purchase",
-      description:
-        "Securely store and access procurement data from any device.",
+      title: "Mobile Approvals",
+      description: "Review and approve purchase orders from anywhere on your mobile device.",
     },
     {
       icon: <BadgeDollarSign className="text-background" />,
-      title: "Cost Analysis & Budgeting",
-      description:
-        "Track spending and optimize procurement budgets with real-time insights.",
+      title: "Budget & Cost Tracking",
+      description: "Link procurement costs directly to your project budgets in real-time.",
     },
     {
-      icon: <BarChart4 className="text-background" />,
-      title: "Demand Forecasting",
-      description:
-        "Leverage AI-driven insights to predict material needs and avoid shortages.",
-    },
-    {
-      icon: <ClipboardList className="text-background" />,
-      title: "Procurement Workflow",
-      description:
-        "Automate repetitive tasks like approvals and reorders to improve efficiency.",
-    },
-    {
-      icon: <Truck className="text-background" />,
-      title: "Logistics & Delivery Tracking",
-      description:
-        "Monitor shipment status and ensure on-time material deliveries.",
-    },
-    {
-      icon: <ArrowDownUp className="text-background" />,
-      title: "Dynamic Pricing & Cost Comparisons",
-      description:
-        "Compare vendor pricing in real-time to secure the best deals.",
-    },
-    {
-      icon: <Layers className="text-background" />,
-      title: "Integration with ERP ",
-      description:
-        "Sync procurement data with financial and project management tools.",
+      icon: <GanttChartSquare className="text-background" />, // Changed icon
+      title: "Project Schedule Integration",
+      description: "Align material delivery dates with your project construction schedule.",
     },
     {
       icon: <FileSignature className="text-background" />,
       title: "Digital Contract Management",
-      description:
-        "Store, review, and manage supplier contracts for transparency and compliance.",
+      description: "Store and manage all supplier contracts and agreements securely.",
     },
     {
       icon: <PackageCheck className="text-background" />,
-      title: "Quality Control & Compliance",
-      description:
-        "Ensure materials meet industry standards before site delivery.",
-    },
-    {
-      icon: <Recycle className="text-background" />,
-      title: "Sustainable Procurement",
-      description:
-        "Optimize sourcing strategies to minimize waste and promote eco-friendly materials.",
+      title: "Goods Receipt & Quality Control",
+      description: "Log deliveries on-site and document material quality upon arrival.",
     },
     {
       icon: <ScanQrCode className="text-background" />,
-      title: "QR & Barcode Scanning",
-      description:
-        "Easily track material receipts and usage with quick scan technology.",
-    },
-    {
-      icon: <BarChart3 className="text-background" />,
-      title: "Vendor Performance",
-      description:
-        "Measure supplier efficiency based on delivery times, quality, and reliability.",
-    },
+      title: "Inventory Integration",
+      description: "Automatically update your inventory stock levels upon material receipt.",
+},
     {
       icon: <FolderCog className="text-background" />,
-      title: "Custom Procurement",
-      description:
-        "Adapt procurement processes to fit your project’s unique needs.",
+      title: "Customizable Workflows",
+      description: "Adapt the procurement process to fit your company’s unique approval needs.",
     },
   ],
+
+  // --- RESOURCES / GUIDES SECTION ---
   featuresData: {
     title: "Resources",
-    subtitle: "Master Procurement Strategies",
-    description:
-      "Explore best practices and comprehensive guides for effectively qualifying contractors ",
+    subtitle: "Master Your Procurement Process",
+    description: "Explore our expert guides for building a world-class construction procurement strategy.",
     features: [
       {
-        title: "Master Procurement Strategies",
-        description: "Watch the workshop to elevate your skills.",
         icon: <Presentation className="text-white" />,
+        title: "Tutorial: Your First Purchase Order",
+        description: "Watch our step-by-step guide.",
       },
       {
         icon: <FileText className="text-white" />,
-        title: "Best Practices for Construction Procurement",
-        description: "Access the guide for streamlined processes.",
+        title: "The Ultimate Guide to Construction Procurement",
+        description: "Access the guide.",
       },
       {
         icon: <Truck className="text-white" />,
-        title: "Optimizing Supplier & Logistics Coordination",
-        description:
-          "Access the guide for efficient delivery and reduced delays.",
+        title: "Best Practices for Supplier Negotiation",
+        description: "Read the article.",
       },
       {
-        icon: <Recycle className="text-white" />,
-        title: "Sustainable & Cost-Effective Sourcing",
-        description: "Access the guide to lower expenses with green practices.",
-      },
-      {
-        icon: <BadgeDollarSign className="text-white" />,
-        title: "Cost-Efficient Procurement Strategies",
-        description: "Access the guide to maximize budget control.",
-      },
-      {
-        icon: <ClipboardList className="text-white" />,
-        title: "Procurement Compliance & Risk Management",
-        description: "Access the guide to safeguard against regulatory issues.",
+        icon: <BookCheck className="text-white" />, // Changed icon
+        title: "A Guide to Three-Way Matching in Construction",
+        description: "Learn how to prevent payment errors.",
       },
     ],
   },
+  
+  // --- FINAL CALL TO ACTION ---
   ctaProps: {
-    title: "Optimize Your Construction Procurement",
-    description: "",
+    title: "Take Control of Your Project Spend",
+    description: "See how Zedops can help you build a more efficient, transparent, and profitable procurement process.",
     benefits: [
-      "Streamlined purchase",
-      "Cost-effective supplier",
-      "Real-time order tracking",
+      "Lower material costs",
+      "Reduce project risks",
+      "Ensure on-time delivery",
     ],
-    button1Label: "Book a demo",
+    button1Label: "Request a Demo",
     button1Link: "/book-a-demo",
-    button2Label: "Start a trial",
-    button2Link: "/start-trial",
+    button2Label: "Talk to Sales",
+    button2Link: "/contact-sales",
   },
 };

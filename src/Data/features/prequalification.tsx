@@ -26,6 +26,7 @@ import {
   ScanSearch,
   UserRound,
   PackageSearch,
+  FileText,
   BetweenVerticalStart,
   StepBack,
   Wifi,
@@ -33,295 +34,265 @@ import {
   Construction,
   Power,
   Ellipsis,
-  FileText,
-} from "lucide-react";
+  ShieldCheck,
+  BarChart3,
+  CheckCircle,
+} from "lucide-react"; // Assume these icons are imported
 
 export const PREQUALIFICATION_PAGE = {
+  // --- HERO SECTION ---
   heroProps: {
-    subtitle: "Prequalification",
+    subtitle: "Build With Confidence. Prequalify The Best Partners, Every Time.",
     description:
-      "Ensure project success starts with qualified contractors.  Our platform streamlines the entire prequalification process, saving you time, reducing risk, and giving you confidence in your team.",
-    buttonLabel: "Get Started",
-    imageSrc: "/Solutions/estimation-hero.jpg",
-    imageAlt: "Construction workers reviewing prequalification forms",
+      "Move beyond manual vetting and endless paperwork. Zedops provides a streamlined, data-driven prequalification process to help you select reliable and qualified contractors for your projects.",
+    buttonLabel: "See How It Works",
+    imageSrc: "/Solutions/Prequalification/prequalification_hero.jpeg",
+    imageAlt: "A project manager confidently reviewing contractor qualifications on a tablet.",
     linkHref: "/book-a-demo",
+    floatingCards: [
+      {
+        icon: ShieldCheck,
+        title: "Compliance Verified",
+        subtitle: "ABC Contracting",
+        positionClasses: "top-1/3 -left-24 hidden lg:block",
+      },
+      {
+        icon: BarChart3,
+        title: "Risk Score: Low",
+        subtitle: "Financial & Safety Analysis",
+        positionClasses: "top-10 -right-16 hidden lg:block",
+      },
+      {
+        icon: CheckCircle,
+        title: "Status: Approved",
+        subtitle: "Ready for Project Onboarding",
+        positionClasses: "bottom-1/4 -right-16 hidden lg:block",
+      },
+    ],
   },
+  
+  // --- SUB-HERO / VALUE PROPOSITION ---
+  // (Note: The original structure had two hero sections, I've repurposed the second one)
   heroSectionProps: {
-    subtitle: "BUILD WITH CONFIDENCE",
-    title: "Prequalify with ease",
+    subtitle: "The Foundation of a Successful Project",
+    title: "Eliminate Guesswork, Minimize Risk.",
     description:
-      "Simplify contractor prequalification by using an efficient, reliable, and automated approach to selecting the best-fit partners for your projects.",
-    buttonLabel: "Start Prequalifying",
-    buttonLink: "/start-prequalifying",
+      "Our prequalification module transforms a complex, high-risk process into a simple, transparent, and automated workflow. Ensure every partner on your project has been vetted for quality, safety, and financial stability.",
+    buttonLabel: "Request a Demo",
+    buttonLink: "/book-a-demo",
   },
+
+  // --- CORE FEATURES ---
   featuresSectionProps: {
     features: [
       {
-        title: "Automated Prequalification",
+        title: "Automated Data Collection",
         description:
-          "Effortlessly collect and evaluate contractor data through automated prequalification forms tailored to your project's needs.",
+          "Replace manual forms and chasing emails. Invite contractors to a secure portal where they submit all required documentation and data through standardized, easy-to-use forms.",
         imageSrc: "/Solutions/estimation-1.jpg",
       },
       {
-        title: "Risk Assessment Tools",
+        title: "Data-Driven Risk Analysis",
         description:
-          "Leverage built-in risk assessment tools to evaluate contractors' financial health, compliance, and past project performance.",
+          "Instantly assess contractor health with dashboards that analyze financial stability, safety records (like EMR), and compliance data, giving you a clear risk score for every applicant.",
         imageSrc: "/Solutions/estimation-2.jpg",
       },
     ],
   },
-  TestimonalsSectionProps: {
-    subtitle: "PREQUALIFY WITH CONFIDENCE",
-    title: "Trust through Prequalification",
+  
+  // --- BENEFITS / OUTCOMES ---
+  TestimonalsSectionProps: { // Renamed conceptually to "Benefits"
+    subtitle: "Why Zedops Prequalification?",
+    title: "Build Your A-Team with Confidence",
     imageSrc: "/Solutions/estimation-testimonal.jpg",
-    imageAlt: "Illustration showing contractor evaluations",
+    imageAlt: "An illustration showing a checklist and a shield, symbolizing risk mitigation.",
     features: [
       {
-        title: "Faster Contractor Selection",
+        title: "Accelerate Project Kick-off",
         description:
-          "Prequalify contractors more quickly, reducing delays and ensuring you’re always on track to start your projects.",
+          "Drastically reduce the time it takes to vet and select partners, moving your projects from planning to groundbreaking faster.",
         icon: <ChevronsUp size={24} />,
       },
       {
-        title: "Minimize Risk",
+        title: "Protect Your Projects & Reputation",
         description:
-          "By using data-driven prequalification, you’ll minimize the risks associated with hiring unqualified contractors.",
+          "Minimize the risk of project delays, budget overruns, and safety incidents by ensuring every partner on site is thoroughly qualified.",
         icon: <ShieldBan size={24} />,
       },
       {
-        title: "Maximize Efficiency",
+        title: "Free Up Your Team",
         description:
-          "Prequalify contractors effortlessly, freeing up more time to focus on project management and execution.",
+          "Automate the repetitive administrative tasks of prequalification, allowing your team to focus on high-value project management activities.",
         icon: <Sparkles size={24} />,
       },
     ],
   },
+
+  // --- DETAILED FEATURE SECTIONS ---
   mainSectionData: [
     {
       image: "/Solutions/estimation-section.jpg",
-      title: "Contractor Profiles",
-      subtitle: "Detailed Information",
+      title: "360-Degree Contractor Profiles",
+      subtitle: "A Single Source of Truth",
       description:
-        "Gain insight into the qualifications, experience, and past performance of contractors, ensuring you make informed decisions.",
+        "Aggregate all critical contractor information into a unified, easy-to-review profile. Compare applicants apples-to-apples and make decisions based on data, not just gut feeling.",
       features: [
         {
           icon: <UserPen size={24} className="text-background" />,
-          title: "Contractor Profile Management",
+          title: "Comprehensive Data Management",
           description:
-            "Manage detailed profiles of each contractor, including certifications, insurance, and other essential data.",
+            "Manage everything in one place: trade licenses, insurance certificates, compliance documents, and key personnel.",
         },
         {
           icon: <LaptopMinimalCheck size={24} className="text-background" />,
-          title: "Review Past Project Success",
+          title: "Verified Project History",
           description:
-            "Analyze the history of completed projects to assess the contractor's ability to handle similar work.",
+            "Analyze a contractor's track record with verified details on past projects, including scope, value, and client references.",
         },
         {
           icon: <BadgeCheck size={24} className="text-background" />,
-          title: "Financial Stability Checks",
+          title: "Financial Health Dashboard",
           description:
-            "Conduct financial evaluations to ensure contractors have the resources to complete the project successfully.",
+            "Evaluate financial stability with tools that help analyze submitted financial statements and creditworthiness.",
         },
       ],
     },
     {
-      image: "/Solutions/estimation section-1.jpg",
+      image: "/Solutions/estimation-section-1.jpg",
       imageOnRight: "true",
-      title: "Contractor Assessment",
-      subtitle: "Comprehensive Evaluation",
+      title: "Customizable Evaluation",
+      subtitle: "Your Standards, Your Workflow",
       description:
-        "Use comprehensive evaluation tools to analyze contractor suitability based on your specific project requirements.",
+        "Every project is unique. Our platform allows you to tailor the prequalification process to your specific needs, ensuring you evaluate contractors against the criteria that matter most to you.",
       features: [
         {
           icon: <Asterisk size={24} className="text-background" />,
-          title: "Risk Assessments",
+          title: "Custom Scoring & Weighting",
           description:
-            "Identify and mitigate potential risks with advanced risk assessment tools tailored to construction projects.",
+            "Create your own scoring criteria. Assign more weight to safety performance, financial health, or past experience as needed.",
         },
         {
           icon: <ListChecks size={24} className="text-background" />,
-          title: "Compliance Checks",
+          title: "Automated Compliance Checks",
           description:
-            "Ensure all contractors meet necessary regulatory and industry compliance standards before selection.",
+            "Set rules to automatically flag contractors who don't meet mandatory compliance standards for safety, insurance, or bonding.",
         },
         {
           icon: <MapPinCheck size={24} className="text-background" />,
-          title: "Qualification Tracking",
+          title: "Continuous Qualification Tracking",
           description:
-            "Keep track of contractor qualifications over time to ensure they remain eligible for future projects.",
+            "Don't just prequalify once. Our system tracks expiring licenses and insurance, ensuring your partners remain qualified throughout the project.",
         },
       ],
     },
   ],
+
+  // --- GRID OF ALL FEATURES ---
   featureData: [
     {
       icon: <ArrowBigRight className="text-background" />,
-      title: "Easy Form Management",
-      description:
-        "Simplify contractor qualification forms with an intuitive interface",
+      title: "Digital Submission Portal",
+      description: "An easy-to-use portal for contractors to submit their information and documents.",
     },
     {
       icon: <Scan className="text-background" />,
-      title: "Customizable Prequalification",
-      description:
-        "Create tailored prequalification forms specific to your projects",
+      title: "Customizable Questionnaires",
+      description: "Build tailored prequalification forms with questions specific to your project's risk profile.",
     },
     {
       icon: <MonitorSmartphone className="text-background" />,
-      title: "Real-Time Monitoring",
-      description: "Monitor the status of contractor applications in real time",
-    },
-    {
-      icon: <Navigation2 className="text-background" />,
-      title: "Prequalification Tracking",
-      description: "Track contractor prequalification status and history",
-    },
-    {
-      icon: <CircleFadingPlus className="text-background" />,
-      title: "Instant Contractor Access",
-      description:
-        "Quickly access and evaluate contractor profiles without delays",
+      title: "Real-Time Application Tracking",
+      description: "Monitor the submission status of all invited contractors from a single dashboard.",
     },
     {
       icon: <BellRing className="text-background" />,
-      title: "Automated Notifications",
-      description:
-        "Receive automated updates when contractors complete or update their prequalification forms",
+      title: "Automated Reminders",
+      description: "Automatically notify contractors about incomplete applications or upcoming deadlines.",
     },
     {
       icon: <Star className="text-background" />,
-      title: "Contractor Rating System",
-      description:
-        "Rate contractors based on their performance to ensure the best match for future projects",
+      title: "Performance Scoring System",
+      description: "Rate and rank contractors based on your custom criteria to easily identify top candidates.",
     },
     {
       icon: <Radical className="text-background" />,
-      title: "Historical Performance",
-      description:
-        "Review contractors’ past project performances to assess future project success",
+      title: "Historical Performance Review",
+      description: "Access a complete history of a contractor's performance on your past projects.",
     },
     {
       icon: <BookDown className="text-background" />,
-      title: "Prequalification Reporting",
-      description:
-        "Generate detailed reports on contractor qualifications, performance, and risk assessments",
+      title: "Comprehensive Reporting",
+      description: "Generate detailed reports on contractor qualifications, risk assessments, and final selections.",
     },
     {
       icon: <Gavel className="text-background" />,
-      title: "Risk Management Tools",
-      description:
-        "Evaluate contractors using built-in risk management tools to minimize project risks",
-    },
-    {
-      icon: <ContactRound className="text-background" />,
-      title: "Detailed Contractor",
-      description:
-        "Keep all essential contractor documentation organized, from certifications to financial reports",
+      title: "Built-in Risk Management",
+      description: "Evaluate contractors using integrated tools to mitigate financial, safety, and compliance risks.",
     },
     {
       icon: <TicketCheck className="text-background" />,
-      title: "Compliance Verification",
-      description:
-        "Ensure that contractors meet regulatory and compliance standards for safety, insurance, and bonding",
+      title: "Automated Compliance Verification",
+      description: "Flag expired licenses, missing insurance, or non-compliant safety records automatically.",
     },
     {
       icon: <Package className="text-background" />,
-      title: "Seamless Integration",
-      description:
-        "Easily integrate prequalification data into your existing project management systems",
+      title: "Seamless ERP/PM Integration",
+      description: "Push approved contractor data directly into your existing project management or ERP systems.",
     },
     {
       icon: <FileStack className="text-background" />,
-      title: "Multi-Project Prequalification",
-      description:
-        "Handle prequalification for multiple projects simultaneously with our scalable solution",
-    },
-    {
-      icon: <Equal className="text-background" />,
-      title: "Instant Contract Matching",
-      description:
-        "Match contractors to projects based on their qualifications, experience, and past project performance",
-    },
-    {
-      icon: <ScanSearch className="text-background" />,
-      title: "Customizable Fields",
-      description:
-        "Design your prequalification forms with fields that meet the specific requirements of each project",
-    },
-    {
-      icon: <UserRound className="text-background" />,
-      title: "User-Friendly Dashboard",
-      description:
-        "Manage your prequalification process efficiently with a user-friendly dashboard that offers a clear overview",
+      title: "Multi-Project Management",
+      description: "Manage prequalification across your entire portfolio of projects from one centralized platform.",
     },
     {
       icon: <PackageSearch className="text-background" />,
-      title: "Collaborative Review Process",
-      description:
-        "Enable team members to collaborate on contractor evaluations and share feedback within the platform",
-    },
-    {
-      icon: <FileText className="text-background" />,
-      title: "Automated Document",
-      description:
-        "Automatically verify submitted contractor documents for authenticity and compliance",
-    },
-    {
-      icon: <BetweenVerticalStart className="text-background" />,
-      title: "Detailed Contractor Insights",
-      description:
-        "Gain deeper insights into contractor capabilities and history with in-depth contractor profiles",
+      title: "Collaborative Review",
+      description: "Enable team members to review, score, and comment on contractor applications collaboratively.",
     },
   ],
+  
+  // --- RESOURCES / GUIDES SECTION ---
   featuresData: {
-    title: "Resources",
-    subtitle: "Prequalification Features",
+    title: "Become a Prequalification Expert",
+    subtitle: "Helpful Resources",
     description:
-      "Explore best practices and comprehensive guides for effectively qualifying contractors",
+      "Explore our guides and best practices to build a world-class contractor vetting process.",
     features: [
       {
-        title: "Want to streamline your contractor evaluation?",
-        description: "Watch the tutorial",
         icon: <StepBack className="text-white" />,
+        title: "Tutorial: Setting Up Your First Workflow",
+        description: "Watch the video guide",
       },
       {
         icon: <Wifi className="text-white" />,
-        title: "Best practices for contractor prequalification",
-        description: "Access the guide",
+        title: "The Ultimate Guide to Contractor Prequalification",
+        description: "Read the article",
       },
       {
         icon: <TableOfContents className="text-white" />,
-        title: "How to evaluate contractor financial stability",
+        title: "How to Effectively Evaluate Contractor Financials",
         description: "Access the guide",
       },
       {
         icon: <Construction className="text-white" />,
-        title: "Ensuring compliance in construction projects",
-        description: "Access the guide",
-      },
-      {
-        icon: <Power className="text-white" />,
-        title: "Streamlining contractor onboarding",
-        description: "Access the guide",
-      },
-      {
-        icon: <Ellipsis className="text-white" />,
-        title: "Optimizing contractor evaluation processes",
-        description: "Access the guide",
+        title: "Top 5 Compliance Risks to Avoid in Construction",
+        description: "Read the article",
       },
     ],
   },
+  
+  // --- FINAL CALL TO ACTION ---
   ctaProps: {
-    title: "Get started with contractor prequalification",
-    description: "",
+    title: "Ready to Build Your Trusted Team of Partners?",
+    description: "Take the first step towards minimizing project risk and ensuring quality from day one. See how our prequalification module can transform your process.",
     benefits: [
-      "14-day free trial",
-      "No credit card required",
-      "Cancel anytime",
+      "Reduce risk of project failure",
+      "Save administrative hours",
+      "Accelerate project timelines",
     ],
-    button1Label: "Book a demo",
+    button1Label: "Request Your Free Demo",
     button1Link: "/book-a-demo",
-    button2Label: "Start a trial",
-    button2Link: "/start-trial",
+    button2Label: "Talk to Sales",
+    button2Link: "/contact-sales",
   },
 };

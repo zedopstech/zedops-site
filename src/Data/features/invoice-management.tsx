@@ -21,302 +21,258 @@ import {
   FileBarChart,
   Calendar,
   TrendingUp,
+  MailCheck,    // New Icon
+  Wallet,       // New Icon
 } from "lucide-react";
 
 export const INVOICEMANAGEMENT_PAGE = {
+  // --- HERO SECTION ---
   heroProps: {
-    subtitle: "Invoice",
+    subtitle: "Get Paid Faster. Manage Cash Flow with Confidence.",
     description:
-      "Get paid faster with our automated construction invoicing system. Streamline billing, track invoices in real-time, and simplify payment management for improved cash flow.",
-    buttonLabel: "Get Started",
-    imageSrc: "/Solutions/estimation-hero.jpg", // MUST UPDATE
-    imageAlt: "Construction invoice management software showing payment status",
-    linkHref: "/invoice-management-demo",
+      "Transform your billing cycle from a source of stress into a streamlined, predictable process. Zedops automates invoice creation, simplifies payment tracking, and helps you maintain a healthy cash flow for your business.",
+    buttonLabel: "Streamline Your Invoicing",
+    imageSrc: "/Solutions/financial/invoice-management-hero.webp", // MUST UPDATE
+    imageAlt: "A clean dashboard showing a list of construction invoices with their status (Paid, Due, Overdue).",
+    linkHref: "/book-a-demo",
+    
+    // --- Floating Cards for the Invoice Management Hero Section ---
+    floatingCards: [
+      {
+        icon: FilePlus,
+        title: "New Invoice Generated",
+        subtitle: "$50,000 to Project Alpha",
+        positionClasses: "top-16 -left-20",
+      },
+      {
+        icon: MailCheck,
+        title: "Invoice Viewed by Client",
+        subtitle: "Invoice #INV-007",
+        positionClasses: "bottom-1/4 -left-24",
+      },
+      {
+        icon: CreditCard,
+        title: "Payment Received",
+        subtitle: "$25,000 from ABC Contracting",
+        positionClasses: "top-1/2 -right-12",
+      },
+    ],
   },
+  
+  // --- SUB-HERO / VALUE PROPOSITION ---
   heroSectionProps: {
-    subtitle: "SIMPLIFY YOUR BILLING PROCESS",
-    title: "Automate and Manage Invoices",
+    subtitle: "From Application To Payment",
+    title: "A Seamless Billing and Collections Cycle",
     description:
-      "Enhance financial transparency with automated invoicing, real-time payment tracking.",
-    buttonLabel: "Explore Features",
-    buttonLink: "/invoice-management-features",
+      "Eliminate manual data entry, incorrect billing, and the friction of chasing payments. Our platform connects your project data directly to your invoices for unparalleled accuracy and efficiency.",
+    buttonLabel: "Request a Demo",
+    buttonLink: "/book-a-demo",
   },
+  
+  // --- CORE FEATURES ---
   featuresSectionProps: {
     features: [
       {
-        title: "Automated Invoice Generation",
+        title: "Automated Pay Applications",
         description:
-          "Create and send invoices automatically, reducing manual work and ensuring accuracy in billing.",
+          "Generate industry-standard payment applications (like AIA G702/G703) automatically from your project data, including schedule of values and stored materials.",
         imageSrc: "/Solutions/estimation-1.jpg",
       },
       {
-        title: "Real-Time Payment Tracking",
+        title: "Real-Time Invoice Tracking",
         description:
-          "Monitor invoice statuses and track payments in real-time to improve cash flow and financial planning.",
+          "Never lose track of a payment. Monitor the status of every invoice in real-time, from 'Sent' and 'Viewed' to 'Paid' or 'Overdue'.",
         imageSrc: "/Solutions/estimation-2.jpg",
       },
     ],
   },
+  
+  // --- BENEFITS / OUTCOMES ---
   TestimonalsSectionProps: {
-    subtitle: "SMART INVOICE MANAGEMENT",
-    title: "Streamline Your Billing Process",
+    subtitle: "Why ZedOps Invoicing?",
+    title: "Improve Your Financial Health",
     imageSrc: "/Solutions/estimation-testimonal.jpg",
-    imageAlt: "Illustration showing invoice management features",
+    imageAlt: "An illustration of a wallet with a rising chart, symbolizing healthy cash flow.",
     features: [
       {
-        title: "Automated Invoice Processing",
+        title: "Improve Cash Flow",
         description:
-          "Generate and send invoices automatically, reducing manual work and ensuring billing accuracy.",
+          "Get paid faster by submitting accurate invoices on time and using automated reminders for overdue payments.",
         icon: <FileText size={24} />,
       },
       {
-        title: "Real-Time Payment Tracking",
+        title: "Reduce Administrative Workload",
         description:
-          "Monitor invoice statuses and track payments in real-time, improving cash flow and financial planning.",
+          "Drastically cut down the time your team spends creating, sending, and tracking invoices, freeing them for higher-value tasks.",
         icon: <CreditCard size={24} />,
       },
       {
-        title: "Late Payment Alerts",
+        title: "Enhance Client Transparency",
         description:
-          "Receive instant alerts for overdue payments, ensuring timely follow-ups and improved revenue management.",
+          "Build trust with clear, professional, and detailed invoices that are easy for your clients to understand and approve.",
         icon: <BellRing size={24} />,
       },
     ],
   },
+
+  // --- DETAILED FEATURE SECTIONS ---
   mainSectionData: [
     {
       image: "/Solutions/estimation-section.jpg",
-      title: "Real-Time Invoice Tracking",
-      subtitle: "Stay on Top of Your Billing",
+      title: "Streamlined Invoice Creation",
+      subtitle: "Accuracy and Speed, Built-In",
       description:
-        "Monitor invoices in real-time, track payment statuses, and streamline billing cycles to improve cash flow management.",
+        "Generate professional, error-free invoices and pay applications in a fraction of the time it takes with spreadsheets.",
       features: [
         {
           icon: <FileText size={24} className="text-background" />,
-          title: "Automated Invoice Generation",
-          description:
-            "Generate and send invoices automatically, reducing manual work and ensuring accuracy.",
+          title: "Pay Application Generation",
+          description: "Automatically populate payment applications with your schedule of values and work-completed data.",
         },
         {
           icon: <CreditCard size={24} className="text-background" />,
-          title: "Payment Status Monitoring",
-          description:
-            "Track payments in real-time, ensuring timely collection and reducing outstanding balances.",
+          title: "Change Order Integration",
+          description: "Ensure all approved change orders are automatically included in your billing, so nothing gets missed.",
         },
         {
           icon: <Clock size={24} className="text-background" />,
-          title: "Due Date & Overdue Alerts",
-          description:
-            "Get instant alerts for upcoming due dates and overdue invoices to take proactive follow-ups.",
+          title: "Customizable Templates",
+          description: "Create professional invoice and pay app templates with your company branding and specific terms.",
         },
       ],
     },
     {
       image: "/Solutions/estimation section-1.jpg",
       imageOnRight: "true",
-      title: "Smart Invoice Management",
-      subtitle: "Optimize Billing & Collections",
+      title: "Intelligent Collections",
+      subtitle: "Proactive Payment Management",
       description:
-        "Use predictive insights and automated workflows to ensure invoices are sent, tracked, and settled efficiently.",
+        "Go beyond simple tracking. Our tools help you proactively manage your accounts receivable to maintain a healthy cash flow.",
       features: [
         {
           icon: <TrendingUp size={24} className="text-background" />,
-          title: "Invoice Trend Analysis",
-          description:
-            "Analyze invoice trends and payment behaviors to improve cash flow forecasting and financial planning.",
+          title: "Invoice Status Tracking",
+          description: "Get real-time updates when an invoice is sent, viewed by the client, and paid.",
         },
         {
-          icon: <PieChart size={24} className="text-background" />,
-          title: "Comprehensive Invoice Reporting",
-          description:
-            "Generate detailed financial reports on invoicing, payments, and outstanding balances for better decision-making.",
+          icon: <Wallet size={24} className="text-background" />, // Changed icon
+          title: "Cash Flow Forecasting",
+          description: "Project future cash inflows based on invoice due dates and historical payment behavior.",
         },
         {
           icon: <BellRing size={24} className="text-background" />,
-          title: "Instant Payment Notifications",
-          description:
-            "Receive real-time alerts when an invoice is paid, overdue, or disputed, keeping financial processes smooth.",
+          title: "Automated Payment Reminders",
+          description: "Set up automated, professional email reminders for upcoming or overdue invoices to prompt timely payment.",
         },
       ],
     },
   ],
+  
+  // --- GRID OF ALL FEATURES ---
   featureData: [
     {
       icon: <FileText className="text-background" />,
-      title: "Automated Invoice",
-      description:
-        "Create and send invoices automatically, reducing manual effort and ensuring billing accuracy.",
+      title: "Automated Pay Applications",
+      description: "Generate AIA G702/G703 style pay apps from project data.",
     },
     {
       icon: <CreditCard className="text-background" />,
-      title: "Payment Processing",
-      description:
-        "Track payments and streamline the processing of invoices to ensure timely collections.",
+      title: "Online Payment Integration",
+      description: "Allow clients to pay invoices directly via integrated payment gateways.",
     },
     {
       icon: <BarChart2 className="text-background" />,
-      title: "Invoice Analytics & Reporting",
-      description:
-        "Gain insights into invoice trends, payment delays, and revenue streams with real-time analytics.",
+      title: "A/R Aging Reports",
+      description: "Instantly see which invoices are current, 30, 60, or 90+ days overdue.",
     },
     {
       icon: <ClipboardList className="text-background" />,
-      title: "Invoice Status Tracking",
-      description:
-        "Monitor the status of invoices in real-time, from sent to paid to overdue.",
+      title: "Invoice Status Dashboard",
+      description: "Track the status of all invoices—draft, sent, viewed, paid, overdue.",
     },
     {
       icon: <AlertTriangle className="text-background" />,
-      title: "Overdue Payment Alerts",
-      description:
-        "Get notified when invoices are overdue and take action to prevent cash flow disruptions.",
-    },
-    {
-      icon: <Clock className="text-background" />,
-      title: "Scheduled Billing",
-      description:
-        "Automate recurring invoices with scheduled billing to improve consistency and accuracy.",
+      title: "Automated Overdue Reminders",
+      description: "Reduce manual follow-up with automated email reminders for late payments.",
     },
     {
       icon: <Receipt className="text-background" />,
-      title: "Digital Receipts & Records",
-      description:
-        "Maintain a digital trail of all invoices and payments for easy auditing and record-keeping.",
+      title: "Digital Invoice Records",
+      description: "Maintain a secure, searchable history of all billing documents.",
     },
     {
       icon: <Calculator className="text-background" />,
-      title: "Tax & Compliance Integration",
-      description:
-        "Ensure tax compliance by automating tax calculations and keeping records in line with regulations.",
-    },
-    {
-      icon: <PieChart className="text-background" />,
-      title: "Revenue Breakdown",
-      description:
-        "Analyze revenue streams based on paid, pending, and overdue invoices for better financial planning.",
+      title: "Tax & Retention Calculation",
+      description: "Automatically calculate sales tax and manage retention amounts on invoices.",
     },
     {
       icon: <ClipboardCheck className="text-background" />,
-      title: "Approval Workflow",
-      description:
-        "Streamline invoice approvals with automated workflows, reducing delays in processing.",
+      title: "Lien Waiver Management",
+      description: "Generate and track lien waivers alongside your payment applications.",
     },
     {
       icon: <Layers className="text-background" />,
-      title: "Multi-Project Invoice",
-      description:
-        "Manage invoices across multiple construction projects from a single dashboard.",
-    },
-    {
-      icon: <Bell className="text-background" />,
-      title: "Instant Invoice Notifications",
-      description:
-        "Receive alerts when an invoice is generated, viewed, paid, or overdue.",
+      title: "Multi-Project Billing",
+      description: "Manage invoicing across your entire project portfolio from one place.",
     },
     {
       icon: <RefreshCcw className="text-background" />,
-      title: "Dynamic Payment Updates",
-      description:
-        "Update invoices dynamically to reflect change orders and additional costs.",
-    },
-    {
-      icon: <Target className="text-background" />,
-      title: "Invoice Performance Tracking",
-      description:
-        "Monitor key invoicing metrics like average payment time and overdue percentage.",
-    },
-    {
-      icon: <TrendingDown className="text-background" />,
-      title: "Dispute & Resolution",
-      description:
-        "Track invoice disputes and manage resolutions efficiently to prevent delays in payments.",
-    },
-    {
-      icon: <Database className="text-background" />,
-      title: "Centralized Invoice Data",
-      description:
-        "Store and manage all invoice records in a secure and accessible system.",
+      title: "Change Order Integration",
+      description: "Ensure all approved change orders are accurately billed.",
     },
     {
       icon: <ShieldCheck className="text-background" />,
-      title: "Secure Transactions",
-      description:
-        "Ensure all invoices and payments are processed securely with encrypted transactions.",
-    },
-    {
-      icon: <FilePlus className="text-background" />,
-      title: "Automated Invoice Reports",
-      description:
-        "Generate financial reports automatically with real-time invoicing data.",
+      title: "Accounting System Sync",
+      description: "Sync all invoice and payment data with your main accounting software.",
     },
     {
       icon: <FileBarChart className="text-background" />,
-      title: "Cash Flow Insights",
-      description:
-        "Analyze how invoices impact cash flow, helping you plan and manage project finances effectively.",
-    },
-    {
-      icon: <Calendar className="text-background" />,
-      title: "Due Date Management",
-      description:
-        "Monitor invoice due dates, ensuring timely payments to avoid any project delays caused by cash flow issues.",
+      title: "Cash Flow Reporting",
+      description: "Analyze your incoming and outgoing cash flow for better financial planning.",
     },
   ],
+
+  // --- RESOURCES / GUIDES SECTION ---
   featuresData: {
     title: "Resources",
-    subtitle: "Master Invoice Strategies",
-    description:
-      "Explore best practices and comprehensive guides for effectively qualifying contractors ",
+    subtitle: "Master Your Billing Cycle",
+    description: "Explore our expert guides to improve your construction billing and cash flow management.",
     features: [
       {
         icon: <FileText className="text-white" />,
-        title: "Customizable Invoice",
-        description:
-          "Create and customize invoice templates with your brand’s logo, payment terms, and project details.",
+        title: "A Contractor's Guide to Payment Applications",
+        description: "Access the guide.",
       },
       {
         icon: <ClipboardList className="text-white" />,
-        title: "Invoice History & Records",
-        description:
-          "Maintain an organized history of all invoices and payments, ensuring easy access to past financial data.",
+        title: "Best Practices for Lien Waiver Management",
+        description: "Read the article.",
       },
       {
         icon: <AlertTriangle className="text-white" />,
-        title: "Invoice Discrepancy Alerts",
-        description:
-          "Get notified about any discrepancies or mismatches between invoices and payments for prompt resolution.",
+        title: "5 Strategies to Drastically Reduce Overdue Invoices",
+        description: "Read our best practices.",
       },
       {
-        icon: <PieChart className="text-white" />,
-        title: "Expense & Revenue Insights",
-        description:
-          "Analyze the breakdown of invoices to gain insights into project costs and revenue patterns.",
-      },
-      {
-        icon: <Receipt className="text-white" />,
-        title: "Comprehensive Billing Reports",
-        description:
-          "Generate billing reports to keep track of project invoicing and ensure financial transparency.",
-      },
-      {
-        icon: <RefreshCcw className="text-white" />,
-        title: "Invoice Updates",
-        description:
-          "Easily update or adjust invoices as project costs change, ensuring your records reflect the latest figures.",
+        icon: <TrendingUp className="text-white" />,
+        title: "How to Improve Your Construction Cash Flow",
+        description: "Learn key strategies.",
       },
     ],
   },
+  
+  // --- FINAL CALL TO ACTION ---
   ctaProps: {
-    title: "Streamline Your Invoice Management Process",
-    description: "",
+    title: "Take Control of Your Company's Cash Flow",
+    description: "Stop waiting on payments and start managing your finances proactively. See how Zedops can streamline your entire billing process.",
     benefits: [
-      "Instant invoice",
-      "Real-time payment tracking",
-      "Automated payment reminders",
+      "Get paid faster",
+      "Reduce administrative work",
+      "Improve financial visibility",
     ],
-    button1Label: "Book a demo",
+    button1Label: "Request a Demo",
     button1Link: "/book-a-demo",
-    button2Label: "Start a trial",
-    button2Link: "/start-trial",
+    button2Label: "Talk to Sales",
+    button2Link: "/contact-sales",
   },
 };

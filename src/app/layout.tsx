@@ -1,9 +1,9 @@
 import "./globals.css";
-// import Footer from "@/Components/Footer";
+import Footer from "@/Components/Footer";
 import { ReactNode } from "react";
 import { Metadata } from "next";
-// import Header from "@/Components/Header";
-// import { Toaster } from "@/Components/UI/toaster";
+import Header from "@/Components/Header";
+import { Toaster } from "@/Components/UI/toaster";
 
 export const metadata: Metadata = {
   title: "ZedOps - AI-Powered Construction Management",
@@ -81,12 +81,12 @@ export default function RootLayout({ children }: { children: ReactNode }) {
         <link rel="canonical" href="https://www.zedops.com" />
       </head>
       <body>
-        {/* <Header /> */}
+        <Header />
         <main>
           {children}
         </main>
-        {/* <Toaster /> */}
-        {/* <Footer /> */}
+        <Toaster />
+        <Footer />
       </body>
     </html>
   );

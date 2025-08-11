@@ -22,303 +22,259 @@ import {
   FileBarChart,
   Banknote,
   BarChart2,
+  FileDigit,      // New Icon
+  Scale,          // New Icon
+  ArrowDownUp,    // New Icon
 } from "lucide-react";
 
 export const PROJECTFINANCIAL_PAGE = {
+  // --- HERO SECTION ---
   heroProps: {
-    subtitle: "Project Financials",
+    subtitle: "Protect Your Profit. On Every Project.",
     description:
-      "Unlock project profitability with real-time financial control. Track budgets, manage costs, and forecast expenses to maximize your margins.",
-    buttonLabel: "Get Started",
-    imageSrc: "/Solutions/estimation-hero.jpg", // MUST UPDATE!
-    imageAlt:
-      "Construction project manager reviewing financial performance dashboard on a laptop.",
-    linkHref: "/project-financials-demo",
+      "Move beyond reactive accounting. Zedops gives you a live, forward-looking view of your project's financial health, connecting your budget, committed costs, and field data in one powerful command center.",
+    buttonLabel: "Take Control of Your Margins",
+    imageSrc: "/Solutions/financial/project-financials-hero.webp", // MUST UPDATE!
+    imageAlt: "A clean dashboard showing a construction project's budget vs. actuals, cost to complete, and profitability forecast.",
+    linkHref: "/book-a-demo",
+    
+    // --- Floating Cards for the Project Financials Hero Section ---
+    floatingCards: [
+      {
+        icon: TrendingUp,
+        title: "Profit Margin: 12.5%",
+        subtitle: "Trending up from last month",
+        positionClasses: "top-16 -left-20",
+      },
+      {
+        icon: AlertTriangle,
+        title: "Cost Overrun Warning",
+        subtitle: "Concrete budget at 95%",
+        positionClasses: "bottom-1/4 -left-24",
+      },
+      {
+        icon: Receipt,
+        title: "New Invoice Approved",
+        subtitle: "$25,000 to ABC Suppliers",
+        positionClasses: "top-1/2 -right-16",
+      },
+    ],
   },
+  
+  // --- SUB-HERO / VALUE PROPOSITION ---
   heroSectionProps: {
-    subtitle: "MANAGE YOUR PROJECTS' BOTTOM LINE",
-    title: "Track, Analyze, and Optimize Financials",
+    subtitle: "From Bid To Closeout",
+    title: "A Single Source of Financial Truth",
     description:
-      "Stay on top of your project's finances with real-time tracking of costs, budgets, and profitability.",
-    buttonLabel: "Explore Features",
-    buttonLink: "/project-financial-features",
+      "Eliminate the risk of surprise overruns and inaccurate reports. Our platform ensures your entire team—from the field to the back office—is working with the same real-time financial data.",
+    buttonLabel: "Request a Demo",
+    buttonLink: "/book-a-demo",
   },
+  
+  // --- CORE FEATURES ---
   featuresSectionProps: {
     features: [
       {
-        title: "Real-Time Budget Tracking",
+        title: "Live Job Costing",
         description:
-          "Monitor your project's financial health by tracking real-time expenses, helping to keep your project within budget and prevent overruns.",
+          "Instantly see the financial impact of every timesheet, purchase order, and daily log. Track your budget vs. actuals in real-time, not weeks later.",
         imageSrc: "/Solutions/estimation-1.jpg",
       },
       {
-        title: "Financial Reports",
+        title: "Cash Flow & Profit Forecasting",
         description:
-          "Generate detailed, customizable financial reports, including cost breakdowns, budget allocations, and projected.",
+          "Look ahead with confidence. Our tools help you forecast cost-to-complete, project future cash flow, and see your projected profit margin at any time.",
         imageSrc: "/Solutions/estimation-2.jpg",
       },
     ],
   },
+  
+  // --- BENEFITS / OUTCOMES ---
   TestimonalsSectionProps: {
-    subtitle: "SMART PROJECT FINANCIALS",
-    title: "Optimize Your Project's Financial Health",
+    subtitle: "Why ZedOps Financial?",
+    title: "Make Smarter Financial Decisions, Faster",
     imageSrc: "/Solutions/estimation-testimonal.jpg",
-    imageAlt: "Illustration showing financial tracking and reports",
+    imageAlt: "An illustration of a rising bar chart with a dollar sign, symbolizing project profitability.",
     features: [
       {
-        title: "Real-Time Budget Tracking",
+        title: "Protect Profitability",
         description:
-          "Track project expenses in real-time to stay within budget and make timely financial adjustments.",
+          "Identify potential cost overruns early and take corrective action before they erode your profit margin.",
         icon: <DollarSign size={24} />,
       },
       {
-        title: "Cost Forecasting",
+        title: "Improve Forecasting Accuracy",
         description:
-          "Forecast project costs and adjust budgets dynamically to prevent overspending and optimize resource.",
+          "Leverage historical and real-time data to create more accurate cost forecasts and improve future bids.",
         icon: <TrendingUp size={24} />,
       },
       {
-        title: "Financial Risk Management",
+        title: "Increase Team Accountability",
         description:
-          "Identify and manage financial risks proactively, with predictive insights and alerts to mitigate potential.",
+          "Provide project managers with the clear, real-time data they need to take ownership of their budgets and drive performance.",
         icon: <ShieldAlert size={24} />,
       },
     ],
   },
+
+  // --- DETAILED FEATURE SECTIONS ---
   mainSectionData: [
     {
       image: "/Solutions/estimation-section.jpg",
-      title: "Real-Time Financial Reporting",
-      subtitle: "Instant Budget Insights",
+      title: "Budget Management",
+      subtitle: "The Foundation of Financial Control",
       description:
-        "Get real-time financial reports and updates to manage project costs effectively. Stay on track with budgets and make adjustments before costs spiral.",
+        "Build, manage, and track your project budgets with precision. Convert your winning bid into a live budget and track every dollar against it.",
       features: [
         {
-          icon: <DollarSign size={24} className="text-background" />,
-          title: "Budget Tracking",
-          description:
-            "Track project expenditures in real-time and compare them against budget forecasts to prevent overspending.",
+          icon: <FileDigit size={24} className="text-background" />, // Changed icon
+          title: "Detailed Cost Code Tracking",
+          description: "Track every expense against specific cost codes to understand exactly where your money is going.",
         },
         {
           icon: <BarChart size={24} className="text-background" />,
-          title: "Cost Analysis & Forecasting",
-          description:
-            "Analyze project costs and forecast future financial needs, ensuring the project stays within budget constraints.",
+          title: "Budget vs. Actuals Reporting",
+          description: "Instantly generate reports comparing your budget to actual costs, committed costs, and forecasts.",
         },
         {
-          icon: <Clock size={24} className="text-background" />,
-          title: "Deadline & Financial Milestones",
-          description:
-            "Track critical financial milestones and ensure costs align with project timelines, preventing last-minute financial surprises.",
+          icon: <ArrowDownUp size={24} className="text-background" />, // Changed icon
+          title: "Change Order Management",
+          description: "Manage the financial impact of scope changes, ensuring all change orders are approved, tracked, and billed.",
         },
       ],
     },
     {
       image: "/Solutions/estimation section-1.jpg",
       imageOnRight: "true",
-      title: "Proactive Financial Management",
-      subtitle: "Early Alerts & Mitigation",
+      title: "Cost & Expense Management",
+      subtitle: "Capture Every Cost, Instantly",
       description:
-        "Use real-time financial alerts and predictive analytics to identify potential cost overruns early and take corrective action.",
+        "Streamline how you track and manage all project-related costs, from labor and materials to subcontractor invoices and miscellaneous expenses.",
       features: [
         {
           icon: <TrendingUp size={24} className="text-background" />,
-          title: "Cost Trend Analysis",
-          description:
-            "Identify cost trends over time and use forecasting models to ensure financial stability throughout the project.",
+          title: "Real-Time Cost Tracking",
+          description: "Capture costs as they happen with data flowing directly from timesheets, procurement, and daily logs.",
         },
         {
           icon: <PieChart size={24} className="text-background" />,
-          title: "Comprehensive Financial Reporting",
-          description:
-            "Generate detailed reports on project financials, including expenses, resource costs, and savings opportunities.",
+          title: "Committed Cost Management",
+          description: "Track costs from purchase orders and subcontracts *before* the invoice arrives for a true picture of your financial exposure.",
         },
         {
-          icon: <AlertTriangle size={24} className="text-background" />,
-          title: "Risk Alerts & Mitigation",
-          description:
-            "Get real-time alerts about potential financial risks, allowing you to act swiftly and keep the project on budget.",
+          icon: <Scale size={24} className="text-background" />, // Changed icon
+          title: "Invoice & Pay Application Processing",
+          description: "Simplify the review and approval process for subcontractor invoices and payment applications.",
         },
       ],
     },
   ],
+  
+  // --- GRID OF ALL FEATURES ---
   featureData: [
     {
       icon: <DollarSign className="text-background" />,
-      title: "Financial Reports & Insights",
-      description:
-        "Generate detailed financial reports on project expenses, revenue, and cash flow for better decision-making.",
+      title: "Real-Time Job Costing",
+      description: "Track every cost against your budget as it occurs.",
     },
     {
       icon: <TrendingUp className="text-background" />,
-      title: "Budget Forecasting",
-      description:
-        "Analyze and predict future project costs based on historical data and current trends.",
+      title: "Cost Forecasting (Cost-to-Complete)",
+      description: "Project your final project costs based on real-time progress.",
     },
     {
       icon: <BarChart2 className="text-background" />,
-      title: "Real-Time Expense Tracking",
-      description:
-        "Monitor project expenses in real-time and stay within budget with proactive cost control.",
+      title: "Budget vs. Actuals Reporting",
+      description: "Instantly see where your project is over or under budget.",
     },
     {
       icon: <PieChart className="text-background" />,
-      title: "Financial Data Visualization",
-      description:
-        "Visualize key financial metrics with charts and graphs for a clearer understanding of project spending.",
+      title: "Committed Cost Tracking",
+      description: "Track expenses from POs and subcontracts before they are invoiced.",
     },
     {
       icon: <AlertTriangle className="text-background" />,
-      title: "Cost Overrun Alerts",
-      description:
-        "Receive alerts when expenses exceed budget limits, enabling immediate corrective actions.",
-    },
-    {
-      icon: <Clock className="text-background" />,
-      title: "Payment Schedule",
-      description:
-        "Track and manage payment schedules for vendors, subcontractors, and suppliers efficiently.",
+      title: "Proactive Overrun Alerts",
+      description: "Receive notifications when a cost code is approaching its budget limit.",
     },
     {
       icon: <Receipt className="text-background" />,
-      title: "Invoice & Billing Reports",
-      description:
-        "Generate accurate and automated reports for invoices, payments, and billing cycles.",
+      title: "Invoice & Payment Management",
+      description: "Streamline the approval process for vendor and subcontractor invoices.",
     },
     {
       icon: <Calculator className="text-background" />,
-      title: "Cost Estimation",
-      description:
-        "Compare estimated vs. actual project costs to identify discrepancies and improve future budgeting.",
+      title: "Change Order Financial Tracking",
+      description: "Manage the financial impact of all scope changes.",
     },
     {
       icon: <LineChart className="text-background" />,
-      title: "Profitability Analysis",
-      description:
-        "Analyze profitability trends and margins to ensure financial success across projects.",
-    },
-    {
-      icon: <ClipboardList className="text-background" />,
-      title: "Financial Compliance",
-      description:
-        "Ensure compliance with financial regulations by tracking necessary documentation and transactions.",
+      title: "Profitability & Margin Analysis",
+      description: "Monitor your project's profitability in real-time.",
     },
     {
       icon: <Layers className="text-background" />,
-      title: "Multi-Project Financial",
-      description:
-        "Monitor financial data across multiple projects in a single dashboard for better portfolio management.",
-    },
-    {
-      icon: <Bell className="text-background" />,
-      title: "Instant Financial Notifications",
-      description:
-        "Receive real-time alerts for budget changes, payment deadlines, and financial risks.",
-    },
-    {
-      icon: <ClipboardCheck className="text-background" />,
-      title: "Audit & Compliance Reports",
-      description:
-        "Generate detailed audit reports to maintain financial transparency and accountability.",
-    },
-    {
-      icon: <RefreshCcw className="text-background" />,
-      title: "Dynamic Budget Adjustments",
-      description:
-        "Adjust budgets dynamically based on project progress and changing financial conditions.",
-    },
-    {
-      icon: <Target className="text-background" />,
-      title: "Financial Goal Tracking",
-      description:
-        "Set and track financial goals, ensuring alignment with project profitability targets.",
-    },
-    {
-      icon: <TrendingDown className="text-background" />,
-      title: "Risk & Loss Analysis",
-      description:
-        "Identify financial risks early and mitigate potential losses with predictive analytics.",
+      title: "Multi-Project Financial Views",
+      description: "Get a portfolio-level overview of the financial health of all your projects.",
     },
     {
       icon: <Database className="text-background" />,
       title: "Centralized Financial Data",
-      description:
-        "Access all financial records in one centralized system for easy tracking and reporting.",
-    },
-    {
-      icon: <ShieldCheck className="text-background" />,
-      title: "Secure Financial Transactions",
-      description:
-        "Ensure all financial transactions are secure and compliant with industry standards.",
+      description: "A single source of truth for all project financial information.",
     },
     {
       icon: <FilePlus className="text-background" />,
-      title: "Automated Report",
-      description:
-        "Generate financial reports automatically with up-to-date data for quick decision-making.",
+      title: "Customizable Financial Reports",
+      description: "Generate the reports you need for internal reviews or client updates.",
     },
     {
-      icon: <FileBarChart className="text-background" />,
-      title: "Profit & Loss Analysis",
-      description:
-        "Analyze project profitability with automated profit and loss reports, ensuring financial health.",
+      icon: <ShieldCheck className="text-background" />,
+      title: "Accounting Integration",
+      description: "Sync your project financial data seamlessly with your main accounting system.",
     },
   ],
+
+  // --- RESOURCES / GUIDES SECTION ---
   featuresData: {
     title: "Resources",
-    subtitle: "Master Financial Strategies",
-    description:
-      "Explore best practices and comprehensive guides for effectively qualifying contractors ",
+    subtitle: "Master Your Project Financials",
+    description: "Explore our expert guides for improving construction cost control and profitability.",
     features: [
       {
         icon: <DollarSign className="text-white" />,
-        title: "Real-Time Financial Alerts",
-        description:
-          "Receive instant notifications for budget overruns, cost fluctuations.",
+        title: "The Ultimate Guide to Job Costing",
+        description: "Access the guide.",
       },
       {
         icon: <ClipboardList className="text-white" />,
-        title: "Automated Financial Reports",
-        description:
-          "Generate detailed reports on project expenditures, revenue forecasts.",
+        title: "How to Effectively Manage Change Orders",
+        description: "Read the article.",
       },
       {
         icon: <AlertTriangle className="text-white" />,
-        title: "Budget Risk Warnings",
-        description:
-          "Get real-time alerts for financial risks, such as cost overruns.",
-      },
-      {
-        icon: <PieChart className="text-white" />,
-        title: "Expense Breakdown Analysis",
-        description:
-          "Track and categorize project expenses, ensuring transparency and better cost management.",
-      },
-      {
-        icon: <Banknote className="text-white" />,
-        title: "Cash Flow Monitoring",
-        description:
-          "Monitor incoming and outgoing project cash flow in real-time to maintain financial stability.",
+        title: "5 Strategies to Prevent Budget Overruns",
+        description: "Read our best practices.",
       },
       {
         icon: <TrendingUp className="text-white" />,
-        title: "Profitability Insights",
-        description:
-          "Analyze project financial performance to optimize profitability and maximize returns.",
+        title: "A Contractor's Guide to Financial Forecasting",
+        description: "Learn the fundamentals.",
       },
     ],
   },
+  
+  // --- FINAL CALL TO ACTION ---
   ctaProps: {
-    title: "Gain Full Control Over Project Finances",
-    description: "",
+    title: "Take Command of Your Project's Profitability",
+    description: "Stop waiting for month-end reports to know where you stand. See how Zedops provides the real-time financial control you need to protect your margins.",
     benefits: [
-      "Real-time budget",
-      "Automated financial reports",
-      "Instant cost overrun alerts",
+      "Prevent budget overruns",
+      "Improve forecast accuracy",
+      "Maximize project profit",
     ],
-    button1Label: "Book a demo",
+    button1Label: "Request a Demo",
     button1Link: "/book-a-demo",
-    button2Label: "Start a trial",
-    button2Link: "/start-trial",
+    button2Label: "Talk to Sales",
+    button2Link: "/contact-sales",
   },
 };

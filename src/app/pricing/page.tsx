@@ -139,26 +139,17 @@ const Pricing: React.FC = () => {
   ];
 
   return (
-    <section className="bg-gradient-to-b from-background via-background/95 to-background/90 text-primary">
+    <section className="text-primary">
       {/* Hero Section */}
       <div className="relative overflow-hidden pt-20 pb-16">
-        {/* Decorative elements */}
-        <div className="absolute inset-0">
-          <div className="absolute top-0 right-1/4 w-96 h-96 rounded-full bg-primary/20 blur-[120px] animate-pulse-slow"></div>
-          <div className="absolute -bottom-20 -left-20 w-96 h-96 rounded-full bg-secondary/20 blur-[120px] animate-pulse-slow"></div>
-          <div className="absolute top-1/3 left-1/3 w-64 h-64 rounded-full bg-accent/10 blur-[80px] animate-float"></div>
-        </div>
         
-        {/* Subtle grid pattern overlay */}
-        <div className="absolute inset-0 bg-grid-white/[0.03] bg-[size:24px_24px]"></div>
-        
-        <div className="max-w-6xl mx-auto px-6 relative z-10">
+        <div className="max-w-7xl mx-auto px-6 relative z-10">
           <div className="text-center mb-20">
             <h1 className="text-4xl font-extrabold sm:text-5xl lg:text-6xl mb-6">
-              <span className="text-white">Pricing That Works for</span>{" "}
-              <span className="bg-clip-text text-transparent bg-gradient-to-r from-primary to-primary/80">Your Business</span>
+              <span className="text-secondary">Pricing That Works for</span>{" "}
+              <span className="text-primary">Your Business</span>
             </h1>
-            <p className="mt-6 text-xl text-white/80 max-w-3xl mx-auto">
+            <p className="mt-6 text-xl text-secondary max-w-3xl mx-auto">
               Whether you’re a small contractor or a large construction
               enterprise, we have plans tailored to meet your unique needs.
             </p>
@@ -173,7 +164,7 @@ const Pricing: React.FC = () => {
 
           {/* Features Section */}
           <div className="bg-white/5 backdrop-blur-sm rounded-2xl p-10 mb-20 border border-white/10 shadow-xl">
-            <h2 className="text-3xl font-bold text-white text-center mb-12">All Plans Include</h2>
+            <h2 className="text-3xl font-bold text-secondary text-center mb-12">All Plans Include</h2>
             <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-8">
               {[
                 { icon: Shield, title: "Enterprise Security", description: "Bank-level security and data protection" },
@@ -184,15 +175,14 @@ const Pricing: React.FC = () => {
               ].map((feature, index) => (
                 <div 
                   key={index} 
-                  className="flex items-start p-6 rounded-xl bg-gradient-to-br from-white/5 to-white/10
-                  border border-white/10"
+                  className="flex items-start p-6 rounded-xl "
                 >
-                  <div className="p-3 rounded-full bg-primary/20 mr-4">
+                  <div className="p-3 rounded-md bg-orange-200 mr-4">
                     <feature.icon className="w-6 h-6 text-primary" />
                   </div>
                   <div>
-                    <h3 className="font-bold text-white mb-2">{feature.title}</h3>
-                    <p className="text-white/70">{feature.description}</p>
+                    <h3 className="font-bold text-secondary">{feature.title}</h3>
+                    <p >{feature.description}</p>
                   </div>
                 </div>
               ))}
@@ -204,20 +194,20 @@ const Pricing: React.FC = () => {
       {/* Frequently Asked Questions Section */}
       <div className="bg-gradient-to-b from-white/95 to-white py-20">
         <div className="max-w-5xl mx-auto px-6">
-          <h2 className="text-3xl font-bold text-background text-center sm:text-4xl mb-3">
+          <h2 className="text-3xl font-bold text-secondary text-center sm:text-4xl mb-3">
             Frequently Asked Questions
           </h2>
-          <p className="mb-12 text-lg text-background/80 text-center max-w-2xl mx-auto">
+          <p className="mb-12 text-lg text-secondary text-center max-w-2xl mx-auto">
             Have questions? We’ve got answers. Here’s what you need to know
           </p>
           <div className="bg-white rounded-2xl p-8 shadow-xl border border-gray-100">
             <Accordion type="single" collapsible className="space-y-5">
               {/* FAQ Item 1 */}
               <AccordionItem value="faq-1" className="border rounded-xl overflow-hidden border-gray-200 shadow-sm">
-                <AccordionTrigger className="text-xl font-semibold hover:no-underline text-background text-start px-6 py-5">
+                <AccordionTrigger className="text-xl font-semibold hover:no-underline text-secondary text-start px-6 py-5">
                   When will the pricing plans be available?
                 </AccordionTrigger>
-                <AccordionContent className="px-6 pb-5 text-lg text-background/80 bg-gray-50/50">
+                <AccordionContent className="px-6 pb-5 text-lg text-secondary bg-gray-50/50">
                   We are currently finalizing our pricing options and will
                   update this page soon. Contact our sales team for early access
                   details and special launch pricing.
@@ -226,10 +216,10 @@ const Pricing: React.FC = () => {
 
               {/* FAQ Item 2 */}
               <AccordionItem value="faq-2" className="border rounded-xl overflow-hidden border-gray-200 shadow-sm">
-                <AccordionTrigger className="text-xl font-semibold hover:no-underline text-background text-start px-6 py-5">
+                <AccordionTrigger className="text-xl font-semibold hover:no-underline text-secondary text-start px-6 py-5">
                   Can I start using ZedOps before the pricing is announced?
                 </AccordionTrigger>
-                <AccordionContent className="px-6 pb-5 text-lg text-background/80 bg-gray-50/50">
+                <AccordionContent className="px-6 pb-5 text-lg text-secondary bg-gray-50/50">
                   Yes! Our platform is available for pilot projects. Contact our
                   sales team to discuss how ZedOps can help your construction
                   management today and secure early adopter benefits.
@@ -238,10 +228,10 @@ const Pricing: React.FC = () => {
 
               {/* FAQ Item 3 */}
               <AccordionItem value="faq-3" className="border rounded-xl overflow-hidden border-gray-200 shadow-sm">
-                <AccordionTrigger className="text-xl font-semibold hover:no-underline text-background text-start px-6 py-5">
+                <AccordionTrigger className="text-xl font-semibold hover:no-underline text-secondary text-start px-6 py-5">
                   Is there a free trial available?
                 </AccordionTrigger>
-                <AccordionContent className="px-6 pb-5 text-lg text-background/80 bg-gray-50/50">
+                <AccordionContent className="px-6 pb-5 text-lg text-secondary bg-gray-50/50">
                   We are working on offering a free trial for new users. Stay
                   tuned for updates or reach out to our team for a personalized
                   demo to experience the platform firsthand.
@@ -250,10 +240,10 @@ const Pricing: React.FC = () => {
               
               {/* FAQ Item 4 */}
               <AccordionItem value="faq-4" className="border rounded-xl overflow-hidden border-gray-200 shadow-sm">
-                <AccordionTrigger className="text-xl font-semibold hover:no-underline text-background text-start px-6 py-5">
+                <AccordionTrigger className="text-xl font-semibold hover:no-underline text-secondary text-start px-6 py-5">
                   Do you offer custom solutions for specific needs?
                 </AccordionTrigger>
-                <AccordionContent className="px-6 pb-5 text-lg text-background/80 bg-gray-50/50">
+                <AccordionContent className="px-6 pb-5 text-lg text-secondary bg-gray-50/50">
                   Absolutely! Our Enterprise plan is fully customizable to meet your specific requirements. 
                   We can tailor features, integrations, and support options to perfectly align with your 
                   organization’s workflow and objectives.
@@ -265,15 +255,10 @@ const Pricing: React.FC = () => {
       </div>
       
       {/* Call to Action Section */}
-      <div className="bg-gradient-to-br from-primary/90 via-primary to-primary/90 py-20">
+      <div className="bg-[#151414] py-20">
         <div className="max-w-5xl mx-auto px-6 text-center relative">
-          {/* Decorative elements */}
-          <div className="absolute inset-0 opacity-20">
-            <div className="absolute top-0 right-1/4 w-64 h-64 rounded-full bg-white blur-[80px]"></div>
-            <div className="absolute bottom-0 left-1/4 w-64 h-64 rounded-full bg-white blur-[80px]"></div>
-          </div>
           
-          <div className="relative z-10 text-secondary">
+          <div className="relative z-10 text-white ">
             <h2 className="text-3xl font-bold sm:text-4xl mb-4">
               Ready to Transform Your Construction Management?
             </h2>
@@ -287,7 +272,7 @@ const Pricing: React.FC = () => {
                 </Button>
               </Link>
               <Link href="/contact-sales">
-                <Button size="lg" variant="outline" className="border-2 border-white text-white px-8 py-6 text-lg font-semibold shadow-lg">
+                <Button size="lg" className=" text-white px-8 py-6 hover:bg-secondary text-lg font-semibold shadow-lg">
                   Contact Sales
                 </Button>
               </Link>

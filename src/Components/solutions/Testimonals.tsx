@@ -27,17 +27,17 @@ const ControlSection: React.FC<ControlSectionProps> = ({
   return (
     <section className="bg-white py-16">
       <div className="max-w-[80rem] mx-auto text-center px-4 lg:px-10">
-        <h3 className="text-[#1BB387] font-semibold text-lg">{subtitle}</h3>
-        <h2 className="text-5xl lg:text-5xl font-semibold text-background mt-2">
+        <h3 className="text-primary font-semibold text-lg">{subtitle}</h3>
+        <h2 className="text-5xl lg:text-5xl font-semibold text-secondary mt-2">
           {title}
         </h2>
 
-        <h2 className="text-3xl lg:text-lg mx-auto max-w-[60ch]  text-gray-600 mt-6">
+        <h2 className="text-3xl lg:text-lg mx-auto max-w-[60ch]  text-secondary mt-6">
           {description}
         </h2>
 
         {/* Centered Image */}
-        {imageSrc && (
+        {/* {imageSrc && (
           <div className="mt-10">
             <Image
               layout="intrinsic"
@@ -48,7 +48,7 @@ const ControlSection: React.FC<ControlSectionProps> = ({
               className="mx-auto max-w-full h-auto object-cover"
             />
           </div>
-        )}
+        )} */}
 
         {/* Features Section */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mt-12">
@@ -59,7 +59,7 @@ const ControlSection: React.FC<ControlSectionProps> = ({
             >
               {/* Icon at Top-Left */}
               {feature.icon && (
-                <div className="flex-shrink-0 w-10 h-10 bg-lightmint text-background flex justify-center items-center rounded-full">
+                <div className="flex-shrink-0 w-10 h-10 bg-primary text-background flex justify-center items-center rounded-full">
                   {typeof feature.icon === "string" ? (
                     <Image
                       width={100}
@@ -76,10 +76,10 @@ const ControlSection: React.FC<ControlSectionProps> = ({
 
               {/* Text Content */}
               <div>
-                <h4 className="text-xl font-semibold text-gray-900">
+                <h4 className="text-xl font-semibold text-secondary">
                   {feature.title}
                 </h4>
-                <p className="text-gray-600 mt-2 text-base">
+                <p className="text-secondary mt-2 text-base">
                   {feature.description}
                 </p>
               </div>

@@ -1,68 +1,97 @@
-import React from "react";
+"use client";
 
-// Define the structure of the props
-interface FeatureStickyProps {
+import React, { useState } from "react";
+// Import all the necessary icons directly into the client component
+import { PanelsTopLeft, Lock, ShieldCheck, Layers, LucideProps } from "lucide-react";
+
+// Create a mapping from string names to the actual components
+const iconMap: { [key: string]: React.ElementType<LucideProps> } = {
+  PanelsTopLeft,
+  Lock,
+  ShieldCheck,
+  Layers,
+};
+
+// Define the structure for a single feature/tab
+interface FeatureTab {
+  title: string;
+  description: string;
+  Icon: string; // Use the string identifier
+}
+
+// Define the props for the entire section
+interface FeatureTabsProps {
   title: string;
   subtitle: string;
   description: string;
-  features: {
-    title: string;
-    description: string;
-    icon: React.ReactNode;
-  }[];
+  features: FeatureTab[];
 }
 
-export default function FeatureSticky({ title, subtitle, description, features }: FeatureStickyProps) {
+const FeatureTabsSection: React.FC<FeatureTabsProps> = ({
+  title,
+  subtitle,
+  description,
+  features,
+}) => {
+  const [activeTab, setActiveTab] = useState(0);
+
   return (
-    <>
-      <section className="overflow-x-clip py-12 sm:py-20 md:py-24 lg:py-28 theme-charcoal light flex flex-col gap-20 bg-custombg text-black">
-        <div className="container mx-auto px-4 sm:px-6 md:px-12 lg:px-32 xl:px-48">
-          <div className="relative grid grid-cols-1 gap-24 md:grid-cols-2 md:gap-28 xl:gap-52">
-            <div className="sticky flex h-fit flex-col gap-6 md:top-12 lg:top-[calc(86.5px+4rem)]">
-              <div>
-                {subtitle && (
-                  <div className="mb-2 inline-block max-h-8 text-accent">
-                    <div className="inline-flex items-center gap-x-3 text-sm font-bold uppercase tracking-wide">
-                      {subtitle}
-                    </div>
-                  </div>
-                )}
-                {title && (
-                  <h2 className="text-3xl sm:text-4xl md:text-5xl font-semibold mb-4">
-                    {title}
-                  </h2>
-                )}
-              </div>
-              {description && (
-                <p className="text-foregroundmuted text-lg">
-                  {description}
+    <section className="bg-white py-20 md:py-28">
+      <div className="container mx-auto max-w-7xl px-6 lg:px-8">
+        {/* Section Header */}
+        <div className="max-w-3xl mx-auto text-center mb-16">
+          <span className="inline-block px-4 py-1.5 text-sm font-semibold bg-primary/10 text-primary rounded-full mb-4 uppercase tracking-wider">
+            {subtitle}
+          </span>
+          <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-secondary leading-tight">
+            {title}
+          </h2>
+          <p className="mt-6 text-lg text-secondary/80">
+            {description}
+          </p>
+        </div>
+
+        {/* Horizontal Tab Buttons */}
+        <div className="flex justify-center border-b border-gray-200 mb-12">
+          <div className="flex flex-wrap -mb-px space-x-4 sm:space-x-8" aria-label="Tabs">
+            {features.map((feature, index) => {
+              // Look up the icon component using the string name
+              const Icon = iconMap[feature.Icon];
+              return (
+                <button
+                  key={index}
+                  onClick={() => setActiveTab(index)}
+                  className={`inline-flex items-center justify-center p-4 border-b-2 text-lg font-semibold transition-colors duration-300
+                    ${
+                      activeTab === index
+                        ? "border-primary text-primary"
+                        : "border-transparent text-secondary/60 hover:text-secondary hover:border-gray-300"
+                    }`}
+                >
+                  {Icon && <Icon className="w-5 h-5 mr-3" />} {/* Render the looked-up icon */}
+                  <span>{feature.title}</span>
+                </button>
+              );
+            })}
+          </div>
+        </div>
+
+        {/* Tab Content Panel */}
+        <div className="max-w-4xl mx-auto">
+          <div className="bg-gray-50 rounded-2xl p-8 lg:p-12 border border-gray-200/80 min-h-[250px] flex items-center text-center">
+            <div className="w-full">
+                <h3 className="text-2xl font-bold text-primary mb-4">
+                  {features[activeTab].title}
+                </h3>
+                <p className="text-lg text-secondary/80 leading-relaxed max-w-2xl mx-auto">
+                  {features[activeTab].description}
                 </p>
-              )}
-            </div>
-            <div className="flex flex-col gap-20">
-              {features && features.map((feature, index) => (
-                <div className="flex flex-col gap-3" key={index}>
-                  <div>
-                    {feature.icon && (
-                      <div className="relative mb-3 inline-flex rounded-xs border border-transparent p-1.5 text-foreground transition-all bg-lightmint">
-                        {feature.icon}
-                      </div>
-                    )}
-                    {feature.title && (
-                      <h3 className="text-2xl font-semibold">{feature.title}</h3>
-                    )}
-                  </div>
-                  {feature.description && (
-                    <p className="text-lg text-foregroundmuted">
-                      {feature.description}
-                    </p>
-                  )}
-                </div>
-              ))}
             </div>
           </div>
         </div>
-      </section>
-    </>
+      </div>
+    </section>
   );
-}
+};
+
+export default FeatureTabsSection;

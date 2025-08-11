@@ -54,7 +54,7 @@ const Footer = () => {
   };
 
   return (
-    <footer className="bg-background text-white relative overflow-hidden">
+    <footer className=" text-white relative overflow-hidden">
       <div className="relative z-10 px-6 lg:px-0 pt-16 pb-8">
         <div className="mx-auto max-w-7xl">
           {/* Main Footer Content */}
@@ -67,21 +67,21 @@ const Footer = () => {
               
               {/* Contact Info */}
               <div className="mt-6 space-y-4">
-              <div className="flex items-start">
+              {/* <div className="flex items-start">
                   <div>
                     <p className="text-sm font-medium text-primary">Our Location</p>
-                    <p className="text-sm text-gray-200 mt-1">
+                    <p className="text-md text-secondary mt-1">
                       {FooterContent.contactInfo.address}
                     </p>
                   </div>
-                </div>
+                </div> */}
                 <a 
                   href={`mailto:${FooterContent.contactInfo.email}`}
                   className="flex items-start group"
                 >
                   <div>
-                    <p className="text-sm font-medium text-primary group-hover:text-white transition-colors duration-200">Email Us</p>
-                    <p className="text-sm text-gray-200 group-hover:text-primary/80 transition-colors duration-200">
+                    <p className="text-sm font-medium text-primary transition-colors duration-200">Email Us</p>
+                    <p className="text-md text-secondary hover:text-primary transition-colors duration-200">
                       {FooterContent.contactInfo.email}
                     </p>
                   </div>
@@ -92,7 +92,7 @@ const Footer = () => {
               
               {/* Social Media */}
               <div className="mt-8">
-                <p className="text-sm font-semibold text-gray-100 mb-3">Follow Us</p>
+                <p className="text-sm font-semibold text-secondary mb-3">Follow Us</p>
                 <div className="flex items-center space-x-4">
                   {FooterContent.socialMedia.map((item, idx) => (
                     <a
@@ -100,7 +100,7 @@ const Footer = () => {
                       href={item.url}
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="inline-flex items-center justify-center w-10 h-10 rounded-full bg-primary hover:bg-secondary text-secondary hover:text-white  transition-all duration-300 hover:scale-110 hover:shadow-lg"
+                      className="inline-flex items-center justify-center w-10 h-10 rounded-full bg-orange-100 hover:bg-secondary text-secondary hover:text-primary  transition-all duration-300 hover:scale-110 hover:shadow-lg"
                     >
                       <item.icon className="w-5 h-5" />
                     </a>
@@ -123,7 +123,7 @@ const Footer = () => {
                           <Link
                             href={option.url}
                             title={option.name}
-                            className="group flex items-center text-gray-200 hover:text-white transition-all duration-200 transform hover:translate-x-1"
+                            className="group flex items-center text-secondary hover:text-primary transition-all duration-200 transform hover:translate-x-1"
                           >
                             <span>{option.name}</span>
                             <ArrowUpRight className="w-3.5 h-3.5 ml-1 opacity-0 group-hover:opacity-100 transition-opacity duration-200" />
@@ -139,7 +139,7 @@ const Footer = () => {
           
           {/* Footer Bottom / Copyright */}
           <div className="mt-16 pt-8 flex flex-col md:flex-row justify-center items-center">
-            <p className="text-sm text-gray-100">
+            <p className="text-sm text-secondary">
               &copy; {new Date().getFullYear()}, All Rights Reserved by{" "}
               <span className="text-primary font-semibold">ZedOps</span>
             </p>

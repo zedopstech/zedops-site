@@ -1,8 +1,13 @@
+"use client";
+
 import React from "react";
+import Link from "next/link";
+import { Button } from "@/Components/UI/button"; // Assuming you use a custom Button component
+import { Check } from "lucide-react"; // A better icon for checkmarks
 
 interface CtoSectionProps {
   title: string;
-  description: string;
+  description?: string; // Description is optional
   benefits: string[];
   button1Label: string;
   button1Link: string;
@@ -20,36 +25,49 @@ const CtoSection: React.FC<CtoSectionProps> = ({
   button2Link,
 }) => {
   return (
-    <div className="bg-green-100 p-6 md:p-12 lg:p-20 rounded-lg shadow-md max-w-6xl mx-auto flex flex-col md:flex-row items-center justify-between gap-8 mt-[-40px]">
-      <div className="w-full md:w-2/3 text-center md:text-left">
-        <h2 className="text-2xl md:text-3xl font-semibold text-background">
-          {title}
-        </h2>
-        <p className="text-base md:text-xl text-gray-700 mt-2">{description}</p>
-        <ul className="flex flex-col md:flex-row md:space-x-4 text-gray-600 mt-4 space-y-2 md:space-y-0">
-          {benefits.map((benefit, index) => (
-            <li
-              key={index}
-              className="flex items-center justify-center md:justify-start"
+    // The relative and z-index are crucial for floating behavior
+    // The negative margin pulls the section up
+    <div className="relative z-10 max-w-7xl mx-auto mt-[-80px] px-4">
+      <div className="bg-secondary p-8 md:p-12 rounded-2xl shadow-2xl flex flex-col lg:flex-row items-center justify-between gap-8">
+        
+        {/* Left Side: Title, Description, Benefits */}
+        <div className="w-full lg:w-2/3 text-center lg:text-left">
+          <h2 className="text-2xl md:text-4xl font-bold text-white leading-tight">
+            {title}
+          </h2>
+
+          {description && (
+            <p className="text-base md:text-lg text-white/80 mt-2">
+              {description}
+            </p>
+          )}
+
+          <ul className="flex flex-col sm:flex-row sm:space-x-6 text-white/90 mt-6 space-y-2 sm:space-y-0 justify-center lg:justify-start">
+            {benefits.map((benefit, index) => (
+              <li key={index} className="flex items-center">
+                <Check className="w-5 h-5 mr-2 text-primary flex-shrink-0" />
+                <span className="font-medium">{benefit}</span>
+              </li>
+            ))}
+          </ul>
+        </div>
+
+        {/* Right Side: Action Buttons */}
+        <div className="w-full lg:w-auto flex flex-col sm:flex-row gap-4 mt-6 lg:mt-0 flex-shrink-0">
+          <Link href={button2Link} className="w-full sm:w-auto">
+            <Button
+              variant="outline"
+              className="w-full bg-transparent border-white/50 text-white hover:bg-white hover:text-primary transition-colors duration-300 py-3 px-6 text-lg font-semibold"
             >
-              <span className="mr-2">✔</span> {benefit}
-            </li>
-          ))}
-        </ul>
-      </div>
-      <div className="w-full md:w-auto flex flex-col md:flex-row gap-4 mt-6 md:mt-0">
-        <a
-          href={button1Link}
-          className="bg-gray-900 text-white py-3 px-6 rounded-full font-semibold text-center"
-        >
-          {button1Label}
-        </a>
-        <a
-          href={button2Link}
-          className="border border-gray-900 text-gray-900 py-3 px-6 rounded-full font-semibold text-center"
-        >
-          {button2Label}
-        </a>
+              {button2Label}
+            </Button>
+          </Link>
+          <Link href={button1Link} className="w-full sm:w-auto">
+            <Button className="w-full bg-white text-primary hover:bg-gray-200 transition-colors duration-300 py-3 px-6 text-lg font-semibold">
+              {button1Label}
+            </Button>
+          </Link>
+        </div>
       </div>
     </div>
   );

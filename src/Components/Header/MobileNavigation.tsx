@@ -51,11 +51,11 @@ const featuresMenu: SolutionCategory[] = [
         href: "/features/tendering-management/prequalification",
         icon: ClipboardList,
       },
-      {
-        title: "BIM",
-        href: "/features/tendering-management/bim",
-        icon: Building2,
-      },
+      // {
+      //   title: "BIM",
+      //   href: "/features/tendering-management/bim",
+      //   icon: Building2,
+      // },
       {
         title: "Estimation and Take-off",
         href: "/features/tendering-management/estimation",
@@ -167,7 +167,7 @@ export default function MobileNavigation({
   ];
 
   return (
-    <div className="fixed inset-0 top-[72px] bg-white z-40 flex flex-col overflow-y-auto">
+    <div className="fixed inset-0 top-[58px] bg-white z-40 flex flex-col overflow-y-auto">
       {/* Navigation */}
       <div className="flex-grow px-4 py-6">
         <Accordion type="single" collapsible>
@@ -267,7 +267,7 @@ export default function MobileNavigation({
           </div>
         </div>
         <Link href="/book-a-demo">
-          <Button className="block w-full text-lg font-semibold bg-primary hover:bg-accent transition-colors duration-300">
+          <Button className="block w-full text-lg font-semibold text-white bg-primary hover:bg-secondary transition-colors duration-300">
             Book a Demo
           </Button>
         </Link>

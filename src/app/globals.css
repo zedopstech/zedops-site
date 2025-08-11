@@ -22,124 +22,56 @@ body.no-scroll {
 
 @layer base {
   :root {
-    --background: 182 76% 14%; /* Dark Teal Background */
-    --foreground: 0 0% 8%; /* Dark Foreground Text */
-    --custombg: 0, 3%, 98%; /* HSL value for #FBF9F9 */
-    --lightmint: 90, 70%, 85%;/*light green for icon background*/
-    --card: 186 61% 10%; /* Darker Teal for Card Background */
-    --card-foreground: 90 100% 90%; /* Light Green Text for Cards */
-    --popover: 186 61% 10%; /* Darker Teal for Popover Background */
-    --popover-foreground: 90 100% 90%; /* Light Green Text for Popovers */
+    /* Core UI */
+    --background: 210, 20%, 98%;      /* Very Light Cool Gray */
+    --surface:    0, 0%, 100%;         /* White */
+    --foreground: 215, 25%, 27%;      /* Dark Desaturated Blue */
+    --muted:      215, 16%, 47%;      /* Softer Gray-Blue */
+    --border:     210, 20%, 90%;      /* Subtle Border */
+    --background-secondary: 240, 12%, 8%; /* Light Gray-Blue Background */
 
-    --primary: 81 100% 90%; /* Green for Buttons or Primary Elements */
-    --primary-foreground: 182 76% 14%; /* Light Green Text for Primary Buttons */
+    /* Branding & Actions */
+    --primary:    28, 100%, 55%;      /* Vibrant Orange */
+    --secondary:  215, 25%, 27%;      /* Strong Blue */
+    --accent:     32, 98%, 83%;      /* Vibrant Magenta */
 
-    --secondary: 182 76% 14%; /* Dark Teal for Secondary Elements */
-    --secondary-foreground: 182 76% 14%; /* Light Green Text for Secondary Elements */
+    /* Semantic Colors */
+    --success:    145, 63%, 42%;      /* Green */
+    --warning:    38, 92%, 50%;       /* Yellow-Orange */
+    --error:      0, 84%, 60%;        /* Red */
 
-    --muted: 186 61% 10%; /* Dark Muted Background */
-    --muted-foreground: 0 0% 8%; /* Muted Foreground Text */
+    /* Highlights & Focus */
+    --highlight:  210, 20%, 94%;      /* Light Gray-Blue Highlight */
+    --ring:       214, 82%, 51%;      /* Secondary Blue for Focus */
 
-    --accent: 158 74% 39%; /* Green for Accents */
-    --accent-foreground: 90 100% 90%; /* Light Green Text for Accents */
+    /* UI Depth & Cards */
+    --card:       0, 0%, 100%;         /* Card Background (White) */
+    --card-text:  215, 25%, 27%;      /* Card Text Color */
 
-    --destructive: 182 76% 14%; /* Dark Teal for Destructive Elements */
-    --destructive-foreground: 90 100% 90%; /* Light Green Text for Destructive Elements */
-
-    --border: 0 0% 8%; /* Dark Border */
-    --input: 0 0% 8%; /* Dark Input Background */
-    --ring: 158 74% 39%; /* Green Ring for Focused Elements */
-
-    --chart-1: 158 74% 39%; /* Procore Green */
-    --chart-2: 186 61% 10%; /* Darker Teal */
-    --chart-3: 182 76% 14%; /* Dark Teal */
-    --chart-4: 90 100% 90%; /* Light Green */
-    --chart-5: 0 0% 8%; /* Dark Foreground */
-    --chart-6: 186 61% 10%; /* Darker Teal */
-    --chart-7: 182 76% 14%; /* Dark Teal */
-    --chart-8: 90 100% 90%; /* Light Green */
-    --chart-9: 158 74% 39%; /* Procore Green */
-    --chart-10: 90 100% 90%; /* Light Green */
-
-    --body: 182 76% 14%; /* Dark Teal Background */
-    --highlight: 158 74% 39%; /* Green Highlight */
-    --disabled: 186 61% 10%; /* Disabled Teal */
-    --shadow: 0 0% 8%; /* Dark Shadow */
-    --ink: 0 0% 8%; /* Dark Ink */
-    --ghost: 90 100% 90%; /* Light Green Ghost */
-
-    --radius: 0.6rem;
-
-    --sidebar-background: 186 61% 10%; /* Sidebar Teal */
-    --sidebar-foreground: 90 100% 90%; /* Sidebar Light Green */
-    --sidebar-primary: 182 76% 14%; /* Sidebar Dark Teal */
-    --sidebar-primary-foreground: 90 100% 90%; /* Sidebar Light Green */
-    --sidebar-accent: 158 74% 39%; /* Sidebar Green Accent */
-    --sidebar-accent-foreground: 90 100% 90%; /* Sidebar Light Green Accent */
-    --sidebar-border: 186 61% 10%; /* Sidebar Border */
-    --sidebar-ring: 158 74% 39%; /* Sidebar Green Ring */
-
-    --background-lighter: 30 1% 18%;
-    --background-light: 30 1% 14%;
-
-    --evergreen-muted: 188 69% 10%;
+    --radius:     0.5rem;             /* Border-radius base */
   }
 
   .dark {
-    --background: 0 0% 8%; /* Dark Background */
-    --foreground: 90 100% 90%; /* Light Green Foreground */
-    --card: 0 0% 8%; /* Dark Card */
-    --card-foreground: 90 100% 90%; /* Light Green Foreground */
-    --popover: 0 0% 8%; /* Dark Popover */
-    --popover-foreground: 90 100% 90%; /* Light Green Foreground */
+    /* Dark Mode Overrides */
+    --background: 216, 28%, 14%;      /* Dark Navy Blue */
+    --surface:    216, 28%, 18%;      /* Slightly Lighter Navy */
+    --foreground: 210, 17%, 81%;      /* Light Gray-Blue Text */
+    --muted:      215, 14%, 55%;      /* Muted Gray-Blue */
+    --border:     216, 28%, 24%;      /* Dark Border */
 
-    --primary: 158 74% 39%; /* Green for Primary Elements */
-    --primary-foreground: 90 100% 90%; /* Light Green for Primary Text */
+    /* Branding & Actions (Slightly adjusted for dark background) */
+    --primary:    25, 100%, 55%;      /* Brighter orange for dark mode */
+    --secondary:  210, 90%, 68%;      /* Lighter, more vibrant blue */
+    --accent:     320, 80%, 65%;      /* Lighter magenta */
+    
+    --highlight:  216, 28%, 22%;      /* Dark Highlight */
+    --ring:       210, 90%, 68%;      /* Lighter Blue for Focus */
 
-    --secondary: 186 61% 10%; /* Darker Teal */
-    --secondary-foreground: 90 100% 90%; /* Light Green */
-
-    --muted: 186 61% 10%; /* Darker Teal */
-    --muted-foreground: 0 0% 8%; /* Dark Foreground */
-
-    --accent: 158 74% 39%; /* Green Accent */
-    --accent-foreground: 90 100% 90%; /* Light Green Accent Text */
-
-    --destructive: 182 76% 14%; /* Dark Teal */
-    --destructive-foreground: 90 100% 90%; /* Light Green */
-
-    --border: 0 0% 8%; /* Dark Border */
-    --input: 0 0% 8%; /* Dark Input */
-    --ring: 158 74% 39%; /* Green Ring */
-
-    --chart-1: 158 74% 39%; /* Procore Green */
-    --chart-2: 186 61% 10%; /* Darker Teal */
-    --chart-3: 182 76% 14%; /* Dark Teal */
-    --chart-4: 90 100% 90%; /* Light Green */
-    --chart-5: 0 0% 8%; /* Dark Foreground */
-    --chart-6: 186 61% 10%; /* Darker Teal */
-    --chart-7: 182 76% 14%; /* Dark Teal */
-    --chart-8: 90 100% 90%; /* Light Green */
-    --chart-9: 158 74% 39%; /* Procore Green */
-    --chart-10: 90 100% 90%; /* Light Green */
-
-    --body: 0 0% 8%; /* Dark Body Background */
-    --highlight: 158 74% 39%; /* Dark Green Highlight */
-    --disabled: 186 61% 10%; /* Disabled Teal */
-    --shadow: 0 0% 8%; /* Dark Shadow */
-    --ink: 90 100% 90%; /* Light Ink */
-    --ghost: 0 0% 8%; /* Dark Ghost */
-
-    --sidebar-background: 0 0% 8%; /* Sidebar Background */
-    --sidebar-foreground: 90 100% 90%; /* Sidebar Foreground */
-    --sidebar-primary: 182 76% 14%; /* Sidebar Primary */
-    --sidebar-primary-foreground: 90 100% 90%; /* Sidebar Primary Text */
-    --sidebar-accent: 158 74% 39%; /* Sidebar Accent */
-    --sidebar-accent-foreground: 90 100% 90%; /* Sidebar Accent Text */
-    --sidebar-border: 0 0% 8%; /* Sidebar Border */
-    --sidebar-ring: 158 74% 39%; /* Sidebar Green Ring */
+    --card:       216, 28%, 18%;      /* Card Background */
+    --card-text:  210, 17%, 81%;      /* Card Text */
   }
 }
+
 
 @layer base {
   * {

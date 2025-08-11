@@ -25,7 +25,7 @@ const Header: React.FC = () => {
   }, [expanded]);
 
   return (
-    <header className="fixed top-0 left-0 right-0 z-50 bg-background py-4 shadow-sm w-full">
+    <header className="fixed top-0 left-0 right-0 z-50 bg-white py-2 shadow-sm border w-full">
       <div className="mx-auto px-6 lg:px-0 max-w-7xl flex items-center justify-between">
         {/* Logo Section */}
         <div className="shrink-0 flex-1 text-center lg:text-left lg:flex-none">
@@ -38,16 +38,16 @@ const Header: React.FC = () => {
         <DesktopNavigationMenu />
 
         {/* Actions Section for Medium Screens and Above */}
-        <div className="hidden sm:flex sm:items-center sm:space-x-4">
+        <div className="hidden sm:flex sm:items-center text-secondary sm:space-x-4">
           <Link
             href="/contact-sales"
             title="Contact Sales"
-            className="flex items-center px-4 py-2 text-base font-medium text-primary hover:text-white"
+            className="flex items-center hover:text-primary px-4 py-2"
           >
             <Headset className="w-5 h-5 mr-2" />
             Contact Sales
           </Link>
-          <Button className="px-10">Login</Button>
+          <Button className="px-10 text-white hover:bg-secondary">Login</Button>
         </div>
 
         {/* Mobile Menu Button */}

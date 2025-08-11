@@ -1,149 +1,181 @@
-import { Calendar, ClipboardList, Users, Clock, FileText, TrendingUp, FilePlus, AlertCircle, DollarSign, Database, FileBarChart, Settings, MapPin, UserCheck2, ShieldCheck, ClipboardCheck, RefreshCcw, Bell, HardHat, CheckCheckIcon } from "lucide-react";
+import {
+  // Pre-Construction
+  Calculator,
+  Handshake,
+  GanttChartSquare,
+  
+  // Project Execution
+  ClipboardList,
+  HardHat,
+  ShoppingCart,
+  Truck,
+  
+  // Project Controls
+  DollarSign,
+  BarChart,
+  FileText,
+  RefreshCcw,
+  AlertCircle,
+  
+  // Platform-Wide
+  Users,
+  Smartphone,
+  Database,
+  Bell,
+  Settings,
+  ShieldCheck,
+  CheckCheckIcon, // for closeout
+} from "lucide-react";
 
 export const ALL_FEATURES = {
+    // --- HERO SECTION ---
     heroprops: {
-      title: "Comprehensive Construction Management Features",
-      subtitle: "Complete Feature Suite",
+      title: "One Platform, Every Tool You Need",
+      subtitle: "The Complete Feature Suite",
       description:
-        "Discover our full range of construction management tools designed to streamline your projects. From estimation and scheduling to resource management and compliance tracking, our platform provides everything you need to deliver successful construction projects.",
-      buttonLabel: "Explore Features",
-      imageAlt:
-        "Overview of construction management software features including project scheduling, cost tracking, and resource management",
+        "Explore the full range of powerful, interconnected tools Zedops offers. From pre-construction planning to final closeout, our platform is designed to streamline every phase of your project lifecycle.",
+      buttonLabel: "Request a Demo",
+      imageAlt: "A collage of different features from the Zedops construction management software.",
       linkHref: "/book-a-demo",
     },
+
+    // --- FLAT FEATURE ARRAY WITH ADDED 'category' PROPERTY ---
     features: [
+      // Category: Pre-Construction
       {
-        icon: <Calendar className="text-background" />,
+        icon: <Calculator />,
+        title: "Estimation & Bidding",
+        description: "Create fast, accurate bids with on-screen takeoffs and a centralized cost database.",
+        category: "Pre-Construction",
+      },
+      {
+        icon: <Handshake />,
+        title: "Prequalification",
+        description: "Minimize risk by vetting and selecting the most qualified subcontractors for your projects.",
+        category: "Pre-Construction",
+      },
+      {
+        icon: <GanttChartSquare />,
         title: "Project Scheduling",
-        description:
-          "Plan and manage project timelines efficiently, ensuring tasks are completed on schedule.",
+        description: "Build and manage detailed project schedules with task dependencies and critical path tracking.",
+        category: "Pre-Construction",
+      },
+      
+      // Category: Project Execution
+      {
+        icon: <ClipboardList />,
+        title: "Field Reporting & Daily Logs",
+        description: "Capture daily site activities, labor, weather, and progress photos from a mobile device.",
+        category: "Project Execution",
       },
       {
-        icon: <ClipboardList className="text-background" />,
-        title: "Task Management",
-        description:
-          "Assign, track, and update project tasks in real-time to keep the team aligned and productive.",
+        icon: <HardHat />,
+        title: "Quality & Safety Management",
+        description: "Conduct inspections, report incidents, manage toolbox talks, and track corrective actions.",
+        category: "Project Execution",
       },
       {
-        icon: <Users className="text-background" />,
-        title: "Team Collaboration",
-        description:
-          "Enhance communication and coordination between teams with shared project data and updates.",
+        icon: <ShoppingCart />,
+        title: "Procurement",
+        description: "Manage purchase orders, supplier relationships, and material requests to keep your project supplied.",
+        category: "Project Execution",
       },
       {
-        icon: <Clock className="text-background" />,
-        title: "Real-Time Progress Tracking",
-        description:
-          "Monitor project progress in real-time and adjust workflows dynamically to avoid delays.",
+        icon: <Truck />,
+        title: "Inventory & Equipment Tracking",
+        description: "Track materials, tools, and equipment across your warehouse and job sites.",
+        category: "Project Execution",
+      },
+
+      // Category: Project Controls
+      {
+        icon: <DollarSign />,
+        title: "Financial Management",
+        description: "Connect field data to your budget for live job costing, cash flow forecasting, and invoicing.",
+        category: "Project Controls",
       },
       {
-        icon: <FileText className="text-background" />,
-        title: "Daily Logs & Reports",
-        description:
-          "Maintain accurate daily logs and reports for documentation and accountability across projects.",
+        icon: <FileText />,
+        title: "Document Management",
+        description: "A central, secure repository for all your plans, specs, submittals, and project documents.",
+        category: "Project Controls",
       },
       {
-        icon: <TrendingUp className="text-background" />,
-        title: "Project Performance",
-        description:
-          "Analyze key project metrics to identify bottlenecks, optimize resources, and improve efficiency.",
-      },
-      {
-        icon: <FilePlus className="text-background" />,
-        title: "Automated Reporting",
-        description:
-          "Generate detailed project reports automatically for tracking progress and decision-making.",
-      },
-      {
-        icon: <AlertCircle className="text-background" />,
-        title: "Risk & Issue Management",
-        description:
-          "Identify, track, and mitigate potential project risks to ensure smooth execution.",
-      },
-      {
-        icon: <DollarSign className="text-background" />,
-        title: "Budget & Cost Tracking",
-        description:
-          "Monitor budgets, control costs, and track financial data to ensure profitability.",
-      },
-      {
-        icon: <Database className="text-background" />,
-        title: "Centralized Project Data",
-        description:
-          "Store and manage all project-related documents, drawings, and records in one secure platform.",
-      },
-      {
-        icon: <FileBarChart className="text-background" />,
-        title: "Project Insights & Forecasting",
-        description:
-          "Leverage data-driven insights to improve project planning and anticipate future challenges.",
-      },
-      {
-        icon: <Settings className="text-background" />,
-        title: "Workflow Automation",
-        description:
-          "Automate repetitive tasks and approvals to streamline project management processes.",
-      },
-      {
-        icon: <MapPin className="text-background" />,
-        title: "Site & Location Tracking",
-        description:
-          "Track site activities, equipment locations, and material deliveries for better oversight.",
-      },
-      {
-        icon: <UserCheck2 className="text-background" />,
-        title: "Resource Allocation",
-        description:
-          "Efficiently assign workforce and equipment to projects to optimize utilization and productivity.",
-      },
-      {
-        icon: <ShieldCheck className="text-background" />,
-        title: "Compliance",
-        description:
-          "Ensure all project activities meet industry regulations and maintain compliance records.",
-      },
-      {
-        icon: <ClipboardCheck className="text-background" />,
-        title: "Quality Control & Inspections",
-        description:
-          "Conduct quality checks and inspections to maintain high construction standards.",
-      },
-      {
-        icon: <RefreshCcw className="text-background" />,
+        icon: <RefreshCcw />,
         title: "Change Order Management",
-        description:
-          "Track and manage change orders efficiently, ensuring adjustments are documented and approved.",
+        description: "Document and track scope changes and their impact on your project's budget and schedule.",
+        category: "Project Controls",
       },
       {
-        icon: <Bell className="text-background" />,
+        icon: <AlertCircle />,
+        title: "RFI & Submittal Tracking",
+        description: "Streamline formal communications with a clear, collaborative workflow and audit trail.",
+        category: "Project Controls",
+      },
+      {
+        icon: <BarChart />,
+        title: "Analytics & Reporting",
+        description: "Generate customizable reports and get actionable insights from project data.",
+        category: "Project Controls",
+      },
+      {
+        icon: <CheckCheckIcon />,
+        title: "Project Closeout",
+        description: "Ensure smooth project handover with final inspections, punch lists, and warranty documentation.",
+        category: "Project Controls",
+      },
+
+      // Category: Platform-Wide
+      {
+        icon: <Users />,
+        title: "Team Collaboration",
+        description: "Centralized communication, task assignments, and a unified project directory.",
+        category: "Platform-Wide",
+      },
+      {
+        icon: <Smartphone />,
+        title: "Mobile App",
+        description: "Access critical project information and perform key tasks from anywhere, even offline.",
+        category: "Platform-Wide",
+      },
+      {
+        icon: <Database />,
+        title: "Centralized Project Data",
+        description: "A single source of truth for all project information, eliminating data silos.",
+        category: "Platform-Wide",
+      },
+      {
+        icon: <Bell />,
         title: "Instant Notifications & Alerts",
-        description:
-          "Get real-time alerts for task updates, deadline changes, and critical project events.",
+        description: "Receive real-time alerts for task updates, overdue items, and critical events.",
+        category: "Platform-Wide",
       },
       {
-        icon: <HardHat className="text-background" />,
-        title: "Safety & Compliance",
-        description:
-          "Integrate safety protocols within project management to ensure compliance and reduce risks.",
+        icon: <Settings />,
+        title: "Customizable Workflows",
+        description: "Adapt the platform to your company's unique approval processes and procedures.",
+        category: "Platform-Wide",
       },
       {
-        icon: <CheckCheckIcon className="text-background" />,
-        title: "Project Completion",
-        description:
-          "Ensure smooth project handover with final inspections, documentation, and approvals.",
+        icon: <ShieldCheck />,
+        title: "Security & Permissions",
+        description: "Protect your data with role-based access, enterprise-grade security, and a full audit trail.",
+        category: "Platform-Wide",
       },
     ],
+    
+    // --- FINAL CALL TO ACTION ---
     ctaProps: {
-      title: "Streamline Project Management for Efficiency",
-      description: "",
+      title: "Ready to See the Full Platform in Action?",
+      description: "Schedule a personalized demo to see how Zedops can unify your teams, streamline your workflows, and increase your profitability.",
       benefits: [
-        "Seamless project",
-        "Real-time task tracking",
-        "Data-driven project insights",
+        "All-in-one platform",
+        "Unlimited users", // A powerful benefit to highlight
+        "Dedicated support",
       ],
-      button1Label: "Get Started",
+      button1Label: "Request a Demo",
       button1Link: "/book-a-demo",
-      button2Label: "Start a trial",
-      button2Link: "/start-trial",
+      button2Label: "Talk to Sales",
+      button2Link: "/contact-sales",
     },
   };

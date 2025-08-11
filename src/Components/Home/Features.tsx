@@ -1,10 +1,10 @@
 "use client"
 
-import React from "react";
+import React, { useState } from "react";
 import Link from "next/link";
 
 // Organized icon imports alphabetically
-import { 
+import {
   ArrowRight,
   BarChart3,
   Bot,
@@ -22,8 +22,8 @@ import {
   Compass,
   Construction,
   CreditCard,
-  Crosshair,
   Cpu,
+  Crosshair,
   DollarSign,
   Eye,
   FileCode,
@@ -63,57 +63,72 @@ import {
   Users,
   Wallet,
   Workflow,
-  Wrench
+  Wrench,
+  Ruler
 } from "lucide-react";
 
+// The full feature content array, including the previously commented-out section
 const FeatureContent = [
   {
-    mainTitle: "AI-Powered Project Intelligence",
+    mainTitle: "Budget & Cost Control",
     content:
-      "Leverage artificial intelligence to predict project outcomes, identify potential risks, and receive smart recommendations for improving efficiency and reducing costs.",
-    link: "/features/ai-intelligence",
-    icon: Brain,
-    color: "from-blue-500 to-indigo-600",
-    bgGradient: "from-blue-500/10 via-indigo-500/5 to-transparent",
-    accentColor: "blue",
-    orbitIcons: [Bot, Sparkles, Gauge, Lightbulb, Cpu, Command, Eye, FlaskConical],
+      "Connect your project budget directly to field activities. Gain real-time financial visibility and make proactive decisions to protect your profit margins.",
+    link: "/features/cost-control",
+    icon: DollarSign, // A more direct icon for financials
     subTitles: [
       {
         id: 1,
-        title: "Predictive Analytics",
+        title: "Live Budget vs. Actuals",
         content:
-          "Anticipate project delays and cost overruns before they happen with AI-powered forecasting based on historical project data.",
+          "Track labor and material costs against your budget as they happen. Eliminate surprises at the end of the month with a live financial dashboard.",
       },
       {
         id: 2,
-        title: "Smart Resource Allocation",
+        title: "Cost Code Integration",
         content:
-          "Let AI optimize your resource distribution across projects based on availability, skills, and project timelines.",
+          "Assign every hour and expense to a specific cost code, providing granular detail and making job costing simple and accurate.",
       },
     ],
   },
   {
-    mainTitle: "Real-Time Project Tracking",
+    mainTitle: "Daily Field Reporting",
     content:
-      "Monitor all your projects in real-time with comprehensive dashboards that provide instant visibility into project status, milestones, and team performance.",
-    link: "/features/project-tracking",
-    icon: Rocket,
-    color: "from-green-500 to-emerald-600",
-    bgGradient: "from-green-500/10 via-emerald-500/5 to-transparent",
-    accentColor: "green",
-    orbitIcons: [Clock, TrendingUp, RefreshCw, Target, Crosshair, BarChart3, PieChart, GitCommit],
+      "Empower your site supervisors to capture comprehensive daily logs in minutes, not hours. Keep everyone from the field to the office perfectly in sync.",
+    link: "/features/daily-reporting",
+    icon: Clipboard, // A more fitting icon for logs
     subTitles: [
       {
         id: 1,
-        title: "Live Progress Updates",
+        title: "Mobile-First Design",
         content:
-          "Track project progress as it happens with real-time updates from the field, ensuring everyone stays informed.",
+          "A simple, intuitive interface designed for the field. Log labor, materials, equipment, and add progress photos directly from a smartphone.",
       },
       {
         id: 2,
-        title: "Performance Metrics",
+        title: "Professional PDF Exports",
         content:
-          "Measure team and individual performance against KPIs with customizable metrics and reporting.",
+          "Generate clean, professional daily reports in PDF format with a single click, ready to be shared with clients and stakeholders.",
+      },
+    ],
+  },
+  {
+    mainTitle: "Drawing & Measurement Tools",
+    content:
+      "Turn your blueprints into an interactive workspace. Perform accurate takeoffs, link documents to locations, and manage issues visually.",
+    link: "/features/drawing-tools",
+    icon: Ruler, // A more specific icon for this feature
+    subTitles: [
+      {
+        id: 1,
+        title: "Accurate Takeoffs & Measurements",
+        content:
+          "Calibrate any drawing and perform precise distance, area, and volume measurements, saving time and reducing estimation errors.",
+      },
+      {
+        id: 2,
+        title: "Visual Issue Tracking",
+        content:
+          "Pin observations, RFIs, and photos directly to their location on the plan, providing clear context for faster resolution.",
       },
     ],
   },
@@ -123,10 +138,6 @@ const FeatureContent = [
       "Centralize all project documentation in one secure location, making it easy to find, share, and collaborate on critical project files.",
     link: "/features/document-management",
     icon: FileText,
-    color: "from-amber-500 to-orange-600",
-    bgGradient: "from-amber-500/10 via-orange-500/5 to-transparent",
-    accentColor: "amber",
-    orbitIcons: [FileCode, FileCog, Folder, FolderOpen, Paperclip, Tag, Save],
     subTitles: [
       {
         id: 1,
@@ -136,59 +147,30 @@ const FeatureContent = [
       },
       {
         id: 2,
-        title: "Secure Sharing",
+        title: "Secure Sharing & Permissions",
         content:
-          "Share documents securely with team members and stakeholders, controlling access and permissions at a granular level.",
+          "Share documents securely with team members and stakeholders, controlling who can view, edit, and download specific files.",
       },
     ],
   },
   {
-    mainTitle: "Advanced Resource Management",
+    mainTitle: "Time & Labor Management",
     content:
-      "Optimize resource allocation across all your projects, ensuring the right people with the right skills are available when and where they're needed.",
-    link: "/features/resource-management",
-    icon: Users,
-    color: "from-purple-500 to-pink-600",
-    bgGradient: "from-purple-500/10 via-pink-500/5 to-transparent",
-    accentColor: "purple",
-    orbitIcons: [Users, Workflow, DollarSign, CoinsIcon, Gauge, Calendar, Cog, Wrench],
+      "Streamline time tracking for your entire workforce. Ensure accurate payroll and get a clear picture of labor costs across all your projects.",
+    link: "/features/time-management",
+    icon: Clock,
     subTitles: [
       {
         id: 1,
-        title: "Skill Matching",
+        title: "Easy Timesheet Entry",
         content:
-          "Match team members to tasks based on their skills, experience, and availability to maximize productivity.",
+          "Field staff can submit individual or crew timesheets in seconds from their mobile device, complete with cost codes and notes.",
       },
       {
         id: 2,
-        title: "Capacity Planning",
+        title: "Streamlined Approval Workflows",
         content:
-          "Plan future resource needs based on project pipelines and team capacity, avoiding bottlenecks before they occur.",
-      },
-    ],
-  },
-  {
-    mainTitle: "Comprehensive Financial Management",
-    content:
-      "Take control of project finances with robust budgeting, cost tracking, and financial reporting tools that keep your projects profitable.",
-    link: "/features/financial-management",
-    icon: BarChart3,
-    color: "from-cyan-500 to-blue-600",
-    bgGradient: "from-cyan-500/10 via-blue-500/5 to-transparent",
-    accentColor: "cyan",
-    orbitIcons: [DollarSign, PieChart, Receipt, CreditCard, Wallet, TrendingUp],
-    subTitles: [
-      {
-        id: 1,
-        title: "Budget Tracking",
-        content:
-          "Monitor project budgets in real-time, tracking actual costs against estimates to prevent overruns.",
-      },
-      {
-        id: 2,
-        title: "Financial Forecasting",
-        content:
-          "Forecast project financials based on current performance and historical data to make informed decisions.",
+          "Managers can review and approve submitted timesheets from anywhere, speeding up the entire payroll process.",
       },
     ],
   },
@@ -198,10 +180,6 @@ const FeatureContent = [
       "Empower your field teams with mobile tools that keep them connected to the office, allowing for real-time data collection and reporting from anywhere.",
     link: "/features/mobile-operations",
     icon: Smartphone,
-    color: "from-red-500 to-rose-600",
-    bgGradient: "from-red-500/10 via-rose-500/5 to-transparent",
-    accentColor: "red",
-    orbitIcons: [Map, Navigation, Compass, Camera, Truck, Clipboard, Wrench],
     subTitles: [
       {
         id: 1,
@@ -217,208 +195,104 @@ const FeatureContent = [
       },
     ],
   },
-  {
-    mainTitle: "Seamless Team Collaboration",
-    content:
-      "Foster collaboration across teams with integrated communication tools, ensuring everyone is aligned and working towards common goals.",
-    link: "/features/team-collaboration",
-    icon: Users,
-    color: "from-teal-500 to-emerald-600",
-    bgGradient: "from-teal-500/10 via-emerald-500/5 to-transparent",
-    accentColor: "teal",
-    orbitIcons: [MessageSquare, Share, LinkIcon, GitPullRequest, GitBranch, UserCog, Mail, ],
-    subTitles: [
-      {
-        id: 1,
-        title: "Real-time Communication",
-        content:
-          "Enable instant communication across teams with integrated messaging, video conferencing, and file sharing.",
-      },
-      {
-        id: 2,
-        title: "Task Assignment",
-        content:
-          "Assign tasks to team members and track progress in real-time, ensuring everyone knows their responsibilities.",
-      },
-    ],
-  },
-  {
-    mainTitle: "Smart Construction Management",
-    content:
-      "Streamline construction projects with AI-powered tools that optimize workflows, predict delays, and improve resource allocation.",
-    link: "/features/construction-management",
-    icon: Building2,
-    color: "from-yellow-500 to-orange-600",
-    bgGradient: "from-yellow-500/10 via-orange-500/5 to-transparent",
-    accentColor: "yellow",
-    orbitIcons: [Hammer, Construction, Wrench, Cog, HardDrive, Shield, Rocket, Settings],
-    subTitles: [
-      {
-        id: 1,
-        title: "Predictive Maintenance",
-        content:
-          "Anticipate equipment failures and schedule maintenance with AI-powered predictive analytics.",
-      },
-      {
-        id: 2,
-        title: "Quality Control",
-        content:
-          "Ensure high-quality construction with AI-powered quality control tools that detect defects and anomalies.",
-      },
-    ],
-  },
 ];
 
-const Features: React.FC = () => {
-
+const FeaturesWithTabs: React.FC = () => {
+  const [activeTab, setActiveTab] = useState(0);
+  const activeFeature = FeatureContent[activeTab];
 
   return (
-    <div className="relative text-white py-24">
+    <div className="relative py-24 bg-orange-50">
       <div className="relative z-10 max-w-3xl px-6 sm:px-8 lg:px-6 mx-auto text-center mb-16 lg:mb-20">
-        <span className="inline-block px-4 py-1.5 rounded-full bg-primary/15 text-primary text-sm font-semibold mb-5 shadow-sm">Key Features</span>
-        <h2 className="text-3xl leading-tight sm:text-4xl xl:text-5xl font-bold">
-          Built for Construction Teams
+        <span className="inline-block px-4 py-1.5 rounded-full bg-primary text-white text-sm font-semibold mb-5 shadow-sm">
+          Key Features
+        </span>
+        <h2 className="text-3xl leading-tight sm:text-4xl xl:text-5xl font-bold text-secondary">
+          An Integrated Platform for Success
         </h2>
-        <p className="mt-6 text-lg text-gray-300 max-w-2xl mx-auto">
-          Tools designed specifically for the challenges of modern construction management, helping teams work smarter and deliver better results.
+        <p className="mt-6 text-lg text-secondary max-w-2xl mx-auto">
+          Explore our powerful, interconnected modules designed to streamline every phase of your project lifecycle, from planning to execution.
         </p>
       </div>
 
-      {FeatureContent.map((item, index) => (
-        <section key={index} className="py-12 md:py-18 relative"> 
-          <div className="relative max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-12 gap-12 xl:gap-20 items-center px-6 lg:px-8">
-            {/* Interactive Visual Element - takes 6 columns on large screens */}
-            <div
-              className={`${
-                index % 2 === 0 ? "lg:col-span-6 lg:order-1" : "lg:col-span-6 lg:order-2"
-              } order-1`}
-            >
-              <div className="relative h-96 rounded-xl overflow-hidden group">
-                {/* Main feature icon - large and centered */}
-                <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2">
-                  <div className={`w-32 h-32 rounded-full bg-gradient-to-br from-primary to-secondary flex items-center justify-center shadow-lg main-icon-pulse`}>
-                    <item.icon className="w-16 h-16 text-primary" />
-                  </div>
-                </div>
-                
-                {/* Orbiting elements using CSS animations */}
-                <div className="absolute top-1/2 left-1/2 w-full h-full -translate-x-1/2 -translate-y-1/2 pointer-events-none">
-                  {/* Generate orbiting icons in a circular pattern */}
-                  {item.orbitIcons && item.orbitIcons.map((OrbitIcon, index) => {
-                    // Calculate position on the circle
-                    const totalIcons = item.orbitIcons.length;
-                    const angle = (index / totalIcons) * 2 * Math.PI;
-                    const radius = 120; // Increased radius from 80 to 120
-                    const randomOffset = index % 3 === 0 ? 15 : index % 3 === 1 ? 8 : 0; // Slightly larger random offset
-                    const adjustedRadius = radius + randomOffset;
-                    
-                    // Calculate x and y coordinates
-                    const x = Math.round(Math.cos(angle) * adjustedRadius * 100) / 100;
-                    const y = Math.round(Math.sin(angle) * adjustedRadius * 100) / 100;
-                    
-                    // Determine rotation direction for CSS class
-                    const orbitClass = index % 2 === 0 ? 'orbit-clockwise' : 'orbit-counter-clockwise';
-                    
-                    // Vary icon sizes - use fewer size options
-                    const sizeVariants = ["w-8 h-8", "w-10 h-10"];
-                    const iconSize = sizeVariants[index % sizeVariants.length];
-                    
-                    // Set icon colors to a consistent scheme
-                    const iconColor = "text-primary";
-                    const bgClass = "bg-primary/10";
-                    
-                    // Skip rendering some icons when there are too many
-                    if (totalIcons > 6 && index % 2 !== 0 && index > 4) {
-                      return null;
-                    }
-                    
-                    return (
-                      <div
-                        key={index}
-                        className={`absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 ${orbitClass}`}
-                        style={{
-                          willChange: "transform"
-                        }}
-                      >
-                        <div 
-                          className="absolute transform -translate-x-1/2 -translate-y-1/2"
-                          style={{ transform: `translate(${x}px, ${y}px)` }}
-                        >
-                          <div 
-                            className={`${iconSize} rounded-lg ${bgClass} backdrop-blur-sm border border-white/20 flex items-center justify-center shadow-lg`}
-                          >
-                            {React.createElement(OrbitIcon, { 
-                              className: `${index % 2 === 0 ? "w-5 h-5" : "w-6 h-6"} ${iconColor}`,
-                              style: { filter: "drop-shadow(0 0 3px rgba(255, 255, 255, 0.3))" }
-                            })}
-                          </div>
-                        </div>
-                      </div>
-                    );
-                  })}
-                </div>
-                
-                {/* Corner accent */}
-                <div className="absolute bottom-0 right-0 w-24 h-24 bg-gradient-to-tl from-secondary/20 to-transparent rounded-tl-3xl"></div>
-              </div>
-            </div>
-
-            {/* Text Content - takes 6 columns on large screens */}
-            <div
-              className={`${
-                index % 2 === 0 ? "lg:col-span-6 lg:order-2" : "lg:col-span-6 lg:order-1"
-              } space-y-8 order-2`}
-            >
-              <div>
-                <h3 className="text-3xl font-bold mb-4 text-white">
-                  <span className="text-primary">{item.mainTitle}</span>
-                </h3>
-                <p className="text-lg text-gray-300 leading-relaxed">{item.content}</p>
-              </div>
-
-              <div className="grid grid-cols-1 gap-6 mt-8">
-                {item.subTitles.map((list) => (
-                  <div 
-                    key={list.id} 
-                    className="flex flex-col p-6 bg-white/5 backdrop-blur-sm border border-white/10 rounded-xl transition-all duration-300 hover:bg-white/10 hover:shadow-lg hover:-translate-y-1 group"
+      <div className="relative max-w-7xl mx-auto px-6 lg:px-8">
+        <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12">
+          
+          {/* Left Side Tab Navigation */}
+          <div className="lg:col-span-6 xl:col-span-3">
+            <div className="space-y-2">
+              {FeatureContent.map((item, index) => {
+                const Icon = item.icon;
+                return (
+                  <button
+                    key={index}
+                    onClick={() => setActiveTab(index)}
+                    className={`w-full flex items-center p-4 rounded-2xl text-left transition-all duration-300 ${
+                      activeTab === index
+                        ? "bg-white shadow-lg scale-105"
+                        : "bg-transparent text-secondary hover:bg-gray-200/50 hover:text-gray-900"
+                    }`}
                   >
-                    <div className="flex items-start space-x-4">
-                      <div className="bg-primary/20 text-primary rounded-lg p-2 group-hover:bg-primary group-hover:text-secondary transition-colors duration-300">
-                        <CheckCircle className="w-6 h-6" />
-                      </div>
-                      <div>
-                        <h4 className="text-xl font-semibold mb-2 group-hover:text-primary transition-colors duration-300">{list.title}</h4>
-                        <p className="text-gray-300 leading-relaxed">{list.content}</p>
-                      </div>
-                    </div>
-                  </div>
-                ))}
-              </div>
-              
-              <Link 
-                href={item.link} 
-                className="inline-flex items-center px-5 py-2.5 bg-primary/10 hover:bg-primary text-primary hover:text-secondary rounded-lg transition-all duration-300 mt-6 group shadow-sm hover:shadow-lg"
-              >
-                <span className="mr-2 font-medium">Explore this feature</span>
-                <ChevronRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
-              </Link>
+                    <Icon className={`w-6 h-6 mr-4 flex-shrink-0 ${ activeTab === index ? "text-primary" : "text-secondary"}`} />
+                    <span className="">{item.mainTitle}</span>
+                  </button>
+                );
+              })}
             </div>
           </div>
-        </section>
-      ))}
+
+          {/* Right Side Content Display */}
+          <div className="lg:col-span-8 xl:col-span-9">
+            {activeFeature && (
+              <div className="p-8 bg-white rounded-xl shadow-xl">
+                <div>
+                  <h3 className="text-3xl font-bold mb-4 text-primary">
+                    {activeFeature.mainTitle}
+                  </h3>
+                  <p className="text-lg text-secondary leading-relaxed">{activeFeature.content}</p>
+                </div>
+
+                <div className="border-t border-gray-200 my-8"></div>
+
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+                  {activeFeature.subTitles.map((list) => (
+                    <div key={list.id} className="flex items-start space-x-3">
+                      <div className="bg-primary/10 text-primary rounded-full p-2">
+                        <CheckCircle className="w-5 h-5" />
+                      </div>
+                      <div>
+                        <h4 className="text-xl font-semibold mb-1 text-secondary">{list.title}</h4>
+                        <p className="text-secondary leading-relaxed">{list.content}</p>
+                      </div>
+                    </div>
+                  ))}
+                </div>
+
+                {/* <Link
+                  href={activeFeature.link}
+                  className="inline-flex items-center text-primary hover:text-secondary font-semibold transition-all duration-300 mt-10 group"
+                >
+                  <span>Explore this feature</span>
+                  <ChevronRight className="w-5 h-5 ml-1 group-hover:translate-x-1 transition-transform" />
+                </Link> */}
+              </div>
+            )}
+          </div>
+        </div>
+      </div>
       
       {/* Bottom CTA */}
-      <div className="relative z-10 mt-8 mb-16 text-center">
-        <Link 
-          href="/features" 
-          className="inline-flex items-center px-8 py-3.5 text-white font-semibold rounded-lg hover:scale-105 transition-all duration-300"
+      <div className="relative z-10 mt-20 text-center">
+        <Link
+          href="/features"
+          className="inline-flex items-center px-6 py-4 bg-primary text-white font-semibold rounded-lg hover:scale-105 transition-transform duration-300 shadow-sm"
         >
           View All Features
-          <ArrowRight className="ml-2 w-5 h-5" />
+          <ChevronRight className="ml-2 w-5 h-5" />
         </Link>
       </div>
     </div>
   );
 };
 
-export default Features;
+export default FeaturesWithTabs;

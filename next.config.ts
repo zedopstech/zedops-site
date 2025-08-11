@@ -27,52 +27,58 @@ const nextConfig: NextConfig = {
         port: '',
         pathname: '/**',
       },
+      {
+        protocol: 'https',
+        hostname: '1000logos.net',
+        port: '',
+        pathname: '/**',
+      },
     ],
   },
-  async redirects() {
-    return [
-      {
-        source: '/',
-        destination: '/coming-soon',
-        permanent: false,
-      },
-      {
-        source: '/about-us',
-        destination: '/coming-soon',
-        permanent: false,
-      },
-      {
-        source: '/blog/:path*',
-        destination: '/coming-soon',
-        permanent: false,
-      },
-      {
-        source: '/book-a-demo',
-        destination: '/coming-soon',
-        permanent: false,
-      },
-      {
-        source: '/contact-sales',
-        destination: '/coming-soon',
-        permanent: false,
-      },
-      {
-        source: '/features/:path*',
-        destination: '/coming-soon',
-        permanent: false,
-      },
-      {
-        source: '/pricing',
-        destination: '/coming-soon',
-        permanent: false,
-      },
-      {
-        source: '/resources/:path*',
-        destination: '/coming-soon',
-        permanent: false,
-      },
-    ]
-  },
+  // async redirects() {
+  //   return [
+  //     {
+  //       source: '/',
+  //       destination: '/coming-soon',
+  //       permanent: false,
+  //     },
+  //     {
+  //       source: '/about-us',
+  //       destination: '/coming-soon',
+  //       permanent: false,
+  //     },
+  //     {
+  //       source: '/blog/:path*',
+  //       destination: '/coming-soon',
+  //       permanent: false,
+  //     },
+  //     {
+  //       source: '/book-a-demo',
+  //       destination: '/coming-soon',
+  //       permanent: false,
+  //     },
+  //     {
+  //       source: '/contact-sales',
+  //       destination: '/coming-soon',
+  //       permanent: false,
+  //     },
+  //     {
+  //       source: '/features/:path*',
+  //       destination: '/coming-soon',
+  //       permanent: false,
+  //     },
+  //     {
+  //       source: '/pricing',
+  //       destination: '/coming-soon',
+  //       permanent: false,
+  //     },
+  //     {
+  //       source: '/resources/:path*',
+  //       destination: '/coming-soon',
+  //       permanent: false,
+  //     },
+  //   ]
+  // },
 };
 
 export default nextConfig;

@@ -13,20 +13,20 @@ const DesktopNavigationMenu = () => {
         {/* Resources */}
         <ResourcesList />
         {/* NavLink */}
-        <NavigationMenu.Item>
+        {/* <NavigationMenu.Item>
           <Link
             href="/pricing"
-            className="block select-none hover:text-white px-3 py-2 text-base font-medium leading-none no-underline outline-none"
+            className="block select-none px-3 py-2 font-normal text-secondary leading-none no-underline outline-none"
             title="pricing"
           >
             Pricing
           </Link>
-        </NavigationMenu.Item>
+        </NavigationMenu.Item> */}
 
         <NavigationMenu.Item>
           <Link
             href="/about-us"
-            className="block select-none hover:text-white px-3 py-2 text-base font-medium leading-none no-underline outline-none"
+            className="block select-none font-normal text-secondary px-3 py-2 leading-none no-underline outline-none"
             title="About Us"
           >
             About Us

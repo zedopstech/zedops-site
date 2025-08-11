@@ -14,55 +14,65 @@ import {
   Share2,
   BellRing,
   RefreshCcw,
+  // New icons for updated content
+  Calculator,
+  GanttChartSquare,
+  HardHat,
+  DollarSign,
+  Users,
 } from "lucide-react";
 
 export const PLATFORM_PAGE = {
+  // --- HERO SECTION ---
   heroprops: {
-    title: "Planning + Building",
-    subtitle: "All-in-One Construction Solutions Platform",
+    title: "The All-in-One Command Center for Construction",
+    subtitle: "One Platform. Total Control.", // Using title as headline and subtitle as pre-headline
     description:
-      "Streamline project planning, execution, and tracking with advanced management tools. Stay on schedule, control costs, and enhance team collaboration for seamless project success.",
-    buttonLabel: "Get Started",
-    imageAlt: "Construction project management overview",
+      "Stop juggling disconnected apps and spreadsheets. Zedops brings your entire project lifecycle—from pre-construction planning and on-site execution to financial tracking and team management—into a single, integrated platform.",
+    buttonLabel: "Request a Demo",
+    imageAlt: "A dynamic dashboard view of the Zedops platform showing multiple project modules.",
     linkHref: "/book-a-demo",
   },
 
+  // --- COLLABORATION SECTION ---
   campaignChannels: {
-    sectionTitle: "Seamless Team Collaboration",
-    subtitle: "COMMUNICATION & COLLABORATION",
+    sectionTitle: "Connect Your Field and Office",
+    subtitle: "UNIFIED TEAM COLLABORATION",
     description:
-      "Keep everyone connected and informed with integrated communication tools designed for construction teams.",
+      "Break down communication silos and ensure every team member, from the site to the office, is working with the same real-time information.",
     features: [
       {
         icon: <MessagesSquare size={24} className="text-background" />,
-        title: "Team Messaging",
+        title: "Centralized Communication",
         description:
-          "Centralized communication channels for project teams, subcontractors, and stakeholders.",
+          "Keep all project-related conversations, updates, and decisions in one place, creating a clear audit trail.",
       },
       {
         icon: <Share2 size={24} className="text-background" />,
-        title: "Document Sharing & Control",
-        description: "Share plans, specs, and reports with version control and access management.",
+        title: "Controlled Document Sharing",
+        description: "Share the latest plans, contracts, and submittals with version control and granular permissions.",
       },
       {
         icon: <BellRing size={24} className="text-background" />,
-        title: "Real-time Notifications",
+        title: "Automated Notifications",
         description:
-          "Stay updated on task assignments, schedule changes, and critical alerts instantly.",
+          "Keep everyone in the loop with instant alerts for new tasks, overdue items, and critical project updates.",
       },
       {
         icon: <ClipboardList size={24} className="text-background" />,
-        title: "Task Updates & Progress",
-        description: "Track and communicate task progress directly within the platform.",
+        title: "Actionable Task Management",
+        description: "Assign tasks, track progress, and ensure accountability across your entire project team.",
       },
     ],
   },
-
+  
+  // --- RESOURCES / MODULES SECTION ---
+  // Repurposing this section to showcase key modules
   featuresData: {
-    title: "Resources",
-    subtitle: "Master Invoice Strategies",
+    title: "Explore the Integrated Modules", // Repurposed title
+    subtitle: "A Tool For Every Task", // Repurposed subtitle
     description:
-      "Explore best practices and comprehensive guides for effectively qualifying contractors ",
+      "Each module is powerful on its own, but they work together to create a seamless flow of information across your projects.",
     tagColor: "text-accent",
     bgColor: "bg-custombg",
     titleColor: "text-black",
@@ -72,117 +82,122 @@ export const PLATFORM_PAGE = {
     iconBgColor: "bg-white",
     features: [
       {
-        icon: <FileText />,
-        title: "Customizable Invoice",
+        icon: <Calculator />,
+        title: "Estimation & Bidding",
         description:
-          "Create and customize invoice templates with your brand’s logo, payment terms, and project details.",
+          "Create fast, accurate bids with digital takeoffs and a centralized cost database to win more profitable work.",
+      },
+      {
+        icon: <GanttChartSquare />,
+        title: "Project Scheduling",
+        description:
+          "Build and manage detailed project schedules with task dependencies and critical path tracking.",
+      },
+      {
+        icon: <HardHat />,
+        title: "Field Reporting & Safety",
+        description:
+          "Empower site teams to capture daily logs, conduct inspections, and report hazards from their mobile devices.",
+      },
+      {
+        icon: <DollarSign />,
+        title: "Financial Management",
+        description:
+          "Connect field data to your budget in real-time for accurate job costing and financial forecasting.",
+      },
+      {
+        icon: <Users />,
+        title: "Resource Management",
+        description:
+          "Allocate and track your crew, equipment, and materials to ensure they are in the right place at the right time.",
       },
       {
         icon: <ClipboardList />,
-        title: "Invoice History & Records",
+        title: "Procurement & Inventory",
         description:
-          "Maintain an organized history of all invoices and payments, ensuring easy access to past financial data.",
-      },
-      {
-        icon: <AlertTriangle />,
-        title: "Invoice Discrepancy Alerts",
-        description:
-          "Get notified about any discrepancies or mismatches between invoices and payments for prompt resolution.",
-      },
-      {
-        icon: <PieChart />,
-        title: "Expense & Revenue Insights",
-        description:
-          "Analyze the breakdown of invoices to gain insights into project costs and revenue patterns.",
-      },
-      {
-        icon: <Receipt />,
-        title: "Comprehensive Billing Reports",
-        description:
-          "Generate billing reports to keep track of project invoicing and ensure financial transparency.",
-      },
-      {
-        icon: <RefreshCcw />,
-        title: "Invoice Updates",
-        description:
-          "Easily update or adjust invoices as project costs change, ensuring your records reflect the latest figures.",
+          "Manage purchase orders, supplier relationships, and material deliveries to keep your project supplied and on track.",
       },
     ],
   },
-
+  
+  // --- MAIN DETAILED SECTION ---
+  // Using this to focus on the core "Project Controls" aspect
   mainSection: [
     {
       image: "/Solutions/estimation-section.jpg",
-      title: "Scheduling",
-      subtitle: "Optimize Project Timelines with Smart Scheduling",
+      title: "Project Controls",
+      subtitle: "Gain Real-Time Visibility & Control",
       description:
-        "Enhance efficiency with precise scheduling tools. Plan tasks, allocate resources, and prevent delays to ensure smooth project execution.",
+        "Move from reactive problem-solving to proactive project management. Our platform gives you the live data you need to make informed decisions that protect your schedule and budget.",
       features: [
         {
           icon: <Calendar className="text-background" />,
-          title: "Advanced Project Scheduling",
+          title: "Schedule Adherence",
           description:
-            "Create detailed project schedules with dependencies, milestones, and deadlines for better coordination.",
+            "Track real-time progress against your baseline schedule and instantly identify potential delays.",
         },
         {
-          icon: <ClipboardList className="text-background" />,
-          title: "Task Management",
+          icon: <DollarSign className="text-background" />,
+          title: "Cost Management",
           description:
-            "Assign, track, and update project tasks in real-time to keep the team aligned and productive.",
+            "Monitor committed costs, track expenses, and forecast your final project costs with greater accuracy.",
         },
         {
           icon: <AlertCircle className="text-background" />,
-          title: "Conflict & Delay Alerts",
+          title: "Risk & Issue Mitigation",
           description:
-            "Get instant alerts on potential scheduling conflicts or delays, allowing for proactive problem-solving.",
+            "Identify, assign, and track project risks and issues to resolution before they impact your bottom line.",
         },
       ],
     },
   ],
 
+  // --- CORE PLATFORM FEATURES ---
   stickySection: {
-    title: "Designed for your entire team",
-    subtitle: "Platform features",
+    title: "The Platform That Powers It All",
+    subtitle: "CORE ARCHITECTURE",
     description:
-      "Tailored for universal usability, our platform minimizes operational overhead, guaranteeing maximum ROI for brands of all sizes.",
+      "Our platform is built on a foundation of security, flexibility, and collaboration, designed to fit the needs of your entire organization and scale as you grow.",
     features: [
       {
-        title: "Workspaces",
+        title: "Centralized Workspace",
         description:
-          "Workspaces enable seamless management across multiple products...",
-        icon: <PanelsTopLeft className="size-6 text-background" />,
+          "Break down information silos. Our unified workspace brings all your projects, teams, documents, and data into a single source of truth, ensuring everyone is working from the most current information.",
+        iconName: "PanelsTopLeft", 
       },
       {
-        title: "User permissions",
+        title: "Role-Based Permissions",
         description:
-          "Admin-level users can control who on your team can create...",
-        icon: <Lock className="size-6 text-background" />,
+          "Maintain complete control over your data. With granular, role-based permissions, you can confidently grant specific access to team members, subcontractors, clients, and other stakeholders, ensuring they only see what they need to.",
+        iconName: "Lock",
       },
       {
-        title: "Compliance",
+        title: "Enterprise-Grade Security",
         description:
-          "As a data company, we understand the importance of keeping...",
-        icon: <ShieldCheck className="size-6 text-background" />,
+          "Your data is your most critical asset. We protect it with best-in-class security protocols, including end-to-end encryption, regular backups, and infrastructure that meets global compliance standards.",
+        iconName: "ShieldCheck",
       },
       {
-        title: "Integrations",
-        description: "Flexible integrations your developers will love...",
-        icon: <Layers className="size-6 text-background" />,
+        title: "Seamless Integrations",
+        description: 
+          "Zedops works with the tools you already use. Our flexible API allows for seamless integration with your existing accounting, ERP, BIM, and other essential business software, creating a truly connected digital ecosystem.",
+        iconName: "Layers",
       },
     ],
   },
 
+  // --- FINAL CALL TO ACTION ---
   ctaProps: {
-    title: "Streamline Project Management for Efficiency",
-    description: "",
+    title: "See the All-in-One Platform in Action",
+    description: "Schedule a personalized demo to see how Zedops can unify your teams, streamline your workflows, and increase your profitability.",
     benefits: [
-      "Seamless project",
-      "Real-time task tracking",
-      "Data-driven project insights",
+      "Improve project visibility",
+      "Enhance team productivity",
+      "Increase profit margins",
     ],
-    button1Label: "Get Started",
+    button1Label: "Request a Demo",
     button1Link: "/book-a-demo",
-    button2Label: "Start a trial",
+    button2Label: "Talk to Sales",
     button2Link: "/start-trial",
   },
 };

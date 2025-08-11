@@ -58,29 +58,29 @@ const resource = [
 const ResourcesList = () => {
   return (
     <NavigationMenu.Item>
-      <NavigationMenu.Trigger className="group flex select-none items-center justify-between gap-0.5 px-3 py-2 text-base font-medium leading-none outline-none hover:text-white">
+      <NavigationMenu.Trigger className="group flex select-none items-center justify-between gap-0.5 px-3 py-2  leading-none outline-none text-secondary">
         Resources
         <ChevronDown
           className="relative top-[1px] ml-1 h-3 w-3 transition-transform duration-300 group-data-[state=open]:rotate-180"
           aria-hidden="true"
         />
       </NavigationMenu.Trigger>
-      <NavigationMenu.Content className="absolute left-0  top-0 w-full sm:w-auto shadow-md ">
-        <div className="flex justify-between w-full bg-background">
-          <ul className="bg-white grid grid-cols-3 p-10 gap-4 w-3/4 text-background">
+      <NavigationMenu.Content className="border absolute left-0 top-0 w-full sm:w-auto shadow-2xl ">
+        <div className="flex justify-between w-full ">
+          <ul className="grid grid-cols-3 p-10 gap-4 w-3/4 text-secondary">
             {resource.map((item, index) => (
               <Link
                 key={index}
                 href={item.href}
                 title={item.title}
-                className="flex items-center p-4 gap-4 group hover:text-primary hover:bg-background rounded-xl"
+                className="flex items-center p-4 gap-4 group hover:bg-orange-100 rounded-xl"
               >
-                <div className="p-3 bg-primary text-background rounded-full">
+                {/* <div className="p-3 bg-orange-200  rounded-full"> */}
                   {item.icon &&
                     React.createElement(item.icon, {
-                      className: "w-6 h-6",
+                      className: "w-12 h-12 text-primary",
                     })}
-                </div>
+                {/* </div> */}
                 <div className="">
                   <p className="font-semibold">{item.title}</p>
                   <p className="text-xs mt-1">{item.content}</p>
@@ -91,18 +91,18 @@ const ResourcesList = () => {
           <div className="p-6 w-1/4 flex flex-col items-start gap-4 justify-evenly">
             <div className="flex flex-row items-center gap-2">
               <Megaphone className="w-6 h-6 text-primary" />
-              <p className="text-sm font-semibold text-primary">
+              <p className="text-sm font-semibold text-secondary">
                 {"What's New"}
               </p>
             </div>
-            <div className="bg-primary rounded w-full h-[200px] mb-2 relative group"></div>
+            <div className="bg-orange-200 rounded w-full h-[200px] mb-2 relative group"></div>
             <div className="flex flex-col items-start gap-2">
               <span className="text-primary">
                 Experience the power of ZedOps firsthand
               </span>
               <Link
                 href=""
-                className="underline text-white flex flex-row items-center gap-1 hover:text-primary"
+                className="underline flex flex-row items-center gap-1 hover:text-primary"
               >
                 Register Now <ArrowRightIcon className="w-4 h-4" />
               </Link>

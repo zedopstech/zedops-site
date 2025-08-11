@@ -1,17 +1,16 @@
 import {
   CircleArrowOutDownLeft,
-  Volume,
   Sparkles,
-  LucideMousePointerClick,
-  LucideCode,
-  LucideEye,
-  LucideLink2,
   Hammer,
   KeyRound,
   TrendingUpDown,
   CircleDollarSign,
   CloudDownload,
   User,
+  LucideMousePointerClick,
+  LucideCode,
+  LucideEye,
+  LucideLink2,
   ChartNoAxesGantt,
   MonitorCog,
   BookCopy,
@@ -34,293 +33,278 @@ import {
   Pickaxe,
   ListCollapse,
   Timer,
+  Calculator,
+  Database,
+  Target,      // New Icon for Takeoff
+  CheckCircle, // New Icon for Bid Won
 } from "lucide-react";
 
 export const ESTIMATION_PAGE = {
+  // --- HERO SECTION ---
   heroProps: {
-    subtitle: "Estimation",
+    subtitle: "Estimate with Speed and Precision. Win More Profitable Bids.",
     description:
-      "Win more bids and boost your bottom line with our construction estimating software. Generate precise and reliable estimates in a fraction of the time, minimizing errors and maximizing profitability.",
-    buttonLabel: "Get Started",
-    imageSrc: "/Solutions/estimation-hero.jpg",
+      "Transform your bidding process from a manual chore into a competitive advantage. Zedops's estimation software helps you create fast, accurate, and professional bids that protect your margins and impress your clients.",
+    buttonLabel: "Start Building Your Bid",
+    imageSrc: "/Solutions/Estimation/estimation_hero.jpg",
     imageAlt:
-      "Construction estimator using software with detailed cost breakdown",
-    linkHref: "/estimation-demo",
+      "An estimator confidently using Zedops software on a laptop, with construction blueprints in the background.",
+    linkHref: "/book-a-demo",
+    
+    // --- ADDED FLOATING CARDS FOR THIS PAGE ---
+    floatingCards: [
+      {
+        icon: Target,
+        title: "Digital Takeoff Complete",
+        subtitle: "1,250 sq meters calculated",
+        positionClasses: "top-1/3 -left-24 hidden lg:block",
+      },
+      {
+        icon: Calculator,
+        title: "Total Bid Price",
+        subtitle: "$1,245,500.00",
+        positionClasses: "top-10 -right-16 hidden lg:block",
+      },
+      {
+        icon: CheckCircle,
+        title: "Status: Bid Won",
+        subtitle: "Project Alpha",
+        positionClasses: "bottom-1/4 -right-16 hidden lg:block",
+      },
+    ],
   },
+
+  // --- SUB-HERO / VALUE PROPOSITION ---
   heroSectionProps: {
-    subtitle: "ACCURATE COST PREDICTIONS",
-    title: "Accurate Project Estimations",
+    subtitle: "FROM GUESSWORK TO GUARANTEE",
+    title: "Build Bids You Can Trust",
     description:
-      "Generate detailed, reliable cost estimates to prevent overruns and keep your projects on budget and on schedule.",
-    buttonLabel: "Start Estimating",
-    buttonLink: "/start-estimating",
+      "Our powerful estimation tools eliminate the costly errors of manual spreadsheets. Leverage digital takeoffs, a centralized cost database, and intelligent analytics to ensure every estimate is both competitive and profitable.",
+    buttonLabel: "Request a Demo",
+    buttonLink: "/book-a-demo",
   },
+
+  // --- CORE FEATURES ---
   featuresSectionProps: {
     features: [
       {
-        title: "Drag-and-Drop Estimation",
+        title: "Digital Takeoffs from Plans",
         description:
-          "Easily create detailed project estimates with our intuitive, user-friendly interface no technical expertise required.",
+          "Upload your PDF plans and perform takeoffs directly on screen. Measure counts, lengths, and areas in minutes, not hours, with complete accuracy.",
         imageSrc: "/Solutions/estimation-1.jpg",
       },
       {
-        title: "Advanced Cost Breakdown",
+        title: "Centralized Cost Database",
         description:
-          "Break down materials, labor, and equipment costs with granular control, ensuring precise budget planning.",
+          "Build and maintain a live database of your material, labor, and equipment costs. Ensure consistency across all bids and update prices in one place.",
         imageSrc: "/Solutions/estimation-2.jpg",
       },
     ],
   },
+
+  // --- BENEFITS / OUTCOMES ---
   TestimonalsSectionProps: {
-    subtitle: "BUDGET WITH CONFIDENCE",
-    title: "Control Your Project Costs",
+    subtitle: "WHY ZEDOPS ESTIMATION?",
+    title: "The Smarter Way to Price Your Work",
     imageSrc: "/Solutions/estimation-testimonal.jpg",
-    imageAlt: "Illustration showing cost control in construction projects",
+    imageAlt:
+      "An illustration of a calculator and a rising chart, symbolizing profitability.",
     features: [
       {
-        title: "Real-Time Estimates",
+        title: "Increase Bid-Win Rate",
         description:
-          "Generate precise cost estimates instantly and adjust them dynamically as project conditions change.",
+          "Produce more accurate and professional bids faster than your competition, allowing you to bid on more projects and win more work.",
         icon: <CircleArrowOutDownLeft size={24} />,
       },
       {
-        title: "Data-Driven Decision Making",
+        title: "Protect Your Profit Margins",
         description:
-          "Use historical data and predictive analytics to enhance your cost forecasting and planning strategies.",
-        icon: <Volume size={24} />,
+          "Eliminate costly miscalculations and overlooked expenses. Ensure every project you win is priced for profitability from day one.",
+        icon: <Calculator size={24} />,
       },
       {
-        title: "Seamless Budget Adjustments",
+        title: "Build Client Trust",
         description:
-          "Adapt to changing project scopes with flexible, automated budget recalculations and real-time updates.",
+          "Present clients with detailed, transparent, and professional bid proposals that build confidence and justify your costs.",
         icon: <Sparkles size={24} />,
       },
     ],
   },
+
+  // --- DETAILED FEATURE SECTIONS ---
   mainSectionData: [
     {
       image: "/Solutions/estimation-section.jpg",
-
-      title: "Smart Cost",
-      subtitle: "Detailed Budgeting",
+      title: "Granular Cost Control",
+      subtitle: "Detailed Line-Item Assembly",
       description:
-        "Organize your estimates with structured categories for materials, labor, and overhead to improve cost tracking.",
+        "Go beyond simple line items. Build detailed cost assemblies that group together all the material, labor, and equipment required for a specific task, ensuring nothing is missed.",
       features: [
         {
           icon: <Hammer size={24} className="text-background" />,
-          title: "Categorize Costs Effectively",
+          title: "Build Custom Assemblies",
           description:
-            "Segment costs based on trade, project phase, or material type for better financial insights.",
+            "Create reusable assemblies for common tasks (e.g., a square meter of drywall) for rapid estimating.",
         },
         {
           icon: <KeyRound size={24} className="text-background" />,
-          title: "Leverage Key Cost Data",
+          title: "Link to Your Cost Database",
           description:
-            "Utilize industry benchmarks and historical data to improve estimate accuracy.",
+            "Automatically pull the latest pricing for materials and labor rates directly into your assemblies.",
         },
         {
           icon: <TrendingUpDown size={24} className="text-background" />,
-          title: "Dynamic Estimate Adjustments",
+          title: "Factor in Margins & Overheads",
           description:
-            "Modify estimates in real time as project variables change.",
+            "Apply markups, taxes, contingencies, and company overheads with precision across the entire bid.",
         },
       ],
     },
     {
       image: "/Solutions/estimation section-1.jpg",
-
       imageOnRight: "true",
-      title: "Estimation Software",
-      subtitle: "Real-Time Calculations",
+      title: "Data-Driven Insights",
+      subtitle: "Learn from Every Project",
       description:
-        "Enhance accuracy with automated calculations, live pricing updates, and AI-driven cost projections.",
+        "Your past projects are your most valuable asset. Zedops turns your historical bid data into powerful insights, helping you refine your pricing and improve accuracy over time.",
       features: [
         {
           icon: <CircleDollarSign size={24} className="text-background" />,
-          title: "Live Market Pricing",
+          title: "Bid vs. Actuals Analysis",
           description:
-            "Stay updated with the latest material and labor cost fluctuations.",
+            "Compare your original estimate against actual project costs to understand where you were accurate and where you can improve.",
         },
         {
-          icon: <CloudDownload size={24} className="text-background" />,
-          title: "Cloud-Based Collaboration",
+          icon: <Database size={24} className="text-background" />,
+          title: "Historical Cost Library",
           description:
-            "Enable real-time collaboration across teams for seamless project estimation.",
+            "Automatically build a library of your real-world costs to create more accurate benchmarks for future bids.",
         },
         {
           icon: <User size={24} className="text-background" />,
-          title: "Integrate with Accounting Systems",
+          title: "Seamless Integration",
           description:
-            "Sync estimates with accounting and project management software for smoother workflows.",
+            "Connect your estimates to project management and accounting to close the loop from bid to budget.",
         },
       ],
     },
   ],
+
+  // --- GRID OF ALL FEATURES ---
   featureData: [
     {
       icon: <LucideMousePointerClick className="text-background" />,
-      title: "Drag-and-Drop Estimation",
-      description: "Quickly build project estimates in a familiar interface.",
+      title: "On-Screen Takeoff",
+      description:
+        "Measure directly from your digital plans—no printing required.",
     },
     {
       icon: <LucideCode className="text-background" />,
-      title: "Custom Estimation Rules",
-      description: "Define cost parameters to fit your specific project needs.",
+      title: "Customizable Cost Catalogs",
+      description:
+        "Build a database of your items, labor rates, and equipment.",
     },
     {
       icon: <LucideEye className="text-background" />,
-      title: "Real-Time Cost Analysis",
-      description: "Monitor project costs and make data-driven adjustments.",
+      title: "Real-Time Cost Totals",
+      description:
+        "See your total bid price update instantly as you build your estimate.",
     },
     {
       icon: <LucideLink2 className="text-background" />,
-      title: "Pre-Designed Templates",
+      title: "Reusable Estimate Templates",
       description:
-        "Use pre-built templates for faster, more consistent estimates.",
+        "Use pre-built templates for common project types to ensure consistency.",
     },
     {
       icon: <ChartNoAxesGantt className="text-background" />,
-      title: "Multi-Project Management",
+      title: "Bid Management Dashboard",
       description:
-        "Handle multiple project estimates within a single dashboard.",
+        "Track the status of all your bids—submitted, won, lost—in one place.",
     },
     {
       icon: <MonitorCog className="text-background" />,
-      title: "Accounting System ",
-      description: "Easily sync estimates with your financial reporting tools.",
+      title: "Accounting Integration",
+      description:
+        "Push winning bids into your accounting software to create project budgets.",
     },
     {
       icon: <BookCopy className="text-background" />,
-      title: "Automated Report",
-      description: "Create professional estimate reports instantly.",
+      title: "Professional Proposal Generation",
+      description:
+        "Create polished, client-ready bid proposals with customizable branding.",
     },
     {
       icon: <Brain className="text-background" />,
-      title: "AI-Powered Cost Forecasting",
+      title: "AI-Powered Cost Suggestions",
       description:
-        "Utilize predictive analytics to estimate future project costs.",
+        "Get smart suggestions based on historical data for similar project types.",
     },
     {
       icon: <BrickWall className="text-background" />,
-      title: "Automated Quantity Takeoff",
+      title: "Material Quantity Calculation",
       description:
-        "Instantly calculate material quantities from blueprints and designs.",
+        "Automatically calculate required material quantities from your takeoffs.",
     },
     {
       icon: <CloudLightning className="text-background" />,
-      title: "Cloud-Based Access",
+      title: "Cloud-Based Platform",
       description:
-        "Work on your estimates from anywhere with secure cloud storage.",
+        "Access and work on your estimates from anywhere, on any device.",
     },
     {
       icon: <Wrench className="text-background" />,
-      title: "Cost Comparison Tools",
+      title: "Subcontractor Quoting",
       description:
-        "Compare vendor pricing and material costs for the best value.",
-    },
-    {
-      icon: <Boxes className="text-background" />,
-      title: "Unit Cost Estimation",
-      description:
-        "Break down project estimates by unit pricing for better accuracy.",
+        "Send out bid packages to subcontractors and compare their quotes side-by-side.",
     },
     {
       icon: <Shuffle className="text-background" />,
       title: "Change Order Management",
       description:
-        "Easily adjust estimates based on project scope changes in real time.",
-    },
-    {
-      icon: <FileText className="text-background" />,
-      title: "Historical Data Insights",
-      description: "Use past project data to refine future cost estimations.",
-    },
-    {
-      icon: <Container className="text-background" />,
-      title: "Vendor & Supplier ",
-      description:
-        "Connect directly with suppliers for real-time pricing and availability.",
-    },
-    {
-      icon: <ChartSpline className="text-background" />,
-      title: "Cost Breakdown Reports",
-      description:
-        "Generate detailed reports to analyze costs at every project phase.",
-    },
-    {
-      icon: <Dna className="text-background" />,
-      title: "Bid Proposal Generation",
-      description:
-        "Create professional bid proposals based on your estimates in minutes.",
-    },
-    {
-      icon: <Combine className="text-background" />,
-      title: "Multi-User Collaboration",
-      description:
-        "Allow teams to work together on estimates with role-based access.",
-    },
-    {
-      icon: <CarTaxiFront className="text-background" />,
-      title: "Tax & Compliance",
-      description:
-        "Automatically factor in taxes, fees, and regulations for accurate pricing.",
-    },
-    {
-      icon: <MonitorSmartphone className="text-background" />,
-      title: "Mobile-Friendly Estimation",
-      description:
-        "Create and update project estimates directly from your mobile device.",
+        "Quickly price and document change orders to protect your scope and profit.",
     },
   ],
+
+  // --- RESOURCES / GUIDES SECTION ---
   featuresData: {
     title: "Resources",
-    subtitle: "Master Estimation Strategies",
+    subtitle: "Master Your Bidding Strategy",
     description:
-      "Explore best practices and comprehensive guides for creating accurate and efficient construction project estimates.",
+      "Explore our expert guides to create more accurate and competitive construction estimates.",
     features: [
       {
-        title: "Want to master estimation?",
-        description: "Join our expert-led workshop.",
         icon: <GraduationCap className="text-white" />,
+        title: "Tutorial: Building Your First Estimate",
+        description: "Watch our step-by-step guide.",
       },
       {
         icon: <Filter className="text-white" />,
-        title: "Fundamentals of Cost Estimation",
-        description: "Access the complete guide.",
+        title: "The Complete Guide to Digital Takeoffs",
+        description: "Access the guide.",
       },
       {
         icon: <HandCoins className="text-white" />,
-        title: "Advanced Cost Analysis",
-        description: "Learn how to refine your project estimates.",
+        title: "How to Build a Powerful Cost Database",
+        description: "Read our best practices.",
       },
       {
         icon: <Pickaxe className="text-white" />,
-        title: "Optimizing Material & Labor Estimations",
-        description: "Improve your cost efficiency strategies.",
-      },
-      {
-        icon: <ListCollapse className="text-white" />,
-        title: "Best Practices for Accurate Costing",
-        description: "Enhance your budgeting precision.",
-      },
-      {
-        icon: <Timer className="text-white" />,
-        title: "Time-Efficient Estimation Workflows",
-        description: "Speed up your estimation process.",
+        title: "5 Common Estimating Mistakes and How to Avoid Them",
+        description: "Read the article.",
       },
     ],
   },
+
+  // --- FINAL CALL TO ACTION ---
   ctaProps: {
-    title: "Start Estimating with Confidence",
-    description: "",
-    benefits: [
-      "14-day free trial",
-      "No credit card required",
-      "Cancel anytime",
-    ],
-    button1Label: "Book a Demo",
+    title: "Start Building More Profitable Bids Today",
+    description:
+      "See for yourself how Zedops can speed up your estimating process and increase your bid-win rate. ",
+    benefits: ["Win more bids", "Protect your profit", "Build client trust"],
+    button1Label: "Request a Demo",
     button1Link: "/book-a-demo",
-    button2Label: "Start a Trial",
+    button2Label: "Start a Free Trial",
     button2Link: "/start-trial",
   },
 };

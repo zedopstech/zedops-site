@@ -1,98 +1,117 @@
+"use client";
+
+import React, { useState } from "react";
 import Image from "next/image";
+import Link from "next/link";
+import { MoveRightIcon } from "lucide-react";
+import { Button } from "@/Components/UI/button"; // Import your button for consistency
+
+// Define the structure for a single app/integration
 interface App {
   href: string;
   image: string;
   name: string;
   description: string;
+  category: string; // Added category for filtering
 }
 
-interface FeatureIntegrationType {
+// Define the props for the entire section
+interface IntegrationsSectionProps {
   title: string;
   subtitle: string;
   apps: App[];
 }
-import { MoveRightIcon } from "lucide-react";
 
-export default function FeatureIntegration({
-  FeatureIntegration,
-}: {
-  FeatureIntegration: FeatureIntegrationType;
-}) {
+const IntegrationsSection: React.FC<{ data: IntegrationsSectionProps }> = ({ data }) => {
+  // Get all unique categories from the data
+  const categories = ["All", ...Array.from(new Set(data.apps.map((app) => app.category)))];
+  const [activeCategory, setActiveCategory] = useState("All");
+
+  // Filter apps based on the active category
+  const filteredApps = activeCategory === "All"
+    ? data.apps
+    : data.apps.filter((app) => app.category === activeCategory);
+
   return (
-    <>
-      <section className="relative overflow-x-clip py-12 sm:py-20 md:py-24 lg:py-28 theme-green light flex flex-col gap-20 bg-white text-foreground">
-        <div className="container flex flex-col gap-6 text-center">
-          <div>
-            <div className="mb-2 text-accent">
-              <div className="flex justify-center items-center gap-x-3 text-sm font-bold uppercase tracking-wide">
-                {FeatureIntegration?.title}
-              </div>
-            </div>
-            <h2 className="mx-auto max-w-[22ch] first-letter:capitalize text-center text-4xl font-medium">
-              {FeatureIntegration?.subtitle}
-            </h2>
-          </div>
+    <section className="bg-white py-20 md:py-28">
+      <div className="container mx-auto max-w-7xl px-6 lg:px-8">
+        {/* Section Header */}
+        <div className="max-w-3xl mx-auto text-center mb-12">
+          <span className="inline-block px-4 py-1.5 text-sm font-semibold bg-primary/10 text-primary rounded-full mb-4 uppercase tracking-wider">
+            {data.title}
+          </span>
+          <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-secondary leading-tight">
+            {data.subtitle}
+          </h2>
         </div>
-        <div className="container grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3 lg:gap-6 mx-auto max-w-6xl">
-          {FeatureIntegration?.apps.map((app: App, index: number) => (
-            <a href={app.href} key={index}>
-              <div className="size-full overflow-hidden rounded p-6 md:p-8 group h-full border border-gray-100 bg-custombg transition-all ease-out translate-y-0 hover:border-gray-200 hover:-translate-y-1">
-                <div className="flex h-full flex-col justify-between gap-8">
-                  <div className="flex flex-col gap-4">
-                    <div className="relative h-12">
+
+        {/* Category Filter Buttons */}
+        <div className="flex flex-wrap justify-center gap-2 md:gap-4 mb-16">
+          {categories.map((category) => (
+            <Button
+              key={category}
+              onClick={() => setActiveCategory(category)}
+              variant={activeCategory === category ? "default" : "outline"}
+              className={`rounded-full px-5 py-2.5 font-semibold transition-all duration-300 hover:bg-primary ${
+                activeCategory === category
+                  ? 'bg-primary text-white shadow-md'
+                  : 'text-secondary/80 border-gray-300 hover:bg-gray-100 hover:border-gray-400'
+              }`}
+            >
+              {category}
+            </Button>
+          ))}
+        </div>
+
+        {/* Integrations Grid */}
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+          {filteredApps.map((app, index) => (
+            <Link href={app.href} key={index} className="group">
+              <div className="h-full bg-gray-50 p-8 rounded-2xl border border-gray-200/80 transition-all duration-300 hover:shadow-xl hover:border-secondary hover:-translate-y-2">
+                <div className="flex h-full flex-col justify-between">
+                  {/* Top part: Icon and Text */}
+                  <div className="flex flex-col">
+                    <div className="relative h-12 w-32 mb-6">
                       {app.image && (
                         <Image
                           fill
                           src={app.image}
-                          alt={app.name}
+                          alt={`${app.name} logo`}
                           className="object-contain object-left"
-                          sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
                         />
                       )}
                     </div>
                     <div>
-                      <h3 className="mb-2 text-xl font-semibold leading-tight first-letter:normal-case">
+                      <h3 className="mb-2 text-xl font-bold text-secondary">
                         {app.name}
                       </h3>
-                      <p className="text-base leading-tight text-foreground-muted group-hover:text-foreground">
+                      <p className="text-base text-secondary/70">
                         {app.description}
                       </p>
                     </div>
                   </div>
-                  <div className="flex flex-row items-center justify-between text-base font-semibold text-muted transition-colors">
-                    {app.href && app.href !== '#' ? (
-                      <>
-                        Learn more
-                        <MoveRightIcon className="size-5 opacity-0 transition-all ease-out-fast -translate-x-2 group-hover:opacity-100 group-hover:translate-x-0" />
-                      </>
-                    ) : (
-                      <span></span>
-                    )}
+                  {/* Bottom part: Learn More Link */}
+                  <div className="mt-6 flex items-center font-semibold text-primary opacity-0 transition-opacity duration-300 group-hover:opacity-100">
+                    <span>Learn more</span>
+                    <MoveRightIcon className="w-5 h-5 ml-2 transition-transform duration-300 -translate-x-2 group-hover:translate-x-0" />
                   </div>
                 </div>
               </div>
-            </a>
+            </Link>
           ))}
         </div>
-        <div className="container relative">
-          <div className="flex items-center justify-center gap-2">
-            <a
-              target="_blank"
-              className="group relative z-[1] inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-full text-base font-bold leading-[50%] ring-offset-background transition-all duration-100 after:absolute after:inset-0 after:z-[-1] after:rounded-full after:bg-back after:transition-all after:duration-300 after:ease-out-fast hover:after:border-foreground hover:after:bg-background hover:after:scale-105 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 active:after:bg-foreground active:after:scale-100 disabled:pointer-events-none disabled:opacity-50 after:border-2 after:border-foreground after:bg-transparent hover:text-white active:text-background h-12 px-5 py-2"
-              href="#"
-            >
-              <span className="relative flex min-h-10 flex-col justify-center overflow-hidden">
-                <span className="relative transition-all duration-500 ease-out-fast translate-y-0 group-hover:opacity-0 group-hover:-translate-y-10">
-                  See all integrations
-                </span>
-                <span className="absolute opacity-0 transition-all duration-500 ease-out-fast translate-y-10 group-hover:opacity-100 group-hover:-translate-y-0">
-                  See all integrations
-                </span>
-              </span>
-            </a>
-          </div>
-        </div>
-      </section>
-    </>
+
+        {/* "View All" Button */}
+        {/* <div className="mt-20 text-center">
+            <Link href="/integrations">
+                <Button size="lg" className="px-8 py-6 text-lg font-semibold bg-primary text-white hover:bg-secondary shadow-lg">
+                    See All Integrations
+                </Button>
+            </Link>
+        </div> */}
+      </div>
+    </section>
   );
-}
+};
+
+export default IntegrationsSection;

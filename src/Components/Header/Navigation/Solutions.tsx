@@ -34,12 +34,12 @@ const featuresMenu = [
         description: "Manage tenders and streamline bidding processes.",
         icon: ClipboardList,
       },
-      {
-        title: "BIM",
-        href: "/features/tendering-management/bim",
-        description: "Building Information Modeling for efficient planning.",
-        icon: Building2,
-      },
+      // {
+      //   title: "BIM",
+      //   href: "/features/tendering-management/bim",
+      //   description: "Building Information Modeling for efficient planning.",
+      //   icon: Building2,
+      // },
       {
         title: "Estimation and Take-off",
         href: "/features/tendering-management/estimation",
@@ -100,29 +100,29 @@ const featuresMenu = [
       },
     ],
   },
-  {
-    category: "Construction Intelligence",
-    items: [
-      {
-        title: "Predictive Analytics",
-        href: "/features/construction-intelligence/predictive-analytics",
-        description: "Gain insights with advanced analytics tools.",
-        icon: Brain,
-      },
-      {
-        title: "Real-Time Dashboards",
-        href: "/features/construction-intelligence/real-time-dashboards",
-        description: "Gain insights with advanced analytics tools.",
-        icon: LayoutDashboard,
-      },
-      {
-        title: "Reports and Alerts",
-        href: "/features/construction-intelligence/reports-and-alerts",
-        description: "Gain insights with advanced analytics tools.",
-        icon: NotepadText,
-      },
-    ],
-  },
+  // {
+  //   category: "Construction Intelligence",
+  //   items: [
+  //     {
+  //       title: "Predictive Analytics",
+  //       href: "/features/construction-intelligence/predictive-analytics",
+  //       description: "Gain insights with advanced analytics tools.",
+  //       icon: Brain,
+  //     },
+  //     {
+  //       title: "Real-Time Dashboards",
+  //       href: "/features/construction-intelligence/real-time-dashboards",
+  //       description: "Gain insights with advanced analytics tools.",
+  //       icon: LayoutDashboard,
+  //     },
+  //     {
+  //       title: "Reports and Alerts",
+  //       href: "/features/construction-intelligence/reports-and-alerts",
+  //       description: "Gain insights with advanced analytics tools.",
+  //       icon: NotepadText,
+  //     },
+  //   ],
+  // },
 ];
 
 const featureNav = [
@@ -149,20 +149,20 @@ const featureNav = [
 const SolutionsList = () => {
   return (
     <NavigationMenu.Item>
-      <NavigationMenu.Trigger className="group flex select-none items-center justify-between gap-0.5 px-3 py-2 text-base font-medium leading-none hover:text-white">
+      <NavigationMenu.Trigger className="group flex select-none items-center justify-between gap-0.5 px-3 py-2 leading-none text-secondary">
         Solutions
         <ChevronDown
           className="relative top-[1px] ml-1 h-3 w-3 transition duration-300 group-data-[state=open]:rotate-180"
           aria-hidden="true"
         />
       </NavigationMenu.Trigger>
-      <NavigationMenu.Content className="absolute left-0 top-0 data-[motion=from-end]:animate-enterFromRight data-[motion=from-start]:animate-enterFromLeft data-[motion=to-end]:animate-exitToRight data-[motion=to-start]:animate-exitToLeft shadow-md">
-        <div className="flex w-screen bg-background">
-          <div className="flex flex-col w-3/4 bg-white">
+      <NavigationMenu.Content className="border absolute left-0 top-0 data-[motion=from-end]:animate-enterFromRight data-[motion=from-start]:animate-enterFromLeft data-[motion=to-end]:animate-exitToRight data-[motion=to-start]:animate-exitToLeft shadow-2xl">
+        <div className="flex w-screen">
+          <div className="flex flex-col w-3/4">
             <div className="grid gap-6 p-10 xl:grid-cols-3 grid-cols-2">
               {featuresMenu.map((category, index) => (
                 <div key={index}>
-                  <h3 className="mb-2 text-sm font-bold uppercase text-background">
+                  <h3 className="mb-2 text-sm font-bold uppercase text-secondary">
                     {category.category}
                   </h3>
                   <ul className="space-y-2">
@@ -172,17 +172,17 @@ const SolutionsList = () => {
                           href={item.href}
                           title={item.title}
                           className={cn(
-                            "flex items-center space-x-3 select-none rounded-xl leading-none no-underline outline-none transition-colors hover:bg-background p-2 group"
+                            "flex items-center space-x-3 select-none rounded-xl leading-none no-underline outline-none transition-colors hover:bg-orange-100 p-2 group"
                           )}
                         >
-                          <div className="p-2 bg-primary group-hover:bg-white rounded-full">
+                          {/* <div className="p-2 bg-orange-200 rounded-full"> */}
                             {item.icon &&
                               React.createElement(item.icon, {
-                                className: "w-6 h-6 text-background ",
+                                className: "w-8 h-8 text-primary",
                               })}
-                          </div>
+                          {/* </div> */}
                           <div className="flex items-center justify-between w-full">
-                            <div className="font-medium text-sm flex items-center gap-2 text-background group-hover:text-white">
+                            <div className="font-medium text-sm flex items-center gap-2 text-secondary">
                               <span>{item.title}</span>
                             </div>
                           </div>
@@ -194,9 +194,9 @@ const SolutionsList = () => {
               ))}
             </div>
           </div>
-          <div className="p-6 w-1/4 flex flex-col items-start gap-4 justify-evenly">
+          <div className=" p-6 w-1/4 flex flex-col items-start gap-4 justify-evenly">
             <div className="h-full w-full flex flex-col">
-              <Button className="bg-primary hover:bg-primary/35 hover:animate-pulse rounded w-full h-[200px] mb-4 relative group">
+              <Button className="bg-orange-200 hover:bg-orange-100 hover:animate-pulse rounded w-full h-[200px] mb-4 relative group">
                 <div className="absolute bottom-0 left-0 m-4 p-2 bg-background text-primary rounded-full">
                   <Play className="w-5 h-5  fill-current" />
                 </div>
@@ -204,7 +204,7 @@ const SolutionsList = () => {
               <span className="text-primary font-bold">
                 Take a tour of ZedOps
               </span>
-              <p className="text-white text-sm opacity-80">
+              <p className="text-sm opacity-80">
                 See how ZedOps enhances construction projects with powerful
                 insights, streamlined management, and automated decision-making.
               </p>
@@ -214,7 +214,7 @@ const SolutionsList = () => {
                 <Link
                   href={item.href}
                   key={idx}
-                  className="text-white rounded-xl hover:text-background flex p-3 items-center hover:bg-white gap-2"
+                  className="rounded-xl flex p-3 items-center gap-2"
                 >
                   {item.icon &&
                     React.createElement(item.icon, {

@@ -103,7 +103,7 @@ const featureGroups = [
 
 const FeatureCard = ({ feature }: { feature: typeof content.features[0] }) => (
   <div 
-    className="bg-gradient-to-br from-gray-50 via-gray-50 to-gray-100 rounded-xl p-6 shadow-sm hover:shadow-md transition-all duration-300 hover:scale-[1.02] hover:-translate-y-1 group border border-gray-100/50 relative overflow-hidden h-full"
+    className="rounded-xl p-6 shadow-sm hover:shadow-md transition-all duration-300 hover:scale-[1.02] hover:-translate-y-1 group border border-gray-200 relative overflow-hidden h-full"
   >
     {/* Gradient overlay effect */}
     <div className="absolute inset-0 bg-gradient-to-br from-secondary/5 to-primary/5 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
@@ -113,7 +113,7 @@ const FeatureCard = ({ feature }: { feature: typeof content.features[0] }) => (
       {/* Subtle background decoration */}
       <div className="absolute -bottom-10 -right-10 w-24 h-24 rounded-full bg-secondary/5 group-hover:bg-secondary/10 transition-colors duration-300"></div>
       
-      <div className="mb-5 inline-flex items-center justify-center w-14 h-14 rounded-xl bg-secondary/10 text-secondary group-hover:bg-secondary/20 group-hover:text-secondary transition-all duration-300 shadow-sm">
+      <div className="mb-5 inline-flex items-center justify-center w-14 h-14 rounded-xl bg-orange-100 text-primary transition-all duration-300 shadow-sm">
         <feature.icon size={26} />
       </div>
       
@@ -167,11 +167,11 @@ const CoreFeatures: React.FC = () => {
       <div className="mx-auto max-w-7xl relative z-10">
         {/* Section Header */}
         <div className="max-w-3xl mx-auto text-center mb-16">
-          <span className="inline-block px-4 py-1.5 rounded-full bg-secondary/10 text-secondary text-sm font-semibold mb-5 shadow-sm">Core Capabilities</span>
-          <h2 className="text-3xl leading-tight text-gray-800 sm:text-4xl xl:text-5xl font-bold mb-6">
-            <span className="text-secondary">{content.mainTitle}</span>
+          <span className="inline-block px-4 py-1.5 rounded-full bg-secondary text-white text-sm font-semibold mb-5 shadow-sm">Core Capabilities</span>
+          <h2 className="text-3xl leading-tight sm:text-4xl xl:text-5xl font-bold mb-6">
+            <span className="text-primary">{content.mainTitle}</span>
           </h2>
-          <p className="text-gray-600 text-lg max-w-2xl mx-auto">
+          <p className="text-secondary text-lg max-w-2xl mx-auto">
             {content.subTitle}
           </p>
         </div>
@@ -215,19 +215,18 @@ const CoreFeatures: React.FC = () => {
           {/* Centralized navigation controls for both carousels */}
           <div className="flex justify-center mt-8">
             <Button
-              variant="outline"
+              
               size="icon"
               onClick={scrollPrev}
-              className="relative mr-2 rounded-full text-primary hover:bg-background" 
+              className="relative mr-2 rounded-full text-white hover:bg-orange-200 bg-secondary" 
             >
               <ChevronLeft className="h-5 w-5" />
               <span className="sr-only">Previous slide</span>
             </Button>
             <Button
-              variant="outline"
               size="icon"
               onClick={scrollNext}
-              className="relative ml-2 rounded-full text-primary hover:bg-background"
+              className="relative ml-2 rounded-full hover:bg-orange-200 text-white bg-secondary"
             >
               <ChevronRight className="h-5 w-5" />
               <span className="sr-only">Next slide</span>
@@ -236,15 +235,15 @@ const CoreFeatures: React.FC = () => {
         </div>
 
         {/* CTA Button */}
-        <div className="mt-20 text-center">
+        {/* <div className="mt-20 text-center">
           <Link 
             href={content.cta.link}
-            className="inline-flex items-center px-8 py-3.5 bg-secondary/90 hover:bg-secondary text-white font-semibold rounded-lg shadow-md hover:shadow-lg hover:scale-[1.02] transition-all duration-300"
+            className="inline-flex items-center px-4 py-2 bg-primary hover:bg-secondary text-white rounded-lg shadow-md hover:shadow-lg hover:scale-[1.02] transition-all duration-300"
           >
             {content.cta.text}
-            <svg className="ml-2 w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path></svg>
+            <ChevronRight className="ml-2 h-4 w-4" />
           </Link>
-        </div>
+        </div> */}
       </div>
     </section>
   );

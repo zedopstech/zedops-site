@@ -3,7 +3,7 @@ import {
   ClipboardList,
   AlertTriangle,
   ShieldAlert,
-  Thermometer,
+  // Thermometer, // Often too specific, can be removed
   CheckCheck,
   ClipboardCheck,
   Layers,
@@ -20,309 +20,259 @@ import {
   AlertCircle,
   Clock,
   FileText,
+  HardHat,      // New Icon
+  Camera,       // New Icon
+  ListChecks,   // New Icon
 } from "lucide-react";
 
 export const QUALITYANDSAFETY_PAGE = {
+  // --- HERO SECTION ---
   heroProps: {
-    subtitle: "Quality & Safety",
+    subtitle: "Build with Certainty. Protect Your People and Your Projects.",
     description:
-      "Protect your team, projects, and reputation with our comprehensive quality and safety management solution. Proactively identify risks, streamline inspections, and ensure a safe and compliant work environment.",
-    buttonLabel: "Get Started",
-    imageSrc: "/Solutions/estimation-hero.jpg", // MUST UPDATE
-    imageAlt: "Construction site safety inspection using a mobile app",
-    linkHref: "/quality-safety-demo",
+      "Transform your site safety and quality assurance from a reactive chore into a proactive advantage. Zedops empowers your team to identify risks before they become incidents and ensure every aspect of your project meets the highest standards.",
+    buttonLabel: "Enhance Your Site Safety",
+    imageSrc: "/Solutions/Quality/quality.webp", // MUST UPDATE
+    imageAlt: "A safety manager on a construction site using a tablet to conduct a digital safety inspection.",
+    linkHref: "/book-a-demo",
+    
+    // --- Floating Cards for the Quality & Safety Hero Section ---
+    floatingCards: [
+      {
+        icon: HardHat,
+        title: "Toolbox Talk Complete",
+        subtitle: "15 team members signed off",
+        positionClasses: "top-16 -left-20",
+      },
+      {
+        icon: AlertTriangle,
+        title: "New Observation Logged",
+        subtitle: "Corrective action assigned",
+        positionClasses: "bottom-1/4 -left-24",
+      },
+      {
+        icon: Camera,
+        title: "Inspection Photos Uploaded",
+        subtitle: "Quality check for concrete pour",
+        positionClasses: "top-1/3 -right-16",
+      },
+    ],
   },
 
+  // --- SUB-HERO / VALUE PROPOSITION ---
   heroSectionProps: {
-    subtitle: "ENSURE TOP-TIER SAFETY & QUALITY",
-    title: "Monitor,and Improve Construction Safety",
+    subtitle: "Proactive Risk & Quality Management",
+    title: "From Compliance to Excellence",
     description:
-      "Enhance safety measures and maintain quality standards with real-time tracking, risk alerts, and compliance monitoring.",
-    buttonLabel: "Explore Features",
-    buttonLink: "/quality-and-safety-features",
+      "Move beyond simple checklists. Our platform provides a connected, real-time view of your site's safety and quality performance, enabling you to build a world-class culture of accountability.",
+    buttonLabel: "Request a Demo",
+    buttonLink: "/book-a-demo",
   },
 
+  // --- CORE FEATURES ---
   featuresSectionProps: {
     features: [
       {
-        title: "Real-Time Safety Monitoring",
+        title: "Digital Inspections & Checklists",
         description:
-          "Track safety metrics in real-time to ensure a safe working environment and prevent accidents.",
+          "Conduct safety audits, quality checks, and site inspections from any mobile device. Use pre-built templates or create your own custom forms in minutes.",
         imageSrc: "/Solutions/estimation-1.jpg",
       },
       {
-        title: "Quality Control Tracking",
+        title: "Actionable Issue Tracking",
         description:
-          "Monitor quality standards throughout the project with detailed inspections and performance tracking.",
+          "Capture issues, observations, and non-conformances instantly with photos. Assign corrective actions and track them to resolution with a clear audit trail.",
         imageSrc: "/Solutions/estimation-2.jpg",
       },
     ],
   },
 
+  // --- BENEFITS / OUTCOMES ---
   TestimonalsSectionProps: {
-    subtitle: "ENSURE TOP-QUALITY AND SAFE PROJECTS",
-    title: "Enhance Quality & Safety Standards",
+    subtitle: "Why ZedOps Quality & Safety?",
+    title: "A Safer, Higher-Quality Project is a More Profitable Project",
     imageSrc: "/Solutions/estimation-testimonal.jpg",
-    imageAlt: "Illustration showing quality and safety features",
+    imageAlt: "An illustration of a shield protecting a construction project, symbolizing risk mitigation.",
     features: [
       {
-        title: "Real-Time Safety Monitoring",
+        title: "Prevent Costly Incidents",
         description:
-          "Track safety performance in real-time, ensuring immediate action on any safety hazards or risks.",
+          "Proactively identify and mitigate hazards before they lead to accidents, reducing downtime, insurance costs, and project delays.",
         icon: <ShieldCheck size={24} />,
       },
       {
-        title: "Quality Inspections & Reports",
+        title: "Eliminate Rework",
         description:
-          "Generate detailed quality reports and track inspections to maintain construction standards.",
+          "Catch quality issues early with standardized inspections and real-time tracking, ensuring work is done right the first time.",
         icon: <ClipboardList size={24} />,
       },
       {
-        title: "Compliance & Risk Alerts",
+        title: "Build a Stronger Reputation",
         description:
-          "Receive instant alerts for potential safety violations or non-compliance issues to take corrective actions.",
+          "Demonstrate your commitment to excellence. A strong safety and quality record helps you win more bids and attract top talent.",
         icon: <AlertTriangle size={24} />,
       },
     ],
   },
 
+  // --- DETAILED FEATURE SECTIONS ---
   mainSectionData: [
     {
       image: "/Solutions/estimation-section.jpg",
-      title: "Real-Time Safety Monitoring",
-      subtitle: "Stay Ahead of Potential Hazards",
+      title: "Proactive Safety Management",
+      subtitle: "Empower Your Entire Team",
       description:
-        "Monitor safety conditions in real-time, identify risks, and ensure a safe working environment across the project.",
+        "Foster a culture of safety where every team member is empowered to identify and report hazards, contributing to a safer work environment for everyone.",
       features: [
         {
           icon: <ShieldAlert size={24} className="text-background" />,
-          title: "Safety Hazard Detection",
-          description:
-            "Identify safety hazards in real-time, allowing for immediate action to prevent accidents.",
+          title: "Mobile-First Hazard Reporting",
+          description: "Enable anyone on site to instantly report a hazard with a photo and location from their phone.",
         },
         {
-          icon: <Thermometer size={24} className="text-background" />,
-          title: "Environmental Condition Monitoring",
-          description:
-            "Track environmental factors such as temperature, humidity, and air quality to ensure a safe working environment.",
+          icon: <HardHat size={24} className="text-background" />, // Changed icon
+          title: "Toolbox Talks & Safety Meetings",
+          description: "Schedule, document, and track attendance for all safety meetings, ensuring compliance and record-keeping.",
         },
         {
           icon: <CheckCheck size={24} className="text-background" />,
-          title: "Safety Compliance Monitoring",
-          description:
-            "Ensure compliance with all safety standards and regulations with real-time monitoring and alerts.",
+          title: "Compliance & Training Records",
+          description: "Maintain a centralized record of all safety certifications and training for your workforce.",
         },
       ],
     },
     {
       image: "/Solutions/estimation section-1.jpg",
       imageOnRight: "true",
-      title: "Quality Assurance & Control",
-      subtitle: "Maintain High Standards of Construction",
+      title: "Comprehensive Quality Assurance",
+      subtitle: "Deliver Excellence, Consistently",
       description:
-        "Monitor quality standards throughout the construction process to deliver the best results on every project.",
+        "Implement a standardized quality control program to ensure your projects meet and exceed client expectations and contractual requirements.",
       features: [
         {
           icon: <ClipboardCheck size={24} className="text-background" />,
-          title: "Quality Inspections",
-          description:
-            "Conduct regular quality checks and inspections to ensure the project adheres to defined quality standards.",
+          title: "Customizable Inspection Checklists",
+          description: "Build checklists tailored to specific trades or project phases, ensuring no detail is overlooked.",
         },
         {
           icon: <Layers size={24} className="text-background" />,
-          title: "Quality Reporting & Analytics",
-          description:
-            "Generate detailed quality reports and analyze data to continuously improve processes and outcomes.",
+          title: "Non-Conformance Reporting (NCR)",
+          description: "Formally document any work that doesn't meet quality standards and manage the remediation process.",
         },
         {
           icon: <AlertCircle size={24} className="text-background" />,
-          title: "Non-Compliance Alerts",
-          description:
-            "Receive alerts about any quality-related non-compliance issues, enabling immediate corrective actions.",
+          title: "Deficiency & Punch Lists",
+          description: "Streamline project closeout by creating, assigning, and tracking punch list items with photos and deadlines.",
         },
       ],
     },
   ],
 
+  // --- GRID OF ALL FEATURES ---
   featureData: [
     {
       icon: <ShieldAlert className="text-background" />,
-      title: "Safety Hazard Detection",
-      description:
-        "Identify potential safety hazards on the construction site in real-time, ensuring proactive risk management.",
-    },
-    {
-      icon: <Thermometer className="text-background" />,
-      title: "Environmental Condition",
-      description:
-        "Track environmental conditions like temperature, humidity, and air quality to ensure a safe working environment.",
-    },
-    {
-      icon: <CheckCheck className="text-background" />,
-      title: "Safety Compliance Tracking",
-      description:
-        "Ensure that safety standards and regulations are met with real-time compliance monitoring and alerts.",
+      title: "Hazard Identification & Reporting",
+      description: "Empower your team to report hazards in real-time from mobile devices.",
     },
     {
       icon: <ClipboardCheck className="text-background" />,
-      title: "Quality Inspections",
-      description:
-        "Conduct regular quality checks and inspections to ensure the project adheres to defined quality standards.",
+      title: "Digital Inspection Forms",
+      description: "Conduct quality, safety, and environmental inspections with custom checklists.",
     },
     {
-      icon: <AlertTriangle className="text-background" />,
-      title: "Risk Alerts",
-      description:
-        "Get instant alerts for potential safety risks, allowing timely action to prevent accidents.",
+      icon: <ListChecks className="text-background" />, // Changed icon
+      title: "Corrective Action Tracking",
+      description: "Assign responsibility and track the resolution of all identified issues.",
     },
     {
       icon: <Clock className="text-background" />,
-      title: "Scheduled Safety Audits",
-      description:
-        "Automate recurring safety audits and inspections, ensuring consistency and thoroughness in safety practices.",
+      title: "Scheduled Audits & Inspections",
+      description: "Automate recurring safety walks and quality checks for consistency.",
     },
     {
       icon: <Receipt className="text-background" />,
       title: "Digital Safety Records",
-      description:
-        "Maintain a digital trail of all safety inspections, audits, and incident reports for easy access.",
+      description: "Maintain a secure, searchable history of all safety-related documentation.",
     },
     {
       icon: <BarChart className="text-background" />,
-      title: "Safety Performance Analytics",
-      description:
-        "Analyze safety trends and incident reports to continuously improve safety protocols and prevent future risks.",
+      title: "Performance Analytics",
+      description: "Analyze trends in safety incidents and quality issues to drive continuous improvement.",
     },
     {
       icon: <ClipboardList className="text-background" />,
-      title: "Incident Tracking",
-      description:
-        "Track safety incidents and near misses to identify patterns and mitigate future risks on-site.",
+      title: "Incident & Near-Miss Reporting",
+      description: "Formally document incidents to understand root causes and prevent recurrence.",
     },
     {
       icon: <ShieldCheck className="text-background" />,
-      title: "Personal Protective",
-      description:
-        "Ensure compliance with PPE requirements, tracking usage and availability across the project site.",
-    },
-    {
-      icon: <Layers className="text-background" />,
-      title: "Multi-Project Safety",
-      description:
-        "Manage safety protocols and incidents across multiple construction projects from a centralized system.",
+      title: "PPE Compliance Tracking",
+      description: "Ensure PPE requirements are being met through regular checks and reporting.",
     },
     {
       icon: <Bell className="text-background" />,
-      title: "Instant Safety Alerts",
-      description:
-        "Receive real-time alerts for safety violations, non-compliance, or potential hazards on-site.",
-    },
-    {
-      icon: <RefreshCcw className="text-background" />,
-      title: "Dynamic Safety Protocol",
-      description:
-        "Update safety protocols dynamically in response to new risks, project changes, or regulatory updates.",
-    },
-    {
-      icon: <Target className="text-background" />,
-      title: "Safety Goal Tracking",
-      description:
-        "Set and track safety goals, ensuring alignment with project safety targets and objectives.",
-    },
-    {
-      icon: <TrendingDown className="text-background" />,
-      title: "Incident Reduction Strategy",
-      description:
-        "Track safety incidents and implement strategies to reduce occurrences and improve overall safety performance.",
+      title: "Instant Notifications",
+      description: "Receive real-time alerts for high-priority incidents or overdue corrective actions.",
     },
     {
       icon: <Database className="text-background" />,
-      title: "Centralized Safety Data",
-      description:
-        "Store and access all safety records and incident reports in one secure, easy-to-manage system.",
-    },
-    {
-      icon: <ShieldCheck className="text-background" />,
-      title: "Secure Safety Transactions",
-      description:
-        "Ensure all safety data and incident reports are securely stored and processed in compliance with industry.",
+      title: "Centralized Compliance Data",
+      description: "Store all training records, certifications, and compliance documents in one place.",
     },
     {
       icon: <FilePlus className="text-background" />,
-      title: "Automated Safety Reports",
-      description:
-        "Generate comprehensive safety reports automatically with real-time safety data for quick analysis and decision-making.",
-    },
-    {
-      icon: <FileBarChart className="text-background" />,
-      title: "Safety & Compliance Insights",
-      description:
-        "Analyze safety data and compliance reports to improve safety planning and execution across all projects.",
+      title: "Automated Report Generation",
+      description: "Instantly generate professional safety and quality reports for clients or stakeholders.",
     },
     {
       icon: <Calendar className="text-background" />,
-      title: "Safety Training Scheduling",
-      description:
-        "Schedule and track safety training sessions to ensure all team members are up-to-date on safety protocols.",
+      title: "Safety Training Management",
+      description: "Schedule and track completion of all required safety training courses.",
     },
   ],
 
+  // --- RESOURCES / GUIDES SECTION ---
   featuresData: {
     title: "Resources",
-    subtitle: "Master Quality Strategies",
-    description:
-      "Explore best practices and comprehensive guides for effectively qualifying contractors ",
+    subtitle: "Build a World-Class Q&S Program",
+    description: "Explore our expert guides to enhance your site safety and quality assurance processes.",
     features: [
       {
-        title: "Safety Hazard Identification",
-        description:
-          "Automatically identify and flag potential hazards on-site to prevent accidents.",
-        icon: <ShieldAlert className="text-white" />,
+        icon: <HardHat className="text-white" />,
+        title: "How to Conduct an Effective Toolbox Talk",
+        description: "Watch the video guide.",
       },
       {
         icon: <ClipboardList className="text-white" />,
-        title: "Safety Compliance Records",
-        description:
-          "Maintain an organized history of safety inspections, audits, and compliance.",
+        title: "The Ultimate Guide to Construction Quality Control",
+        description: "Access the guide.",
       },
       {
         icon: <AlertTriangle className="text-white" />,
-        title: "Safety Violation Alerts",
-        description:
-          "Receive instant alerts when safety violations or risks are detected.",
-      },
-      {
-        icon: <BarChart className="text-white" />,
-        title: "Incident & Risk Analytics",
-        description:
-          "Analyze safety incident data to identify trends, improve risk management strategies, and enhance site safety.",
+        title: "Leading vs. Lagging Indicators in Safety",
+        description: "Read the article.",
       },
       {
         icon: <FileText className="text-white" />,
-        title: "Safety Training Records",
-        description:
-          "Track and manage safety training programs for all workers to ensure compliance with site safety standards.",
-      },
-      {
-        icon: <RefreshCcw className="text-white" />,
-        title: "Dynamic Safety Protocol",
-        description:
-          "Easily update safety protocols in real-time as new risks or regulations emerge to keep your team safe and compliant.",
+        title: "A Contractor's Guide to ISO 9001",
+        description: "Learn about quality management systems.",
       },
     ],
   },
 
+  // --- FINAL CALL TO ACTION ---
   ctaProps: {
-    title: "Enhance Construction Site Safety and Quality",
-    description: "",
+    title: "Build Safer, Build Better, Build Smarter.",
+    description: "Take the first step towards a zero-incident culture and a reputation for excellence. See how Zedops can help.",
     benefits: [
-      "Instant hazard",
-      "Real-time safety violation",
-      "Comprehensive compliance tracking",
+      "Reduce workplace incidents",
+      "Eliminate costly rework",
+      "Enhance project reputation",
     ],
-    button1Label: "Book a demo",
+    button1Label: "Request a Demo",
     button1Link: "/book-a-demo",
-    button2Label: "Start a trial",
-    button2Link: "/start-trial",
+    button2Label: "Talk to Sales",
+    button2Link: "/contact-sales",
   },
 };

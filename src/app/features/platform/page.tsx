@@ -5,7 +5,9 @@ import FeatureCards from "@/Components/solutions/Featurecards"
 import { PLATFORM_PAGE } from "@/Data/platform/platform-page";
 import Mainsection from "@/Components/solutions/Mainsection";
 import CtoSection from "@/Components/solutions/Ctosection";
-import FeatureSticky from "@/Components/solutions/FeatureSticky";
+import FeatureTabsSection from "@/Components/solutions/FeatureSticky";
+import FeatureHighlightSection from "@/Components/solutions/LeadSection";
+import GuidesSection from "@/Components/solutions/Featurecards";
 
 
 export default function PrequalificationPage() {
@@ -16,14 +18,12 @@ export default function PrequalificationPage() {
       {/* Hero Section */}
       <IntroSection {...PLATFORM_PAGE.heroprops} />
       {/* Use original section name 'campaignChannels' (content updated in data file) */}
-      <LeadSection data={PLATFORM_PAGE.campaignChannels} />
-      {/* Use original section name 'featuresData' */}
-      <FeatureCards featuresData={PLATFORM_PAGE.featuresData} />
+      <FeatureHighlightSection data={PLATFORM_PAGE.campaignChannels} />
       {/* Use original section name 'mainSection' */}
       <Mainsection sections={PLATFORM_PAGE.mainSection} />
       {/* Remove added sections for safety & analytics */}
       {/* Sticky section and CTA remain */}
-      <FeatureSticky {...PLATFORM_PAGE.stickySection} />
+      <FeatureTabsSection {...PLATFORM_PAGE.stickySection} />
       <CtoSection {...PLATFORM_PAGE.ctaProps} />
       {/* Hero Content Section */}
       {/* <MainHero {...PROJECTMANAGEMENT_PAGE.heroSectionProps} /> */}
