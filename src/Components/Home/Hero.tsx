@@ -1,8 +1,7 @@
 "use client"
 
-import { PlayIcon, Sparkles, BarChart3, Clock, Smartphone, FileText, Shield, Calendar, GitBranch, Settings, CheckCircle, HardHat, Play, ArrowRight, ArrowRightIcon, ChevronRight } from "lucide-react";
+import { BarChart3, Clock, Smartphone, FileText, Calendar, GitBranch, Settings, CheckCircle, HardHat, Play, ChevronRight } from "lucide-react";
 import Link from "next/link";
-import { Button } from "../UI/button";
 
 const Hero = () => {
   return (

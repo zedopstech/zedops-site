@@ -1,5 +1,4 @@
 import React from "react";
-import Image from "next/image";
 
 interface Feature {
   icon: React.ReactNode; // Now accepts a ReactNode for icons

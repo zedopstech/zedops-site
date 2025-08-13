@@ -1,4 +1,4 @@
-import { Lock, Users, KeyRound, CloudCog, ShieldCheck, Bug, Server, DatabaseZap, ShieldQuestion, UserCheck } from "lucide-react"; // Added new icons
+import { Lock, Users, KeyRound, ShieldCheck, Server, UserCheck } from "lucide-react"; // Added new icons
 
 export const SECURITY_PAGE = {
   // --- HERO SECTION ---

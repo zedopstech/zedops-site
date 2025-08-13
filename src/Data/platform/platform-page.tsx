@@ -1,19 +1,10 @@
 import {
   MessagesSquare,
-  FileText,
   ClipboardList,
-  AlertTriangle,
-  PieChart,
-  Receipt,
   Calendar,
   AlertCircle,
-  PanelsTopLeft,
-  Lock,
-  ShieldCheck,
-  Layers,
   Share2,
   BellRing,
-  RefreshCcw,
   // New icons for updated content
   Calculator,
   GanttChartSquare,
@@ -163,25 +154,25 @@ export const PLATFORM_PAGE = {
         title: "Centralized Workspace",
         description:
           "Break down information silos. Our unified workspace brings all your projects, teams, documents, and data into a single source of truth, ensuring everyone is working from the most current information.",
-        iconName: "PanelsTopLeft", 
+          Icon: "PanelsTopLeft", 
       },
       {
         title: "Role-Based Permissions",
         description:
           "Maintain complete control over your data. With granular, role-based permissions, you can confidently grant specific access to team members, subcontractors, clients, and other stakeholders, ensuring they only see what they need to.",
-        iconName: "Lock",
+          Icon: "Lock",
       },
       {
         title: "Enterprise-Grade Security",
         description:
           "Your data is your most critical asset. We protect it with best-in-class security protocols, including end-to-end encryption, regular backups, and infrastructure that meets global compliance standards.",
-        iconName: "ShieldCheck",
+          Icon: "ShieldCheck",
       },
       {
         title: "Seamless Integrations",
         description: 
           "Zedops works with the tools you already use. Our flexible API allows for seamless integration with your existing accounting, ERP, BIM, and other essential business software, creating a truly connected digital ecosystem.",
-        iconName: "Layers",
+          Icon: "Layers",
       },
     ],
   },

@@ -21,8 +21,6 @@ const ControlSection: React.FC<ControlSectionProps> = ({
   title,
   description,
   features,
-  imageSrc,
-  imageAlt,
 }) => {
   return (
     <section className="bg-white py-16">

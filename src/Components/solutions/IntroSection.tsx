@@ -1,6 +1,5 @@
 import { FC } from "react";
 import Link from "next/link";
-import { Play } from "lucide-react";
 import { Button } from "@/Components/UI/button"; // It's better to use your existing Button component for consistency
 
 interface HeroProps {

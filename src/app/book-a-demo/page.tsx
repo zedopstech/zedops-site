@@ -2,7 +2,7 @@
 
 import React, { useState, useEffect, useMemo } from "react";
 import { Button } from "@/Components/UI/button";
-import { Building2, Users, Workflow, ArrowRight, Shield, Clock, XCircle, CheckCircle, Calendar, Cpu, LineChart } from "lucide-react";
+import { Building2, Users, Workflow, ArrowRight, Shield, Clock, CheckCircle, LineChart } from "lucide-react";
 import Link from "next/link";
 import { Input } from "@/Components/UI/input";
 import { Label } from "@/Components/UI/label";

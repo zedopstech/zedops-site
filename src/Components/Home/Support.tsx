@@ -1,4 +1,4 @@
-import { ArrowUpRight, Headset, Mail, MessageSquare, Clock, Shield, BookOpen, PuzzleIcon, User } from "lucide-react";
+import { ArrowUpRight, Headset, Mail, MessageSquare, Shield, BookOpen, PuzzleIcon, User } from "lucide-react";
 import { Button } from "../UI/button";
 import Link from "next/link";
 

@@ -8,23 +8,23 @@ import { Building2, CheckCircle, TrendingUp, Users, ArrowRight } from "lucide-re
 const aboutUsContent = {
   hero: {
     pretitle: "Our Story",
-    title: "We're Closing the Gap Between the Field and the Office",
+    title: "We&apos;re Closing the Gap Between the Field and the Office",
     description:
-      "Zedops was born on the job site. We're a team of construction veterans and tech innovators who grew tired of watching great projects get bogged down by disconnected data, manual paperwork, and outdated software. We knew there had to be a better way.",
-    image: "/aboutUs/about-us-hero.webp", // Suggested: A high-quality, authentic photo of your team or co-founder on a site.
+      "Zedops was born on the job site. We&apos;re a team of construction veterans and tech innovators who grew tired of watching great projects get bogged down by disconnected data, manual paperwork, and outdated software. We knew there had to be a better way.",
+    image: "about/about-us-hero.webp", // Suggested: A high-quality, authentic photo of your team or co-founder on a site.
   },
   ourStory: {
     title: "A Platform Built From a Decade of Experience",
     description_p1:
-      "Our co-founder spent over decades in Gulf contracting, managing complex projects and experiencing firsthand the frustrations of implementing software that wasn't built for the reality of the job site. He saw tools that were too complex, too expensive, or simply didn't connect to the financial big picture.",
+      "Our co-founder spent over decades in Gulf contracting, managing complex projects and experiencing firsthand the frustrations of implementing software that wasn&apos;t built for the reality of the job site. He saw tools that were too complex, too expensive, or simply didn&apos;t connect to the financial big picture.",
     description_p2:
-      "Zedops is the solution he wished he had. It's not just another app; it's a field-tested philosophy. We believe that technology should serve the craft, not complicate it. Every feature we build starts with a simple question: 'Will this make life easier for the site supervisor and give the project manager the data they actually need?'",
+      "Zedops is the solution he wished he had. It&apos;s not just another app; it&apos;s a field-tested philosophy. We believe that technology should serve the craft, not complicate it. Every feature we build starts with a simple question: &apos;Will this make life easier for the site supervisor and give the project manager the data they actually need?&apos;",
     image: "/construction-management-about-us.jpg", // Suggested: A professional photo of your co-founder.
   },
   whyChooseUs: {
     title: "Our Guiding Principles",
     description:
-      "We're building Zedops with a clear set of values that guide our every decision, ensuring we create a platform that is both powerful and practical.",
+      "We&apos;re building Zedops with a clear set of values that guide our every decision, ensuring we create a platform that is both powerful and practical.",
     points: [
       {
         title: "Field-First Design",
@@ -35,7 +35,7 @@ const aboutUsContent = {
       {
         title: "Radical Simplicity",
         description:
-          "We prioritize clarity and ease-of-use. You shouldn't need a month of training to manage a project effectively.",
+          "We prioritize clarity and ease-of-use. You shouldn&apos;t need a month of training to manage a project effectively.",
         Icon: CheckCircle,
       },
       {
@@ -149,9 +149,9 @@ const AboutUs: React.FC = () => {
               <h2 className="text-3xl font-bold sm:text-4xl">
                 Ready to Build a Better Way?
               </h2>
-              <p className="text-xl text-white/80 max-w-2xl mx-auto mt-6 mb-10">
-                See for yourself how our field-first approach is redefining construction management. Let's build the future, together.
-              </p>
+                <p className="text-xl text-white/80 max-w-2xl mx-auto mt-6 mb-10">
+                See for yourself how our field-first approach is redefining construction management. Let&apos;s build the future, together.
+                </p>
               <Link href="/book-a-demo">
                 <Button size="lg" className="bg-white text-primary hover:bg-gray-200 px-8 py-6 text-lg font-semibold shadow-lg hover:scale-105 transition-transform">
                   Request a Demo

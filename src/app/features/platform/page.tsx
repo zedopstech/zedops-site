@@ -1,13 +1,10 @@
 import React from "react";
 import IntroSection from "@/Components/solutions/IntroSection"
-import LeadSection from "@/Components/solutions/LeadSection"
-import FeatureCards from "@/Components/solutions/Featurecards"
 import { PLATFORM_PAGE } from "@/Data/platform/platform-page";
 import Mainsection from "@/Components/solutions/Mainsection";
 import CtoSection from "@/Components/solutions/Ctosection";
 import FeatureTabsSection from "@/Components/solutions/FeatureSticky";
 import FeatureHighlightSection from "@/Components/solutions/LeadSection";
-import GuidesSection from "@/Components/solutions/Featurecards";
 
 
 export default function PrequalificationPage() {
