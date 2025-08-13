@@ -36,28 +36,28 @@ const PersonasSection = () => {
         personas: [
             {
                 name: "Project Managers",
-                imageSrc: "/persona/project-managers.jpg", // Replace with your image
+                imageSrc: "/Persona/project-managers.jpg", // Replace with your image
                 link: "/solutions/project-managers",
                 shape: 'circle',
                 bgColor: 'black',
             },
             {
                 name: "Site Supervisors",
-                imageSrc: "/persona/site-supervisor.jpg", // Replace with your image
+                imageSrc: "/Persona/site-supervisor.jpg", // Replace with your image
                 link: "/solutions/site-supervisors",
                 shape: 'squircle',
                 bgColor: 'blue',
             },
             {
                 name: "Company Owners",
-                imageSrc: "/persona/company-owner.jpg", // Replace with your image
+                imageSrc: "/Persona/company-owner.jpg", // Replace with your image
                 link: "/solutions/company-owners",
                 shape: 'semicircle',
                 bgColor: 'black',
             },
             {
                 name: "Subcontractors",
-                imageSrc: "/persona/subcontractor.jpg", // Replace with your image
+                imageSrc: "/Persona/subcontractor.jpg", // Replace with your image
                 link: "/solutions/subcontractors",
                 shape: 'circle',
                 bgColor: 'blue',

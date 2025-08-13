@@ -11,7 +11,7 @@ const aboutUsContent = {
     title: "We&apos;re Closing the Gap Between the Field and the Office",
     description:
       "Zedops was born on the job site. We&apos;re a team of construction veterans and tech innovators who grew tired of watching great projects get bogged down by disconnected data, manual paperwork, and outdated software. We knew there had to be a better way.",
-    image: "about/about-us-hero.webp", // Suggested: A high-quality, authentic photo of your team or co-founder on a site.
+    image: "aboutUs/about-us-hero.webp", // Suggested: A high-quality, authentic photo of your team or co-founder on a site.
   },
   ourStory: {
     title: "A Platform Built From a Decade of Experience",
